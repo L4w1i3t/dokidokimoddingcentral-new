@@ -4,3 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure full height */
+}

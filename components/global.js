@@ -1,6 +1,7 @@
+// [components]/global.js
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch and insert the header
-    fetch("components/header.html")
+    fetch("/components/header.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok for header.html');
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Error loading header:', error));
 
     // Fetch and insert the footer
-    fetch("components/footer.html")
+    fetch("/components/footer.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok for footer.html');

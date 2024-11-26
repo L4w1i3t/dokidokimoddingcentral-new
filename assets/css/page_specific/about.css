@@ -1,0 +1,84 @@
+body {
+    /* Set the background image */
+    background-image: url('../../gui/aboutcorridor.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Ensure the overlay stays behind content */
+}
+
+#about-container {
+    max-width: 900px; /* Increased width for better readability */
+    margin: 60px auto; /* Added top margin to prevent overlap with fixed header */
+    padding: 40px 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 2px solid #4b0049;
+}
+
+#about-container h1 {
+    text-align: center;
+    color: #4b0049;
+    font-family: 'HotMustardBTNRegular', sans-serif; /* Apply Hot Mustard font */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h2 {
+    text-align: center; /* Center the headings */
+    color: #333;
+    font-family: 'HotMustardBTNRegular', sans-serif; /* Apply Hot Mustard font */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4b0049;
+    padding-bottom: 10px;
+}
+
+.about-section p {
+    line-height: 1.8;
+    color: #555;
+    text-align: justify; /* Justify the paragraph text for better readability */
+}
+
+.about-section ul, .about-section ol {
+    margin-left: 30px;
+    color: #555;
+}
+
+.about-section ul li, .about-section ol li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-section a {
+    color: #4b0049;
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    text-decoration: underline;
+}
+
+.final-message {
+    text-align: center;
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333;
+}

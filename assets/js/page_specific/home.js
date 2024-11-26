@@ -1,5 +1,3 @@
-// assets/js/page_specific/home.js
-
 document.addEventListener("DOMContentLoaded", function() {
     const menuLinks = document.querySelectorAll("#main-menu ul li a");
     const sprite = document.querySelector(".matsu-sprite");
@@ -21,10 +19,29 @@ document.addEventListener("DOMContentLoaded", function() {
             "FAQ": "Find answers to frequently asked questions!"
         };
 
-        let typingInterval; // Store the interval ID
-        let tooltipTimeout; // Store the timeout ID for hiding the tooltip
+        let typingInterval = null; // Store the interval ID
+        let tooltipTimeout = null; // Store the timeout ID for hiding the tooltip
 
-        const typeText = (text, callback) => {
+        /**
+         * Clears any existing typing interval and tooltip timeout.
+         */
+        const clearExistingTimers = () => {
+            if (typingInterval) {
+                clearInterval(typingInterval);
+                typingInterval = null;
+            }
+            if (tooltipTimeout) {
+                clearTimeout(tooltipTimeout);
+                tooltipTimeout = null;
+            }
+        };
+
+        /**
+         * Types out the provided text into the tooltip element.
+         * @param {string} text - The text to type out.
+         */
+        const typeText = (text) => {
+            clearExistingTimers(); // Ensure no overlapping intervals
             let index = 0;
             tooltip.textContent = ''; 
             tooltip.style.display = 'block'; 
@@ -36,23 +53,28 @@ document.addEventListener("DOMContentLoaded", function() {
                     tooltip.textContent += text.charAt(index);
                     index++;
                 } else {
-                    clearInterval(typingInterval);
-                    if (callback) callback();
+                    clearExistingTimers();
                 }
             }, 10);
         };
 
+        /**
+         * Handles the mouse enter and focus events on menu links.
+         * @param {Event} event - The event object.
+         */
         const handleMouseEnter = (event) => {
             sprite.src = hoverSrc;
             const menuItem = event.target.textContent.trim();
-            const tooltipText = tooltipTexts[menuItem] || "Information about " + menuItem;
-            clearTimeout(tooltipTimeout); // Clear any existing timeout to hide the tooltip
+            const tooltipText = tooltipTexts[menuItem] || `Information about ${menuItem}`;
             typeText(tooltipText);
         };
 
+        /**
+         * Handles the mouse leave and blur events on menu links.
+         */
         const handleMouseLeave = () => {
             sprite.src = originalSrc;
-            clearInterval(typingInterval); // Clear the typing interval
+            clearExistingTimers(); // Stop typing and clear timeouts
             tooltip.textContent = ''; // Clear the text immediately
             tooltip.classList.remove('show');
             tooltip.classList.add('hide');
@@ -63,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 500); // Match the transition duration in CSS
         };
 
+        // Attach event listeners to each menu link
         menuLinks.forEach(link => {
             link.addEventListener("mouseenter", handleMouseEnter);
             link.addEventListener("mouseleave", handleMouseLeave);
@@ -108,14 +131,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Create bubbles at intervals
         const bubbleInterval = setInterval(createBubble, 1000); // Generate a bubble every 1 second
-
-        // Optional: Stop creating bubbles after a certain time or under specific conditions
-        // For example, stop after 2 minutes:
-        /*
-        setTimeout(() => {
-            clearInterval(bubbleInterval);
-        }, 120000); // 120,000 ms = 2 minutes
-        */
     } else {
         console.error("Sprite image with class 'matsu-sprite', tooltip with id 'tooltip', or bubble container not found.");
     }

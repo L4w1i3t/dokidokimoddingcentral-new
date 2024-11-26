@@ -1,19 +1,16 @@
+├── .gitignore
 ├── [assets]/
 │   ├── [css]/
 │   │   ├── [page_specific]/
-│   │   │   ├── aboutsite.css
-│   │   │       --- Start of aboutsite.css ---
+│   │   │   ├── about.css
+│   │   │       --- Start of about.css ---
 
-│   │   │       --- End of aboutsite.css ---
-│   │   │   ├── aboutus.css
-│   │   │       --- Start of aboutus.css ---
-
-│   │   │       --- End of aboutus.css ---
+│   │   │       --- End of about.css ---
 │   │   │   └── home.css
 │   │   │       --- Start of home.css ---
 │   │   │       /* assets/css/page_specific/home.css */
 │   │   │       
-│   │   │       /* General Styles */
+│   │   │       /* ... previous styles ... */
 │   │   │       
 │   │   │       /* Prevent scrolling on the homepage */
 │   │   │       body, html {
@@ -42,9 +39,16 @@
 │   │   │           width: 250px; /* Set the logo size */
 │   │   │           height: auto;
 │   │   │           margin-bottom: 20px;
+│   │   │           z-index: 2;
 │   │   │       }
 │   │   │       
 │   │   │       /* Style the main menu */
+│   │   │       #main-menu {
+│   │   │           position: relative; /* Ensure menu has a positioning context */
+│   │   │           z-index: 2; /* Higher z-index to stay above bubbles */
+│   │   │           margin: 1% 0 30% 0; /* Positioning higher up */
+│   │   │       }
+│   │   │       
 │   │   │       #main-menu ul {
 │   │   │           list-style: none;
 │   │   │           padding: 0;
@@ -55,7 +59,7 @@
 │   │   │       }
 │   │   │       
 │   │   │       #main-menu ul li {
-│   │   │           font-family: 'HotMustardBTNRegular', sans-serif; /* Example font */
+│   │   │           font-family: 'HotMustardBTNRegular', sans-serif;
 │   │   │           font-size: 36px;
 │   │   │           text-transform: uppercase;
 │   │   │           letter-spacing: 1.5px;
@@ -102,19 +106,26 @@
 │   │   │       }
 │   │   │       
 │   │   │       #column2 {
+│   │   │           position: relative; /* Ensure that .bubble-container is positioned relative to #column2 */
 │   │   │           flex: 1; /* Each column takes equal space */
 │   │   │           padding: 20px; /* Inner padding */
 │   │   │           /* No background color */
+│   │   │           height: 100vh;
 │   │   │           display: flex;
 │   │   │           flex-direction: column;
 │   │   │           align-items: center; /* Center items horizontally */
 │   │   │           justify-content: center; /* Center items vertically */
 │   │   │           text-align: center; /* Center text */
+│   │   │           overflow: hidden; /* Ensure bubbles don't cause overflow */
+│   │   │           z-index: 1; /* Ensure column content is above bubbles */
 │   │   │       }
 │   │   │       
 │   │   │       #column3 {
 │   │   │           flex: 1; /* Each column takes equal space */
 │   │   │           padding: 20px; /* Inner padding */
+│   │   │           /* Removed position and z-index to prevent overlapping */
+│   │   │           position: static;
+│   │   │           z-index: auto;
 │   │   │       }
 │   │   │       
 │   │   │       .divider {
@@ -150,7 +161,7 @@
 │   │   │           max-width: 250px;
 │   │   │           font-size: 32px;
 │   │   │           display: none; /* Hidden by default */
-│   │   │           z-index: 1000; /* Ensure it appears above other elements */
+│   │   │           z-index: 3; /* Ensure tooltip is above bubbles and menu */
 │   │   │           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 │   │   │           white-space: pre-wrap;
 │   │   │           font-family: 'Courier New', Courier, monospace;
@@ -198,6 +209,43 @@
 │   │   │           }
 │   │   │       }
 │   │   │       
+│   │   │       /* Bubble Container Styles */
+│   │   │       .bubble-container {
+│   │   │           position: absolute;
+│   │   │           bottom: -100px; /* Start below the viewport */
+│   │   │           left: 0;
+│   │   │           width: 100%;
+│   │   │           height: 120%; /* Extend beyond the top to accommodate rising bubbles */
+│   │   │           overflow: hidden;
+│   │   │           pointer-events: none; /* Allow clicks to pass through */
+│   │   │           z-index: 0; /* Ensure bubbles are behind other content */
+│   │   │       }
+│   │   │       
+│   │   │       /* Individual Bubble Styles */
+│   │   │       .bubble {
+│   │   │           position: absolute;
+│   │   │           bottom: 0;
+│   │   │           background-color: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+│   │   │           border-radius: 50%;
+│   │   │           opacity: 0.5; /* Further reduced opacity */
+│   │   │           animation: rise linear forwards; /* Changed to 'linear' for consistent speed and 'forwards' to retain final state */
+│   │   │       }
+│   │   │       
+│   │   │       /* Keyframes for Bubble Rising Animation */
+│   │   │       @keyframes rise {
+│   │   │           0% {
+│   │   │               transform: translateY(0) scale(1);
+│   │   │               opacity: 0.5;
+│   │   │           }
+│   │   │           50% {
+│   │   │               opacity: 0.8;
+│   │   │           }
+│   │   │           100% {
+│   │   │               transform: translateY(-120vh) scale(1.5); /* Rise beyond the viewport */
+│   │   │               opacity: 0;
+│   │   │           }
+│   │   │       }
+│   │   │       
 │   │   │       /* Media Queries */
 │   │   │       @media (max-width: 768px) {
 │   │   │           /* Hide the left and right columns */
@@ -237,6 +285,14 @@
 │   │   │               font-size: 14px;
 │   │   │               right: 10px;
 │   │   │           }
+│   │   │       
+│   │   │           /* Hide bubble container on smaller screens if desired */
+│   │   │           /* Uncomment the following to hide bubbles on mobile devices */
+│   │   │           /*
+│   │   │           .bubble-container {
+│   │   │               display: none;
+│   │   │           }
+│   │   │           */
 │   │   │       }
 │   │   │       --- End of home.css ---
 │   │   ├── responsive.css
@@ -251,6 +307,12 @@
 │   │           font-weight: normal;
 │   │           font-style: normal;
 │   │       }
+│   │       
+│   │       html, body {
+│   │           margin: 0; /* Remove default margin */
+│   │           padding: 0; /* Remove default padding */
+│   │           height: 100%; /* Ensure full height */
+│   │       }
 │   │       --- End of styles.css ---
 │   ├── [fonts]/
 │   │   ├── HotMustardBTNRegular.ttf
@@ -259,6 +321,7 @@
 │   │   ├── s1.ttf
 │   │   └── y1.ttf
 │   ├── [gui]/
+│   │   ├── aboutcorridor.webp
 │   │   ├── bedroom.png
 │   │   ├── class.webp
 │   │   ├── closet.png
@@ -269,28 +332,28 @@
 │   │   ├── logo.webp
 │   │   └── residential.png
 │   ├── [images]/
+│   │   └── [staff]/
 │   ├── [js]/
 │   │   ├── main.js
 │   │       --- Start of main.js ---
 
 │   │       --- End of main.js ---
 │   │   ├── [page_specific]/
-│   │   │   ├── aboutsite.js
-│   │   │       --- Start of aboutsite.js ---
+│   │   │   ├── about.js
+│   │   │       --- Start of about.js ---
 
-│   │   │       --- End of aboutsite.js ---
-│   │   │   ├── aboutus.js
-│   │   │       --- Start of aboutus.js ---
-
-│   │   │       --- End of aboutus.js ---
+│   │   │       --- End of about.js ---
 │   │   │   └── home.js
 │   │   │       --- Start of home.js ---
+│   │   │       // assets/js/page_specific/home.js
+│   │   │       
 │   │   │       document.addEventListener("DOMContentLoaded", function() {
 │   │   │           const menuLinks = document.querySelectorAll("#main-menu ul li a");
 │   │   │           const sprite = document.querySelector(".matsu-sprite");
 │   │   │           const tooltip = document.querySelector("#tooltip");
+│   │   │           const bubbleContainer = document.querySelector(".bubble-container"); // Select the bubble container
 │   │   │       
-│   │   │           if (sprite && tooltip) {
+│   │   │           if (sprite && tooltip && bubbleContainer) {
 │   │   │               const originalSrc = "assets/sprites/matsu1.webp";
 │   │   │               const hoverSrc = "assets/sprites/matsu2.webp";
 │   │   │               const preloadedImage = new Image();
@@ -353,8 +416,55 @@
 │   │   │                   link.addEventListener("focus", handleMouseEnter);
 │   │   │                   link.addEventListener("blur", handleMouseLeave);
 │   │   │               });
+│   │   │       
+│   │   │               // Bubble Effect Implementation
+│   │   │       
+│   │   │               const MAX_BUBBLES = 30; // Maximum number of bubbles on screen
+│   │   │       
+│   │   │               const createBubble = () => {
+│   │   │                   if (bubbleContainer.children.length >= MAX_BUBBLES) return; // Limit the number of bubbles
+│   │   │       
+│   │   │                   const bubble = document.createElement('div');
+│   │   │                   bubble.classList.add('bubble');
+│   │   │       
+│   │   │                   // Random size between 10px and 40px
+│   │   │                   const size = Math.random() * 30 + 10;
+│   │   │                   bubble.style.width = `${size}px`;
+│   │   │                   bubble.style.height = `${size}px`;
+│   │   │       
+│   │   │                   // Random horizontal position (0% to 100%)
+│   │   │                   const position = Math.random() * 100;
+│   │   │                   bubble.style.left = `${position}%`;
+│   │   │       
+│   │   │                   // Random animation duration between 8s and 20s
+│   │   │                   const duration = Math.random() * 12 + 8;
+│   │   │                   bubble.style.animationDuration = `${duration}s`;
+│   │   │       
+│   │   │                   // Random opacity between 0.5 and 0.7 for variation
+│   │   │                   const opacity = Math.random() * 0.2 + 0.5;
+│   │   │                   bubble.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+│   │   │       
+│   │   │                   // Append the bubble to the container
+│   │   │                   bubbleContainer.appendChild(bubble);
+│   │   │       
+│   │   │                   // Remove the bubble after the animation completes to prevent DOM clutter
+│   │   │                   bubble.addEventListener('animationend', () => {
+│   │   │                       bubble.remove();
+│   │   │                   });
+│   │   │               };
+│   │   │       
+│   │   │               // Create bubbles at intervals
+│   │   │               const bubbleInterval = setInterval(createBubble, 1000); // Generate a bubble every 1 second
+│   │   │       
+│   │   │               // Optional: Stop creating bubbles after a certain time or under specific conditions
+│   │   │               // For example, stop after 2 minutes:
+│   │   │               /*
+│   │   │               setTimeout(() => {
+│   │   │                   clearInterval(bubbleInterval);
+│   │   │               }, 120000); // 120,000 ms = 2 minutes
+│   │   │               */
 │   │   │           } else {
-│   │   │               console.error("Sprite image with class 'matsu-sprite' or tooltip with id 'tooltip' not found.");
+│   │   │               console.error("Sprite image with class 'matsu-sprite', tooltip with id 'tooltip', or bubble container not found.");
 │   │   │           }
 │   │   │       });
 │   │   │       --- End of home.js ---
@@ -369,17 +479,16 @@
 │   ├── footer.css
 │       --- Start of footer.css ---
 │       footer {
-│           background-color: #f1f1f1;
+│           background-color: #000000;
 │           padding: 20px 0;
 │           text-align: center;
-│           position: fixed;
 │           width: 100%;
-│           bottom: 0;
 │       }
 │       
 │       footer p {
 │           margin: 0 0 10px 0;
-│           color: #333;
+│           color: #ffffff;
+│           text-decoration: underline;
 │       }
 │       
 │       footer ul {
@@ -411,9 +520,10 @@
 │       --- End of footer.html ---
 │   ├── global.js
 │       --- Start of global.js ---
+│       // [components]/global.js
 │       document.addEventListener("DOMContentLoaded", function() {
 │           // Fetch and insert the header
-│           fetch("components/header.html")
+│           fetch("/components/header.html")
 │               .then(response => {
 │                   if (!response.ok) {
 │                       throw new Error('Network response was not ok for header.html');
@@ -426,7 +536,7 @@
 │               .catch(error => console.error('Error loading header:', error));
 │       
 │           // Fetch and insert the footer
-│           fetch("components/footer.html")
+│           fetch("/components/footer.html")
 │               .then(response => {
 │                   if (!response.ok) {
 │                       throw new Error('Network response was not ok for footer.html');
@@ -473,10 +583,9 @@
 │       <header>
 │           <nav>
 │               <ul>
-│                   <li><a href="index.html">Home</a></li>
-│                   <li><a href="pages/about/aboutsite.html">About</a></li>
-│                   <li><a href="pages/faq.html">FAQ</a></li>
-│                   <!-- Add more navigation links as needed -->
+│                   <li><a href="../index.html">Home</a></li>
+│                   <li><a href="../pages/about.html">About</a></li>
+│                   <li><a href="../pages/faq.html">FAQ</a></li>
 │               </ul>
 │           </nav>
 │       </header>
@@ -521,10 +630,12 @@
                                 <li><a href="#submissions">Submissions</a></li>
                                 <li><a href="#assets">Assets</a></li>
                                 <li><a href="#classroom">Classroom</a></li>
-                                <li><a href="#about">About</a></li>
+                                <li><a href="pages/about.html">About</a></li>
                                 <li><a href="#faq">FAQ</a></li>
                             </ul>
                         </nav>
+                        <!-- Bubble Container -->
+                        <div class="bubble-container"></div>
                     </div>
                     <div class="divider"></div>
                     <div class="column" id="column3">
@@ -542,18 +653,19 @@
     </body>
     </html>
     --- End of index.html ---
-└── [pages]/
-    ├── [about]/
-    │   ├── aboutsite.html
-    │       --- Start of aboutsite.html ---
+├── LICENSE
+├── [pages]/
+│   ├── about.html
+│       --- Start of about.html ---
 
-    │       --- End of aboutsite.html ---
-    │   └── aboutus.html
-    │       --- Start of aboutus.html ---
+│       --- End of about.html ---
+│   ├── add other pages here
+│   └── faq.html
+│       --- Start of faq.html ---
 
-    │       --- End of aboutus.html ---
-    ├── add other pages here
-    └── faq.html
-        --- Start of faq.html ---
-
-        --- End of faq.html ---
+│       --- End of faq.html ---
+└── README.md
+    --- Start of README.md ---
+    # dokidokimoddingcentral-new
+    The new and improved site for DDMC.
+    --- End of README.md ---
