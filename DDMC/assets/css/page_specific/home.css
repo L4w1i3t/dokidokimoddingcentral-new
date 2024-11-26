@@ -1,0 +1,286 @@
+/* assets/css/page_specific/home.css */
+
+/* ... previous styles ... */
+
+/* Prevent scrolling on the homepage */
+body, html {
+    overflow: hidden;
+    height: 100%; /* Ensure the page height is restricted */
+    margin: 0; /* Remove any default margins that might cause scrollbars */
+    padding: 0;
+}
+
+/* Adjust layout to position content closer to the top */
+#main-container {
+    position: relative; /* To position the tooltip absolutely within it */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items closer to the top */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background: #4b0049; /* Example background color */
+    padding: 0px 20px; /* Add some top padding for spacing */
+    gap: 20px; /* Space between elements */
+}
+
+/* Style the site logo */
+#site-logo {
+    width: 250px; /* Set the logo size */
+    height: auto;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+/* Style the main menu */
+#main-menu {
+    position: relative; /* Ensure menu has a positioning context */
+    z-index: 2; /* Higher z-index to stay above bubbles */
+    margin: 1% 0 30% 0;
+}
+
+#main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#main-menu ul li {
+    font-family: 'HotMustardBTNRegular', sans-serif; /* Example font */
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#main-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+#main-menu ul li a:hover {
+    color: #ff69b4; /* Highlight color on hover */
+}
+
+/* Hide the dynamic header and footer on this page and this page only */
+#header,
+#footer {
+    display: none;
+}
+
+/* Column Container Styles */
+.column-container {
+    display: flex;
+    justify-content: space-between; /* Space columns evenly */
+    align-items: flex-start; /* Align items to the start of the container */
+    width: 100vw; /* Full width */
+    height: 100vh;
+    margin-top: 0px; /* Space above the columns */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+#column1 {
+    position: relative; /* Added to position tooltip absolutely within it */
+    flex: 1; /* Each column takes equal space */
+    padding: 20px; /* Inner padding */
+    background: url('../../gui/class.webp') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire column */
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-end; /* Align children to the bottom */
+    height: 100%; /* Ensure it takes full height */
+    overflow: hidden; /* Enable cropping */
+}
+
+#column2 {
+    position: relative; /* Ensure that .bubble-container is positioned relative to #column2 */
+    flex: 1; /* Each column takes equal space */
+    padding: 20px; /* Inner padding */
+    /* No background color */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    overflow: hidden; /* Ensure bubbles don't cause overflow */
+    z-index: 1; /* Ensure column content is above bubbles */
+}
+
+#column3 {
+    flex: 1; /* Each column takes equal space */
+    padding: 20px; /* Inner padding */
+    /* Removed position and z-index to prevent overlapping */
+    position: static;
+    z-index: auto;
+}
+
+.divider {
+    width: 2px; /* Width of the divider line */
+    background-color: black; /* Color of the divider line */
+    height: auto; /* Full height of the column */
+}
+
+.column-container .divider {
+    height: 100%; /* Full height */
+}
+
+.matsu-sprite {
+    transform: scaleX(-1) translateY(20%) translateX(80px); /* Flip horizontally and move down */
+    width: 140%; /* Enlarge the sprite */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.matsu-sprite.hidden {
+    opacity: 0;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    top: 20%; /* Adjusted to position over Matsu's head */
+    left: 50%; /* Center horizontally within #column1 */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    max-width: 250px;
+    font-size: 32px;
+    display: none; /* Hidden by default */
+    z-index: 3; /* Ensure tooltip is above bubbles and menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0; /* Start fully transparent */
+}
+
+/* Tooltip visible state */
+.tooltip.show {
+    opacity: 1; /* Fully opaque when shown */
+}
+
+.tooltip.hide {
+    opacity: 0; /* Fully transparent when hidden */
+}
+
+/* Styling the tooltip's cloud-like arrow */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Position below the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+}
+
+/* Cursor effect for typing */
+.tooltip::before {
+    content: '|';
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    animation: blink 1s infinite;
+    color: #fff;
+    font-size: 32px;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Bubble Container Styles */
+.bubble-container {
+    position: absolute;
+    bottom: -100px; /* Start below the viewport */
+    left: 0;
+    width: 100%;
+    height: 120%; /* Extend beyond the top to accommodate rising bubbles */
+    overflow: hidden;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: 0; /* Ensure bubbles are behind other content */
+}
+
+/* Individual Bubble Styles */
+.bubble {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+    border-radius: 50%;
+    opacity: 0.5; /* Further reduced opacity */
+    animation: rise linear forwards; /* Changed to 'linear' for consistent speed and 'forwards' to retain final state */
+}
+
+/* Keyframes for Bubble Rising Animation */
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-120vh) scale(1.5); /* Rise beyond the viewport */
+        opacity: 0;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Hide the left and right columns */
+    #column1,
+    #column3,
+    .matsu-sprite {
+        display: none;
+    }
+
+    /* Ensure the middle column takes full width */
+    #column2 {
+        flex: 1; /* Allow the middle column to take full width */
+        padding: 20px; /* Maintain padding */
+    }
+
+    /* Adjust the main container */
+    #main-container {
+        flex-direction: column; /* Stack columns vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    /* Optionally hide dividers */
+    .divider {
+        display: none;
+    }
+
+    /* Adjust tooltip positioning for smaller screens */
+    .tooltip {
+        top: 30%; /* Adjust as needed */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 200px; /* Smaller width for mobile */
+    }
+
+    /* Adjust cursor size */
+    .tooltip::before {
+        font-size: 14px;
+        right: 10px;
+    }
+
+    /* Hide bubble container on smaller screens if desired */
+    /* Uncomment the following to hide bubbles on mobile devices */
+    /*
+    .bubble-container {
+        display: none;
+    }
+    */
+}
