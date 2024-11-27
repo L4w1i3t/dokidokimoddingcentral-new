@@ -7,6 +7,7 @@ footer {
 
 footer p {
     margin: 0 0 10px 0;
+    margin-top: auto;
     color: #ffffff;
     text-decoration: underline;
 }
@@ -30,4 +31,8 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: underline;
+}
+
+main {
+    min-height: 100vh;
 }

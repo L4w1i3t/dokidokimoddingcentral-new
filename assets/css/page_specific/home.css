@@ -19,7 +19,6 @@ body, html {
     justify-content: flex-start; /* Align items closer to the top */
     height: 100vh; /* Full viewport height */
     text-align: center;
-    background: #4b0049; /* Example background color */
     padding: 0px 20px; /* Add some top padding for spacing */
     gap: 20px; /* Space between elements */
 }
@@ -99,7 +98,7 @@ body, html {
     position: relative; /* Ensure that .bubble-container is positioned relative to #column2 */
     flex: 1; /* Each column takes equal space */
     padding: 20px; /* Inner padding */
-    /* No background color */
+    background: #4b0049;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -113,9 +112,10 @@ body, html {
 #column3 {
     flex: 1; /* Each column takes equal space */
     padding: 20px; /* Inner padding */
-    /* Removed position and z-index to prevent overlapping */
+    background: black;
     position: static;
     z-index: auto;
+    height: 100vh;
 }
 
 .divider {

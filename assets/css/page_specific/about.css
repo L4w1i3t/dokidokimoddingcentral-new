@@ -82,3 +82,38 @@ body::before {
     font-size: 1.2em;
     color: #333;
 }
+
+.about-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.about-question {
+    width: 100%;
+    /*text-align: left;*/
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-family: 'HotMustardBTNRegular', sans-serif;
+    color: #4b0049;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.about-question:hover {
+    color: #ff69b4;
+}
+
+.about-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 10px; /* Optional padding for the answer */
+}
+
+.about-section.active .about-answer {
+    max-height: 50000px; /* Arbitrary high value to accommodate content */
+}
