@@ -23,12 +23,58 @@ body, html {
     gap: 20px; /* Space between elements */
 }
 
-/* Style the site logo */
-#site-logo {
-    width: 250px; /* Set the logo size */
-    height: auto;
+/* Style the site logo and wrapped text */
+.logo-container {
+    position: relative;
+    width: 250px; /* Match the logo size */
+    height: 250px; /* Make it square to accommodate the circular SVG */
     margin-bottom: 20px;
     z-index: 2;
+}
+
+/* Style the site logo */
+#site-logo {
+    width: 250px; /* Logo size */
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    animation: rotateLogo 20s linear infinite;
+}
+
+.logo-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg); /* Rotate to start text at the top */
+    pointer-events: none; /* Allow interactions to pass through */
+    animation: rotateText 20s linear infinite;
+}
+
+.logo-text text {
+    text-anchor: middle;
+    fill: white;
+}
+
+/* Animation for rotating text around the logo */
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for rotating the logo */
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 /* Style the main menu */
@@ -94,11 +140,38 @@ body, html {
     overflow: hidden; /* Enable cropping */
 }
 
+/* Original idea for column 2. Commented out right now because of testing an animated texture for column 2. 
+Do not uncomment this or delete this yet. */
+/* #column2 {
+    position: relative;
+    flex: 1;
+    padding: 20px; 
+    background: #4b0049;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1; 
+}
+*/
+
+:root {
+    --tron-blue: #00667d;
+    --tron-purple: #4c187a;
+    --tron-pink: #712214;
+    --tron-black: #000000;
+}
+
 #column2 {
-    position: relative; /* Ensure that .bubble-container is positioned relative to #column2 */
+    position: relative; /* Ensure positioning context for pseudo-elements */
     flex: 1; /* Each column takes equal space */
     padding: 20px; /* Inner padding */
-    background: #4b0049;
+    background: linear-gradient(270deg, var(--tron-blue), var(--tron-purple), var(--tron-pink), var(--tron-blue));
+    background-size: 800% 800%;
+    animation: tronGradient 15s ease infinite;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -107,6 +180,44 @@ body, html {
     text-align: center; /* Center text */
     overflow: hidden; /* Ensure bubbles don't cause overflow */
     z-index: 1; /* Ensure column content is above bubbles */
+    border: 2px solid var(--tron-blue); /* Neon border */
+    box-shadow: 0 0 20px var(--tron-blue), 0 0 30px var(--tron-purple);
+}
+
+#column2::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.0) 70%);
+    pointer-events: none;
+    z-index: 0;
+    animation: glow 10s ease infinite;
+}
+
+/* Keyframes for the animated gradient */
+@keyframes tronGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Keyframes for the glowing effect */
+@keyframes glow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #column3 {
