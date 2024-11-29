@@ -16,4 +16,21 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
+
+    const staffMembers = document.querySelectorAll('.staff-member');
+
+    staffMembers.forEach(member => {
+        member.addEventListener('click', () => {
+            const profile = member.nextElementSibling; // Get the corresponding profile section
+            profile.classList.toggle('active'); // Toggle the active class to show/hide
+
+            // Optional: Close other profiles
+            staffMembers.forEach(otherMember => {
+                if (otherMember !== member) {
+                    const otherProfile = otherMember.nextElementSibling;
+                    otherProfile.classList.remove('active'); // Hide other profiles
+                }
+            });
+        });
+    });
 });
