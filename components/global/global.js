@@ -1,7 +1,7 @@
 // EVERYTHING PERTAINING TO GLOBAL/UNIVERSAL COMPONENTS GOES HERE
 document.addEventListener("DOMContentLoaded", function() {
     // Determine the base path dynamically
-    const basePath = window.location.pathname.includes('/pages/') ? '../' : '';
+    const basePath = window.location.pathname.includes('/pages/') ? '../../' : '';
 
     // Function to set the active navigation link
     const setActiveNavLink = () => {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     // Fetch and insert the header
-    fetch(`${basePath}components/header.html`)
+    fetch(`${basePath}components/header/header.html`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok for header.html');
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Error loading header:', error));
 
     // Fetch and insert the footer
-    fetch(`${basePath}components/footer.html`)
+    fetch(`${basePath}components/footer/footer.html`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok for footer.html');

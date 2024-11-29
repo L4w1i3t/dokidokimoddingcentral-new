@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else {
                     clearExistingTimers();
                 }
-            }, 10);
+            }, 40); // Typing speed
         };
 
         /**
