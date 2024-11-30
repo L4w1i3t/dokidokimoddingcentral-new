@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const addFavicon = () => {
         const link = document.createElement('link');
         link.rel = 'icon';
-        link.href = 'components/favicon.ico'; // Updated relative path
+        link.href = 'favicon.ico'; // Relative path to favicon
         link.type = 'image/x-icon';
         document.head.appendChild(link);
     };
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
         addFavicon();
 
         // Load the header and footer using relative paths
-        loadComponent("#header", "components/header/header.html");
-        loadComponent("#footer", "components/footer/footer.html");
+        loadComponent("#header", "/components/header/header.html");
+        loadComponent("#footer", "/components/footer/footer.html");
     };
 
     // Initialize globals when the DOM is fully loaded
