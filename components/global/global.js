@@ -1,31 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function() {
     // Dynamically adds the favicon to the document head.
     const addFavicon = () => {
-        const link = document.createElement('link');
-        link.rel = 'icon';
-        link.href = 'favicon.ico'; // Relative path to favicon
-        link.type = 'image/x-icon';
-        document.head.appendChild(link);
+        $('<link/>', {
+            rel: 'icon',
+            href: 'favicon.ico', // Relative path to favicon
+            type: 'image/x-icon'
+        }).appendTo('head');
     };
 
     // Fetches an HTML component and inserts it into the specified selector. 
     const loadComponent = (selector, url) => {
-        fetch(url)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Failed to load ${url}: ${response.status} ${response.statusText}`);
-                }
-                return response.text();
+        $.get(url)
+            .done(function(data) {
+                $(selector).html(data);
             })
-            .then(data => {
-                const element = document.querySelector(selector);
-                if (element) {
-                    element.innerHTML = data;
-                } else {
-                    console.error(`Element with selector "${selector}" not found.`);
-                }
-            })
-            .catch(error => console.error(`Error loading component from ${url}:`, error));
+            .fail(function(jqXHR, textStatus, errorThrown) {
+                console.error(`Error loading component from ${url}:`, textStatus, errorThrown);
+            });
     };
 
     // Initializes all global functionalities.

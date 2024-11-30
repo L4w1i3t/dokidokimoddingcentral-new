@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function() {
     // Function to dynamically add the favicon
     const addFavicon = () => {
-        const link = document.createElement('link');
-        link.rel = 'icon';
-        link.href = '../../components/favicon.ico';
-        link.type = 'image/x-icon';
-        document.head.appendChild(link);
+        $('<link/>', {
+            rel: 'icon',
+            href: '../../components/favicon.ico',
+            type: 'image/x-icon'
+        }).appendTo('head');
     };
 
     // Add the favicon
