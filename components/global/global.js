@@ -1,58 +1,51 @@
-// EVERYTHING PERTAINING TO GLOBAL/UNIVERSAL COMPONENTS GOES HERE
 document.addEventListener("DOMContentLoaded", function() {
-    // Determine the base path dynamically
-    const basePath = window.location.pathname.includes('/pages/') ? '../../' : '';
-
-    // Function to set the active navigation link
-    const setActiveNavLink = () => {
-        const navLinks = document.querySelectorAll('header nav ul li a');
-        let currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
-        
-        // Handle the root path (e.g., 'index.html' or '/')
-        if (currentPage === '') {
-            currentPage = 'index.html';
-        }
-
-        navLinks.forEach(link => {
-            let linkPath = link.getAttribute('href');
-            let linkPage = linkPath.substring(linkPath.lastIndexOf('/') + 1);
-
-            // Remove query parameters or hash fragments
-            linkPage = linkPage.split('?')[0].split('#')[0];
-
-            // Compare the link's page with the current page
-            if (linkPage === currentPage) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        });
+    /**
+     * Dynamically adds the favicon to the document head.
+     */
+    const addFavicon = () => {
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = '/components/favicon.ico'; // Absolute path to favicon
+        link.type = 'image/x-icon';
+        document.head.appendChild(link);
     };
 
-    // Fetch and insert the header
-    fetch(`${basePath}components/header/header.html`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok for header.html');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-            setActiveNavLink(); // Set the active link after header is loaded
-        })
-        .catch(error => console.error('Error loading header:', error));
+    /**
+     * Fetches an HTML component and inserts it into the specified selector.
+     * @param {string} selector - The CSS selector of the element where the component will be inserted.
+     * @param {string} url - The absolute URL path to the HTML component.
+     */
+    const loadComponent = (selector, url) => {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${url}: ${response.status} ${response.statusText}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                const element = document.querySelector(selector);
+                if (element) {
+                    element.innerHTML = data;
+                } else {
+                    console.error(`Element with selector "${selector}" not found.`);
+                }
+            })
+            .catch(error => console.error(`Error loading component from ${url}:`, error));
+    };
 
-    // Fetch and insert the footer
-    fetch(`${basePath}components/footer/footer.html`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok for footer.html');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        })
-        .catch(error => console.error('Error loading footer:', error));
+    /**
+     * Initializes all global functionalities.
+     */
+    const initializeGlobals = () => {
+        // Add the favicon to the document
+        addFavicon();
+
+        // Load the header and footer using absolute paths
+        loadComponent("#header", "/components/header/header.html");
+        loadComponent("#footer", "/components/footer/footer.html");
+    };
+
+    // Initialize globals when the DOM is fully loaded
+    initializeGlobals();
 });
