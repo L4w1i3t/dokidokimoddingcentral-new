@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    /**
-     * Dynamically adds the favicon to the document head.
-     */
+    // Dynamically adds the favicon to the document head.
     const addFavicon = () => {
         const link = document.createElement('link');
         link.rel = 'icon';
-        link.href = '/components/favicon.ico'; // Absolute path to favicon
+        link.href = 'favicon.ico'; // Relative path to favicon
         link.type = 'image/x-icon';
         document.head.appendChild(link);
     };
 
-    /**
-     * Fetches an HTML component and inserts it into the specified selector.
-     * @param {string} selector - The CSS selector of the element where the component will be inserted.
-     * @param {string} url - The absolute URL path to the HTML component.
-     */
+    
+    // Fetches an HTML component and inserts it into the specified selector. 
     const loadComponent = (selector, url) => {
         fetch(url)
             .then(response => {
@@ -34,14 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.error(`Error loading component from ${url}:`, error));
     };
 
-    /**
-     * Initializes all global functionalities.
-     */
+    // Initializes all global functionalities.
     const initializeGlobals = () => {
         // Add the favicon to the document
         addFavicon();
 
-        // Load the header and footer using absolute paths
+        // Load the header and footer using relative paths
         loadComponent("#header", "/components/header/header.html");
         loadComponent("#footer", "/components/footer/footer.html");
     };
