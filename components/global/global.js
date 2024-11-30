@@ -3,12 +3,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const addFavicon = () => {
         const link = document.createElement('link');
         link.rel = 'icon';
-        link.href = 'favicon.ico'; // Relative path to favicon
+        link.href = 'components/favicon.ico'; // Updated relative path
         link.type = 'image/x-icon';
         document.head.appendChild(link);
     };
 
-    
     // Fetches an HTML component and inserts it into the specified selector. 
     const loadComponent = (selector, url) => {
         fetch(url)
@@ -31,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initializes all global functionalities.
     const initializeGlobals = () => {
-        // Add the favicon to the document
+        // Add favicon before anything else
         addFavicon();
 
         // Load the header and footer using relative paths
-        loadComponent("#header", "/components/header/header.html");
-        loadComponent("#footer", "/components/footer/footer.html");
+        loadComponent("#header", "components/header/header.html");
+        loadComponent("#footer", "components/footer/footer.html");
     };
 
     // Initialize globals when the DOM is fully loaded
