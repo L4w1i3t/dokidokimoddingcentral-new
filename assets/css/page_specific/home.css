@@ -8,7 +8,7 @@ body, html {
     height: 100%;
     margin: 0; /* Remove any default margins that might cause scrollbars */
     padding: 0;
-    width: 100%; /* Changed from 100vw to 100% */
+    width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -43,7 +43,7 @@ body, html {
 /* Style the site logo */
 #site-logo {
     width: 100%;
-    max-width: 256px;
+    max-width: 100%;
     height: auto;
     margin: 0; /* Remove default margins */
     object-fit: cover;
@@ -176,7 +176,7 @@ Do not uncomment this or delete this yet. */
 #column2 {
     position: relative; /* Ensure positioning context for pseudo-elements */
     flex: 1; /* Each column takes equal space */
-    padding: 20px; /* Inner padding */
+    padding: 2%; /* Inner padding */
     background: linear-gradient(270deg, var(--tron-blue), var(--tron-purple), var(--tron-pink), var(--tron-blue));
     background-size: 800% 800%;
     animation: tronGradient 15s ease infinite;
@@ -346,7 +346,7 @@ Do not uncomment this or delete this yet. */
     }
 }
 
-/* Media Queries */
+/* Mobile Screens */
 @media (max-width: 768px) {
     /* Hide the left and right columns */
     #column1,
@@ -369,23 +369,17 @@ Do not uncomment this or delete this yet. */
         width: 100%;
     }
 
+    #column2 {
+        padding: 5%; /* Adjust padding for smaller screens */
+    }
+
+    .logo-container {
+        max-width: 90%; /* Allow more space on smaller screens */
+    }
+
     /* Optionally hide dividers */
     .divider {
         display: none;
-    }
-
-    /* Adjust tooltip positioning for smaller screens */
-    .tooltip {
-        top: 30%; /* Adjust as needed */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 200px; /* Smaller width for mobile */
-    }
-
-    /* Adjust cursor size */
-    .tooltip::before {
-        font-size: 14px;
-        right: 10px;
     }
 
     /* Hide bubble container on smaller screens if desired */
@@ -395,6 +389,38 @@ Do not uncomment this or delete this yet. */
         display: none;
     }
     */
+}
+
+/* For Screens Below 2k res */
+@media (max-width: 1599px) {
+    .logo-container {
+        max-width: 250px;
+    }
+
+    #site-logo {
+        width: clamp(120px, 10vw, 250px);
+    }
+
+    #main-menu ul li {
+        font-size: clamp(20px, 2vw, 30px);
+    }
+
+    .tooltip {
+        font-size: clamp(18px, 1.5vw, 28px);
+        max-width: clamp(180px, 40vw, 350px);
+    }
+
+    .divider {
+        width: 1.5px;
+    }
+
+    #column1, #column2, #column3 {
+        padding: 15px;
+    }
+
+    .tooltip {
+        top: 20%;
+    }
 }
 
 /* Fallback to hide any accidental overflow */
