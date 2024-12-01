@@ -1,5 +1,3 @@
-// assets/js/addComponents.js
-
 document.addEventListener("DOMContentLoaded", function() {
     // Load an HTML component and insert it into the DOM.
     function loadComponent(url, insertPosition) {
@@ -24,14 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
-    // Determine if the current page is the homepage.
-    // Adjust the conditions based on how your homepage is accessed.
+    // Determine if the current page is the homepage
     const path = window.location.pathname;
     const isHomePage = path === '/' || path.endsWith('/index.html');
 
     // If it's not the homepage, load the header and footer
     if (!isHomePage) {
-        // Adjust the paths based on the location of your addComponents.js file and your project structure
         loadComponent('../components/header/header.html', 'prepend');
         loadComponent('../components/footer/footer.html', 'append');
     }
