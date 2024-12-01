@@ -1,13 +1,15 @@
-/* assets/css/page_specific/home.css */
-
-/* ... previous styles ... */
+/* Global box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 /* Prevent scrolling on the homepage */
 body, html {
-    overflow: hidden;
-    height: 100%; /* Ensure the page height is restricted */
+    height: 100%;
     margin: 0; /* Remove any default margins that might cause scrollbars */
     padding: 0;
+    width: 100%; /* Changed from 100vw to 100% */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Adjust layout to position content closer to the top */
@@ -17,26 +19,28 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* Align items closer to the top */
-    height: 100vh; /* Full viewport height */
     text-align: center;
-    padding: 0px 20px; /* Add some top padding for spacing */
+    padding: 0px; /* Remove unnecessary padding */
     gap: 20px; /* Space between elements */
+    width: 100%; /* Ensure it does not exceed viewport */
+    max-width: 100%;
 }
 
 /* Style the site logo and wrapped text */
 .logo-container {
     position: relative;
-    width: 250px; /* Match the logo size */
-    height: 250px; /* Make it square to accommodate the circular SVG */
-    margin-bottom: 20px;
+    width: 100%; /* Make it responsive */
+    max-width: 250px; /* Match the logo size */
+    height: auto; /* Adjust height based on content */
     z-index: 2;
 }
 
 /* Style the site logo */
 #site-logo {
-    width: 250px; /* Logo size */
+    width: 100%; /* Make it responsive */
+    max-width: 250px; /* Set a maximum size */
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     object-fit: cover;
     animation: rotateLogo 30s linear infinite;
 }
@@ -82,6 +86,8 @@ body, html {
     position: relative; /* Ensure menu has a positioning context */
     z-index: 2; /* Higher z-index to stay above bubbles */
     margin: 1% 0 30% 0; /* Positioning higher up */
+    width: 100%;
+    max-width: 100%;
 }
 
 #main-menu ul {
@@ -110,19 +116,13 @@ body, html {
     color: #ff69b4; /* Highlight color on hover */
 }
 
-/* Hide the dynamic header and footer on this page and this page only */
-#header,
-#footer {
-    display: none;
-}
-
 /* Column Container Styles */
 .column-container {
     display: flex;
     justify-content: space-between; /* Space columns evenly */
     align-items: flex-start; /* Align items to the start of the container */
-    width: 100vw; /* Full width */
-    height: 100vh;
+    width: 100%; /* Changed from 100vw to 100% */
+    height: 100%; /* Changed from 100vh to 100% */
     margin-top: 0px; /* Space above the columns */
     overflow: hidden; /* Ensure content doesn't overflow */
 }
@@ -136,8 +136,10 @@ body, html {
     display: flex; /* Make it a flex container */
     flex-direction: column; /* Stack children vertically */
     justify-content: flex-end; /* Align children to the bottom */
-    height: 100%; /* Ensure it takes full height */
+    height: 100vh; /* Ensure it takes full height */
+    max-width: 100%;
     overflow: hidden; /* Enable cropping */
+    max-width: 100%;
 }
 
 /* Original idea for column 2. Commented out right now because of testing an animated texture for column 2. 
@@ -172,7 +174,7 @@ Do not uncomment this or delete this yet. */
     background: linear-gradient(270deg, var(--tron-blue), var(--tron-purple), var(--tron-pink), var(--tron-blue));
     background-size: 800% 800%;
     animation: tronGradient 15s ease infinite;
-    height: 100vh;
+    height: 100vh; /* Full height of the viewport */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center items horizontally */
@@ -180,8 +182,7 @@ Do not uncomment this or delete this yet. */
     text-align: center; /* Center text */
     overflow: hidden; /* Ensure bubbles don't cause overflow */
     z-index: 1; /* Ensure column content is above bubbles */
-    border: 2px solid var(--tron-blue); /* Neon border */
-    box-shadow: 0 0 20px var(--tron-blue), 0 0 30px var(--tron-purple);
+    max-width: 100%;
 }
 
 #column2::before {
@@ -213,23 +214,22 @@ Do not uncomment this or delete this yet. */
     flex: 1; /* Each column takes equal space */
     padding: 20px; /* Inner padding */
     background: black;
-    position: static;
+    position: relative;
     z-index: auto;
-    height: 100vh;
+    height: 100vh; /* Ensure it takes full height */
+    max-width: 100%; /* Prevent overflow */
+    overflow: hidden; /* Ensure content is contained */
 }
 
 .divider {
     width: 2px; /* Width of the divider line */
-    background-color: black; /* Color of the divider line */
-    height: auto; /* Full height of the column */
-}
-
-.column-container .divider {
+    background-color: white; /* Color of the divider line */
     height: 100%; /* Full height */
+    z-index: 5;
 }
 
 .matsu-sprite {
-    transform: scaleX(-1) translateY(20%) translateX(80px); /* Flip horizontally and move down */
+    transform: scaleX(-1) translateY(25%) translateX(80px); /* Flip horizontally and move down */
     width: 140%; /* Enlarge the sprite */
     height: auto; /* Maintain aspect ratio */
 }
@@ -241,14 +241,14 @@ Do not uncomment this or delete this yet. */
 /* Tooltip Styles */
 .tooltip {
     position: absolute;
-    top: 20%; /* Adjusted to position over Matsu's head */
+    top: 25%; /* Adjusted to position over Matsu's head */
     left: 50%; /* Center horizontally within #column1 */
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
     padding: 15px 20px;
     border-radius: 15px;
-    max-width: 250px;
+    max-width: 400px;
     font-size: 32px;
     display: none; /* Hidden by default */
     z-index: 3; /* Ensure tooltip is above bubbles and menu */
@@ -256,15 +256,19 @@ Do not uncomment this or delete this yet. */
     white-space: pre-wrap;
     font-family: 'Courier New', Courier, monospace;
     opacity: 0; /* Start fully transparent */
+    max-height: 80vh; /* Prevent overflow */
+    overflow: hidden; /* Prevent scrollbar */
 }
 
 /* Tooltip visible state */
 .tooltip.show {
     opacity: 1; /* Fully opaque when shown */
+    display: block; /* Ensure it is displayed */
 }
 
 .tooltip.hide {
     opacity: 0; /* Fully transparent when hidden */
+    display: none; /* Ensure it is hidden */
 }
 
 /* Styling the tooltip's cloud-like arrow */
@@ -349,12 +353,14 @@ Do not uncomment this or delete this yet. */
     #column2 {
         flex: 1; /* Allow the middle column to take full width */
         padding: 20px; /* Maintain padding */
+        max-width: 100%;
     }
 
     /* Adjust the main container */
     #main-container {
         flex-direction: column; /* Stack columns vertically */
         height: auto; /* Allow height to adjust */
+        width: 100%;
     }
 
     /* Optionally hide dividers */
@@ -383,4 +389,9 @@ Do not uncomment this or delete this yet. */
         display: none;
     }
     */
+}
+
+/* Fallback to hide any accidental overflow */
+body {
+    overflow-x: hidden;
 }

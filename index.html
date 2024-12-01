@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doki Doki Modding Central</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--THE HEADER AND FOOTER ARE NOT ON THE HOMEPAGE ONLY-->
     <link rel="stylesheet" href="assets/css/page_specific/home.css">
+    <link rel="icon" href="assets/gui/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -21,19 +22,6 @@
                 <div class="column" id="column2">
                     <div class="logo-container">
                         <img src="assets/gui/logo.webp" alt="DDMC Logo" id="site-logo">
-                        <!-- SVG for Wrapping Text -->
-                        <svg class="logo-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                            <defs>
-                                <!-- Circular path -->
-                                <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"/>
-                            </defs>
-                            <text font-family="'HotMustardBTNRegular', sans-serif" font-size="20" fill="#ff69b4">
-                                <!-- Attach text to the circular path -->
-                                <textPath href="#circlePath" startOffset="50%">
-                                    DOKI DOKI MODDING CENTRAL
-                                </textPath>
-                            </text>
-                        </svg>
                     </div>
                     <nav id="main-menu">
                         <ul>
@@ -56,7 +44,7 @@
         </section>
     </main>
 
-    <script src="components/global/global.js"></script>
+    <script src="assets/js/positionTooltip.js"></script>
     <script src="assets/js/page_specific/home.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
