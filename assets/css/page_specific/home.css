@@ -29,18 +29,23 @@ body, html {
 /* Style the site logo and wrapped text */
 .logo-container {
     position: relative;
-    width: 100%; /* Make it responsive */
-    max-width: 250px; /* Match the logo size */
-    height: auto; /* Adjust height based on content */
+    width: 100%;
+    max-width: 256px;
+    height: auto;
     z-index: 2;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
 }
+
 
 /* Style the site logo */
 #site-logo {
-    width: 100%; /* Make it responsive */
-    max-width: 250px; /* Set a maximum size */
+    width: 100%;
+    max-width: 256px;
     height: auto;
-    margin-bottom: 0px;
+    margin: 0; /* Remove default margins */
     object-fit: cover;
     animation: rotateLogo 30s linear infinite;
 }
@@ -49,6 +54,7 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
+    transform: translate(-50%, -50%) rotate(0deg); /* Center the SVG */
     width: 100%;
     height: 100%;
     transform: rotate(0deg); /* Rotate to start text at the top */
