@@ -1,4 +1,4 @@
-/* Global box-sizing */
+/* Global box sizing */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -137,7 +137,7 @@ body, html {
     position: relative; /* Added to position tooltip absolutely within it */
     flex: 1; /* Each column takes equal space */
     padding: 20px; /* Inner padding */
-    background: url('../../gui/class.webp') no-repeat center center; /* Background image */
+    background: url('../../images/bg/class.webp') no-repeat center center; /* Background image */
     background-size: cover; /* Cover the entire column */
     display: flex; /* Make it a flex container */
     flex-direction: column; /* Stack children vertically */
@@ -235,7 +235,7 @@ Do not uncomment this or delete this yet. */
 }
 
 .matsu-sprite {
-    transform: scaleX(-1) translateY(25%) translateX(80px); /* Flip horizontally and move down */
+    transform: scaleX(-1) translateY(25%) translateX(10%); /* Flip horizontally and move down */
     width: 140%; /* Enlarge the sprite */
     height: auto; /* Maintain aspect ratio */
 }
