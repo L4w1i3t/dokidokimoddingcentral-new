@@ -1,0 +1,200 @@
+/* Apply a smooth font for better readability */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    /* Set the background image */
+    background-image: url('../../images/bg/submitkitchen.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    overflow-y: auto; /* Ensure the body can scroll */
+}
+
+/* Semi-transparent overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Ensure the overlay stays behind content */
+}
+
+/* Container styling */
+#submission-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    /* Removed animation from here */
+}
+
+/* Submission Content with fadeIn animation */
+.submission-content {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    will-change: opacity, backdrop-filter; /* Hint for better performance */
+}
+
+/* FadeIn Keyframes - Only opacity */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Heading Styles with Text Shadow */
+.submission-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Paragraph Styles */
+.submission-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 2rem; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    margin-top: 40px;
+}
+
+/* Submission Button Styles */
+.submission-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: linear-gradient(135deg, #6a0dad, #4b0049);
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    will-change: transform, box-shadow, background; /* Hint for better performance */
+}
+
+.submission-button i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Pseudo-element for dynamic overlay */
+.submission-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(65deg);
+    transition: all 0.5s;
+}
+
+/* Hover Effects for Submission Button */
+.submission-button:hover {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.submission-button:hover::after {
+    top: 150%;
+    left: 150%;
+}
+
+/* Media Queries for High-Resolution Screens */
+@media (min-width: 2560px) { /* For 2K and higher resolutions */
+    .submission-button {
+        padding: 1.5rem 3rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 3840px) { /* For 4K resolutions */
+    .submission-button {
+        padding: 2rem 4rem;
+        font-size: 2rem;
+    }
+}
+
+/* Decorative Divider */
+.divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
+    margin: 40px auto;
+    border: none;
+}
+
+/* Submission Guidelines Section */
+.guidelines {
+    text-align: left;
+    margin-top: 40px;
+    color: #ddd;
+}
+
+.guidelines h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.guidelines ul {
+    list-style: disc inside;
+    line-height: 1.6;
+}
+
+.guidelines li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Typography Adjustments */
+@media (max-width: 768px) {
+    .submission-content {
+        padding: 20px;
+    }
+
+    .submission-content h1 {
+        font-size: 2rem;
+    }
+
+    .submission-content p {
+        font-size: 1rem;
+    }
+
+    .guidelines h2 {
+        font-size: 1.5rem;
+    }
+}

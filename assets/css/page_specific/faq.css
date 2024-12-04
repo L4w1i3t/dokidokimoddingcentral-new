@@ -1,4 +1,6 @@
+/* Apply a smooth font for better readability */
 body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     /* Set the background image */
     background-image: url('../../images/bg/faqcloset.webp');
     background-attachment: fixed;
@@ -6,8 +8,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    overflow-y: auto; /* Ensure the body can scroll */
 }
 
+/* Semi-transparent overlay */
 body::before {
     content: '';
     position: fixed;
@@ -19,77 +27,130 @@ body::before {
     z-index: -1; /* Ensure the overlay stays behind content */
 }
 
-
-/* FAQ Container Styling */
+/* Container with fadeIn animation */
 #faq-container {
-    max-width: 900px;
-    margin: 60px auto;
+    max-width: 900px; /* Increased width for better readability */
+    margin: 60px auto; /* Added top margin to prevent overlap with fixed header */
     padding: 40px 30px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border: 2px solid #4b0049;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-/* Main Heading */
+/* FadeIn Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Main Heading Styles with Text Shadow */
 #faq-container h1 {
     text-align: center;
-    color: #4b0049;
-    font-family: 'HotMustardBTNRegular', sans-serif;
+    color: #ffffff; /* Changed to white for better contrast */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Updated to match body font */
     font-size: 2.5rem;
     margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-/* FAQ Sections */
+/* FAQ Section Styling */
 .faq-section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* FAQ Items */
+.faq-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ Item Styles */
 .faq-item {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* FAQ Questions */
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ Questions with Button-like Appearance */
 .faq-question {
     width: 100%;
     text-align: left;
-    background: none;
+    background: linear-gradient(135deg, #6a0dad, #4b0049);
     border: none;
     outline: none;
     font-size: 1.2em;
-    font-family: sans-serif, monospace;
-    font-style: italic;
-    font-weight: bold;
-    color: #4b0049;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #fff;
     cursor: pointer;
-    padding: 10px 0;
-    transition: color 0.3s ease;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.faq-question::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(65deg);
+    transition: all 0.5s;
 }
 
 .faq-question:hover {
-    color: #ff69b4;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* FAQ Answers */
+.faq-question:hover::after {
+    top: 150%;
+    left: 150%;
+}
+
+/* FAQ Answers with Transition */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    font-family: sans-serif, monospace;
+    transition: max-height 0.5s ease, padding 0.5s ease; /* Added padding transition for smoothness */
+    padding: 0 10px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #e0e0e0;
 }
 
+.faq-item.active .faq-answer {
+    max-height: 3000px; /* Increased max-height to accommodate all content */
+    padding: 20px 10px; /* Add padding when expanded for better readability */
+}
+
+/* FAQ Answer Paragraphs */
 .faq-answer p {
     margin: 10px 0;
-    color: #555;
+    color: #e0e0e0;
     text-align: justify;
-}
-
-/* Active FAQ Item */
-.faq-item.active .faq-answer {
-    max-height: 5000px; /* Arbitrary high value to accommodate content */
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 /* Responsive Design */
@@ -99,11 +160,71 @@ body::before {
         padding: 30px 20px;
     }
 
+    #faq-container h1 {
+        font-size: 2rem;
+    }
+
+    .faq-section {
+        padding: 15px;
+    }
+
     .faq-question {
-        font-size: 1em;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .faq-answer {
+        padding: 0 10px; /* Ensure padding is reset when collapsed */
     }
 
     .faq-answer p {
         font-size: 0.95em;
+    }
+}
+
+/* Additional High-Resolution Adjustments */
+@media (min-width: 2560px) { /* For 2K and higher resolutions */
+    #faq-container {
+        padding: 60px 50px;
+    }
+
+    #faq-container h1 {
+        font-size: 3rem;
+    }
+
+    .faq-section {
+        padding: 25px;
+    }
+
+    .faq-question {
+        padding: 1.5rem 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .faq-answer {
+        padding: 25px 15px;
+    }
+}
+
+@media (min-width: 3840px) { /* For 4K resolutions */
+    #faq-container {
+        padding: 80px 60px;
+    }
+
+    #faq-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .faq-section {
+        padding: 30px;
+    }
+
+    .faq-question {
+        padding: 2rem 3rem;
+        font-size: 1.8rem;
+    }
+
+    .faq-answer {
+        padding: 30px 20px;
     }
 }
