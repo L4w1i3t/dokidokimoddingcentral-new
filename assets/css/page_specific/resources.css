@@ -28,7 +28,7 @@ body::before {
 }
 
 /* Container with fadeIn animation */
-#classroom-container {
+#resources-container {
     max-width: 1200px; /* Increased width for better readability */
     margin: 60px auto; /* Center the container */
     padding: 60px 30px;
@@ -50,7 +50,7 @@ body::before {
 }
 
 /* Main Heading Styles with Text Shadow */
-#classroom-container h1 {
+#resources-container h1 {
     text-align: center;
     color: #ffffff; /* Changed to white for better contrast */
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Consistent with body font */
@@ -59,8 +59,8 @@ body::before {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-/* Classroom Boxes Container */
-.classroom-boxes {
+/* Resources Boxes Container */
+.resources-boxes {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
@@ -68,14 +68,14 @@ body::before {
     flex-wrap: wrap;
 }
 
-/* Individual Classroom Box Styles */
-.classroom-box {
+/* Individual Resource Box Styles */
+.resource-box {
     background: linear-gradient(135deg, #6a0dad, #4b0049);
     border-radius: 15px;
     color: #ffffff;
     text-decoration: none;
-    flex: 1 1 300px; /* Flexible width with a minimum of 300px */
-    max-width: 350px;
+    flex: 1 1 250px; /* Flexible width with a minimum of 250px */
+    max-width: 300px;
     padding: 30px 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -84,8 +84,17 @@ body::before {
     will-change: transform, box-shadow, background; /* Hint for better performance */
 }
 
-/* Hover Effects for Classroom Boxes */
-.classroom-box::after {
+/* Resource Icon Styling */
+.resource-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px auto;
+    display: block;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+
+/* Hover Effects for Resource Boxes */
+.resource-box::after {
     content: '';
     position: absolute;
     top: -50%;
@@ -97,30 +106,31 @@ body::before {
     transition: all 0.5s;
 }
 
-.classroom-box:hover {
+.resource-box:hover {
     background: linear-gradient(135deg, #8e2de2, #4a00e0);
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.classroom-box:hover::after {
+.resource-box:hover::after {
     top: 150%;
     left: 150%;
 }
 
-/* Classroom Box Headings */
-.classroom-box h2 {
-    font-size: 2rem;
+/* Resource Box Headings */
+.resource-box h2 {
+    font-size: 1.8rem;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-/* Classroom Box Paragraphs */
-.classroom-box p {
-    font-size: 1.1rem;
+/* Resource Box Paragraphs */
+.resource-box p {
+    font-size: 1rem;
     line-height: 1.6;
     color: #e0e0e0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 /* Decorative Divider (Optional) */
@@ -134,63 +144,92 @@ body::before {
 
 /* Responsive Typography Adjustments */
 @media (max-width: 768px) {
-    #classroom-container {
+    #resources-container {
         margin: 40px 20px;
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
 
-    #classroom-container h1 {
+    #resources-container h1 {
         font-size: 2rem;
     }
 
-    .classroom-box {
+    .resources-boxes {
+        justify-content: center;
+    }
+
+    .resource-box {
+        flex: 1 1 100%;
+        max-width: none;
         padding: 20px 15px;
     }
 
-    .classroom-box h2 {
+    .resource-box h2 {
         font-size: 1.5rem;
     }
 
-    .classroom-box p {
-        font-size: 1rem;
+    .resource-box p {
+        font-size: 0.95rem;
+    }
+
+    .resource-icon {
+        width: 50px;
+        height: 50px;
     }
 }
 
 /* Additional High-Resolution Adjustments */
 @media (min-width: 2560px) { /* For 2K and higher resolutions */
-    #classroom-container {
-        padding: 80px 50px;
+    #resources-container {
+        padding: 60px 50px;
     }
 
-    #classroom-container h1 {
-        font-size: 3.5rem;
+    #resources-container h1 {
+        font-size: 3rem;
     }
 
-    .classroom-box {
+    .resource-box {
         padding: 40px 25px;
-        font-size: 1.3rem;
+        max-width: 350px;
     }
 
-    .classroom-box h2 {
-        font-size: 2.5rem;
+    .resource-box h2 {
+        font-size: 2rem;
+    }
+
+    .resource-box p {
+        font-size: 1.1rem;
+    }
+
+    .resource-icon {
+        width: 70px;
+        height: 70px;
     }
 }
 
 @media (min-width: 3840px) { /* For 4K resolutions */
-    #classroom-container {
-        padding: 100px 60px;
+    #resources-container {
+        padding: 80px 60px;
     }
 
-    #classroom-container h1 {
-        font-size: 4rem;
+    #resources-container h1 {
+        font-size: 3.5rem;
     }
 
-    .classroom-box {
+    .resource-box {
         padding: 50px 30px;
-        font-size: 1.5rem;
+        max-width: 400px;
     }
 
-    .classroom-box h2 {
-        font-size: 3rem;
+    .resource-box h2 {
+        font-size: 2.5rem;
+    }
+
+    .resource-box p {
+        font-size: 1.2rem;
+    }
+
+    .resource-icon {
+        width: 80px;
+        height: 80px;
     }
 }
