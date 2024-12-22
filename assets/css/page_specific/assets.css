@@ -1,0 +1,205 @@
+/* Apply a smooth font for better readability */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    /* Set the background image */
+    background-image: url('../../images/bg/assetsres.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    overflow-y: auto; /* Ensure the body can scroll */
+}
+
+/* Semi-transparent overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Ensure the overlay stays behind content */
+}
+
+/* Container with fadeIn animation */
+#assets-container {
+    max-width: 1200px; /* Increased width for better readability */
+    margin: 60px auto; /* Center the container */
+    padding: 60px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    will-change: opacity, backdrop-filter; /* Hint for better performance */
+}
+
+/* FadeIn Keyframes - Only opacity */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Main Heading Styles with Text Shadow */
+#assets-container h1 {
+    text-align: center;
+    color: #ffffff; /* Changed to white for better contrast */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Consistent with body font */
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* assets Boxes Container */
+.assets-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Individual assets Box Styles */
+.assets-box {
+    background: linear-gradient(135deg, #6a0dad, #4b0049);
+    border-radius: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    flex: 1 1 250px; /* Flexible width with a minimum of 250px */
+    max-width: 300px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    will-change: transform, box-shadow, background; /* Hint for better performance */
+}
+
+/* Hover Effects for assets Boxes */
+.assets-box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(65deg);
+    transition: all 0.5s;
+}
+
+.assets-box:hover {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.assets-box:hover::after {
+    top: 150%;
+    left: 150%;
+}
+
+/* assets Box Headings */
+.assets-box h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* assets Box Paragraphs */
+.assets-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Decorative Divider (Optional) */
+.divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
+    margin: 40px auto;
+    border: none;
+}
+
+.asset-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px auto;
+    display: block;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+    border-radius: 5%;
+}
+
+/* Responsive Typography Adjustments */
+@media (max-width: 768px) {
+    #assets-container {
+        margin: 40px 20px;
+        padding: 40px 20px;
+    }
+
+    #assets-container h1 {
+        font-size: 2rem;
+    }
+
+    .assets-box {
+        padding: 20px 15px;
+    }
+
+    .assets-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .assets-box p {
+        font-size: 1rem;
+    }
+}
+
+/* Additional High-Resolution Adjustments */
+@media (min-width: 2560px) { /* For 2K and higher resolutions */
+    #assets-container {
+        padding: 80px 50px;
+    }
+
+    #assets-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .assets-box {
+        padding: 40px 25px;
+        font-size: 1.3rem;
+    }
+
+    .assets-box h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 3840px) { /* For 4K resolutions */
+    #assets-container {
+        padding: 100px 60px;
+    }
+
+    #assets-container h1 {
+        font-size: 4rem;
+    }
+
+    .assets-box {
+        padding: 50px 30px;
+        font-size: 1.5rem;
+    }
+
+    .assets-box h2 {
+        font-size: 3rem;
+    }
+}

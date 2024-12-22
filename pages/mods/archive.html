@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Archive - Doki Doki Modding Central</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../components/header/header.css">
+    <link rel="stylesheet" href="../../components/footer/footer.css">
+    <link rel="stylesheet" href="../../assets/css/page_specific/archive.css">
+    <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<main>
+    <section id="mods-container">
+        <h1>Mod Archive</h1>
+        <div id="mods-list" class="mod-grid"></div>
+        <div id="pagination-controls" class="pagination">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page">Next</button>
+        </div>
+    </section>
+</main>
+
+<script>
+    const itemsPerPage = 16;
+    let currentPage = 1;
+    let totalPages = 1;
+    let allMods = [];
+
+    const container = document.getElementById('mods-list');
+    const prevBtn = document.getElementById('prev-page');
+    const nextBtn = document.getElementById('next-page');
+    const pageInfo = document.getElementById('page-info');
+
+    function renderPage(pageNumber) {
+        container.innerHTML = '';
+        const startIndex = (pageNumber - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const modsToShow = allMods.slice(startIndex, endIndex);
+
+        modsToShow.forEach(mod => {
+            const modCard = document.createElement('a');
+            modCard.classList.add('mod-card');
+            modCard.href = `./archive/${mod.route}/mod.html`;
+            modCard.innerHTML = `
+                <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" />
+                <h2>${mod.title}</h2>
+                <p>By: ${mod.author}</p>
+            `;
+            container.appendChild(modCard);
+        });
+
+        pageInfo.textContent = `Page ${pageNumber} of ${totalPages}`;
+        prevBtn.disabled = (pageNumber === 1);
+        nextBtn.disabled = (pageNumber === totalPages);
+    }
+
+    fetch('../../data/mods.json')
+        .then(response => response.json())
+        .then(data => {
+            allMods = data.archive;
+            const totalItems = allMods.length;
+            totalPages = Math.ceil(totalItems / itemsPerPage);
+            renderPage(currentPage);
+        })
+        .catch(error => console.error('Error loading mods:', error));
+
+    prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            renderPage(currentPage);
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            renderPage(currentPage);
+        }
+    });
+</script>
+
+<script src="../../components/addComponents.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

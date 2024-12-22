@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'HotMustardBTNRegular';
-    src: url('../fonts/HotMustardBTNRegular.ttf') format('truetype');
+    src: url('/assets/fonts/HotMustardBTNRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

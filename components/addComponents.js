@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // If it's not the homepage, load the header and footer
     if (!isHomePage) {
-        loadComponent('../components/header/header.html', 'prepend');
-        loadComponent('../components/footer/footer.html', 'append');
+        loadComponent('/components/header/header.html', 'prepend');
+        loadComponent('/components/footer/footer.html', 'append');
     }
 });
