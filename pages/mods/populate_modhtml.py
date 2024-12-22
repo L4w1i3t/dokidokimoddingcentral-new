@@ -1,6 +1,5 @@
 import os
 
-# Define the HTML template
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +35,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-# Directory to start from
 BASE_DIR = "."
 
 def populate_empty_mods(base_dir):
