@@ -133,8 +133,10 @@ body::before {
 }
 
 .asset-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
     margin: 0 auto 15px auto;
     display: block;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
