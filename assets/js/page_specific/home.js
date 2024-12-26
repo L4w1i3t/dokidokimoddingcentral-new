@@ -134,4 +134,34 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("Sprite image with class 'matsu-sprite', tooltip with id 'tooltip', or bubble container not found.");
     }
+
+    const showcaseContainer = document.getElementById('showcase');
+    const itemsToShow = 8; // Number of thumbnails to display
+
+    fetch('/data/mods.json')
+        .then(response => response.json())
+        .then(data => {
+            const allMods = data.standard; // Right now just using standard
+            const randomMods = getRandomMods(allMods, itemsToShow);
+            displayShowcase(randomMods);
+        })
+        .catch(error => console.error('Error loading mods:', error));
+
+    function getRandomMods(mods, count) {
+        const shuffled = mods.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, count);
+    }
+
+    function displayShowcase(mods) {
+        mods.forEach(mod => {
+            const modCard = document.createElement('div');
+            modCard.classList.add('mod-card');
+            modCard.innerHTML = `
+                <a href="/pages/mods/standard/${mod.route}/mod.html">
+                    <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" />
+                </a>
+            `;
+            showcaseContainer.appendChild(modCard);
+        });
+    }
 });
