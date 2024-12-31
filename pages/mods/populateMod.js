@@ -1,120 +1,118 @@
 /*****************************************************
  *  populateMod.js
- *  Script to dynamically populate each mod.html page
- *  based on the route name and data from mods.json.
+ *  Script for a SINGLE mod.html page that uses
+ *  ?cat=xxx & ?route=yyy in the query string.
  *****************************************************/
 
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
 (async function populateModPage() {
-    try {
-      /***************************************
-       * 1) Figure out which mod folder we’re in.
-       ***************************************/
-      // Example URL: ".../pages/mods/android/brokenpoet/mod.html"
-      // We'll split the URL by "/" and grab the second to last piece (the folder name).
-      const pathParts = window.location.pathname.split('/');
-      // Usually the route name is the folder right before "mod.html".
-      // Adjust index if your structure is different:
-      // e.g. pathParts[pathParts.length - 2]
-      const routeName = pathParts[pathParts.length - 2];
-  
-      /***************************************
-       * 2) Fetch mods.json
-       ***************************************/
-      // Adjust the path to your mods.json as needed.
-      // Because we’re inside pages/mods/... 
-      // we might need a relative path like:
-      // "../../../../data/mods.json"
-      const response = await fetch('../../../../data/mods.json');
-      if (!response.ok) {
-        throw new Error(`Could not fetch mods.json: ${response.status}`);
-      }
-      const modsData = await response.json();
-  
-      /***************************************
-       * 3) Combine all categories (optional)
-       ***************************************/
-      const allMods = [
-        ...(modsData.standard || []),
-        ...(modsData.archive || []),
-        ...(modsData.android || []),
-        ...(modsData.demos || []),
-        ...(modsData.videos || []),
-      ];
-  
-      /***************************************
-       * 4) Find the relevant mod
-       ***************************************/
-      const thisMod = allMods.find(mod => mod.route === routeName);
-  
-      if (!thisMod) {
-        console.error(`No mod found in mods.json with route "${routeName}".`);
-        return;
-      }
-  
-      /***************************************
-       * 5) Populate the placeholders
-       ***************************************/
-  
-      // 5A) Update the <title>
-      document.title = `${thisMod.title} - Doki Doki Modding Central`;
-  
-      // 5B) <h1>[MOD TITLE]</h1>
-      const titleEl = document.querySelector('.mod-content h1');
-      if (titleEl) {
-        titleEl.textContent = thisMod.title;
-      }
-  
-      // 5C) <img src="..." class="mod-image">
-      const imgEl = document.querySelector('.mod-image');
-      if (imgEl) {
-        // The JSON has something like "/assets/mod_prevs/brokenpoet.webp"
-        // We'll strip the leading slash and prefix the correct number of "../"
-        const cleanImagePath = thisMod.imageUrl.replace(/^\//, ''); // remove leading slash
-        imgEl.src = `../../../../${cleanImagePath}`;
-        imgEl.alt = thisMod.title;
-      }
-  
-      // 5D) <p><strong>Author:</strong> [AUTHOR]</p> (2nd <p> in our template)
-      // 5E) <p><strong>Submitted By:</strong> [SUBMITTER]</p> (3rd <p>)
-      // 5F) <p><strong>Description:</strong></p> (4th <p>)
-      // 5G) <p>[insert description here]</p> (5th <p>)
-      // Because the template uses sequential <p> elements, we can do:
-      const paragraphEls = document.querySelectorAll('.mod-content p');
-      // paragraphEls[0] = Author line
-      // paragraphEls[1] = Submitted By line
-      // paragraphEls[2] = "Description:" label
-      // paragraphEls[3] = actual description content
-  
-      if (paragraphEls[0]) {
-        paragraphEls[0].innerHTML = `<strong>Author:</strong> ${thisMod.author}`;
-      }
-      if (paragraphEls[1]) {
-        paragraphEls[1].innerHTML = `<strong>Submitted By:</strong> ${thisMod.submittedBy || 'N/A'}`;
-      }
-      if (paragraphEls[3]) {
-        paragraphEls[3].textContent = thisMod.description || '';
-      }
-  
-      // 5H) If you have "links" for downloads:
-      // E.g. an array of objects: { url: "...", text: "..." }
-      // Or possibly an empty array. We'll handle it:
-      const downloadButton = document.querySelector('.download-button');
-      if (downloadButton) {
-        if (thisMod.links && thisMod.links.length > 0) {
-          // For simplicity, pick the first link if multiple
-          downloadButton.href = thisMod.links[0].url || '#';
-          downloadButton.textContent = thisMod.links[0].text || 'Download';
-        } else {
-          // If no link is available, hide the button or disable it
-          downloadButton.href = '#';
-          downloadButton.textContent = 'No Download Available';
-          // Alternatively, you could remove the button
-          // downloadButton.style.display = 'none';
-        }
-      }
-  
-    } catch (error) {
-      console.error('Error in populateModPage:', error);
+  try {
+    /***************************************
+     * 1) Grab "cat" and "route" from the URL
+     ***************************************/
+    const categoryName = getQueryParam('cat');   // e.g. "standard" or "android"
+    const routeName = getQueryParam('route');    // e.g. "tripletrouble"
+
+    if (!categoryName || !routeName) {
+      console.error(
+        `Missing 'cat' or 'route' query param. Example: ?cat=standard&route=brokenpoet`
+      );
+      return;
     }
-  })();
-  
+
+    /***************************************
+     * 2) Fetch mods.json
+     ***************************************/
+    // Because mod.html is at pages/mods/mod.html, we likely need:
+    //   ../../data/mods.json
+    // (same as your old code).
+    const response = await fetch('../../data/mods.json');
+    if (!response.ok) {
+      throw new Error(`Could not fetch mods.json: ${response.status}`);
+    }
+    const modsData = await response.json();
+
+    /***************************************
+     * 3) Check that categoryName is valid
+     ***************************************/
+    if (!modsData.hasOwnProperty(categoryName)) {
+      console.error(`Category '${categoryName}' not found in mods.json.`);
+      return;
+    }
+
+    // We'll load only that category:
+    const categoryMods = modsData[categoryName];
+
+    /***************************************
+     * 4) Find the relevant mod in that category
+     ***************************************/
+    const thisMod = categoryMods.find(mod => mod.route === routeName);
+    if (!thisMod) {
+      console.error(
+        `No mod found in category '${categoryName}' with route '${routeName}'.`
+      );
+      return;
+    }
+
+    /***************************************
+     * 5) Populate placeholders in mod.html
+     ***************************************/
+    // <title>
+    document.title = `${thisMod.title} - Doki Doki Modding Central`;
+
+    // <h1>...
+    const titleEl = document.querySelector('.mod-content h1');
+    if (titleEl) {
+      titleEl.textContent = thisMod.title;
+    }
+
+    // <img src="..." alt="..."
+    const imgEl = document.querySelector('.mod-image');
+    if (imgEl) {
+      // If your JSON has a leading slash in imageUrl, remove it
+      const cleanImagePath = thisMod.imageUrl.replace(/^\//, '');
+      // For instance, if your imageUrl is "/assets/mod_prevs/DDTT.webp"
+      // We'll do `../../${cleanImagePath}` so it references the main assets folder:
+      imgEl.src = `../../${cleanImagePath}`;
+      imgEl.alt = thisMod.title;
+    }
+
+    // paragraphs
+    const paragraphEls = document.querySelectorAll('.mod-content p');
+    // [0] = <p><strong>Author:</strong> ...</p>
+    // [1] = <p><strong>Submitted By:</strong> ...</p>
+    // [2] = <p><strong>Description:</strong></p>
+    // [3] = <p>Actual description</p>
+    if (paragraphEls[0]) {
+      paragraphEls[0].innerHTML = `<strong>Author:</strong> ${thisMod.author}`;
+    }
+    if (paragraphEls[1]) {
+      paragraphEls[1].innerHTML = `<strong>Submitted By:</strong> ${thisMod.submittedBy || 'N/A'}`;
+    }
+    if (paragraphEls[3]) {
+      paragraphEls[3].textContent = thisMod.description || '';
+    }
+
+    // Download link
+    const downloadButton = document.querySelector('.download-button');
+    if (downloadButton) {
+      if (thisMod.links && thisMod.links.length > 0) {
+        // Optionally show version or text
+        // e.g. `Download (Android)` or just the link text if it exists
+        // We'll just do generic "Download" if there's no text
+        const firstLink = thisMod.links[0];
+        downloadButton.href = firstLink.url || '#';
+        downloadButton.textContent = firstLink.text || 'Download';
+      } else {
+        downloadButton.href = '#';
+        downloadButton.textContent = 'No Download Available';
+      }
+    }
+  } catch (error) {
+    console.error('Error in populateModPage:', error);
+  }
+})();
