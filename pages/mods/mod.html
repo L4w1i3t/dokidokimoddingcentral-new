@@ -1,10 +1,10 @@
+<!-- mod.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>[MOD TITLE] - Doki Doki Modding Central</title>
-
   <link rel="stylesheet" href="../../../../assets/css/styles.css" />
   <link rel="stylesheet" href="../../../../components/header/header.css" />
   <link rel="stylesheet" href="../../../../components/footer/footer.css" />
@@ -18,7 +18,7 @@
     <div class="mod-content">
       <h1>[MOD TITLE]</h1>
 
-      <!-- Mod image (thumbnail) -->
+      <!-- If you have the thumbnail + play overlay approach for videos, keep them here -->
       <div class="mod-image-wrapper">
         <img
           id="modThumbnail"
@@ -26,20 +26,13 @@
           alt="Mod Preview"
           class="mod-image"
         />
-        <!-- A clickable overlay with a play icon (initially hidden for non-video) -->
         <div class="play-overlay hidden" id="playOverlay">
           <div class="play-icon">▶</div>
         </div>
       </div>
 
-      <!-- Video iframe container (hidden by default) -->
       <div class="video-iframe-wrapper hidden" id="videoWrapper">
-        <iframe
-          id="videoIframe"
-          src=""
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <iframe id="videoIframe" src="" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <p><strong>Author:</strong> [AUTHOR]</p>
@@ -47,13 +40,10 @@
       <p><strong>Description:</strong></p>
       <p>[insert description here]</p>
 
-      <!-- Download container for normal mods -->
+      <!-- Instead of a single <a> for the download button, we just have a container. -->
       <div class="mod-download" id="downloadContainer">
-        <a href="link_to_download" class="download-button" id="downloadButton">
-          [DOWNLOAD BUTTON]
-        </a>
+        <!-- We'll inject multiple <a> buttons here via JS if there are multiple links -->
       </div>
-
     </div>
   </section>
 </main>

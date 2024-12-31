@@ -81,6 +81,7 @@ body::before {
     text-decoration: none; /* No underline */
     transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
     text-align: center; /* Center text */
+    margin: 10px 10px;
 }
 
 /* Hover effects for download button */

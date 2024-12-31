@@ -1,7 +1,14 @@
 /*****************************************************
  *  populateMod.js
+ *  SINGLE script for mod.html that:
+ *   1) Checks cat=xxx & route=yyy
+ *   2) If videos, shows overlay & embedded video
+ *   3) Otherwise, shows multiple download links
  *****************************************************/
 
+/**
+ * Helper to read a query param from the URL.
+ */
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
@@ -9,58 +16,60 @@ function getQueryParam(param) {
 
 (async function populateModPage() {
   try {
-    const categoryName = getQueryParam('cat');  
-    const routeName = getQueryParam('route');   
+    // 1) Grab cat & route from the URL
+    const categoryName = getQueryParam('cat');  // e.g. "videos" or "standard"
+    const routeName = getQueryParam('route');   // e.g. "tripletrouble"
 
     if (!categoryName || !routeName) {
-      console.error("Missing 'cat' or 'route' query param.");
+      console.error("Missing 'cat' or 'route' query param. E.g. ?cat=videos&route=youmattertoo");
       return;
     }
 
-    // 1) Fetch mods.json
+    // 2) Fetch mods.json (adjust path as needed if your structure differs)
     const response = await fetch('../../data/mods.json');
     if (!response.ok) {
       throw new Error(`Could not fetch mods.json: ${response.status}`);
     }
     const modsData = await response.json();
 
-    // 2) Check if the category is valid
+    // 3) Check if category is valid
     if (!modsData.hasOwnProperty(categoryName)) {
       console.error(`Category '${categoryName}' not found in mods.json.`);
       return;
     }
-
     const categoryMods = modsData[categoryName];
-    // 3) find the mod
+
+    // 4) Find the mod by route
     const thisMod = categoryMods.find(mod => mod.route === routeName);
     if (!thisMod) {
-      console.error(`No mod found in category '${categoryName}' with route '${routeName}'.`);
+      console.error(`No mod found in category '${categoryName}' with route='${routeName}'.`);
       return;
     }
 
-    // 4) Populate text fields
+    // 5) Populate basic fields
+    // Page <title>
     document.title = `${thisMod.title} - Doki Doki Modding Central`;
 
-    // Title
+    // <h1> (the mod's main title)
     const titleEl = document.querySelector('.mod-content h1');
     if (titleEl) {
       titleEl.textContent = thisMod.title;
     }
 
-    // Image
+    // The thumbnail image
     const imgEl = document.getElementById('modThumbnail');
     if (imgEl) {
-      const cleanImagePath = thisMod.imageUrl.replace(/^\//, ''); 
+      const cleanImagePath = thisMod.imageUrl.replace(/^\//, '');
       imgEl.src = `../../${cleanImagePath}`;
       imgEl.alt = thisMod.title;
     }
 
-    // paragraphs
+    // The paragraphs in .mod-content
     const paragraphEls = document.querySelectorAll('.mod-content p');
-    // [0] Author line
-    // [1] Submitted by
-    // [2] 'Description:'
-    // [3] actual description
+    // [0] => Author line
+    // [1] => SubmittedBy line
+    // [2] => "Description:"
+    // [3] => actual description
     if (paragraphEls[0]) {
       paragraphEls[0].innerHTML = `<strong>Author:</strong> ${thisMod.author}`;
     }
@@ -71,60 +80,66 @@ function getQueryParam(param) {
       paragraphEls[3].textContent = thisMod.description || '';
     }
 
-    // 5) Download button references
+    // 6) Reference to the download container
     const downloadContainer = document.getElementById('downloadContainer');
-    const downloadButton = document.getElementById('downloadButton');
 
-    // 6) If it's a video mod, show the overlay, hide the download
+    // 7) Check if we are dealing with videos
     if (categoryName === 'videos') {
-      // Hide download container
+      // If it's a video mod, let's hide the download container entirely (or clear it)
       if (downloadContainer) {
         downloadContainer.style.display = 'none';
       }
 
-      // Show the play overlay
+      // Show the overlay (play button) & load the iframe link
       const playOverlay = document.getElementById('playOverlay');
-      if (playOverlay) {
-        playOverlay.classList.remove('hidden');
-      }
-
-      // We'll get the first link as the embed URL
-      let videoUrl = null;
-      if (thisMod.links && thisMod.links.length > 0) {
-        videoUrl = thisMod.links[0].url;
-      }
-
-      // Set up a click handler to hide the image + overlay & show the iframe
       const videoWrapper = document.getElementById('videoWrapper');
       const videoIframe = document.getElementById('videoIframe');
 
-      if (videoUrl && videoWrapper && videoIframe) {
-        videoIframe.src = videoUrl;
+      // Only if there's a links array and at least one link
+      if (thisMod.links && thisMod.links.length > 0) {
+        // For simplicity, pick the first link as the embed URL
+        const videoUrl = thisMod.links[0].url;
 
-        // We can let user click EITHER the overlay or the image
-        const startVideo = () => {
-          // hide image
-          imgEl.classList.add('hidden');
-          // hide overlay
-          playOverlay.classList.add('hidden');
-          // show iframe
-          videoWrapper.classList.remove('hidden');
-        };
+        if (playOverlay && videoWrapper && videoIframe && imgEl) {
+          // Remove 'hidden' from the overlay so it's visible
+          playOverlay.classList.remove('hidden');
 
-        playOverlay.addEventListener('click', startVideo);
-        imgEl.addEventListener('click', startVideo);
+          // Assign the iframe's src
+          videoIframe.src = videoUrl || '';
+
+          // When user clicks either the overlay or the image, hide them, show the video
+          const startVideo = () => {
+            imgEl.classList.add('hidden');
+            playOverlay.classList.add('hidden');
+            videoWrapper.classList.remove('hidden');
+          };
+
+          playOverlay.addEventListener('click', startVideo);
+          imgEl.addEventListener('click', startVideo);
+        }
       }
+      // If no links, fallback message (idk what to put here)
     } else {
-      // 7) Normal mod with a download link
-      if (thisMod.links && thisMod.links.length > 0 && downloadButton) {
-        const firstLink = thisMod.links[0];
-        downloadButton.href = firstLink.url || '#';
-        downloadButton.textContent = firstLink.version
-          ? `Download (${firstLink.version})`
-          : 'Download';
-      } else if (downloadButton) {
-        downloadButton.href = '#';
-        downloadButton.textContent = 'No Download Available';
+      // 8) Not a video, so we show download links if present
+      if (thisMod.links && thisMod.links.length > 0 && downloadContainer) {
+        // Clear container
+        downloadContainer.innerHTML = '';
+
+        thisMod.links.forEach(linkObj => {
+          const btn = document.createElement('a');
+          btn.classList.add('download-button');
+          btn.href = linkObj.url || '#';
+          //btn.setAttribute('target', '_blank'); // open in new tab
+          // If linkObj has .version, display it
+          btn.textContent = linkObj.version
+            ? `Download (${linkObj.version})`
+            : 'Download';
+
+          downloadContainer.appendChild(btn);
+        });
+      } else if (downloadContainer) {
+        // No links
+        downloadContainer.innerHTML = '<p>No Download Available</p>';
       }
     }
   } catch (error) {
