@@ -20,10 +20,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 <h1>[MOD TITLE]</h1>
                 <img src="../../../../assets/mod_prevs/[image].webp" alt="Mod Preview" class="mod-image">
                 <p><strong>Author:</strong> [AUTHOR]</p>
+                <p><strong>Submitted By:</strong> [SUBMITTER]</p>
                 <p><strong>Description:</strong></p>
                 <p>[insert description here]</p>
                 <div class="mod-download">
-                    <a href="link_to_download" class="download-button">Download Mod</a>
+                    <a href="link_to_download" class="download-button">[DOWNLOAD BUTTON]</a>
                 </div>
             </div>
         </section>
@@ -31,6 +32,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <script src="../../../../components/addComponents.js"></script>
     <script src="../../../../assets/js/main.js"></script>
+    <script src="../../../../pages/mods/populateMod.js"></script>
 </body>
 </html>
 """
@@ -42,6 +44,9 @@ def populate_empty_mods(base_dir):
         for file in files:
             if file == "mod.html":
                 file_path = os.path.join(root, file)
+                # empty the file
+                with open(file_path, "w") as f:
+                    f.write("")
                 # Check if the file is empty
                 if os.path.getsize(file_path) == 0:
                     print(f"Populating empty file: {file_path}")
