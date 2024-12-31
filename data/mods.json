@@ -12,7 +12,11 @@
         {
           "version": "standard",
           "url": "https://www.mediafire.com/file_premium/uzvryadkuakof41/DDTT-4.2.0-Renpy7Mod.zip/file"
-        }
+        },
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/uzvryadku"
+          }
       ]
     },
     {
@@ -2118,7 +2122,7 @@
       ]
     },
     {
-      "id": 1121,
+      "id": 1122,
       "title": "Celebration!",
       "author": "Tiny Waffle Studios",
       "imageUrl": "/assets/mod_prevs/celebration.jpg",
@@ -2133,7 +2137,7 @@
       ]
     },
     {
-      "id": 1122,
+      "id": 1123,
       "title": "Little Literature Club",
       "author": "regal-begal",
       "imageUrl": "/assets/mod_prevs/little_literature_club.jpg",
@@ -2148,7 +2152,7 @@
       ]
     },
     {
-      "id": 1123,
+      "id": 1124,
       "title": "The Doki's Blow Up the White House",
       "author": "Teravolt Productions",
       "imageUrl": "/assets/mod_prevs/dokisblowupwhitehouse.jpg",
@@ -2163,7 +2167,7 @@
       ]
     },
     {
-      "id": 1124,
+      "id": 1125,
       "title": "Falsely Accused of Criminal Activity Club!",
       "author": "dfwk",
       "imageUrl": "/assets/mod_prevs/Falsely_Accused.jpg",
@@ -2517,12 +2521,12 @@
       "author": "JQilin Gaming, Tune Eternal",
       "imageUrl": "/assets/mod_prevs/DDTT.webp",
       "route": "ttdemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "JQilin Gaming",
+      "description": "Doki Doki Triple Trouble is the first ever 18+ RomCom that centers around everyone's favorite pink-haired heartbreaker: Natsuki! Follow MC's year long escapade to try to be the main man in Natsuki's life as he competes with a different man... and then a different man... and then a different man. An original story jam packed with action, drama, comedy, romance, an incredible original soundtrack, and enough NSFW to make your head spin! A DDLC mod that will make you laugh, cry, question life, and jam out while doing so. Will MC surrender his common sense to get with Natsuki or will he realize that it's not worth the trouble? Find out now in Doki Doki Triple Trouble!",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/b7b7frdu6vj502a/DDTT-Renpy7Mod.zip/file"
         }
       ]
     },
@@ -2532,12 +2536,12 @@
       "author": "dewallt101",
       "imageUrl": "/assets/mod_prevs/blueseasdemov2.webp",
       "route": "blueseasdemov2",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "dewallt101",
+      "description": "Our protagonist is an American student who moved to Japan from his home state of Virgina due to father being appointed commander of the USS Ronald Reagan. After moving from his home he is introduced to Kenji. MC is not your a typical high school otaku-nerd. He has a wise-guy kinda attitude which makes for the best of banter among his friends. It is at this point we meet Sayori, a sweet, bubbly and overly cheerful girl and also Kenjis childhood friend who just so happens to love eating snacks and has a bottomless pit for a stomach. She invites both Kenji and our protagonist to the literature club to see what it is all about.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/folder/w4c0encelko2s/Demo_V2"
         }
       ]
     },
@@ -2547,27 +2551,27 @@
       "author": "Team Everlasting",
       "imageUrl": "/assets/mod_prevs/everlasting.webp",
       "route": "everlastingdemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "This demo will contain Act 1: Resonance. This demo is meant to serve as an introduction to the world, as well as provide (hopefully) a good story to keep you immersed. Our team has worked really hard on this, and I am pretty proud of this myself.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/9q3vxd6u58xzpa5/DDEverlasting_Demo.zip/file"
         }
       ]
     },
     {
       "id": 20003,
-      "title": "Infinity Pens The Original Demo",
+      "title": "Infinity Pens: The Original Demo",
       "author": "CaptainOreo, BlueRay",
       "imageUrl": "/assets/mod_prevs/infinitypens.webp",
       "route": "infinitypensdemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "JQilin Gaming, Codex",
+      "description": "Infinity Pens is about two girls fighting over six magic pens. June is the blonde girl, but she cannot remember her past, and it hurts her she tries to remember. Hanako is red-haired, and she is the villain. Long story short, Monika traps Hanako in a classroom, and June releases her. But Hanako’s true intention is to kill all Monika in existence(another mod). And to do so, she needs the Infinity Pens. So it is up to June to stop here and find the pens before she does. But it looks like Monika is hidden something, too. - CaptainOreo [WARNING: This modification is not in accordance with Team Salvato IP Guidelines and DDMC.site is not responsible for the inadequacies in following the IP terms and conditions, and do not assume any responsibility for the lack of adherence. Please download at your own discretion.]",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/fq7ns1yy1c7ctc1/Infinity_Pens_Demo_Package.zip/file"
         }
       ]
     },
@@ -2577,12 +2581,12 @@
       "author": "The Dark Rainclouds",
       "imageUrl": "/assets/mod_prevs/darkrainclouds.webp",
       "route": "darkraincloudsdemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "The tragedy before the festival happened but luck (and life) smiles at you this time with a second chance, a smile that slowly becomes almost macabre, In this new story where will your decisions take you? If dark clouds cloud your life slowly all you have left is Expect the best",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/kspvggh5gjpxdxe/DokiDokiDarkRainclouds-Py2-4.2.2-Py2-Renpy7Mod.zip/file"
         }
       ]
     },
@@ -2592,12 +2596,12 @@
       "author": "Neljas",
       "imageUrl": "/assets/mod_prevs/truestory.webp",
       "route": "truestorydemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "True Story is Monika's POV mod, heavily inspired by Everlasting Summer (especially Semyon's route) and Seven Summer Days. This, among other things, applies to the menu, gui, and the music (in this mod there are even more OST's from ES than DDLC OST's), even the saving method (unlike regular DDLC mods, in this mod you first need to point at selected slot, and then again additionally click on the corresponding “Save/Load” button, in general, just like in ES)",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/5g9iuwylcpp52e1/True_Story_Demo_PC.zip/file"
         }
       ]
     },
@@ -2607,12 +2611,12 @@
       "author": "Studio Silver",
       "imageUrl": "/assets/mod_prevs/undercurrents.webp",
       "route": "undercurrents_demo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "Come to shore with this extraordinary fan-made sequel to the critically acclaimed Doki Doki Literature Club! Get to know the lives of your favorite Dokis, both in and out of school, and meet new people along the way. Doki Doki Undercurrents, or DDU for short, is a sequel following the events of the original Doki Doki Literature Club (DDLC). It takes what DDLC has done and builds on its foundations, adding more to the lore and the grim psychological horror. One of the main themes of DDLC was the surreal nature of the unexpected, usually in the form of jumpscares - This mod, however, looks into what truly makes a tale unnerving. Through the eyes of Melody, you'll explore the expanded world of Doki Doki Undercurrents, learning about a multitude of characters and their lives, both in and out of school. You'll watch her grow and learn, and be the hand to guide her when things are at their most unforgiving. This is a story centred around the many challenges life brings, the desire to rise to the occasion, and the consequences that come with hubris. Will you be the one to master the waves, or will you, too, be swept into the undercurrents?",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/c5r5f68qtsezfzi/DokiDokiUndercurrentsD2Sleepover-Renpy8-DDLCMod.zip/file"
         }
       ]
     },
@@ -2622,12 +2626,12 @@
       "author": "TheNumbahSeven",
       "imageUrl": "/assets/mod_prevs/adealwithalastor.webp",
       "route": "adealwithalastordemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "And then Charlie said, \"our true friends were the Hazbin Hotel we made along the way.\"",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/nvud12e1jv8bqxl/ADealWithAlastor_Demo_2.0.zip/file"
         }
       ]
     },
@@ -2637,12 +2641,12 @@
       "author": "Tormuse",
       "imageUrl": "/assets/mod_prevs/turquoise.webp",
       "route": "turquoise_demo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "I just finished making a demo for Turquoise, my upcoming Sayonika mod, featuring a romantic relationship between Sayori and Monika. :)",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/urkubfq7t3gvvg5/Turquoise_demo_1.3.zip/file"
         }
       ]
     },
@@ -2652,12 +2656,12 @@
       "author": "CraftedBrother05",
       "imageUrl": "/assets/mod_prevs/hibernation.webp",
       "route": "hibernation_demo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "In an intoxicated world, the dreams beyond are endless, and the eyes of the gods are dawning upon them. Filled with a lifetime of suffering, misconceptions, and traumas, the girls have to wade through their way with each excruciating day as you play through the heart-wrenching and true-to-life story. Immerse yourself, believe in ascension, and be ready for wonder as you descend...into the IRIS. (Based on the IRIS music project by DAGames.) [WARNING: This modification contains materials that are copyrighted by other artists in certain regions of the world, and may cause certain individuals to experience conflictions with copyright content identification when recording footage. Please proceed with caution if this applies to you. Contains covers of Iris music by DAGames.]",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/oigpbcc40mxztq0/DokiDokiHibernationDEMOEditionV1.0.zip/file"
         }
       ]
     },
@@ -2667,12 +2671,12 @@
       "author": "Wretched Team",
       "imageUrl": "/assets/mod_prevs/afterschool.webp",
       "route": "afterschool",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "64BitBob",
+      "description": "Doki Doki: After School takes place half a decade after the end of the Literature Club, where our main character has since returned home from university. A chance meeting with an old friend ignites a desire to reunite the club; a chance for friends to bond with each other once more. However, each of them must deal with the harsh realities of adult life and the nostalgic allure of simpler times.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/j2f3rg9uweqf5i7/Doki_Doki_After_School_-_demo_release.zip/file"
         }
       ]
     },
@@ -2682,12 +2686,12 @@
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/new_view.png",
       "route": "anewviewdemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "64BitBob",
+      "description": "Haruna is a Kuudere, and in this mod, you get a crush on her, now, you must break through her exterior to see the sweet and caring girl that lies within.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/mr1sochv00v37i6/DDHaruna-3.0.1-Renpy7Mod.zip/file"
         }
       ]
     },
@@ -2697,12 +2701,12 @@
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/love_torn.webp",
       "route": "lovetorndemo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "64BitBob",
+      "description": "In this mod, you live in a re-imagined world of Doki Doki Literature Club. No craziness, just DDLC with a normal life! When your best friend Sayori convinces you to join her club, a chance reunion with your childhood friend Kotonoha sends you down a spiral path of choices, where you enjoy the good, while attempting to handle the bad. Can you handle everything life's about to send your way?",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/54h60a0h9q1loax/DDLoveTorn-3.0.0-Mod.zip/file"
         }
       ]
     },
@@ -2712,12 +2716,12 @@
       "author": "Specsuki",
       "imageUrl": "/assets/mod_prevs/natsukis_expanded_story.webp",
       "route": "natsukisexpandedstory",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Knuklez",
+      "description": "A discontinued demo where in this story, the MC is best friends with Natsuki. [WARNING: This modification contains materials that are copyrighted by other artists in certain regions of the world, and may cause certain individuals to experience conflictions with copyright content identification when recording footage. Please proceed with caution if this applies to you. It was on the list 'Removed Mods due to Copyright' If I had to guess it was probably be the only 2 non ddlc background.]",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/cmkbo6riiop8qls/NES1.0.zip/file"
         }
       ]
     },
@@ -2727,12 +2731,12 @@
       "author": "Süleyman Aydın",
       "imageUrl": "/assets/mod_prevs/afternoon.webp",
       "route": "afternoon",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "He began to come to his senses in the borderless world of the dear friend. Guide him, he needs you very much. Go as far as you can and end this cursed cycle. Who knows... maybe this time everything will be fine.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "demo",
+          "url": "https://www.mediafire.com/file_premium/ueup45wzcn4ruru/Afternoon_Demo.rar/file"
         }
       ]
     }
@@ -2744,12 +2748,12 @@
       "author": "Doki Senate",
       "imageUrl": "/assets/mod_prevs/ymt.webp",
       "route": "youmattertoo",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Doki Senate",
+      "description": "The Dokis find out that Jacob has depression and they come up with a plan to help him, but something goes horribly wrong in the process... [WARNING: This modification contains materials that are copyrighted by other artists in certain regions of the world, and may cause certain individuals to experience conflictions with copyright content identification when recording footage. Please proceed with caution if this applies to you. Contains audio by Yo-Yo Ma;Ennio Morricone, John Williams, London Symphony Orchestra, Nintendo, Alexandre Desplat, Kevin Kiner, Matthew St. Laurent, Nicholas Hooper, North Texas Wind Symphony, Eugene Migliaro Corporon, Sleepy Times, Natural Sound Makers, Nature Recordings (Video was blocked in Russia by Sleepy Times, Natural Sound Makers, Nature Recordings).]",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/so1ZYMvw8_k"
         }
       ]
     },
@@ -2759,12 +2763,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/hauntedhouse.webp",
       "route": "explorehauntedhouse",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "Monika, Sayori, and Natsuki get lost exploring a haunted house and it is up to Yuri to save them from the horrors that await her there.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/ALIwQfCNaXQ?si=rt6m2qwCfP08Z09s"
         }
       ]
     },
@@ -2774,12 +2778,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/dokisplaymarioparty9.webp",
       "route": "dokisplaymarioparty9",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "Monika decided to bring a Wii to the club and MarioFan looks forward to dominating the others at Mario Party 9.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/Y2MJUUA9vnQ?si=dIHbL2wKpJ3IiAAp"
         }
       ]
     },
@@ -2789,12 +2793,12 @@
       "author": "DiverseDokiStories",
       "imageUrl": "/assets/mod_prevs/dokiversus.webp",
       "route": "dokiversus",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "DiverseDokiStories",
+      "description": "A dark entity attempts to overthrow the rule of a god.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/Omw4nvCSV3g?si=hnOszuHj0fMiE7ho"
         }
       ]
     },
@@ -2804,12 +2808,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/yurismansion.webp",
       "route": "yurismansion",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "Yuri seems to have won a Mansion in a contest she didn’t even enter for. Let’s see what this strange mansion has in store for her.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/ajHYChpQDec?si=8XibWbKfnySfplPy"
         }
       ]
     },
@@ -2819,12 +2823,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/beachdaywithkiyomi.webp",
       "route": "beachdaywithkiyomi",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "Kiyomi wants to spend some quality time with DokiFan at the beach. Wonder what will happen between them.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/hfcId7tv9Ko?si=Myvo9cjKwjpS23os"
         }
       ]
     },
@@ -2834,12 +2838,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/hangoutwithkoto.webp",
       "route": "hangoutwithkoto",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "It’s been too long since Koto has seen DokiFan, so she decides to ask him out on a hang out to catch up on things.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/Mdp_NoPM3jE?si=EwqcoCbt0xdkSZqb"
         }
       ]
     },
@@ -2849,12 +2853,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/kiyomisbigdate.webp",
       "route": "kiyomisbigdate",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "This mod follows a certain individual named Jace. He gets jealous of Sayori and DokiFan's relationship and wishes he could have one too. He suddenly runs into a particular girl named Kiyomi and falls in love with her at first sight. He takes an opportunity to ask her out to the mall. Will he finally find the love of his life? We shall see how this 'date' goes for both of them.",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/-LPuXyyfE8E?si=XMB9d5d7BpWzqiOc"
         }
       ]
     },
@@ -2864,12 +2868,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/sayorismistletoesurprise.webp",
       "route": "sayorismistletoesurprise",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "It’s Christmas Eve, and DokiFan wants to hang out with his amazing girlfriend while she has something planned of her own. Just what could the bun be up to?",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/gw3EPUAmp_g?si=Rptq7JdvKCsrrX7N"
         }
       ]
     },
@@ -2879,12 +2883,12 @@
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/dokifansbirthdaysurprise.jpg",
       "route": "dokifansbirthdaysurprise",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "It’s DokiFan’s birthday, however, all his friends are acting as if they don’t remember his birthday. Could they really have forgotten or is it just a ruse?",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/T_UhSfKJ1Lc?si=dsYU1svVFA9vdntX"
         }
       ]
     },
@@ -2894,12 +2898,12 @@
       "author": "TheBike",
       "imageUrl": "/assets/mod_prevs/amonthwithnatsuki.jpg",
       "route": "amonthwithnatsuki",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "JNT",
+      "description": "You spend a month with Natsuki. Does it turn out well?",
       "links": [
         {
-          "version": "standard",
-          "url": "https://example.com/replacement_link"
+          "version": "video",
+          "url": "https://www.youtube.com/embed/-wUxszG58UY?si=ITGf4SnwDkdH21hz"
         }
       ]
     }

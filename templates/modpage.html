@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[MOD TITLE] - Doki Doki Modding Central</title>
-    <link rel="stylesheet" href="../../../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../../../components/header/header.css">
-    <link rel="stylesheet" href="../../../../components/footer/footer.css">
-    <link rel="stylesheet" href="../../../../assets/css/mod_style.css">
-    <link rel="icon" href="../../../../assets/gui/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>[MOD TITLE] - Doki Doki Modding Central</title>
+
+  <!-- Main site styles -->
+  <link rel="stylesheet" href="../../../../assets/css/styles.css"/>
+  <link rel="stylesheet" href="../../../../components/header/header.css"/>
+  <link rel="stylesheet" href="../../../../components/footer/footer.css"/>
+  <!-- Our mod styling (or new combined style) -->
+  <link rel="stylesheet" href="../../../../assets/css/mod_style.css"/>
+  <link rel="icon" href="../../../../assets/gui/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
 
-    <main>
-        <section id="mod-container">
-            <div class="mod-content">
-                <h1>[MOD TITLE]</h1>
-                <img src="../../../../assets/mod_prevs/[image].webp" alt="Mod Preview" class="mod-image">
-                <p><strong>Author:</strong> [AUTHOR]</p>
-                <p><strong>Submitted By:</strong> [SUBMITTER]</p>
-                <p><strong>Description:</strong></p>
-                <p>[insert description here]</p>
-                <div class="mod-download">
-                    <a href="link_to_download" class="download-button">[DOWNLOAD BUTTON]</a>
-                </div>
-            </div>
-        </section>
-    </main>
+<main>
+  <section id="mod-container">
+    <div class="mod-content">
+      <h1>[MOD TITLE]</h1>
+      <!-- The mod image (thumbnail) -->
+      <img
+        src="../../../../assets/mod_prevs/[image].webp"
+        alt="Mod Preview"
+        class="mod-image"
+        id="modThumbnail"
+      />
 
-    <script src="../../../../components/addComponents.js"></script>
-    <script src="../../../../assets/js/main.js"></script>
-    <script src="./populateMod.js"></script>
+      <!-- Our iframe for video, hidden by default via CSS (see below) -->
+      <div class="video-iframe-wrapper hidden" id="videoWrapper">
+        <iframe
+          id="videoIframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <p><strong>Author:</strong> [AUTHOR]</p>
+      <p><strong>Submitted By:</strong> [SUBMITTER]</p>
+      <p><strong>Description:</strong></p>
+      <p>[insert description here]</p>
+
+      <!-- The download button for normal mods (hidden if video) -->
+      <div class="mod-download" id="downloadContainer">
+        <a href="link_to_download" class="download-button" id="downloadButton">
+          [DOWNLOAD BUTTON]
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="../../../../components/addComponents.js"></script>
+<script src="../../../../assets/js/main.js"></script>
+<script src="./populateMod.js"></script>
 </body>
 </html>
