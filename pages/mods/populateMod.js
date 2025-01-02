@@ -26,7 +26,7 @@ function getQueryParam(param) {
     }
 
     // 2) Fetch mods.json (adjust path as needed if your structure differs)
-    const response = await fetch('../../data/mods.json');
+    const response = await fetch('/data/mods.json');
     if (!response.ok) {
       throw new Error(`Could not fetch mods.json: ${response.status}`);
     }
