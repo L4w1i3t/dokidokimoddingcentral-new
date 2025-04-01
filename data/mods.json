@@ -284,7 +284,26 @@
           "url": "https://www.mediafire.com/file_premium/rqudjfqrrkty2zs/NeuroDDLCDemo-0.1.0-Renpy8-DDLCMod.zip/file"
         }
       ]
+    }, 
+	{
+      "id": 19,
+      "title": "Deceptive Hearts: Judgement Day",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/deceptiveheartsjudgementday.jpg",
+      "route": "deceptiveheartsjudgementday.jpg",
+      "submittedBy": "Tune Eternal",
+      "description": "Someone has freed u/DeadEmpyre from the Doki Doki Modding Club's #gulag channel, and it's up to the members of the DDMC to find out who it is. But this mysterious figure is bent on deleting the Discord server and finally putting an end to the Doki Doki Modding Club once and for all...Based on cringe in r/ddlcmods",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/gzkfrrzkf0d2e7a/DeceptiveHearts2-1.0.2-Deceptive_Hearts.zip/file"
+        }
+      ]
     }
+	
+	
+	
+	
   ],
   "archive": [
     {
@@ -2238,6 +2257,10 @@
         }
       ]
     }
+	
+	
+	
+	
   ],
   "android": [
     {
@@ -2569,6 +2592,36 @@
           "url": "https://www.mediafire.com/file_premium/ubpa17blu03kz6u/club.littleliterature.android-20231220.apk/file"
         }
       ]
+    }, 
+	{
+      "id": 10022,
+      "title": "Deceptive Hearts: Judgement Day",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/deceptiveheartsjudgementday.jpg",
+      "route": "deceptiveheartsjudgementday.jpg",
+      "submittedBy": "Tune Eternal",
+      "description": "Someone has freed u/DeadEmpyre from the Doki Doki Modding Club's #gulag channel, and it's up to the members of the DDMC to find out who it is. But this mysterious figure is bent on deleting the Discord server and finally putting an end to the Doki Doki Modding Club once and for all...Based on cringe in r/ddlcmods",
+      "links": [
+        {
+          "version": "Android",
+          "url": "https://www.mediafire.com/file_premium/ezlk4azovemrit1/Deceptive_Hearts_2_Android_Port.apk/file"
+        }
+      ]
+    },
+	{
+      "id": 10023,
+      "title": "The Renewal Demo",
+      "author": "iiTzWolfyy",
+      "imageUrl": "/assets/mod_prevs/therenewal.jpg",
+      "route": "therenewal",
+      "submittedBy": "Tune Eternal",
+      "description": "In the beginning of the umpteenth loop of the game where all the dramatical events have always taken place, something changes. Out of nowhere, MC becomes self aware like Monika has always been. He remembers everything that happened in the past and will try his best to save everyone from their cruel fates (yes, even Monika). The thing is, something will be in the way, and he will quickly notice it... Will you be able to save the club and start a brand new life? Can you trust Monika in this altered reality? Will it finally be the renewal that we've all been waiting for?",
+      "links": [
+        {
+          "version": "Android",
+          "url": "https://www.mediafire.com/file_premium/icqv28gf35yysjz/The_Renewal_Demo.apk/file"
+        }
+      ]
     }
   ],
   "demos": [
@@ -2794,6 +2847,21 @@
         {
           "version": "demo",
           "url": "https://www.mediafire.com/file_premium/ueup45wzcn4ruru/Afternoon_Demo.rar/file"
+        }
+      ]
+    }, 
+	 {
+      "id": 1125,
+      "title": "The Renewal Demo",
+      "author": "iiTzWolfyy",
+      "imageUrl": "/assets/mod_prevs/therenewal.jpg",
+      "route": "therenewal",
+      "submittedBy": "Tune Eternal",
+      "description": "In the beginning of the umpteenth loop of the game where all the dramatical events have always taken place, something changes. Out of nowhere, MC becomes self aware like Monika has always been. He remembers everything that happened in the past and will try his best to save everyone from their cruel fates (yes, even Monika). The thing is, something will be in the way, and he will quickly notice it... Will you be able to save the club and start a brand new life? Can you trust Monika in this altered reality? Will it finally be the renewal that we've all been waiting for?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/ey4gyfx233xhj4u/The_Renewal_Demo-1.1-_Mod.zip/file"
         }
       ]
     }
