@@ -14,27 +14,58 @@
 
     <main>
         <section id="assets-container">
-            <h1>Assets</h1>
-            <div class="assets-boxes">
-                <a class="assets-box" href="assets/music.html">
-                    <img src="../assets/gui/musicbutton.webp" alt="Ren'Py Documentation Icon" class="asset-icon">
-                    <h2>Music</h2>
-                    <p>Repository of free-to-use Creative Commons BY-NC audio and sound effects.</p>
+            <div class="assets-header">
+                <h1>Assets</h1>
+                <p class="assets-description">All resources are organized by category for easy access and usage in your projects.</p>
+            </div>
+            
+            <div class="assets-grid">
+                <a class="assets-card music" href="assets/music.html">
+                    <div class="assets-content">
+                        <div class="icon-container">
+                            <img src="../assets/gui/musicbutton.webp" alt="Music Icon" class="asset-icon">
+                        </div>
+                        <h2>Music & Audio</h2>
+                        <p>Elevate your mod with atmospheric soundtracks and effects.</p>
+                    </div>
                 </a>
-                <a class="assets-box" href="assets/art.html">
-                    <img src="../assets/gui/artbutton.webp" alt="Ren'Py Documentation Icon" class="asset-icon">
-                    <h2>Art</h2>
-                    <p>Repository of community-made and free-to-use Creative Commons BY-NC art.</p>
+                
+                <a class="assets-card art" href="assets/art.html">
+                    <div class="assets-content">
+                        <div class="icon-container">
+                            <img src="../assets/gui/artbutton.webp" alt="Art Icon" class="asset-icon">
+                        </div>
+                        <h2>Backgrounds & CGs</h2>
+                        <p>Enhance your visual storytelling with diverse artistic assets.</p>
+                    </div>
                 </a>
-                <a class="assets-box" href="assets/code.html">
-                    <img src="../assets/gui/codebutton.webp" alt="Ren'Py Documentation Icon" class="asset-icon">
-                    <h2>Code</h2>
-                    <p>Repository of custom scripts for use in your projects for plug-and-play or ease of use.</p>
+                
+                <a class="assets-card code" href="assets/code.html">
+                    <div class="assets-content">
+                        <div class="icon-container">
+                            <img src="../assets/gui/codebutton.webp" alt="Code Icon" class="asset-icon">
+                        </div>
+                        <h2>Code</h2>
+                        <p>Implement advanced features with ready-to-use code snippets.</p>
+                    </div>
                 </a>
-                <a class="assets-box" href="assets/gui.html">
-                    <img src="../assets/gui/guibutton.webp" alt="Ren'Py Documentation Icon" class="asset-icon">
-                    <h2>GUI</h2>
-                    <p>Repository of community-made GUI elements, edited from DDLC or custom.</p>
+                
+                <a class="assets-card gui" href="assets/gui.html">
+                    <div class="assets-content">
+                        <div class="icon-container">
+                            <img src="../assets/gui/guibutton.webp" alt="GUI Icon" class="asset-icon">
+                        </div>
+                        <h2>Interface</h2>
+                        <p>Create a unique look and feel with custom GUI components.</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="assets-footer">
+                <h2>Want to Contribute?</h2>
+                <p>Share your creative work with the community and help other modders bring their visions to life.</p>
+                <a href="submit.html" class="contribute-button">
+                    <span>Submit Your Assets</span>
                 </a>
             </div>
         </section>

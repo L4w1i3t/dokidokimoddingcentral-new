@@ -1,21 +1,19 @@
-/* Apply a smooth font for better readability */
+/* Modern Mods Page Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    /* Set the background image */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('../../images/bg/modsclub.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     color: #ffffff;
-    overflow-y: auto; /* Ensure the body can scroll */
+    overflow-y: auto;
 }
 
-/* Semi-transparent overlay */
+/* Dark overlay */
 body::before {
     content: '';
     position: fixed;
@@ -23,185 +21,331 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: -1; /* Ensure the overlay stays behind content */
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
 }
 
-/* Container with fadeIn animation */
+main {
+    padding: 80px 20px;
+}
+
+/* Main Container */
 #mods-container {
-    max-width: 1200px; /* Increased width for better readability */
-    margin: 60px auto; /* Center the container */
-    padding: 60px 30px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    animation: fadeIn 1.5s ease-in-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    will-change: opacity, backdrop-filter; /* Hint for better performance */
+    max-width: 1400px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease;
 }
 
-/* FadeIn Keyframes - Only opacity */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Main Heading Styles with Text Shadow */
-#mods-container h1 {
+.mods-header {
     text-align: center;
-    color: #ffffff; /* Changed to white for better contrast */
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Consistent with body font */
-    font-size: 2.8rem;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    margin-bottom: 60px;
 }
 
-/* Mods Boxes Container */
-.mods-boxes {
+.mods-header h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+}
+
+.mods-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.category-card {
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 13, 173, 0.85), rgba(142, 45, 226, 0.85));
+    z-index: 1;
+    opacity: 0.9;
+    transition: opacity 0.4s ease;
+}
+
+.category-card.standard::before {
+    background: linear-gradient(135deg, rgba(106, 13, 173, 0.85), rgba(142, 45, 226, 0.85));
+}
+
+.category-card.android::before {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.85), rgba(33, 150, 243, 0.85));
+}
+
+.category-card.archive::before {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 0.85), rgba(255, 193, 7, 0.85));
+}
+
+.category-card.demos::before {
+    background: linear-gradient(135deg, rgba(233, 30, 99, 0.85), rgba(156, 39, 176, 0.85));
+}
+
+.category-card.videos::before {
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.85), rgba(216, 27, 96, 0.85));
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.category-card:hover::before {
+    opacity: 1;
+}
+
+.category-content {
+    position: relative;
+    padding: 35px 30px;
+    z-index: 2;
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 2rem;
+    flex-direction: column;
+    height: 100%;
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    background: rgba(255, 255, 255, 0.12);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.category-card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.category-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.explore-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.category-card:hover .explore-button {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+.explore-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+.explore-button svg {
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .explore-button svg {
+    transform: translateX(5px);
+}
+
+.explore-button:hover svg {
+    transform: translateX(5px);
+}
+
+/* Resources Section */
+.mods-resources {
+    background: rgba(30, 30, 40, 0.85);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.mods-resources h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
+}
+
+.mods-resources p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.resource-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Individual Mods Box Styles */
-.mods-box {
-    background: linear-gradient(135deg, #6a0dad, #4b0049);
-    border-radius: 15px;
-    color: #ffffff;
+.resource-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6a0dad, #4b0082);
+    color: white;
     text-decoration: none;
-    flex: 1 1 250px; /* Flexible width with a minimum of 250px */
-    max-width: 300px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    will-change: transform, box-shadow, background; /* Hint for better performance */
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-/* Hover Effects for Mods Boxes */
-.mods-box::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(65deg);
-    transition: all 0.5s;
-}
-
-.mods-box:hover {
+.resource-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.mods-box:hover::after {
-    top: 150%;
-    left: 150%;
+.resource-link svg {
+    transition: transform 0.3s ease;
 }
 
-/* Mods Box Headings */
-.mods-box h2 {
-    font-size: 2rem;
- margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+.resource-link:hover svg {
+    transform: translateX(5px);
 }
 
-/* Mods Box Paragraphs */
-.mods-box p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #e0e0e0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* Decorative Divider (Optional) */
-.divider {
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
-    margin: 40px auto;
-    border: none;
-}
-
-/* Responsive Typography Adjustments */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    #mods-container {
-        margin: 40px 20px;
-        padding: 40px 20px;
+    .mods-header h1 {
+        font-size: 2.2rem;
     }
-
-    #mods-container h1 {
-        font-size: 2rem;
-    }
-
-    .mods-box {
-        padding: 20px 15px;
-    }
-
-    .mods-box h2 {
-        font-size: 1.5rem;
-    }
-
-    .mods-box p {
+    
+    .mods-description {
         font-size: 1rem;
     }
+    
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-card {
+        height: auto;
+    }
+    
+    .mods-resources {
+        padding: 30px 20px;
+    }
+    
+    .mods-resources h2 {
+        font-size: 1.8rem;
+    }
+    
+    .resource-links {
+        flex-direction: column;
+    }
 }
 
-/* Additional High-Resolution Adjustments */
-@media (min-width: 2560px) { /* For 2K and higher resolutions */
-    #mods-container {
-        padding: 80px 50px;
-    }
-
-    #mods-container h1 {
-        font-size: 3.5rem;
-    }
-
-    .mods-box {
-        padding: 40px 25px;
-        font-size: 1.3rem;
-    }
-
-    .mods-box h2 {
-        font-size: 2.5rem;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 3840px) { /* For 4K resolutions */
+@media (min-width: 2560px) {
     #mods-container {
-        padding: 100px 60px;
+        max-width: 1800px;
     }
-
-    #mods-container h1 {
+    
+    .mods-header h1 {
         font-size: 4rem;
     }
-
-    .mods-box {
-        padding: 50px 30px;
-        font-size: 1.5rem;
+    
+    .mods-description {
+        font-size: 1.4rem;
+        max-width: 1000px;
     }
-
-    .mods-box h2 {
-        font-size: 3rem;
+    
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     }
-}
-
-/* Resource Icon Styling */
-.mods-icon {
-    width: 80px;
-    height: 80px;
-    max-width: 80px;
-    max-height: 80px;
-    margin: 0 auto 15px auto;
-    display: block;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+    
+    .category-card h2 {
+        font-size: 2.5rem;
+    }
+    
+    .category-card p {
+        font-size: 1.3rem;
+    }
 }

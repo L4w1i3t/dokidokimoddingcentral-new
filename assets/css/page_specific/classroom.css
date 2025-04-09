@@ -1,21 +1,19 @@
-/* Apply a smooth font for better readability */
+/* Modern Classroom Page Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    /* Set the background image */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('../../images/bg/classroomclass.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     color: #ffffff;
-    overflow-y: auto; /* Ensure the body can scroll */
+    overflow-y: auto;
 }
 
-/* Semi-transparent overlay */
+/* Dark overlay */
 body::before {
     content: '';
     position: fixed;
@@ -23,174 +21,357 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: -1; /* Ensure the overlay stays behind content */
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
 }
 
-/* Container with fadeIn animation */
+main {
+    padding: 80px 20px;
+}
+
+/* Main Container */
 #classroom-container {
-    max-width: 1200px; /* Increased width for better readability */
-    margin: 60px auto; /* Center the container */
-    padding: 60px 30px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    animation: fadeIn 1.5s ease-in-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    will-change: opacity, backdrop-filter; /* Hint for better performance */
+    max-width: 1400px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease;
 }
 
-/* FadeIn Keyframes - Only opacity */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Main Heading Styles with Text Shadow */
-#classroom-container h1 {
+/* Header Section */
+.classroom-header {
     text-align: center;
-    color: #ffffff; /* Changed to white for better contrast */
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Consistent with body font */
-    font-size: 2.8rem;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    margin-bottom: 60px;
 }
 
-/* Classroom Boxes Container */
-.classroom-boxes {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-/* Individual Classroom Box Styles */
-.classroom-box {
-    background: linear-gradient(135deg, #6a0dad, #4b0049);
-    border-radius: 15px;
+.classroom-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
     color: #ffffff;
-    text-decoration: none;
-    flex: 1 1 300px; /* Flexible width with a minimum of 300px */
-    max-width: 350px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    will-change: transform, box-shadow, background; /* Hint for better performance */
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+    letter-spacing: 1px;
 }
 
-/* Hover Effects for Classroom Boxes */
-.classroom-box::after {
+.classroom-tagline {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Classroom Boxes */
+.classroom-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.classroom-box {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+}
+
+.classroom-box::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(65deg);
-    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 13, 173, 0.85), rgba(142, 45, 226, 0.85));
+    z-index: 1;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.classroom-box.courses::before {
+    background: linear-gradient(135deg, rgba(106, 13, 173, 0.85), rgba(142, 45, 226, 0.85));
+}
+
+.classroom-box.library::before {
+    background: linear-gradient(135deg, rgba(0, 150, 136, 0.85), rgba(38, 166, 154, 0.85));
+}
+
+.classroom-box.playground::before {
+    background: linear-gradient(135deg, rgba(233, 30, 99, 0.85), rgba(216, 27, 96, 0.85));
 }
 
 .classroom-box:hover {
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-.classroom-box:hover::after {
-    top: 150%;
-    left: 150%;
+.classroom-box:hover::before {
+    opacity: 1;
 }
 
-/* Classroom Box Headings */
+.box-content {
+    position: relative;
+    padding: 40px 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.icon-container {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 0 auto 20px;  /* This centers horizontally with auto left/right margins */
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.classroom-box:hover .icon-container {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.classroom-icon {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
 .classroom-box h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Classroom Box Paragraphs */
 .classroom-box p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.box-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.classroom-box:hover .box-button {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+.box-button svg {
+    transition: transform 0.3s ease;
+}
+
+.classroom-box:hover .box-button svg {
+    transform: translateX(5px);
+}
+
+/* Classroom Footer */
+.classroom-footer {
+    background: rgba(30, 30, 45, 0.85);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
+}
+
+.footer-text p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #e0e0e0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    max-width: 600px;
 }
 
-/* Decorative Divider (Optional) */
-.divider {
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
-    margin: 40px auto;
-    border: none;
+.footer-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-/* Responsive Typography Adjustments */
+.primary-action {
+    padding: 14px 28px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6a0dad, #4b0082);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.primary-action:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.secondary-action {
+    padding: 12px 26px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.secondary-action:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    #classroom-container {
-        margin: 40px 20px;
-        padding: 40px 20px;
+    .classroom-header h1 {
+        font-size: 2.5rem;
     }
-
-    #classroom-container h1 {
-        font-size: 2rem;
+    
+    .classroom-tagline {
+        font-size: 1.1rem;
     }
-
+    
+    .classroom-boxes {
+        grid-template-columns: 1fr;
+    }
+    
     .classroom-box {
-        padding: 20px 15px;
+        height: auto;
     }
-
-    .classroom-box h2 {
-        font-size: 1.5rem;
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
     }
-
-    .classroom-box p {
-        font-size: 1rem;
+    
+    .footer-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-actions {
+        width: 100%;
     }
 }
 
-/* Additional High-Resolution Adjustments */
-@media (min-width: 2560px) { /* For 2K and higher resolutions */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .classroom-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .classroom-box:last-child {
+        grid-column: span 2;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 2560px) {
     #classroom-container {
-        padding: 80px 50px;
+        max-width: 1800px;
     }
-
-    #classroom-container h1 {
-        font-size: 3.5rem;
+    
+    .classroom-header h1 {
+        font-size: 4.5rem;
     }
-
-    .classroom-box {
-        padding: 40px 25px;
-        font-size: 1.3rem;
+    
+    .classroom-tagline {
+        font-size: 1.6rem;
+        max-width: 1000px;
     }
-
+    
+    .classroom-boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     .classroom-box h2 {
         font-size: 2.5rem;
     }
-}
-
-@media (min-width: 3840px) { /* For 4K resolutions */
-    #classroom-container {
-        padding: 100px 60px;
+    
+    .classroom-box p {
+        font-size: 1.3rem;
     }
-
-    #classroom-container h1 {
-        font-size: 4rem;
+    
+    .footer-text h2 {
+        font-size: 2.8rem;
     }
-
-    .classroom-box {
-        padding: 50px 30px;
-        font-size: 1.5rem;
-    }
-
-    .classroom-box h2 {
-        font-size: 3rem;
+    
+    .footer-text p {
+        font-size: 1.4rem;
     }
 }

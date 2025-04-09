@@ -1,0 +1,112 @@
+{
+    "addons": [
+      {
+        "id": "addon-1",
+        "title": "DUMMY 1",
+        "category": "ui",
+        "compatibility": [7, 8],
+        "description": "DUMMY 1",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-2",
+        "title": "DUMMY 2",
+        "category": "system",
+        "compatibility": [6, 7, 8],
+        "description": "DUMMY 2",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-3",
+        "title": "DUMMY 3",
+        "category": "effects",
+        "compatibility": [7],
+        "description": "DUMMY 3",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-4",
+        "title": "DUMMY 4",
+        "category": "utility",
+        "compatibility": [8],
+        "description": "DUMMY 4",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-5",
+        "title": "DUMMY 5",
+        "category": "audio",
+        "compatibility": [7, 8],
+        "description": "DUMMY 5",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-6",
+        "title": "DUMMY 6",
+        "category": "system",
+        "compatibility": [7],
+        "description": "DUMMY 6",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-7",
+        "title": "DUMMY 7",
+        "category": "ui",
+        "compatibility": [6],
+        "description": "DUMMY 7",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-8",
+        "title": "DUMMY 8",
+        "category": "system",
+        "compatibility": [6, 7, 8],
+        "description": "DUMMY 8",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-9",
+        "title": "DUMMY 9",
+        "category": "audio",
+        "compatibility": [6, 7, 8],
+        "description": "DUMMY 9",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-10",
+        "title": "DUMMY 10",
+        "category": "effects",
+        "compatibility": [6, 7],
+        "description": "DUMMY 10",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-11",
+        "title": "DUMMY 11",
+        "category": "ui",
+        "compatibility": [7, 8],
+        "description": "DUMMY 11",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "addon-12",
+        "title": "DUMMY 12",
+        "category": "ui",
+        "compatibility": [6, 7, 8],
+        "description": "DUMMY 12",
+        "imageUrl": "",
+        "downloadUrl": "#"
+      }
+    ]
+  }

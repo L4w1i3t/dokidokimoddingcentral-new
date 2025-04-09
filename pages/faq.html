@@ -15,130 +15,288 @@
     <main>
         <section id="faq-container">
             <h1>Frequently Asked Questions</h1>
+            
+            <div class="faq-tabs">
+                <button class="faq-tab active" data-category="general">General</button>
+                <button class="faq-tab" data-category="modding">Modding</button>
+                <button class="faq-tab" data-category="submission">Submissions</button>
+                <button class="faq-tab" data-category="community">Community</button>
+            </div>
 
-            <div class="faq-section">
-                <div class="faq-item">
-                    <button class="faq-question">TL;DR What is Doki Doki Modding Central?</button>
-                    <div class="faq-answer">
-                        <p>TL;DR Doki Doki Modding Central (DDMC) is a comprehensive sister platform dedicated to creating, sharing, and 
-                            exploring modifications for <em>Doki Doki Literature Club!</em> by Team Salvato. It serves as a hub 
-                            for modders and fans to collaborate, share resources, and enhance their experience.</p>
+            <!-- GENERAL QUESTIONS -->
+            <div class="faq-category active" id="general">
+                <div class="faq-section">
+                    <div class="faq-item">
+                        <button class="faq-question">What is Doki Doki Modding Central?</button>
+                        <div class="faq-answer">
+                            <p>Doki Doki Modding Central (DDMC) is a comprehensive platform dedicated to creating, sharing, and 
+                                exploring modifications for <em>Doki Doki Literature Club!</em> by Team Salvato. It serves as a hub 
+                                for modders and fans to collaborate, share resources, and enhance their experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Why was DDMC created?</button>
+                        <div class="faq-answer">
+                            <p>DDMC was created in October 2023 to provide an inclusive, drama-free environment for the DDLC modding community.
+                               Our goal is to foster creativity, archive and preserve mods, and provide resources for modders without the
+                               politics and restrictions that have affected other communities. Our motto is "Archive Everything" - 
+                               we believe in preserving the community's creative work regardless of internet drama or stigma.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">What can I find on DDMC?</button>
+                        <div class="faq-answer">
+                            <p>Our platform offers:</p>
+                            <ul>
+                                <li>An extensive catalog of mods (standard, Android, demos, archived)</li>
+                                <li>Educational resources and tutorials in our Classroom section</li>
+                                <li>Asset repository with music, art, code snippets, and GUI elements</li>
+                                <li>Community spaces via Discord and Reddit</li>
+                                <li>Submission forms for your own mods and resources</li>
+                                <li>Documentation for Ren'Py and modding templates</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">Who's Matsuda?</button>
+                        <div class="faq-answer">
+                            <p>She's a totally real person who does totally real things. Source: trust me bro.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- MODDING QUESTIONS -->
+            <div class="faq-category" id="modding">
+                <div class="faq-section">
+                    <div class="faq-item">
+                        <button class="faq-question">Do I need any specific software to create a mod?</button>
+                        <div class="faq-answer">
+                            <p>While the specific tools depend on the type of mod you're creating, most DDLC mods are developed using 
+                                the Ren'Py engine. We provide comprehensive documentation and tutorials in the classroom to help you 
+                                get started, if you need help, or if you want to learn anything new. Common tools include:</p>
+                            <ul>
+                                <li>Ren'Py SDK (Software Development Kit)</li>
+                                <li>A text editor (VSCode, Atom, Sublime Text, etc.)</li>
+                                <li>Image editing software (for backgrounds and sprites)</li>
+                                <li>Audio editing software (optional, for custom music/sounds)</li>
+                                <li>Our DDLC Modding Template</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">How can I submit my mod to DDMC?</button>
-                    <div class="faq-answer">
-                        <p>We have two specific Google Forms that you can access by going to their respective pages. You can submit your
-                            mod by filling out the mod submission form with all the requisite information. The other form is where you
-                            can submit assets (music, code, sprites, art, etc.) to be uploaded for others to use.
-                        </p>
+                    <div class="faq-item">
+                        <button class="faq-question">My mod wasn't made with Ren'Py. Can it still be added to the site?</button>
+                        <div class="faq-answer">
+                            <p>
+                                Yes, you can submit your mods regardless of engine or how you made it. Be advised that during your submission, you
+                                will have to outline how exactly to install and run it, as it would deviate from the standard instructions.
+                                Also remember that your mod <strong>does</strong> have to be complicit with Team Salvato's IP Guidelines, so
+                                you can't submit a pre-installed/pre-built mod. We don't make the rules, we just enforce them.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">Are there any rules for creating mods?</button>
+                        <div class="faq-answer">
+                            <p>Yes, although we try to be as hands-off as we can; we're not an anarchy, but we also don't rule with an iron fist 
+                                either. See the "About" page for what we do enforce. The most important rules to follow are:</p>
+                            <ul>
+                                <li>Follow the <a href="http://teamsalvato.com/ip-guidelines/" target="_blank">Team Salvato IP Guidelines</a></li>
+                                <li>Don't include illegal content or malware</li>
+                                <li>Respect copyright laws for third-party assets</li>
+                                <li>Provide proper installation instructions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">Where can I find resources for my mod?</button>
+                        <div class="faq-answer">
+                            <p>We offer extensive resources in our Assets and Resources sections, including:</p>
+                            <ul>
+                                <li>Music libraries with free-to-use tracks</li>
+                                <li>Background and sprite art</li>
+                                <li>Code snippets and template addons</li>
+                                <li>GUI elements and design resources</li>
+                                <li>Links to recommended external tools and libraries</li>
+                            </ul>
+                            <p>These resources can help you create a professional mod without having to create everything from scratch.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- SUBMISSION QUESTIONS -->
+            <div class="faq-category" id="submission">
+                <div class="faq-section">
+                    <div class="faq-item">
+                        <button class="faq-question">How can I submit my mod to DDMC?</button>
+                        <div class="faq-answer">
+                            <p>We have several submission forms that you can access from our Submissions page:</p>
+                            <ul>
+                                <li><strong>Mod Submission</strong> - For completed mods or demos</li>
+                                <li><strong>Asset Submission</strong> - For backgrounds, music, sprites, etc.</li>
+                                <li><strong>Template Addon Submission</strong> - For Ren'Py additions that extend the base template</li>
+                            </ul>
+                            <p>Each form will guide you through the submission process with specific fields for that content type.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">Are there any rules for creating mods?</button>
-                    <div class="faq-answer">
-                        <p>Yes, although we try to be as hands-off as we can; we're not an anarchy, but we also don't rule with an iron fist 
-                            either. See the "About" page for what we do enforce.</p>
+                    <div class="faq-item">
+                        <button class="faq-question">My mod's not on the site yet, and I submitted it days ago!</button>
+                        <div class="faq-answer">
+                            <p>
+                                Please have patience. We have at most two people right now that manage the site--one is a busy IT specialist, and
+                                the other is a busy university student. Point is, we do have lives, and we will upload mods and assets whenever
+                                we have the chance to. As such, we also prefer to upload in massive batches instead of on an individual basis,
+                                so be assured that you're not the only one thinking this. TL;DR we'll get to your stuff eventually.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">Can I update my mod after it's been published?</button>
+                        <div class="faq-answer">
+                            <p>Yes, you can submit updates to your mod or assets using the same submission forms. Just clearly indicate:</p>
+                            <ul>
+                                <li>This is an update to an existing submission</li>
+                                <li>The name of the original mod/asset</li>
+                                <li>A summary of what has changed</li>
+                                <li>The new version number (if applicable)</li>
+                            </ul>
+                            <p>Our team will process the update and replace the old version with your new one.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">What types of content can I submit?</button>
+                        <div class="faq-answer">
+                            <p>We accept a wide variety of DDLC-related content:</p>
+                            <ul>
+                                <li><strong>Mods</strong> - Full mods, demos, patches</li>
+                                <li><strong>Assets</strong> - Music, artwork, sprites, backgrounds, sound effects</li>
+                                <li><strong>Code</strong> - Template addons, useful scripts, technical improvements</li>
+                                <li><strong>Videos</strong> - Mod playthroughs, tutorials, showcases</li>
+                            </ul>
+                            <p>As long as your content follows our basic guidelines and isn't illegal, we'll most likely archive it.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- COMMUNITY QUESTIONS -->
+            <div class="faq-category" id="community">
+                <div class="faq-section">
+                    <div class="faq-item">
+                        <button class="faq-question">How can I get involved in the community?</button>
+                        <div class="faq-answer">
+                            <p>Getting involved in the community can be as simple as contributing your thoughts and ideas--it makes a big 
+                                difference and supports everyone here. If you'd like to take a more active role, you can connect with staff 
+                                and other members through our subreddit or Discord server. For those interested in joining the team, we 
+                                announce open positions whenever we're hiring. If you're passionate and interested, let us know! We value 
+                                merit and commitment above all else.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">Do I need any specific software to create a mod?</button>
-                    <div class="faq-answer">
-                        <p>While the specific tools depend on the type of mod you're creating, most DDLC mods are developed using 
-                            the Ren'Py engine. We provide comprehensive documentation and tutorials in the classroom to help you 
-                            get started, if you need help, or if you want to learn anything new.</p>
+                    <div class="faq-item">
+                        <button class="faq-question">Is there support available if I encounter issues?</button>
+                        <div class="faq-answer">
+                            <p>Absolutely! Not only do we have a dedicated feedback form and channel in the Discord server, where you can either
+                                be anonymous or known. You can also reach out to one of the staff members directly if you so choose. Also note that
+                                feedback is not just exclusive to technical issues; your complaints can also be about anything that may impact the
+                                community negatively if left unchecked--harrassment by other users, abuse of power by a staff member, grooming,
+                                you name it. We value all input regardless of significance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">I'm not allowed in the subreddit/Discord server, can I still upload mods?</button>
+                        <div class="faq-answer">
+                            <p>
+                                Keep in mind: we actually don't ban people from the Discord server, only with particularly egregious exceptions;
+                                see the server to find out what we do instead. As for uploading mods as a banned user, you absolutely can, as per rule
+                                1 on the "About" page. We like to separate art from artist here.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">How is DDMC different from other DDLC modding communities?</button>
+                        <div class="faq-answer">
+                            <p>DDMC was founded on these key principles that set us apart:</p>
+                            <ul>
+                                <li><strong>Archive Everything</strong> - We believe in preserving the community's creative work</li>
+                                <li><strong>Minimal Censorship</strong> - We support creative freedom within legal boundaries</li>
+                                <li><strong>Community-First</strong> - Decisions are made with the community's interests in mind</li>
+                                <li><strong>Drama-Free</strong> - We focus on creativity and collaboration, not politics</li>
+                                <li><strong>Transparency</strong> - Open communication and accountability from staff</li>
+                            </ul>
+                            <p>These principles guide everything we do and have created a more relaxed, creative-focused community.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">How can I get involved in the community?</button>
-                    <div class="faq-answer">
-                        <p>Getting involved in the community can be as simple as contributing your thoughts and ideas--it makes a big 
-                            difference and supports everyone here. If you'd like to take a more active role, you can connect with staff 
-                            and other members through our subreddit or Discord server. For those interested in joining the team, we 
-                            announce open positions whenever we're hiring. If you're passionate and interested, let us know! We value 
-                            merit and commitment above all else.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">Is there support available if I encounter issues?</button>
-                    <div class="faq-answer">
-                        <p>Absolutely! Not only do we have a dedicated feedback form and channel in the Discord server, where you can either
-                            be anonymous or known. You can also reach out to one of the staff members directly if you so choose. Also note that
-                            feedback is not just exclusive to technical issues; your complaints can also be about anything that may impact the
-                            community negatively if left unchecked--harrassment by other users, abuse of power by a staff member, grooming,
-                            you name it. We value all input regardless of significance.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">I'm not allowed in the subreddit/Discord server, can I still upload mods?</button>
-                    <div class="faq-answer">
-                        <p>
-                            Keep in mind: we actually don't ban people from the Discord server, only with particularly egregious exceptions;
-                            see the server to find out what we do instead. As for uploading mods as a banned user, you absolutely can, as per rule
-                            1 on the "About" page. We like to separate art from artist here.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">My mod wasn't made with Ren'Py. Can it still be added to the site?</button>
-                    <div class="faq-answer">
-                        <p>
-                            Yes, you can submit your mods regardless of engine or how you made it. Be advised that during your submission, you
-                            will have to outline how exactly to install and run it, as it would deviate from the standard instructions.
-                            Also remember that your mod <strong>does</strong> have to be complicit with Team Salvato's IP Guidelines, so
-                            you can't submit a pre-installed/pre-built mod. We don't make the rules, we just enforce them.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">My mod's not on the site yet, and I submitted it days ago!</button>
-                    <div class="faq-answer">
-                        <p>
-                            Please have patience. We have at most two people right now that manage the site--one is a busy IT specialist, and
-                            the other is a busy university student. Point is, we do have lives, and we will upload mods and assets whenever
-                            we have the chance to. As such, we also prefer to upload in massive batches instead of on an individual basis,
-                            so be assured that you're not the only one thinking this. TL;DR we'll get to your stuff eventually.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">Who's Matsuda?</button>
-                    <div class="faq-answer">
-                        <p>
-                            She's a totally real person who does totally real things. Source: trust me bro.
-                        </p>
-                    </div>
-                </div>
-
-                <!--Template for faq items to easily copy and paste
-
-                <div class="faq-item">
-                    <button class="faq-question"></button>
-                    <div class="faq-answer">
-                        <p>
-
-                        </p>
-                    </div>
-                </div>
-
-                -->
             </div>
         </section>
     </main>
 
     <script src="../components/addComponents.js"></script>
-    <script src="../assets/js/page_specific/faq.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        // Updated accordion functionality for FAQ items - all collapsed by default
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = question.nextElementSibling;
+                
+                // Check if this item is already active
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = null;
+                });
+                
+                // If the clicked item wasn't active, open it
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+        
+        // Tab navigation
+        document.querySelectorAll('.faq-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.faq-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all categories
+                document.querySelectorAll('.faq-category').forEach(cat => {
+                    cat.classList.remove('active');
+                });
+                
+                // Show the selected category
+                const categoryId = tab.getAttribute('data-category');
+                document.getElementById(categoryId).classList.add('active');
+                
+                // Ensure all questions are collapsed in the newly shown category
+                document.querySelectorAll('#' + categoryId + ' .faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = null;
+                });
+            });
+        });
+    </script>
 </body>
 </html>

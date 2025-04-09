@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../../assets/css/styles.css"/>
   <link rel="stylesheet" href="../../components/header/header.css"/>
   <link rel="stylesheet" href="../../components/footer/footer.css"/>
-  <link rel="stylesheet" href="../../assets/css/page_specific/demos.css"/>
+  <link rel="stylesheet" href="../../assets/css/page_specific/mod-catalog.css"/>
   <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
@@ -15,60 +15,140 @@
 <main>
   <section id="mods-container">
     <h1>Mod Demos</h1>
-    <div id="mods-list" class="mod-grid"></div>
-    <div id="pagination-controls" class="pagination">
-      <button id="prev-page" disabled>Previous</button>
-      <span id="page-info">Page 1</span>
-      <button id="next-page">Next</button>
+    
+    <div class="search-filter-container">
+      <div class="search-box">
+        <input type="text" id="mod-search" placeholder="Search demos...">
+        <button id="search-button">Search</button>
+      </div>
+      <div class="filter-container">
+        <select id="sort-filter">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+        </select>
+      </div>
+    </div>
+    
+    <div id="mods-list" class="mod-grid">
+      <!-- Mods will be dynamically loaded here -->
+    </div>
+    
+    <div class="pagination">
+      <button id="prev-page" class="pagination-button" disabled>Previous</button>
+      <span id="page-info" class="pagination-info">Page 1 of 1</span>
+      <button id="next-page" class="pagination-button">Next</button>
     </div>
   </section>
 </main>
 
 <script>
-  const itemsPerPage = 16;
+  const itemsPerPage = 12;
   let currentPage = 1;
   let totalPages = 1;
   let allMods = [];
+  let filteredMods = [];
 
   const container = document.getElementById('mods-list');
   const prevBtn = document.getElementById('prev-page');
   const nextBtn = document.getElementById('next-page');
   const pageInfo = document.getElementById('page-info');
+  const searchInput = document.getElementById('mod-search');
+  const searchButton = document.getElementById('search-button');
+  const sortFilter = document.getElementById('sort-filter');
 
+  // Function to render mods on the current page
   function renderPage(pageNumber) {
     container.innerHTML = '';
     const startIndex = (pageNumber - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    const modsToShow = allMods.slice(startIndex, endIndex);
+    const modsToShow = filteredMods.slice(startIndex, endIndex);
 
-    modsToShow.forEach(mod => {
-      const modCard = document.createElement('a');
-      modCard.classList.add('mod-card');
-      // pass cat=demos
-      modCard.href = `./mod.html?cat=demos&route=${mod.route}`;
-      modCard.innerHTML = `
-        <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" />
-        <h2>${mod.title}</h2>
-        <p>By: ${mod.author}</p>
+    if (modsToShow.length === 0) {
+      container.innerHTML = `
+        <div class="no-results">
+          <p>No demos found matching your search criteria.</p>
+        </div>
       `;
-      container.appendChild(modCard);
-    });
+    } else {
+      modsToShow.forEach(mod => {
+        const modCard = document.createElement('a');
+        modCard.classList.add('mod-card');
+        modCard.href = `./mod.html?cat=demos&route=${mod.route}`;
+        modCard.innerHTML = `
+          <div class="mod-image-container">
+            <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" />
+          </div>
+          <div class="mod-details">
+            <h2>${mod.title}</h2>
+            <div class="mod-meta">
+              <span class="mod-author">By: ${mod.author}</span>
+            </div>
+          </div>
+        `;
+        container.appendChild(modCard);
+      });
+    }
 
+    // Update pagination info
     pageInfo.textContent = `Page ${pageNumber} of ${totalPages}`;
     prevBtn.disabled = (pageNumber === 1);
-    nextBtn.disabled = (pageNumber === totalPages);
+    nextBtn.disabled = (pageNumber === totalPages || totalPages === 0);
   }
 
+  // Function to filter and sort mods
+  function filterAndSortMods() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const sortType = sortFilter.value;
+
+    // Filter by search term
+    filteredMods = allMods.filter(mod => 
+        mod.title.toLowerCase().includes(searchTerm) || 
+        mod.author.toLowerCase().includes(searchTerm)
+    );
+
+    // Sort based on selected option
+    switch(sortType) {
+        case 'newest':
+            // Assuming the default order in JSON is oldest first
+            // Just reverse the array to get newest first
+            filteredMods = [...filteredMods].reverse();
+            break;
+        case 'oldest':
+            // Keep the original order from the JSON which is already oldest first
+            // Do nothing as filteredMods is already in the right order
+            break;
+        case 'az':
+            filteredMods.sort((a, b) => a.title.localeCompare(b.title));
+            break;
+        case 'za':
+            filteredMods.sort((a, b) => b.title.localeCompare(a.title));
+            break;
+    }
+
+    // Reset to first page and update
+    currentPage = 1;
+    totalPages = Math.max(1, Math.ceil(filteredMods.length / itemsPerPage));
+    renderPage(currentPage);
+}
+
+  // Load mods from JSON
   fetch('../../data/mods.json')
     .then(response => response.json())
     .then(data => {
-      allMods = data.demos;
-      const totalItems = allMods.length;
-      totalPages = Math.ceil(totalItems / itemsPerPage);
-      renderPage(currentPage);
+        allMods = data.demos;
+        
+        // Apply the default sorting (newest first)
+        // which is just the reverse of the original order
+        filteredMods = [...allMods].reverse();
+        
+        totalPages = Math.ceil(filteredMods.length / itemsPerPage);
+        renderPage(currentPage);
     })
     .catch(error => console.error('Error loading mods:', error));
 
+  // Event listeners
   prevBtn.addEventListener('click', () => {
     if (currentPage > 1) {
       currentPage--;
@@ -82,6 +162,15 @@
       renderPage(currentPage);
     }
   });
+
+  searchButton.addEventListener('click', filterAndSortMods);
+  searchInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      filterAndSortMods();
+    }
+  });
+
+  sortFilter.addEventListener('change', filterAndSortMods);
 </script>
 
 <script src="../../components/addComponents.js"></script>

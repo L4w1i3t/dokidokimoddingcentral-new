@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Addons - Doki Doki Modding Central</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../components/header/header.css">
+    <link rel="stylesheet" href="../../components/footer/footer.css">
+    <link rel="stylesheet" href="../../assets/css/page_specific/addons.css">
+    <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <main>
+        <section id="addons-header">
+            <h1>DDLC Modding Template Addons</h1>
+            <p>Enhance your modding experience with these powerful tools and extensions</p>
+            
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <input type="text" id="addon-search" placeholder="Search addons...">
+                    <button id="search-button">Search</button>
+                </div>
+                <div class="filter-container">
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="ui">UI Components</option>
+                        <option value="system">Core Systems</option>
+                        <option value="effects">Visual Effects</option>
+                        <option value="audio">Audio Tools</option>
+                        <option value="utility">Utilities</option>
+                    </select>
+                    <select id="compatibility-filter">
+                        <option value="all">All Ren'Py Versions</option>
+                        <option value="6">Ren'Py 6.x</option>
+                        <option value="7">Ren'Py 7.x</option>
+                        <option value="8">Ren'Py 8.x</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="addons-container">
+            <!-- Addons will be dynamically loaded here from addons.json -->
+        </section>
+
+        <div class="pagination">
+            <button id="prev-page" class="pagination-button" disabled>Previous</button>
+            <span id="page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="next-page" class="pagination-button" disabled>Next</button>
+        </div>
+
+        <section id="submit-addon">
+            <h2>Submit Your Addon</h2>
+            <p>Have you created a useful addon for DDLC modding? Share it with the community!</p>
+            <a href="../submit.html" class="submit-button">Submit Addon</a>
+        </section>
+    </main>
+
+    <script src="../../components/addComponents.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/page_specific/addons.js"></script>
+</body>
+</html>
