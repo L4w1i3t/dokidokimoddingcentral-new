@@ -18,15 +18,21 @@
     
     <div class="search-filter-container">
       <div class="search-box">
-        <input type="text" id="mod-search" placeholder="Search demos...">
+        <input type="text" id="mod-search" placeholder="Search mod titles...">
         <button id="search-button">Search</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="author-search" placeholder="Search by author...">
+        <button id="author-search-button">Search</button>
       </div>
       <div class="filter-container">
         <select id="sort-filter">
           <option value="newest">Newest First</option>
           <option value="oldest">Oldest First</option>
-          <option value="az">A-Z</option>
-          <option value="za">Z-A</option>
+          <option value="az">Title (A-Z)</option>
+          <option value="za">Title (Z-A)</option>
+          <option value="author-az">Author (A-Z)</option>
+          <option value="author-za">Author (Z-A)</option>
         </select>
       </div>
     </div>
@@ -56,6 +62,8 @@
   const pageInfo = document.getElementById('page-info');
   const searchInput = document.getElementById('mod-search');
   const searchButton = document.getElementById('search-button');
+  const authorInput = document.getElementById('author-search');
+  const authorSearchButton = document.getElementById('author-search-button');
   const sortFilter = document.getElementById('sort-filter');
 
   // Function to render mods on the current page
@@ -100,13 +108,17 @@
   // Function to filter and sort mods
   function filterAndSortMods() {
     const searchTerm = searchInput.value.toLowerCase().trim();
+    const authorTerm = authorInput.value.toLowerCase().trim();
     const sortType = sortFilter.value;
 
-    // Filter by search term
-    filteredMods = allMods.filter(mod => 
-        mod.title.toLowerCase().includes(searchTerm) || 
-        mod.author.toLowerCase().includes(searchTerm)
-    );
+    // Filter by search term and author
+    filteredMods = allMods.filter(mod => {
+      const matchesTitle = searchTerm === '' || 
+                          mod.title.toLowerCase().includes(searchTerm);
+      const matchesAuthor = authorTerm === '' || 
+                           mod.author.toLowerCase().includes(authorTerm);
+      return matchesTitle && matchesAuthor;
+    });
 
     // Sort based on selected option
     switch(sortType) {
@@ -125,13 +137,19 @@
         case 'za':
             filteredMods.sort((a, b) => b.title.localeCompare(a.title));
             break;
+        case 'author-az':
+            filteredMods.sort((a, b) => a.author.localeCompare(b.author));
+            break;
+        case 'author-za':
+            filteredMods.sort((a, b) => b.author.localeCompare(a.author));
+            break;
     }
 
     // Reset to first page and update
     currentPage = 1;
     totalPages = Math.max(1, Math.ceil(filteredMods.length / itemsPerPage));
     renderPage(currentPage);
-}
+  }
 
   // Load mods from JSON
   fetch('../../data/mods.json')
@@ -165,6 +183,13 @@
 
   searchButton.addEventListener('click', filterAndSortMods);
   searchInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      filterAndSortMods();
+    }
+  });
+
+  authorSearchButton.addEventListener('click', filterAndSortMods);
+  authorInput.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
       filterAndSortMods();
     }

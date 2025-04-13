@@ -1,21 +1,19 @@
-/* Apply a smooth font for better readability */
+/* Modern Mod Page Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    /* Set the background image */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('../images/bg/modsclub.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     color: #ffffff;
-    overflow-y: auto; /* Ensure the body can scroll */
+    overflow-y: auto;
 }
 
-/* Semi-transparent overlay */
+/* Dark overlay */
 body::before {
     content: '';
     position: fixed;
@@ -23,150 +21,248 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: -1; /* Ensure the overlay stays behind content */
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
 }
 
-/* Container for mod content */
+/* Main container styles */
 #mod-container {
-    max-width: 1200px; /* Maximum width for better readability */
-    margin: 60px auto; /* Center the container */
-    padding: 40px; /* Inner padding */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Shadow for depth */
-    backdrop-filter: blur(8.5px); /* Blur effect for background */
-    -webkit-backdrop-filter: blur(8.5px); /* Safari support */
+    max-width: 900px; /* Wider container for better content layout */
+    margin: 80px auto 40px;
+    padding: 30px 40px;
+    background: rgba(30, 30, 40, 0.85);
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    animation: fadeIn 0.8s ease;
 }
 
-/* Mod title styles */
-#mod-container h1 {
-    font-size: 2.5rem; /* Font size for the title */
-    margin-bottom: 20px; /* Space below the title */
-    text-align: center; /* Center the title */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for better visibility */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* Mod image styles */
+/* Title styling */
+.mod-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+}
+
+/* Add decorative underline to title */
+.mod-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, rgba(142, 45, 226, 0.4), rgba(142, 45, 226, 1), rgba(142, 45, 226, 0.4));
+    border-radius: 2px;
+}
+
+/* Image container and styling */
+.mod-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 25px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
 .mod-image {
-    width: 100%; /* Full width */
-    max-width: 600px; /* Maximum width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px auto; /* Center the image */
-    display: block; /* Block display for centering */
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-/* Author and description styles */
-.mod-content p {
-    font-size: 1.2rem; /* Font size for paragraphs */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 20px; /* Space below paragraphs */
+/* Play button overlay for video mods */
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.mod-download {
-    text-align: center; /* Center the button */
-    margin-top: 20px; /* Optional: Add some space above the button */
+.play-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Download button styles */
-.download-button {
-    display: inline-block; /* Inline block for button styling */
-    padding: 15px 30px; /* Padding for button */
-    font-size: 1.5rem; /* Font size for button */
-    color: #ffffff; /* Text color */
-    background: linear-gradient(135deg, #6a0dad, #4b0049); /* Gradient background */
-    border: none; /* No border */
-    border-radius: 10px; /* Rounded corners */
-    text-decoration: none; /* No underline */
-    transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
-    text-align: center; /* Center text */
-    margin: 10px 10px;
+.play-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #8e2de2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Hover effects for download button */
-.download-button:hover {
-    background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Darker gradient on hover */
-    transform: translateY(-3px); /* Lift effect on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+.play-overlay:hover .play-icon {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #mod-container {
-        padding: 20px; /* Reduce padding on smaller screens */
-    }
-
-    #mod-container h1 {
-        font-size: 2rem; /* Smaller title font size */
-    }
-
-    .mod-image {
-        max-width: 100%; /* Full width on smaller screens */
-    }
-
-    .download-button {
-        font-size: 1.2rem; /* Smaller button font size */
-    }
-}
-
-/* For the hidden class on the video iframe wrapper */
 .hidden {
     display: none !important;
-  }
-  
-/* The wrapper for the video iframe */
+}
+
+/* Video iframe styling */
 .video-iframe-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio if you want it */
+    padding-bottom: 56.25%; /* 16:9 ratio */
     height: 0;
-    margin-top: 20px;
+    overflow: hidden;
+    max-width: 700px;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
-  
+
 .video-iframe-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 12px;
+}
+
+/* Mod info section */
+.mod-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #e0e0e0;
+}
+
+/* Styling for the info items (author, category, etc.) */
+.mod-content p strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Description styling */
+.mod-content p:nth-of-type(4) strong {
+    font-size: 1.3rem;
+    color: #ffffff;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(142, 45, 226, 0.5);
+}
+
+.mod-content p:nth-of-type(5) {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Download section */
+.mod-download {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.download-button {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6a0dad, #4b0049);
     border: none;
     border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-  
-/* We'll absolutely position the .play-overlay on top of the .mod-image */
-.mod-image-wrapper {
-    position: relative;
-    display: block; /* or inline-block, but block is simpler for auto margin */
-    margin: 0 auto; /* This centers the entire wrapper horizontally */
-    max-width: 600px; /* match the .mod-image max-width to keep them consistent */
-  }
-  
-  
-  /* The overlay is a full-size layer on top of the thumbnail. */
-  .play-overlay {
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-  }
-  
-  /* The icon itself can be big text or an actual image */
-  .play-icon {
-    font-size: 4rem; /* Big play symbol */
-    color: #fff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  }
-  
-  /* On hover, maybe darken the overlay or scale the icon */
-  .play-overlay:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* or you can scale the .play-icon here if you like */
-  }
-  
+
+.download-button:hover {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mod-download p {
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Error message styling */
+.error-message {
+    text-align: center;
+    padding: 30px;
+}
+
+.error-message h2 {
+    color: #ff6666;
+    margin-bottom: 15px;
+}
+
+.error-message a {
+    color: #8e2de2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.error-message a:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #mod-container {
+        margin: 60px 20px 30px;
+        padding: 25px 20px;
+    }
+
+    .mod-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .download-button {
+        width: 100%;
+    }
+}
+
+/* For very large screens */
+@media (min-width: 1400px) {
+    #mod-container {
+        max-width: 1000px;
+    }
+}
