@@ -14,14 +14,25 @@ function getQueryParam(param) {
   return urlParams.get(param);
 }
 
+/**
+ * Helper to check if a string is empty or null.
+ */
+function isEmpty(str) {
+  return !str || str.trim() === '';
+}
+
 (async function populateModPage() {
   try {
     // 1) Grab cat & route from the URL
     const categoryName = getQueryParam('cat');  // e.g. "videos" or "standard"
     const routeName = getQueryParam('route');   // e.g. "tripletrouble"
+    // Also check for any author or search filtering (might be present if coming from search)
+    const authorFilter = getQueryParam('author');
+    const searchQuery = getQueryParam('search');
 
     if (!categoryName || !routeName) {
       console.error("Missing 'cat' or 'route' query param. E.g. ?cat=videos&route=youmattertoo");
+      document.querySelector('.mod-content').innerHTML = '<div class="error-message"><h2>Error: Mod Not Found</h2><p>Required information is missing from the URL.</p><p><a href="/pages/mods.html">Return to Mods Page</a></p></div>';
       return;
     }
 
@@ -35,6 +46,7 @@ function getQueryParam(param) {
     // 3) Check if category is valid
     if (!modsData.hasOwnProperty(categoryName)) {
       console.error(`Category '${categoryName}' not found in mods.json.`);
+      document.querySelector('.mod-content').innerHTML = '<div class="error-message"><h2>Error: Category Not Found</h2><p>The requested mod category does not exist.</p><p><a href="/pages/mods.html">Return to Mods Page</a></p></div>';
       return;
     }
     const categoryMods = modsData[categoryName];
@@ -43,6 +55,7 @@ function getQueryParam(param) {
     const thisMod = categoryMods.find(mod => mod.route === routeName);
     if (!thisMod) {
       console.error(`No mod found in category '${categoryName}' with route='${routeName}'.`);
+      document.querySelector('.mod-content').innerHTML = '<div class="error-message"><h2>Error: Mod Not Found</h2><p>The requested mod could not be found.</p><p><a href="/pages/mods.html">Return to Mods Page</a></p></div>';
       return;
     }
 
@@ -76,8 +89,26 @@ function getQueryParam(param) {
     if (paragraphEls[1]) {
       paragraphEls[1].innerHTML = `<strong>Submitted By:</strong> ${thisMod.submittedBy || 'N/A'}`;
     }
+    
+    // Add category display
+    if (paragraphEls[2]) {
+      // Move "Description:" to the next paragraph
+      const categoryDisplayName = {
+        'standard': 'PC Mod',
+        'android': 'Android Mod',
+        'demos': 'Demo',
+        'videos': 'Video',
+        'archive': 'Archived Mod'
+      };
+      const displayCategory = categoryDisplayName[categoryName] || categoryName;
+      paragraphEls[2].innerHTML = `<strong>Category:</strong> ${displayCategory}`;
+    }
+    
     if (paragraphEls[3]) {
-      paragraphEls[3].textContent = thisMod.description || '';
+      paragraphEls[3].innerHTML = `<strong>Description:</strong>`;
+    }
+    if (paragraphEls[4]) {
+      paragraphEls[4].textContent = thisMod.description || '';
     }
 
     // 6) Reference to the download container
@@ -144,5 +175,6 @@ function getQueryParam(param) {
     }
   } catch (error) {
     console.error('Error in populateModPage:', error);
+    document.querySelector('.mod-content').innerHTML = '<div class="error-message"><h2>Error: Unexpected Error</h2><p>An unexpected error occurred while loading the mod.</p><p><a href="/pages/mods.html">Return to Mods Page</a></p></div>';
   }
 })();

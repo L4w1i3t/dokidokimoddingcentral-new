@@ -1,0 +1,42 @@
+<IfModule mod_headers.c>
+    # Prevent Clickjacking
+    Header always set X-Frame-Options "DENY"
+
+    # Prevent MIME sniffing
+    Header set X-Content-Type-Options "nosniff"
+
+    # Enable XSS protection in older browsers
+    Header set X-XSS-Protection "1; mode=block"
+
+    # Enforce a Content Security Policy (CSP)
+	Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self';"
+	
+
+
+
+    # Control what gets sent in the Referer header
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Restrict access to browser features
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), fullscreen=(), payment=()"
+	
+	# Enforce HTTPS for all connections, including subdomains, and preload into browser HSTS lists
+	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Block requests containing suspicious characters (like <, >, or script)
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (<|>|%3C|%3E|script|%3Cscript%3E) [NC]
+RewriteRule ^(.*)$ /$1? [R=301,L]
+
+
+# Disable ETags to prevent information leakage (inodes, file modification times, etc.)
+# Helps prevent fingerprinting, cache poisoning, and minor privacy risks
+FileETag None
+Header unset ETag
+

@@ -6,471 +6,627 @@
 /* Prevent scrolling on the homepage */
 body, html {
     height: 100%;
-    margin: 0; /* Remove any default margins that might cause scrollbars */
+    margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow: hidden;
 }
 
-/* Adjust layout to position content closer to the top */
+/* Base styles for the home page */
+body {
+    background: url('../../images/bg/class.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+/* Main container */
 #main-container {
-    position: relative; /* To position the tooltip absolutely within it */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align items closer to the top */
-    text-align: center;
-    padding: 0px; /* Remove unnecessary padding */
-    gap: 20px; /* Space between elements */
-    width: 100%; /* Ensure it does not exceed viewport */
-    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: auto; /* Allow natural aspect ratio */
 }
 
-/* Style the site logo and wrapped text */
+/* Column container */
+.column-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+/* Individual columns */
+.column {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+#column1 {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end; /* Push content to bottom */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    padding-bottom: 0; /* Remove bottom padding to allow sprite to touch bottom */
+}
+
+#column2 {
+    flex: 1.5;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(84, 22, 144, 0.6));
+    position: relative;
+    z-index: 1;
+}
+
+#column3 {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+}
+
+/* Divider between columns */
+.divider {
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #ff69b4, transparent);
+}
+
+/* Logo container styling */
 .logo-container {
     position: relative;
     width: 100%;
-    max-width: 256px;
-    height: auto;
-    z-index: 2;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    max-width: 220px; /* Increased from 180px */
+    height: 220px; /* Increased from 180px */
+    margin: 0 auto 2rem;
+    z-index: 50;
 }
 
-
-/* Style the site logo */
 #site-logo {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0; /* Remove default margins */
-    object-fit: cover;
-    animation: rotateLogo 30s linear infinite;
+    height: 100%;
+    object-fit: contain;
+    animation: pulse 4s infinite alternate, rotate 30s linear infinite;
 }
 
 .logo-text {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-50%, -50%) rotate(0deg); /* Center the SVG */
     width: 100%;
     height: 100%;
-    transform: rotate(0deg); /* Rotate to start text at the top */
-    pointer-events: none; /* Allow interactions to pass through */
-    animation: rotateText 30s linear infinite;
+    animation: rotate-reverse 30s linear infinite;
+    transform-origin: center;
 }
 
-.logo-text text {
-    text-anchor: middle;
-    fill: white;
-}
-
-/* Animation for rotating text around the logo */
-@keyframes rotateText {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Animation for rotating the logo */
-@keyframes rotateLogo {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-360deg);
-    }
-}
-
-/* Style the main menu */
+/* Navigation menu */
 #main-menu {
-    position: relative; /* Ensure menu has a positioning context */
-    z-index: 2; /* Higher z-index to stay above bubbles */
-    margin: 1% 0 30% 0; /* Positioning higher up */
     width: 100%;
-    max-width: 100%;
+    max-width: 320px; /* Increased from 280px */
+    z-index: 49;
 }
 
 #main-menu ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem; /* Increased from 0.8rem */
 }
 
 #main-menu ul li {
-    font-family: 'HotMustardBTNRegular', sans-serif;
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
 }
 
-#main-menu ul li a {
-    text-decoration: none;
+#main-menu ul li:nth-child(1) { animation-delay: 0.1s; }
+#main-menu ul li:nth-child(2) { animation-delay: 0.2s; }
+#main-menu ul li:nth-child(3) { animation-delay: 0.3s; }
+#main-menu ul li:nth-child(4) { animation-delay: 0.4s; }
+#main-menu ul li:nth-child(5) { animation-delay: 0.5s; }
+#main-menu ul li:nth-child(6) { animation-delay: 0.6s; }
+
+.nav-button {
+    display: block;
+    padding: 0.9rem 1.8rem; /* Increased from 0.8rem 1.5rem */
+    background-color: rgba(255, 105, 180, 0.3);
     color: #fff;
-    transition: color 0.3s ease;
-}
-
-#main-menu ul li a:hover {
-    color: #ff69b4; /* Highlight color on hover */
-}
-
-/* Column Container Styles */
-.column-container {
-    display: flex;
-    justify-content: space-between; /* Space columns evenly */
-    align-items: flex-start; /* Align items to the start of the container */
-    width: 100%; /* Changed from 100vw to 100% */
-    height: 100%; /* Changed from 100vh to 100% */
-    margin-top: 0px; /* Space above the columns */
-    overflow: hidden; /* Ensure content doesn't overflow */
-}
-
-#column1 {
-    position: relative; /* Added to position tooltip absolutely within it */
-    flex: 1; /* Each column takes equal space */
-    padding: 20px; /* Inner padding */
-    background: url('../../images/bg/class.webp') no-repeat center center; /* Background image */
-    background-size: cover; /* Cover the entire column */
-    display: flex; /* Make it a flex container */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: flex-end; /* Align children to the bottom */
-    height: 100vh; /* Ensure it takes full height */
-    max-width: 100%;
-    overflow: hidden; /* Enable cropping */
-    max-width: 100%;
-}
-
-/* Original idea for column 2. Commented out right now because of testing an animated texture for column 2. 
-Do not uncomment this or delete this yet. */
-/* #column2 {
-    position: relative;
-    flex: 1;
-    padding: 20px; 
-    background: #4b0049;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #ff69b4;
+    border-radius: 30px;
     text-align: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    position: relative;
     overflow: hidden;
-    z-index: 1; 
-}
-*/
-
-:root {
-    --tron-blue: #00667d;
-    --tron-purple: #4c187a;
-    --tron-pink: #712214;
-    --tron-black: #000000;
+    font-size: 1.1rem; /* Added font size */
 }
 
-#column2 {
-    position: relative; /* Ensure positioning context for pseudo-elements */
-    flex: 1; /* Each column takes equal space */
-    padding: 2%; /* Inner padding */
-    background: linear-gradient(270deg, var(--tron-blue), var(--tron-purple), var(--tron-pink), var(--tron-blue));
-    background-size: 800% 800%;
-    animation: tronGradient 15s ease infinite;
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    text-align: center; /* Center text */
-    overflow: hidden; /* Ensure bubbles don't cause overflow */
-    z-index: 1; /* Ensure column content is above bubbles */
-    max-width: 100%;
-}
-
-#column2::before {
+.nav-button::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.0) 70%);
-    pointer-events: none;
-    z-index: 0;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
 }
 
-/* Keyframes for the animated gradient */
-@keyframes tronGradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.nav-button:hover {
+    background-color: rgba(255, 105, 180, 0.7);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
 }
 
-#column3 {
-    flex: 1; /* Each column takes equal space */
-    padding: 20px; /* Inner padding */
-    background: black;
-    position: relative;
-    z-index: auto;
-    height: 100vh; /* Ensure it takes full height */
-    max-width: 100%; /* Prevent overflow */
-    overflow: hidden; /* Ensure content is contained */
+.nav-button:hover::before {
+    left: 100%;
 }
 
-.divider {
-    width: 2px; /* Width of the divider line */
-    background-color: white; /* Color of the divider line */
-    height: 100%; /* Full height */
-    z-index: 5;
-}
-
+/* Matsuda sprite */
 .matsu-sprite {
-    transform: scaleX(-1) translateY(25%) translateX(10%); /* Flip horizontally and move down */
-    width: 140%; /* Enlarge the sprite */
-    height: auto; /* Maintain aspect ratio */
+    width: auto;
+    height: 100%;
+    max-height: 75vh; /* Larger sprite size */
+    margin-top: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.5));
+    transition: transform 0.3s ease;
+    transform-origin: bottom center;
 }
 
-.matsu-sprite.hidden {
-    opacity: 0;
+.matsu-sprite.flipped {
+    transform: scaleX(-1); /* Flip horizontally */
 }
 
-/* Tooltip Styles */
+.matsu-sprite:hover {
+    transform: scaleX(-1) scale(1.03); /* Keep flipped and slightly scale up on hover */
+}
+
+/* Tooltip for menu interactions */
 .tooltip {
     position: absolute;
-    top: 25%; /* Adjusted to position over Matsu's head */
-    left: 50%; /* Center horizontally within #column1 */
-    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
-    padding: 15px 20px;
-    border-radius: 15px;
-    max-width: 400px;
-    font-size: 32px;
-    display: none; /* Hidden by default */
-    z-index: 3; /* Ensure tooltip is above bubbles and menu */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    white-space: pre-wrap;
-    font-family: 'Courier New', Courier, monospace;
-    opacity: 0; /* Start fully transparent */
-    max-height: 80vh; /* Prevent overflow */
-    overflow: hidden; /* Prevent scrollbar */
+    padding: 1.2rem;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    max-width: 300px;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    text-align: center;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%) translateY(20px);
+    border: 2px solid #fff;
+    box-shadow: 
+        0 0 0 2px #ff69b4,
+        0 0 15px rgba(255, 105, 180, 0.6);
+    font-family: 'Aller', sans-serif;
+    line-height: 1.4;
+    /* Message box style additions */
+    text-shadow: 0 0 2px #000;
+    backdrop-filter: blur(2px);
 }
 
-/* Tooltip visible state */
-.tooltip.show {
-    opacity: 1; /* Fully opaque when shown */
-    display: block; /* Ensure it is displayed */
+.tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    z-index: 1;
 }
 
-.tooltip.hide {
-    opacity: 0; /* Fully transparent when hidden */
-    display: none; /* Ensure it is hidden */
-}
-
-/* Styling the tooltip's cloud-like arrow */
 .tooltip::after {
     content: '';
     position: absolute;
-    bottom: -10px; /* Position below the tooltip */
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    border-width: 10px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid rgba(0, 0, 0, 0.85);
+    z-index: 2;
 }
 
-/* Cursor effect for typing */
-.tooltip::before {
-    content: '|';
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-    animation: blink 1s infinite;
-    color: #fff;
-    font-size: 32px;
+.tooltip.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
-@keyframes blink {
-    0%, 50% {
-        opacity: 1;
-    }
-    51%, 100% {
-        opacity: 0;
-    }
-}
-
-/* Bubble Container Styles */
+/* Bubble animations in column 2 */
 .bubble-container {
     position: absolute;
-    bottom: -100px; /* Start below the viewport */
     left: 0;
+    top: 0;
     width: 100%;
-    height: 120%; /* Extend beyond the top to accommodate rising bubbles */
-    overflow: hidden;
-    pointer-events: none; /* Allow clicks to pass through */
-    z-index: 0; /* Ensure bubbles are behind other content */
+    height: 100%;
+    pointer-events: none;
+    z-index: 0; /* Behind content (z-index: 1) but in front of background */
+    overflow: visible;
 }
 
-/* Individual Bubble Styles */
 .bubble {
     position: absolute;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+    background-color: rgba(255, 105, 180, 0.45);
+    border: 2px solid rgba(255, 105, 180, 0.7);
     border-radius: 50%;
-    opacity: 0.5; /* Further reduced opacity */
-    animation: rise linear forwards; /* Changed to 'linear' for consistent speed and 'forwards' to retain final state */
+    opacity: 1;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8), inset 0 0 8px rgba(255, 255, 255, 0.5);
+    /* Remove fixed animation properties - will be set via JavaScript */
 }
 
-/* Keyframes for Bubble Rising Animation */
-@keyframes rise {
-    0% {
-        transform: translateY(0) scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(-120vh) scale(1.5); /* Rise beyond the viewport */
-        opacity: 0;
-    }
-}
-
-/* Mobile Screens */
-@media (max-width: 768px) {
-    /* Hide the left and right columns */
-    #column1,
-    #column3,
-    .matsu-sprite {
-        display: none;
-    }
-
-    /* Ensure the middle column takes full width */
-    #column2 {
-        flex: 1; /* Allow the middle column to take full width */
-        padding: 20px; /* Maintain padding */
-        max-width: 100%;
-    }
-
-    /* Adjust the main container */
-    #main-container {
-        flex-direction: column; /* Stack columns vertically */
-        height: auto; /* Allow height to adjust */
-        width: 100%;
-    }
-
-    #column2 {
-        padding: 5%; /* Adjust padding for smaller screens */
-    }
-
-    .logo-container {
-        max-width: 90%; /* Allow more space on smaller screens */
-    }
-
-    /* Optionally hide dividers */
-    .divider {
-        display: none;
-    }
-
-    /* Hide bubble container on smaller screens if desired */
-    /* Uncomment the following to hide bubbles on mobile devices */
-    /*
-    .bubble-container {
-        display: none;
-    }
-    */
-}
-
-/* For Screens Below 2k res */
-@media (max-width: 1599px) {
-    .logo-container {
-        max-width: 250px;
-    }
-
-    #site-logo {
-        width: clamp(120px, 10vw, 250px);
-    }
-
-    #main-menu ul li {
-        font-size: clamp(20px, 2vw, 30px);
-    }
-
-    .tooltip {
-        font-size: clamp(18px, 1.5vw, 28px);
-        max-width: clamp(180px, 40vw, 350px);
-    }
-
-    .divider {
-        width: 1.5px;
-    }
-
-    #column1, #column2, #column3 {
-        padding: 15px;
-    }
-
-    .tooltip {
-        top: 20%;
-    }
-}
-
-/* Fallback to hide any accidental overflow */
-body {
-    overflow-x: hidden;
-}
-
+/* Showcase container in column 3 */
 .showcase-container {
-    margin: 20px 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header h2 {
+    color: #ff69b4;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.7);
+}
+
+.section-line {
+    height: 2px;
+    width: 80%;
+    background: linear-gradient(to right, transparent, #ff69b4, transparent);
+    margin-bottom: 1rem;
 }
 
 .showcase-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 0.8rem;
+    margin-bottom: 0.8rem; /* Slightly reduced to make space for reroll button */
+    max-height: 72%; /* Slightly reduced to make space for reroll button */
+    padding-right: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #ff69b4 rgba(0, 0, 0, 0.2);
+    visibility: hidden; /* Hide initially to prevent flickering */
+    overflow: hidden; /* Hide scrollbar initially */
 }
 
-.mod-card {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    background: linear-gradient(135deg, #6a0dad, #4b0049);
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-    overflow: hidden; /* Prevent overflow */
+.showcase-grid.loaded {
+    visibility: visible; /* Show when loaded */
+    overflow-y: auto; /* Only enable scroll after loaded */
+    overflow: hidden;
 }
 
-.mod-card h3, .mod-card p {
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Add ellipsis for truncated text */
-    color: white;
+/* Reroll button for featured mods */
+.reroll-button {
+    align-self: center;
+    padding: 0.5rem 1.2rem;
+    background-color: rgba(255, 105, 180, 0.3);
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #ff69b4;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
 }
 
-.mod-card h3 {
-    font-size: 1.2rem; /* Adjust font size for title */
-    margin: 0; /* Remove default margin */
+.reroll-button:hover {
+    background-color: rgba(255, 105, 180, 0.7);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(255, 105, 180, 0.4);
 }
 
-.mod-card p {
-    font-size: 1rem; /* Adjust font size for author */
-    margin: 0; /* Remove default margin */
+.reroll-button svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
 }
 
-.mod-card:hover {
-    transform: scale(1.05);
+.reroll-button:hover svg {
+    transform: rotate(180deg);
 }
 
-.mod-image {
+.reroll-button.spinning svg {
+    animation: spin 0.8s linear;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.showcase-grid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.showcase-grid::-webkit-scrollbar-thumb {
+    background-color: #ff69b4;
+    border-radius: 4px;
+}
+
+.showcase-grid::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.showcase-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff69b4;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.6s forwards;
+    aspect-ratio: 16 / 9; /* 16:9 aspect ratio for mod thumbnails */
+    cursor: pointer;
+    display: block; /* Ensure this is a block element */
+}
+
+.showcase-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    background-color: rgba(255, 105, 180, 0.2);
+    border: 1px solid #fff;
+}
+
+.showcase-img {
     width: 100%;
-    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Remove any potential inline spacing */
+}
+
+/* Community links section */
+.community-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.social-link.reddit {
+    background-color: rgba(255, 69, 0, 0.3);
+    border: 2px solid #ff4500;
+}
+
+.social-link.reddit:hover {
+    background-color: rgba(255, 69, 0, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+}
+
+.social-link.discord {
+    background-color: rgba(114, 137, 218, 0.3);
+    border: 2px solid #7289da;
+}
+
+.social-link.discord:hover {
+    background-color: rgba(114, 137, 218, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(114, 137, 218, 0.4);
+}
+
+/* Footer text */
+.footer-text {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+.footer-text p {
+    margin: 0.2rem 0;
+}
+
+/* Visual effects */
+.glitch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.05) 3px,
+        rgba(0, 0, 0, 0.05) 3px
+    );
+    pointer-events: none;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.pixel-noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/gui/noise.png');
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 3;
+    animation: noise 0.5s steps(5) infinite;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 105, 180, 0.5));
+    }
+    100% {
+        filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.8));
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { 
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% { 
+        transform: translateY(-20vh);
+        opacity: 0;
+    }
+}
+
+@keyframes noise {
+    0% { transform: translate(0,0); }
+    20% { transform: translate(-5px,5px); }
+    40% { transform: translate(5px,-5px); }
+    60% { transform: translate(-5px,-5px); }
+    80% { transform: translate(5px,5px); }
+    100% { transform: translate(0,0); }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .showcase-grid {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+        grid-template-rows: repeat(3, 1fr); /* Keep 3 rows */
+    }
+}
+
+/* Media query for different aspect ratios */
+@media (min-aspect-ratio: 16/9) {
+    .column-container {
+        max-height: 100vh;
+    }
+    
+    .matsu-sprite {
+        max-height: 70vh; /* Adjust for wider screens */
+    }
+}
+
+@media (max-aspect-ratio: 4/3) {
+    .matsu-sprite {
+        max-height: 60vh; /* Smaller for narrower screens */
+    }
+}
+
+/* Mobile layout - only show column 2 */
+@media (max-width: 768px) {
+    #column1, #column3, .divider {
+        display: none; /* Hide side columns and dividers */
+    }
+
+    #column2 {
+        width: 100%;
+        flex: 1;
+        height: 100vh;
+        padding: 1rem;
+    }
+    
+    .logo-container {
+        margin: 0 auto 1rem;
+    }
+}
+
+@media (min-height: 900px) {
+    /* For 1080p screens and larger */
+    .logo-container {
+        max-width: 250px;
+        height: 250px;
+    }
+    
+    #main-menu {
+        max-width: 360px;
+    }
+    
+    .nav-button {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .tooltip {
+        padding: 1.4rem;
+        font-size: 1.1rem;
+        max-width: 320px;
+    }
+}
+
+@media (max-height: 768px) {
+    /* For smaller screens */
+    .logo-container {
+        max-width: 180px;
+        height: 180px;
+        margin-bottom: 1.5rem;
+    }
+    
+    #main-menu ul {
+        gap: 0.7rem;
+    }
+    
+    .nav-button {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.95rem;
+    }
+    
+    .tooltip {
+        padding: 1rem;
+        font-size: 0.9rem;
+        max-width: 240px;
+    }
 }
