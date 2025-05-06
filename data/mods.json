@@ -2256,7 +2256,53 @@
           "url": "https://www.mediafire.com/file_premium/rrzbekm01jqvl5p/DDFAOCAC-1.0-pc.rar/file"
         }
       ]
+    },
+    {
+      "id": 1126,
+      "title": "Intercepting",
+      "author": "inessa_k",
+      "imageUrl": "/assets/mod_prevs/intercepting.png",
+      "route": "intercepting",
+      "submittedBy": "Tune Eternal",
+      "description": "Festival last year was a failure. A chain reaction of events caused the club to disband and MC to move away. This year, a new student who moved from unknown country under unknown circumstances, tries to make things right. For her, and for the club.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/llihri9c3l2gcmn/DokiDokiIntercepting-beta-Renpy7Mod.zip/file"
+        }
+      ]
+    }, 
+    {
+      "id": 1127,
+      "title": "Controversity Time!",
+      "author": "bimagamongMOP",
+      "imageUrl": "/assets/mod_prevs/controversity_time.jpg",
+      "route": "controversitytime!",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a satire DDLC mod, like 'DDLC Mod Slander' in a way. Please do not take everything you read seriously the instant you start playing.\n\n(Is a very surface-level critique of a community that a new person made a mod about)",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/9t60ao0l0djwh54/DCT-2.0.0_Doki_Doki_Controversity_Time%2521_-_ver_2.0.0_-_PC.zip/file"
+        }
+      ]
+    }, 
+    {
+      "id": 1128,
+      "title": "DX Battle Plus Ultimate",
+      "author": "Shipwrecker",
+      "imageUrl": "/assets/mod_prevs/battle_plus_unlimited.jpg",
+      "route": "dxbattleplusultimate",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a mod where (You guessed it) Sonic comes in the story. It's a way past cool mod where the ultimate crossover happens! Enjoy!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/26spq98ulx7h0aq/DDLC_DX_Battle_Plus_Ultimate_-_Ver_1.0_-_PC.zip/file"
+        }
+      ]
     }
+
 	
 	
 	
@@ -2622,6 +2668,21 @@
           "url": "https://www.mediafire.com/file_premium/icqv28gf35yysjz/The_Renewal_Demo.apk/file"
         }
       ]
+    }, 
+    {
+      "id": 10024,
+      "title": "XD",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/xd.jpg",
+      "route": "xd",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a rom-com mod with a lot of fluff and risqué humor, inspired by the game dev studio SMEE. It has a lot of references to other VNs and some of my favorite media. It's not gonna be for everyone, but I hope it can get a chuckle out of someone at least.",
+      "links": [
+        {
+          "version": "Android",
+          "url": "https://www.mediafire.com/file_premium/8qe3jzuihpqu2gz/Doki_Doki_XD_Demo.apk/file"
+        }
+      ]
     }
   ],
   "demos": [
@@ -2851,7 +2912,7 @@
       ]
     }, 
 	 {
-      "id": 1125,
+      "id": 20014,
       "title": "The Renewal Demo",
       "author": "iiTzWolfyy",
       "imageUrl": "/assets/mod_prevs/therenewal.jpg",
@@ -2860,8 +2921,23 @@
       "description": "In the beginning of the umpteenth loop of the game where all the dramatical events have always taken place, something changes. Out of nowhere, MC becomes self aware like Monika has always been. He remembers everything that happened in the past and will try his best to save everyone from their cruel fates (yes, even Monika). The thing is, something will be in the way, and he will quickly notice it... Will you be able to save the club and start a brand new life? Can you trust Monika in this altered reality? Will it finally be the renewal that we've all been waiting for?",
       "links": [
         {
-          "version": "standard",
+          "version": "Demo",
           "url": "https://www.mediafire.com/file_premium/ey4gyfx233xhj4u/The_Renewal_Demo-1.1-_Mod.zip/file"
+        }
+      ]
+    }, 
+    {
+      "id": 20015,
+      "title": "XD",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/xd.jpg",
+      "route": "xd",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a rom-com mod with a lot of fluff and risqué humor, inspired by the game dev studio SMEE. It has a lot of references to other VNs and some of my favorite media. It's not gonna be for everyone, but I hope it can get a chuckle out of someone at least.",
+      "links": [
+        {
+          "version": "Demo",
+          "url": "https://www.mediafire.com/file_premium/gmvw0t4ux292m0j/scripts.rpa/file"
         }
       ]
     }
