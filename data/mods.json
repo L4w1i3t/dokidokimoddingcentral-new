@@ -2301,7 +2301,52 @@
           "url": "https://www.mediafire.com/file_premium/26spq98ulx7h0aq/DDLC_DX_Battle_Plus_Ultimate_-_Ver_1.0_-_PC.zip/file"
         }
       ]
-    }
+    }, 
+    {
+    "id": 1129,
+    "title": "Welcome to the Anime Club",
+    "author": "Headlocker",
+    "imageUrl": "/assets/mod_prevs/animeclub.jpg",
+    "route": "welcometotheanimeclub",
+    "submittedBy": "Tune Eternal",
+    "description": "MC and Monika: Once best friends, now bitter enemies with the former trying to close the Literature Club for good. One game. One gamble might decide the future for both clubs. Will this gamble bring him good fortune or will it contribute to his own demise and the LC gets to live for another day?",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/cd5l7hkbxh8g09l/Welcome_to_the_Anime_Club_-_ver_1.0_-_PC.zip/file"
+      }
+    ]
+  }, 
+  {
+    "id": 1130,
+    "title": "Emerald Affection (Act One)",
+    "author": "KryoGenic03",
+    "imageUrl": "/assets/mod_prevs/ea.png",
+    "route": "emeraldaffectionactone",
+    "submittedBy": "Tune Eternal",
+    "description": "After one month in the club and graduation only a few months away, MC becomes conflicted about how he feels about the club president, Monika. With a complicated past, and a drive to make Monika happy, will he work up the guts to be with her? Or will life’s problems get in the way? Find out in this Act 1 release of Doki Doki: Emerald Affection!",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/8lz3h5yccf7kdmp/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.12.zip/file"
+      }
+    ]
+  }, 
+  {
+    "id": 1131,
+    "title": "What If+",
+    "author": "Riverr, Various Artists",
+    "imageUrl": "/assets/mod_prevs/wi+.jpg",
+    "route": "whatif+",
+    "submittedBy": "Tune Eternal",
+    "description": "Life only goes on one set path and yet, the mind can’t help but wonder what could’ve happened. What if things happened differently? What if I did this instead of that? What if I were to disguise fast food as my own cooking? Let this mod take you on a journey which stares at the fate of DDLC and asks… What if what if? Who knows? We might escape our wretched fates finally.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/esohp9onziagv8r/WhatIfPlus.-1.0-Renpy7Mod.zip/file"
+      }
+    ]
+  },
 
 	
 	
@@ -2683,7 +2728,54 @@
           "url": "https://www.mediafire.com/file_premium/8qe3jzuihpqu2gz/Doki_Doki_XD_Demo.apk/file"
         }
       ]
-    }
+    }, 
+    {
+    "id": 10025,
+    "title": "Welcome to the Anime Club",
+    "author": "Headlocker",
+    "imageUrl": "/assets/mod_prevs/animeclub.jpg",
+    "route": "welcometotheanimeclub",
+    "submittedBy": "Tune Eternal",
+    "description": "MC and Monika: Once best friends, now bitter enemies with the former trying to close the Literature Club for good. One game. One gamble might decide the future for both clubs. Will this gamble bring him good fortune or will it contribute to his own demise and the LC gets to live for another day?",
+    "links": [
+      {
+        "version": "Android",
+        "url": "https://www.mediafire.com/file_premium/hrvjzf1x1wzz8fa/Welcome_to_the_Anime_Club_-_ver_1.0_-_Android.apk/file"
+      }
+    ]
+    }, 
+     {
+    "id": 20016,
+    "title": "Foreign Relations (Extended Demo)",
+    "author": "David Locklin, Team Relations",
+    "imageUrl": "/assets/mod_prevs/fr.jpg",
+    "route": "foreignrelationsextendeddemo",
+    "submittedBy": "Tune Eternal",
+    "description": "This mod puts you in the shoes of a transfer student coming to Japan. Here, you will join the Literature Club and meet with it's lovely members. You have one year before you leave Japan and return home, but could a special someone you meet make you stay there longer? Or perhaps, could you take that special someone home with you?",
+    "links": [
+      {
+        "version": "Android",
+        "url": "https://www.mediafire.com/file_premium/ew3qih938mvd998/DDLC_Foreign_Relations_Demo_1.4.apk/file"
+      }
+    ]
+  }, 
+    {
+    "id": 20017,
+    "title": "Emerald Affection (Act One)",
+    "author": "KryoGenic03",
+    "imageUrl": "/assets/mod_prevs/ea.png",
+    "route": "emeraldaffectionactone",
+    "submittedBy": "Tune Eternal",
+    "description": "After one month in the club and graduation only a few months away, MC becomes conflicted about how he feels about the club president, Monika. With a complicated past, and a drive to make Monika happy, will he work up the guts to be with her? Or will life’s problems get in the way? Find out in this Act 1 release of Doki Doki: Emerald Affection!",
+    "links": [
+      {
+        "version": "Android",
+        "url": "https://www.mediafire.com/file_premium/502qvgqqsv89ru0/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.11_Android_Port.apk/file"
+      }
+    ]
+  }
+      
+    
   ],
   "demos": [
     {
@@ -2940,7 +3032,22 @@
           "url": "https://www.mediafire.com/file_premium/gmvw0t4ux292m0j/scripts.rpa/file"
         }
       ]
-    }
+    }, 
+    {
+    "id": 20016,
+    "title": "Foreign Relations (Extended Demo)",
+    "author": "David Locklin, Team Relations",
+    "imageUrl": "/assets/mod_prevs/fr.jpg",
+    "route": "foreignrelationsextendeddemo",
+    "submittedBy": "Tune Eternal",
+    "description": "This mod puts you in the shoes of a transfer student coming to Japan. Here, you will join the Literature Club and meet with it's lovely members. You have one year before you leave Japan and return home, but could a special someone you meet make you stay there longer? Or perhaps, could you take that special someone home with you?",
+    "links": [
+      {
+        "version": "Demo",
+        "url": "https://www.mediafire.com/file_premium/cyp4u93vvg47ep7/ForeignRelations1.4-Renpy7Mod.zip/file"
+      }
+    ]
+  }
   ],
   "videos": [
     {
