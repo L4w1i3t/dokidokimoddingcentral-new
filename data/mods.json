@@ -2337,7 +2337,7 @@
     "title": "What If+",
     "author": "Riverr, Various Artists",
     "imageUrl": "/assets/mod_prevs/wi+.jpg",
-    "route": "whatif+",
+    "route": "whatifplus",
     "submittedBy": "Tune Eternal",
     "description": "Life only goes on one set path and yet, the mind can’t help but wonder what could’ve happened. What if things happened differently? What if I did this instead of that? What if I were to disguise fast food as my own cooking? Let this mod take you on a journey which stares at the fate of DDLC and asks… What if what if? Who knows? We might escape our wretched fates finally.",
     "links": [
@@ -2346,12 +2346,22 @@
         "url": "https://www.mediafire.com/file_premium/esohp9onziagv8r/WhatIfPlus.-1.0-Renpy7Mod.zip/file"
       }
     ]
+  }, 
+   {
+    "id": 1132,
+    "title": "Another Lover",
+    "author": "Dipshit Studios",
+    "imageUrl": "/assets/mod_prevs/anotherlover.webp",
+    "route": "anotherlover",
+    "submittedBy": "Tune Eternal",
+    "description": "This mod is a shitpost mod. It literally is. 5 min of gameplay.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/1bu38z3ltqml23h/Another_Lover_-_Ver_1.0_-_PC.rar/file"
+      }
+    ]
   },
-
-	
-	
-	
-	
   ],
   "android": [
     {
