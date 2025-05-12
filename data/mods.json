@@ -2362,6 +2362,96 @@
       }
     ]
   },
+   {
+    "id": 1133,
+    "title": "Look Around and Find Out",
+    "author": "Team PV",
+    "imageUrl": "/assets/mod_prevs/lookaroundandfindout.jpg",
+    "route": "lookaroundandfindout",
+    "submittedBy": "Tune Eternal",
+    "description": "Monika ask you to do ONE task. Will you make the right choice and do what she says, or will do you're own thing? (A Point and Click Adventure)",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/j67orct24fykq7w/DokiDokiLookAroundFindOut-1.1.zip/file"
+      }
+    ]
+  }, 
+   {
+    "id": 1134,
+    "title": "Metal Club",
+    "author": "Brifyjek",
+    "imageUrl": "/assets/mod_prevs/metalclub.png",
+    "route": "metalclub",
+    "submittedBy": "Tune Eternal",
+    "description": "Doki Doki Metal Club is a story of a high school club of metalheads. Instead of literature, this time it's music that the girls are passionate about. MC, a poser listening to metalcore, joins a club where every member has a different taste in metal. Yuri, a metal elitist, is a fan of 'true metal' and all things kvlt. She introduces MC to the world of black metal.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/102gopwaw4j8vuz/dokidokimetalclub.rar/file"
+      }
+    ]
+  },
+    {
+    "id": 1135,
+    "title": "Through My Eyes",
+    "author": "12gizguy6 ",
+    "imageUrl": "/assets/mod_prevs/throughmyeyes.jpg",
+    "route": "throughmyeyes",
+    "submittedBy": "Knuklez",
+    "description": "Through My Eyes is a playable teaser for the Doki Doki Salvation Remake, but it can be enjoyed independently. Through My Eyes is a short, 10-minute experience that will put you in the shoes of your childhood friend, Sayori right after you confess your love for her. ",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/k2du95tmp483aej/ThroughMyEyes-1.5-Renpy7Mod.zip/file"
+      }
+    ]
+  },
+  {
+    "id": 1136,
+    "title": "Project N",
+    "author": "AwesomeNinjaXD",
+    "imageUrl": "/assets/mod_prevs/projectn.png",
+    "route": "projectn",
+    "submittedBy": "Tune Eternal",
+    "description": "Similar to the base game, Sayori convinces MC to join the Literature Club. Route-based. In each route, MC falls in love with one of the club members, and discovers issues that they have. Good and bad ending, with a bonus chapter included.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/2g9afpa77ttj3oe/scripts.rpa/file"
+      }
+    ]
+  },
+  {
+    "id": 1137,
+    "title": "What If",
+    "author": "Riverr, Various Artists",
+    "imageUrl": "/assets/mod_prevs/whatif.png",
+    "route": "whatif",
+    "submittedBy": "Tune Eternal",
+    "description": "Life only goes on one set path and yet, the mind can’t help but wonder what could’ve happened. What if things happened differently? What if I did this instead of that? What if I was better? Let this mod take you on a journey which stares at the fate of DDLC and asks… What If? Who knows? We might learn something new on the way.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/yccb3ykswi0185m/WhatIf.-1.0-Renpy7Mod.zip/file"
+      }
+    ]
+  },
+  {
+    "id": 1138,
+    "title": "The Monika Mod",
+    "author": "KryoGenic03",
+    "imageUrl": "/assets/mod_prevs/monikamod.png",
+    "route": "themonikamod",
+    "submittedBy": "Tune Eternal",
+    "description": "A completely normal Monika mod where nothing bad happens to her and 0 hijinks ensue ever!",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/6bmm1ipharqegv3/TheMonikaMod-V1.01.zip/file"
+      }
+    ]
+  }
   ],
   "android": [
     {
