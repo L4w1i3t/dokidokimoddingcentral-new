@@ -284,7 +284,26 @@
           "url": "https://www.mediafire.com/file_premium/rqudjfqrrkty2zs/NeuroDDLCDemo-0.1.0-Renpy8-DDLCMod.zip/file"
         }
       ]
+    }, 
+	{
+      "id": 19,
+      "title": "Deceptive Hearts: Judgement Day",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/deceptiveheartsjudgementday.jpg",
+      "route": "deceptiveheartsjudgementday.jpg",
+      "submittedBy": "Tune Eternal",
+      "description": "Someone has freed u/DeadEmpyre from the Doki Doki Modding Club's #gulag channel, and it's up to the members of the DDMC to find out who it is. But this mysterious figure is bent on deleting the Discord server and finally putting an end to the Doki Doki Modding Club once and for all...Based on cringe in r/ddlcmods",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/gzkfrrzkf0d2e7a/DeceptiveHearts2-1.0.2-Deceptive_Hearts.zip/file"
+        }
+      ]
     }
+	
+	
+	
+	
   ],
   "archive": [
     {
@@ -1854,8 +1873,8 @@
       "author": "dfwk",
       "imageUrl": "/assets/mod_prevs/monika_anal_probe.webp",
       "route": "monika_anal_probe",
-      "submittedBy": "",
-      "description": "",
+      "submittedBy": "Tune Eternal",
+      "description": "Monika can't resist Chocolate Impossible Chicken Pot Pie. This is literally just a faithful recreation of South Park S1E1, 'Cartman Gets An Anal Probe'.",
       "links": [
         {
           "version": "standard",
@@ -1870,7 +1889,7 @@
       "imageUrl": "/assets/mod_prevs/cloudyreality.webp",
       "route": "mycloudyreality",
       "submittedBy": "Tune Eternal",
-      "description": "Monika can't resist Chocolate Impossible Chicken Pot Pie. This is literally just a faithful recreation of South Park S1E1, “Cartman Gets An Anal Probe.",
+      "description": "We're giving the chance to give Sayori a reason to live, but other choices are trying to get in the way of that, are you going to make the right choices to keep your childhood friend? Or are you ready to let her go and move on to someone else? Well, that's all up to you and every choice you make along the way, so choose wisely :)hocolate Impossible Chicken Pot Pie. This is literally just a faithful recreation of South Park S1E1, “Cartman Gets An Anal Probe.",
       "links": [
         {
           "version": "standard",
@@ -2237,7 +2256,202 @@
           "url": "https://www.mediafire.com/file_premium/rrzbekm01jqvl5p/DDFAOCAC-1.0-pc.rar/file"
         }
       ]
-    }
+    },
+    {
+      "id": 1126,
+      "title": "Intercepting",
+      "author": "inessa_k",
+      "imageUrl": "/assets/mod_prevs/intercepting.png",
+      "route": "intercepting",
+      "submittedBy": "Tune Eternal",
+      "description": "Festival last year was a failure. A chain reaction of events caused the club to disband and MC to move away. This year, a new student who moved from unknown country under unknown circumstances, tries to make things right. For her, and for the club.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/llihri9c3l2gcmn/DokiDokiIntercepting-beta-Renpy7Mod.zip/file"
+        }
+      ]
+    }, 
+    {
+      "id": 1127,
+      "title": "Controversity Time!",
+      "author": "bimagamongMOP",
+      "imageUrl": "/assets/mod_prevs/controversity_time.jpg",
+      "route": "controversitytime!",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a satire DDLC mod, like 'DDLC Mod Slander' in a way. Please do not take everything you read seriously the instant you start playing.\n\n(Is a very surface-level critique of a community that a new person made a mod about)",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/9t60ao0l0djwh54/DCT-2.0.0_Doki_Doki_Controversity_Time%2521_-_ver_2.0.0_-_PC.zip/file"
+        }
+      ]
+    }, 
+    {
+      "id": 1128,
+      "title": "DX Battle Plus Ultimate",
+      "author": "Shipwrecker",
+      "imageUrl": "/assets/mod_prevs/battle_plus_unlimited.jpg",
+      "route": "dxbattleplusultimate",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a mod where (You guessed it) Sonic comes in the story. It's a way past cool mod where the ultimate crossover happens! Enjoy!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/26spq98ulx7h0aq/DDLC_DX_Battle_Plus_Ultimate_-_Ver_1.0_-_PC.zip/file"
+        }
+      ]
+    }, 
+    {
+    "id": 1129,
+    "title": "Welcome to the Anime Club",
+    "author": "Headlocker",
+    "imageUrl": "/assets/mod_prevs/animeclub.jpg",
+    "route": "welcometotheanimeclub",
+    "submittedBy": "Tune Eternal",
+    "description": "MC and Monika: Once best friends, now bitter enemies with the former trying to close the Literature Club for good. One game. One gamble might decide the future for both clubs. Will this gamble bring him good fortune or will it contribute to his own demise and the LC gets to live for another day?",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/cd5l7hkbxh8g09l/Welcome_to_the_Anime_Club_-_ver_1.0_-_PC.zip/file"
+      }
+    ]
+  }, 
+  {
+    "id": 1130,
+    "title": "Emerald Affection (Act One)",
+    "author": "KryoGenic03",
+    "imageUrl": "/assets/mod_prevs/ea.png",
+    "route": "emeraldaffectionactone",
+    "submittedBy": "Tune Eternal",
+    "description": "After one month in the club and graduation only a few months away, MC becomes conflicted about how he feels about the club president, Monika. With a complicated past, and a drive to make Monika happy, will he work up the guts to be with her? Or will life’s problems get in the way? Find out in this Act 1 release of Doki Doki: Emerald Affection!",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/8lz3h5yccf7kdmp/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.12.zip/file"
+      }
+    ]
+  }, 
+  {
+    "id": 1131,
+    "title": "What If+",
+    "author": "Riverr, Various Artists",
+    "imageUrl": "/assets/mod_prevs/wi+.jpg",
+    "route": "whatifplus",
+    "submittedBy": "Tune Eternal",
+    "description": "Life only goes on one set path and yet, the mind can’t help but wonder what could’ve happened. What if things happened differently? What if I did this instead of that? What if I were to disguise fast food as my own cooking? Let this mod take you on a journey which stares at the fate of DDLC and asks… What if what if? Who knows? We might escape our wretched fates finally.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/esohp9onziagv8r/WhatIfPlus.-1.0-Renpy7Mod.zip/file"
+      }
+    ]
+  }, 
+   {
+    "id": 1132,
+    "title": "Another Lover",
+    "author": "Dipshit Studios",
+    "imageUrl": "/assets/mod_prevs/anotherlover.jpg",
+    "route": "anotherlover",
+    "submittedBy": "Tune Eternal",
+    "description": "This mod is a shitpost mod. It literally is. 5 min of gameplay.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/1bu38z3ltqml23h/Another_Lover_-_Ver_1.0_-_PC.rar/file"
+      }
+    ]
+  },
+   {
+    "id": 1133,
+    "title": "Look Around and Find Out",
+    "author": "Team PV",
+    "imageUrl": "/assets/mod_prevs/lookaroundandfindout.jpg",
+    "route": "lookaroundandfindout",
+    "submittedBy": "Tune Eternal",
+    "description": "Monika ask you to do ONE task. Will you make the right choice and do what she says, or will do you're own thing? (A Point and Click Adventure)",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/j67orct24fykq7w/DokiDokiLookAroundFindOut-1.1.zip/file"
+      }
+    ]
+  }, 
+   {
+    "id": 1134,
+    "title": "Metal Club",
+    "author": "Brifyjek",
+    "imageUrl": "/assets/mod_prevs/metalclub.png",
+    "route": "metalclub",
+    "submittedBy": "Tune Eternal",
+    "description": "Doki Doki Metal Club is a story of a high school club of metalheads. Instead of literature, this time it's music that the girls are passionate about. MC, a poser listening to metalcore, joins a club where every member has a different taste in metal. Yuri, a metal elitist, is a fan of 'true metal' and all things kvlt. She introduces MC to the world of black metal.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/102gopwaw4j8vuz/dokidokimetalclub.rar/file"
+      }
+    ]
+  },
+    {
+    "id": 1135,
+    "title": "Through My Eyes",
+    "author": "12gizguy6 ",
+    "imageUrl": "/assets/mod_prevs/throughmyeyes.jpg",
+    "route": "throughmyeyes",
+    "submittedBy": "Knuklez",
+    "description": "Through My Eyes is a playable teaser for the Doki Doki Salvation Remake, but it can be enjoyed independently. Through My Eyes is a short, 10-minute experience that will put you in the shoes of your childhood friend, Sayori right after you confess your love for her. ",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/k2du95tmp483aej/ThroughMyEyes-1.5-Renpy7Mod.zip/file"
+      }
+    ]
+  },
+  {
+    "id": 1136,
+    "title": "Project N",
+    "author": "AwesomeNinjaXD",
+    "imageUrl": "/assets/mod_prevs/projectn.png",
+    "route": "projectn",
+    "submittedBy": "Tune Eternal",
+    "description": "Similar to the base game, Sayori convinces MC to join the Literature Club. Route-based. In each route, MC falls in love with one of the club members, and discovers issues that they have. Good and bad ending, with a bonus chapter included.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/2g9afpa77ttj3oe/scripts.rpa/file"
+      }
+    ]
+  },
+  {
+    "id": 1137,
+    "title": "What If",
+    "author": "Riverr, Various Artists",
+    "imageUrl": "/assets/mod_prevs/whatif.png",
+    "route": "whatif",
+    "submittedBy": "Tune Eternal",
+    "description": "Life only goes on one set path and yet, the mind can’t help but wonder what could’ve happened. What if things happened differently? What if I did this instead of that? What if I was better? Let this mod take you on a journey which stares at the fate of DDLC and asks… What If? Who knows? We might learn something new on the way.",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/yccb3ykswi0185m/WhatIf.-1.0-Renpy7Mod.zip/file"
+      }
+    ]
+  },
+  {
+    "id": 1138,
+    "title": "The Monika Mod",
+    "author": "KryoGenic03",
+    "imageUrl": "/assets/mod_prevs/monikamod.png",
+    "route": "themonikamod",
+    "submittedBy": "Tune Eternal",
+    "description": "A completely normal Monika mod where nothing bad happens to her and 0 hijinks ensue ever!",
+    "links": [
+      {
+        "version": "standard",
+        "url": "https://www.mediafire.com/file_premium/6bmm1ipharqegv3/TheMonikaMod-V1.01.zip/file"
+      }
+    ]
+  }
   ],
   "android": [
     {
@@ -2569,7 +2783,99 @@
           "url": "https://www.mediafire.com/file_premium/ubpa17blu03kz6u/club.littleliterature.android-20231220.apk/file"
         }
       ]
-    }
+    }, 
+	{
+      "id": 10022,
+      "title": "Deceptive Hearts: Judgement Day",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/deceptiveheartsjudgementday.jpg",
+      "route": "deceptiveheartsjudgementday.jpg",
+      "submittedBy": "Tune Eternal",
+      "description": "Someone has freed u/DeadEmpyre from the Doki Doki Modding Club's #gulag channel, and it's up to the members of the DDMC to find out who it is. But this mysterious figure is bent on deleting the Discord server and finally putting an end to the Doki Doki Modding Club once and for all...Based on cringe in r/ddlcmods",
+      "links": [
+        {
+          "version": "Android",
+          "url": "https://www.mediafire.com/file_premium/ezlk4azovemrit1/Deceptive_Hearts_2_Android_Port.apk/file"
+        }
+      ]
+    },
+	{
+      "id": 10023,
+      "title": "The Renewal Demo",
+      "author": "iiTzWolfyy",
+      "imageUrl": "/assets/mod_prevs/therenewal.jpg",
+      "route": "therenewal",
+      "submittedBy": "Tune Eternal",
+      "description": "In the beginning of the umpteenth loop of the game where all the dramatical events have always taken place, something changes. Out of nowhere, MC becomes self aware like Monika has always been. He remembers everything that happened in the past and will try his best to save everyone from their cruel fates (yes, even Monika). The thing is, something will be in the way, and he will quickly notice it... Will you be able to save the club and start a brand new life? Can you trust Monika in this altered reality? Will it finally be the renewal that we've all been waiting for?",
+      "links": [
+        {
+          "version": "Android",
+          "url": "https://www.mediafire.com/file_premium/icqv28gf35yysjz/The_Renewal_Demo.apk/file"
+        }
+      ]
+    }, 
+    {
+      "id": 10024,
+      "title": "XD",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/xd.jpg",
+      "route": "xd",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a rom-com mod with a lot of fluff and risqué humor, inspired by the game dev studio SMEE. It has a lot of references to other VNs and some of my favorite media. It's not gonna be for everyone, but I hope it can get a chuckle out of someone at least.",
+      "links": [
+        {
+          "version": "Android",
+          "url": "https://www.mediafire.com/file_premium/8qe3jzuihpqu2gz/Doki_Doki_XD_Demo.apk/file"
+        }
+      ]
+    }, 
+    {
+    "id": 10025,
+    "title": "Welcome to the Anime Club",
+    "author": "Headlocker",
+    "imageUrl": "/assets/mod_prevs/animeclub.jpg",
+    "route": "welcometotheanimeclub",
+    "submittedBy": "Tune Eternal",
+    "description": "MC and Monika: Once best friends, now bitter enemies with the former trying to close the Literature Club for good. One game. One gamble might decide the future for both clubs. Will this gamble bring him good fortune or will it contribute to his own demise and the LC gets to live for another day?",
+    "links": [
+      {
+        "version": "Android",
+        "url": "https://www.mediafire.com/file_premium/hrvjzf1x1wzz8fa/Welcome_to_the_Anime_Club_-_ver_1.0_-_Android.apk/file"
+      }
+    ]
+    }, 
+     {
+    "id": 20016,
+    "title": "Foreign Relations (Extended Demo)",
+    "author": "David Locklin, Team Relations",
+    "imageUrl": "/assets/mod_prevs/fr.jpg",
+    "route": "foreignrelationsextendeddemo",
+    "submittedBy": "Tune Eternal",
+    "description": "This mod puts you in the shoes of a transfer student coming to Japan. Here, you will join the Literature Club and meet with it's lovely members. You have one year before you leave Japan and return home, but could a special someone you meet make you stay there longer? Or perhaps, could you take that special someone home with you?",
+    "links": [
+      {
+        "version": "Android",
+        "url": "https://www.mediafire.com/file_premium/ew3qih938mvd998/DDLC_Foreign_Relations_Demo_1.4.apk/file"
+      }
+    ]
+  }, 
+    {
+    "id": 20017,
+    "title": "Emerald Affection (Act One)",
+    "author": "KryoGenic03",
+    "imageUrl": "/assets/mod_prevs/ea.png",
+    "route": "emeraldaffectionactone",
+    "submittedBy": "Tune Eternal",
+    "description": "After one month in the club and graduation only a few months away, MC becomes conflicted about how he feels about the club president, Monika. With a complicated past, and a drive to make Monika happy, will he work up the guts to be with her? Or will life’s problems get in the way? Find out in this Act 1 release of Doki Doki: Emerald Affection!",
+    "links": [
+      {
+        "version": "Android",
+        "url": "https://www.mediafire.com/file_premium/502qvgqqsv89ru0/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.11_Android_Port.apk/file"
+      }
+    ]
+  }
+      
+    
   ],
   "demos": [
     {
@@ -2796,7 +3102,52 @@
           "url": "https://www.mediafire.com/file_premium/ueup45wzcn4ruru/Afternoon_Demo.rar/file"
         }
       ]
-    }
+    }, 
+	 {
+      "id": 20014,
+      "title": "The Renewal Demo",
+      "author": "iiTzWolfyy",
+      "imageUrl": "/assets/mod_prevs/therenewal.jpg",
+      "route": "therenewal",
+      "submittedBy": "Tune Eternal",
+      "description": "In the beginning of the umpteenth loop of the game where all the dramatical events have always taken place, something changes. Out of nowhere, MC becomes self aware like Monika has always been. He remembers everything that happened in the past and will try his best to save everyone from their cruel fates (yes, even Monika). The thing is, something will be in the way, and he will quickly notice it... Will you be able to save the club and start a brand new life? Can you trust Monika in this altered reality? Will it finally be the renewal that we've all been waiting for?",
+      "links": [
+        {
+          "version": "Demo",
+          "url": "https://www.mediafire.com/file_premium/ey4gyfx233xhj4u/The_Renewal_Demo-1.1-_Mod.zip/file"
+        }
+      ]
+    }, 
+    {
+      "id": 20015,
+      "title": "XD",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/xd.jpg",
+      "route": "xd",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a rom-com mod with a lot of fluff and risqué humor, inspired by the game dev studio SMEE. It has a lot of references to other VNs and some of my favorite media. It's not gonna be for everyone, but I hope it can get a chuckle out of someone at least.",
+      "links": [
+        {
+          "version": "Demo",
+          "url": "https://www.mediafire.com/file_premium/gmvw0t4ux292m0j/scripts.rpa/file"
+        }
+      ]
+    }, 
+    {
+    "id": 20016,
+    "title": "Foreign Relations (Extended Demo)",
+    "author": "David Locklin, Team Relations",
+    "imageUrl": "/assets/mod_prevs/fr.jpg",
+    "route": "foreignrelationsextendeddemo",
+    "submittedBy": "Tune Eternal",
+    "description": "This mod puts you in the shoes of a transfer student coming to Japan. Here, you will join the Literature Club and meet with it's lovely members. You have one year before you leave Japan and return home, but could a special someone you meet make you stay there longer? Or perhaps, could you take that special someone home with you?",
+    "links": [
+      {
+        "version": "Demo",
+        "url": "https://www.mediafire.com/file_premium/cyp4u93vvg47ep7/ForeignRelations1.4-Renpy7Mod.zip/file"
+      }
+    ]
+  }
   ],
   "videos": [
     {
