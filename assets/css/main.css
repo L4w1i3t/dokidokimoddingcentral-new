@@ -1,0 +1,16 @@
+/* Add proper spacing for the fixed header */
+body {
+    padding-top: 70px; /* Adjust based on header height */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Smaller padding for mobile */
+    }
+}
+
+/* Make sure z-index settings don't conflict with the header */
+main {
+    position: relative;
+    z-index: 1;
+}

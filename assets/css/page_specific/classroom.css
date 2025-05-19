@@ -300,32 +300,81 @@ main {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .classroom-header h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 15px;
     }
     
     .classroom-tagline {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        padding: 0 10px;
     }
     
     .classroom-boxes {
         grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
     }
     
     .classroom-box {
         height: auto;
+        padding: 20px;
     }
     
-    .footer-content {
+    .box-content {
+        padding: 0;
+    }
+    
+    .icon-container {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    
+    .classroom-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .classroom-box h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .classroom-box p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+    
+    .feature-list {
+        margin-bottom: 0;
+    }
+    
+    .feature-list li {
+        font-size: 0.9rem;
+        padding-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .action-buttons {
         flex-direction: column;
-        text-align: center;
+        gap: 10px;
     }
     
-    .footer-text h2 {
-        font-size: 1.8rem;
-    }
-    
-    .footer-actions {
+    .primary-action, 
+    .secondary-action {
         width: 100%;
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+    
+    /* Improve touchable area for mobile */
+    .feature-list li,
+    .primary-action,
+    .secondary-action {
+        min-height: 44px; /* Apple's recommended minimum touch target size */
+        display: flex;
+        align-items: center;
     }
 }
 

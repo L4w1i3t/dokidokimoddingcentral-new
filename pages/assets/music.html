@@ -3,49 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance</title>
+    <title>Music & Audio - Doki Doki Modding Central</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/components/header/header.css">
     <link rel="stylesheet" href="/components/footer/footer.css">
+    <link rel="stylesheet" href="/assets/css/page_specific/music-assets.css">
     <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            background-image: url('/assets/images/bg/sorry.webp')
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: white;
-            background-color: black;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: white;
-            background-color: black;
-        }
-        .container {
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            min-height: 100vh;
-        }
-    </style>
 </head>
 <body>
+    <main>
+        <section id="music-container">
+            <div class="music-header">
+                <h1>Music & Audio Assets</h1>
+                <p class="music-tagline">Enhance your mod with atmospheric soundtracks and sound effects</p>
+            </div>
 
-    <div class="container">
-        <h1>Sorry!</h1>
-        <p>This page is currently a work in progress. We appreciate your patience and understanding.</p>
-    </div>
+            <!-- Subcategory Navigation -->
+            <div class="subcategory-nav">
+                <button class="subcategory-btn active" data-target="bgm-section">Background Music</button>
+                <button class="subcategory-btn" data-target="sfx-section">Sound Effects</button>
+            </div>
+
+            <!-- BGM Section -->
+            <section id="bgm-section" class="asset-section active">
+                <div class="section-header">
+                    <h2>Background Music</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="search-filter-container">
+                    <div class="search-box">
+                        <input type="text" id="bgm-search" placeholder="Search music...">
+                        <button id="bgm-search-button">Search</button>
+                    </div>
+                    <div class="filter-container">
+                        <select id="bgm-genre-filter">
+                            <option value="all">All Genres</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Classical">Classical</option>
+                            <option value="Electronic">Electronic</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="bgm-grid" class="music-grid">
+                    <!-- BGM items will be dynamically loaded here -->
+                </div>
+                
+                <div class="pagination" id="bgm-pagination">
+                    <button id="bgm-prev-page" class="pagination-button" disabled>Previous</button>
+                    <span id="bgm-page-info" class="pagination-info">Page 1 of 1</span>
+                    <button id="bgm-next-page" class="pagination-button" disabled>Next</button>
+                </div>
+            </section>
+
+            <!-- SFX Section -->
+            <section id="sfx-section" class="asset-section">
+                <div class="section-header">
+                    <h2>Sound Effects</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="search-filter-container">
+                    <div class="search-box">
+                        <input type="text" id="sfx-search" placeholder="Search sound effects...">
+                        <button id="sfx-search-button">Search</button>
+                    </div>
+                    <div class="filter-container">
+                        <select id="sfx-category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="UI">UI/Interface</option>
+                            <option value="Environment">Environment</option>
+                            <option value="Character">Character</option>
+                            <option value="Ambience">Ambience</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="sfx-grid" class="music-grid">
+                    <!-- SFX items will be dynamically loaded here -->
+                </div>
+                
+                <div class="pagination" id="sfx-pagination">
+                    <button id="sfx-prev-page" class="pagination-button" disabled>Previous</button>
+                    <span id="sfx-page-info" class="pagination-info">Page 1 of 1</span>
+                    <button id="sfx-next-page" class="pagination-button" disabled>Next</button>
+                </div>
+            </section>
+
+            <div class="music-footer">
+                <h2>Want to Contribute?</h2>
+                <p>Share your music and sound effects with the community to help other modders create immersive experiences.</p>
+                <a href="/pages/submit.html" class="contribute-button">
+                    <span>Submit Your Audio</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <script src="/components/addComponents.js"></script>
+    <script src="/assets/js/page_specific/music-assets.js"></script>
     <script src="/assets/js/main.js"></script>
-
 </body>
 </html>

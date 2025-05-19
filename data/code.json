@@ -1,9 +1,59 @@
 {
     "code": [
-      { "id": 90000, "name": "Placeholder 1", "author": "N/A", "type": "ATL"},
-      { "id": 90001, "name": "Placeholder 2", "author": "N/A", "type": "Meta"},
-      { "id": 90002, "name": "Placerholder 3", "author": "N/A", "type": "Effects"},
-      { "id": 90003, "name": "Placeholder 4", "author": "N/A", "type": "Misc."},
-      { "id": 90004, "name": "Placeholder 5", "author": "N/A", "type": "UX"}
+      { 
+        "id": 90000, 
+        "name": "Character Floating Animation", 
+        "author": "L4w1i3t",
+        "type": "ATL",
+        "complexity": "beginner",
+        "description": "A simple floating animation that makes character sprites gently bob up and down.",
+        "file": "test1.rpy",
+        "usage": ["Copy the code to your transforms.rpy file", "Use the animation in dialogue with 'show sayori 4q at float_bounce'", "Customize parameters to change the bounce height and speed"],
+        "notes": "Works with all character sprites in DDLC. Adjust the yoffset values to change how high the character bounces."
+      },
+      { 
+        "id": 90001, 
+        "name": "Screen Memory System", 
+        "author": "L4w1i3t",
+        "type": "Meta",
+        "complexity": "intermediate",
+        "description": "A fourth-wall breaking system that remembers if the player has seen certain screens or dialogues before.",
+        "file": "test2.rpy",
+        "usage": ["Add this code to definitions.rpy or a custom script file", "Call screen_seen() with a unique name for each scene you want to track", "Use the returned boolean value to create different dialogue options"],
+        "notes": "This system persists across game restarts and save files, making it perfect for meta-commentary about player actions across multiple playthroughs."
+      },
+      { 
+        "id": 90002, 
+        "name": "RGB Glitch Effect", 
+        "author": "L4w1i3t",
+        "type": "Effects",
+        "complexity": "advanced",
+        "description": "Creates a visual RGB channel split effect commonly used to create a glitchy, corrupted appearance.",
+        "file": "test3.rpy",
+        "usage": ["Copy the code to your definitions.rpy or a new script file", "Create glitched versions of your images with: image name_glitched = RGBGlitch(\"original_image\")", "Show the glitched image during gameplay with: show name_glitched", "Adjust 'amount' parameter to control glitch intensity"],
+        "notes": "This effect is processor-intensive. Use sparingly and test on lower-end devices to ensure smooth performance."
+      },
+      { 
+        "id": 90003, 
+        "name": "Custom Save System Extension", 
+        "author": "L4w1i3t",
+        "type": "Misc.",
+        "complexity": "intermediate",
+        "description": "Extends the save system to store additional metadata with each save file, such as chapter names, locations, or custom thumbnails.",
+        "file": "test4.rpy",
+        "usage": ["Add the code to your script files before screens.rpy", "Set current_chapter and current_location variables in your game script", "Call save_with_metadata(slot) instead of renpy.save(slot)", "Modify your save/load screens to display the metadata using display_save_metadata(slot)"],
+        "notes": "This system requires basic knowledge of Ren'Py's screen language to fully implement with custom save/load screens."
+      },
+      { 
+        "id": 90004, 
+        "name": "Interactive Message System", 
+        "author": "L4w1i3t",
+        "type": "UX",
+        "complexity": "beginner",
+        "description": "Creates a phone-like messaging interface where text appears character by character, with customizable message bubbles and timestamps.",
+        "file": "test5.rpy",
+        "usage": ["Copy the code to a new script file like phone.rpy", "Create style definitions for message_bubble_them and message_bubble_you", "Add a phone_bg image to your project", "Initialize a messages list and add messages with the create_message function", "Show the screen with: call screen message_screen(messages)"],
+        "notes": "Add typing animations by using Ren'Py's text tag for typewriter effects {cps=20}Like this{/cps}, or create a more advanced system with callbacks."
+      }
     ]
 }

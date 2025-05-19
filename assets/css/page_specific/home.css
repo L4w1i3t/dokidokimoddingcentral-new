@@ -575,12 +575,62 @@ body {
     #column2 {
         width: 100%;
         flex: 1;
-        height: 100vh;
-        padding: 1rem;
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+        justify-content: center;
     }
     
     .logo-container {
-        margin: 0 auto 1rem;
+        margin: 0 auto 1.5rem;
+        max-width: 200px;
+        height: 200px;
+    }
+    
+    #main-menu {
+        width: 100%;
+    }
+    
+    #main-menu ul {
+        gap: 0.8rem;
+    }
+    
+    .nav-button {
+        width: 100%;
+        padding: 0.8rem;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .footer-text {
+        margin-top: 2rem;
+        padding: 1rem 0;
+    }
+    
+    .footer-text p {
+        font-size: 0.9rem;
+    }
+    
+    /* Handle screen rotation better */
+    @media (orientation: landscape) {
+        #column2 {
+            padding: 1rem;
+        }
+        
+        .logo-container {
+            max-width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+        }
+        
+        #main-menu ul {
+            gap: 0.5rem;
+        }
+        
+        .nav-button {
+            padding: 0.6rem;
+            font-size: 1rem;
+        }
     }
 }
 

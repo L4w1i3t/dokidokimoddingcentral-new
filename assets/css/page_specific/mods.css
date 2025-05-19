@@ -289,31 +289,89 @@ main {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .mods-header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        margin-bottom: 15px;
     }
     
     .mods-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        padding: 0 5px;
     }
     
     .category-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
     }
     
     .category-card {
         height: auto;
+        padding: 20px 15px;
+    }
+    
+    .category-content {
+        padding: 0;
+    }
+    
+    .category-icon {
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .category-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .category-card p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .feature-list {
+        margin-bottom: 0;
+    }
+    
+    .feature-list li {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
     }
     
     .mods-resources {
-        padding: 30px 20px;
+        padding: 25px 15px;
+        margin-top: 20px;
     }
     
     .mods-resources h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .mods-resources p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
     }
     
     .resource-links {
         flex-direction: column;
+        gap: 10px;
+    }
+    
+    .resource-link {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 0.95rem;
+        justify-content: center;
+    }
+    
+    /* Improve touchable areas for mobile */
+    .category-card,
+    .resource-link,
+    .feature-list li {
+        min-height: 44px;
     }
 }
 

@@ -1,8 +1,7 @@
 {
   "music": [
-    { "id": 70000, "name": "Placeholder 1", "author": "N/A", "genre": "Rock/Pop", "length-nearest-minute": "1"},
-    { "id": 70001, "name": "Placeholder 2", "author": "N/A", "genre": "Acid Jazz/Pop", "length-nearest-minute": "10"},
-    { "id": 70002, "name": "Placerholder 3", "author": "N/A", "genre": "Rock", "length-nearest-minute": "6"},
-    { "id": 70003, "name": "Placeholder 4", "author": "N/A", "genre": "Pop", "length-nearest-minute": "4"}
+    { "id": 70000, "name": "Sekibaku (PLACEHOLDER)", "author": "Amacha", "genre": "Healing", "file": "sekibaku.mp3"},
+    { "id": 70001, "name": "Bounce and Roll (PLACEHOLDER)", "author": "ATLUS", "genre": "Acid Swing", "file": "bar.flac"},
+    { "id": 70001, "name": "Bad Apple??? (PLACEHOLDER)", "author": "???", "genre": "???", "file": "badapplelol.flac"}
   ]
 }

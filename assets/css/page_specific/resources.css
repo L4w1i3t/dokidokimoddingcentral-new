@@ -1,21 +1,19 @@
-/* Apply a smooth font for better readability */
+/* Modern Resources Page Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    /* Set the background image */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('../../images/bg/classroomclass.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     color: #ffffff;
-    overflow-y: auto; /* Ensure the body can scroll */
+    overflow-y: auto;
 }
 
-/* Semi-transparent overlay */
+/* Dark overlay */
 body::before {
     content: '';
     position: fixed;
@@ -23,215 +21,351 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: -1; /* Ensure the overlay stays behind content */
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
 }
 
-/* Container with fadeIn animation */
-#resources-container {
-    max-width: 1200px; /* Increased width for better readability */
-    margin: 60px auto; /* Center the container */
-    padding: 60px 30px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    animation: fadeIn 1.5s ease-in-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    will-change: opacity, backdrop-filter; /* Hint for better performance */
+main {
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* FadeIn Keyframes - Only opacity */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Main Heading Styles with Text Shadow */
-#resources-container h1 {
+/* Header Section */
+.resources-header {
     text-align: center;
-    color: #ffffff; /* Changed to white for better contrast */
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Consistent with body font */
-    font-size: 2.8rem;
     margin-bottom: 50px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    animation: fadeIn 1s ease;
 }
 
-/* Resources Boxes Container */
-.resources-boxes {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-/* Individual Resource Box Styles */
-.resource-box {
-    background: linear-gradient(135deg, #6a0dad, #4b0049);
-    border-radius: 15px;
+.resources-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
     color: #ffffff;
-    text-decoration: none;
-    flex: 1 1 250px; /* Flexible width with a minimum of 250px */
-    max-width: 300px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+    letter-spacing: 1px;
+}
+
+.resources-tagline {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Category Section */
+.resources-category {
+    margin-bottom: 60px;
+    animation: fadeIn 1s ease;
+}
+
+.category-header {
+    margin-bottom: 30px;
     position: relative;
+}
+
+.category-header h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 105, 180, 0.5);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.category-line {
+    height: 3px;
+    width: 100px;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255, 105, 180, 0.7), rgba(255,255,255,0));
+    margin: 0 auto;
+}
+
+/* Resources Boxes Grid */
+.resources-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Resource Box Styling */
+.resource-box {
+    border-radius: 15px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    will-change: transform, box-shadow, background; /* Hint for better performance */
-}
-
-/* Resource Icon Styling */
-.resource-icon {
-    width: auto;
-    height: auto;
-    max-width: 80px;
-    max-height: 80px;
-    margin: 0 auto 15px auto;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white;
     display: block;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+    height: 100%;
 }
 
-/* Hover Effects for Resource Boxes */
-.resource-box::after {
+.resource-box::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(65deg);
-    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 13, 173, 0.85), rgba(75, 0, 130, 0.85));
+    z-index: 1;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+/* Different gradient colors for different categories */
+.resource-box:nth-child(3n+2)::before {
+    background: linear-gradient(135deg, rgba(233, 30, 99, 0.85), rgba(156, 39, 176, 0.85));
+}
+
+.resource-box:nth-child(3n+3)::before {
+    background: linear-gradient(135deg, rgba(0, 150, 136, 0.85), rgba(38, 166, 154, 0.85));
 }
 
 .resource-box:hover {
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-.resource-box:hover::after {
-    top: 150%;
-    left: 150%;
+.resource-box:hover::before {
+    opacity: 1;
 }
 
-/* Resource Box Headings */
-.resource-box h2 {
-    font-size: 1.8rem;
+.resource-content {
+    position: relative;
+    padding: 30px 25px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Icon Container */
+.icon-container {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.resource-box:hover .icon-container {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.resource-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+/* Text Elements */
+.resource-box h3 {
+    font-size: 1.5rem;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Resource Box Paragraphs */
 .resource-box p {
     font-size: 1rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+/* Footer Section */
+.resources-footer {
+    background: rgba(30, 30, 45, 0.85);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.resources-footer h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
+}
+
+.resources-footer p {
+    font-size: 1.1rem;
     line-height: 1.6;
     color: #e0e0e0;
-    text-align: justify;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 0 auto 25px;
 }
 
-/* Decorative Divider (Optional) */
-.divider {
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
-    margin: 40px auto;
-    border: none;
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #7289da, #5865F2);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive Typography Adjustments */
+.discord-button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #7289da, #4752c4);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.discord-button svg {
+    transition: transform 0.3s ease;
+}
+
+.discord-button:hover svg {
+    transform: translateX(5px);
+}
+
+/* Replace contribute-button styles with Discord button styles */
+.contribute-button {
+    display: none; /* Hide the old button style */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    #resources-container {
-        margin: 40px 20px;
-        padding: 30px 20px;
+    .resources-header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
     }
-
-    #resources-container h1 {
-        font-size: 2rem;
+    
+    .resources-tagline {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
     }
-
+    
+    .category-header h2 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    
     .resources-boxes {
-        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-
-    .resource-box {
-        flex: 1 1 100%;
-        max-width: none;
+    
+    .resource-content {
         padding: 20px 15px;
     }
-
-    .resource-box h2 {
-        font-size: 1.5rem;
+    
+    .icon-container {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
     }
-
+    
+    .resource-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .resource-box h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
     .resource-box p {
         font-size: 0.95rem;
     }
-
-    .resource-icon {
-        width: 50px;
-        height: 50px;
+    
+    .resources-footer {
+        padding: 30px 20px;
+        margin-top: 40px;
+    }
+    
+    .resources-footer h2 {
+        font-size: 1.8rem;
+    }
+    
+    .resources-footer p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+    
+    .discord-button {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        width: 100%;
     }
 }
 
-/* Additional High-Resolution Adjustments */
-@media (min-width: 2560px) { /* For 2K and higher resolutions */
-    #resources-container {
-        padding: 60px 50px;
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .resources-boxes {
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    #resources-container h1 {
-        font-size: 3rem;
-    }
-
-    .resource-box {
-        padding: 40px 25px;
-        max-width: 350px;
-    }
-
-    .resource-box h2 {
+    
+    .category-header h2 {
         font-size: 2rem;
     }
-
-    .resource-box p {
-        font-size: 1.1rem;
-    }
-
-    .resource-icon {
-        width: 70px;
-        height: 70px;
-    }
 }
 
-@media (min-width: 3840px) { /* For 4K resolutions */
-    #resources-container {
-        padding: 80px 60px;
+/* Large screens */
+@media (min-width: 2560px) {
+    main {
+        max-width: 1800px;
     }
-
-    #resources-container h1 {
-        font-size: 3.5rem;
+    
+    .resources-header h1 {
+        font-size: 4.5rem;
     }
-
-    .resource-box {
-        padding: 50px 30px;
-        max-width: 400px;
+    
+    .resources-tagline {
+        font-size: 1.6rem;
+        max-width: 1000px;
     }
-
-    .resource-box h2 {
-        font-size: 2.5rem;
+    
+    .category-header h2 {
+        font-size: 2.8rem;
     }
-
+    
+    .resources-boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .resource-box h3 {
+        font-size: 1.8rem;
+    }
+    
     .resource-box p {
         font-size: 1.2rem;
     }
-
-    .resource-icon {
-        width: 80px;
-        height: 80px;
+    
+    .resources-footer h2 {
+        font-size: 2.8rem;
+    }
+    
+    .resources-footer p {
+        font-size: 1.4rem;
     }
 }

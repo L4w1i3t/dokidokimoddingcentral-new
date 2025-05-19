@@ -3,49 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance</title>
+    <title>Code - Doki Doki Modding Central</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/components/header/header.css">
     <link rel="stylesheet" href="/components/footer/footer.css">
+    <link rel="stylesheet" href="/assets/css/page_specific/code-assets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
     <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            background-image: url('/assets/images/bg/sorry.webp')
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: white;
-            background-color: black;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: white;
-            background-color: black;
-        }
-        .container {
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            min-height: 100vh;
-        }
-    </style>
 </head>
 <body>
+    <main>
+        <section id="code-container">
+            <div class="code-header">
+                <h1>Code Snippets Library</h1>
+                <p class="code-tagline">Enhance your mods with ready-to-use code snippets and implementation guides</p>
+            </div>
 
-    <div class="container">
-        <h1>Sorry!</h1>
-        <p>This page is currently a work in progress. We appreciate your patience and understanding.</p>
-    </div>
+            <!-- Category Navigation -->
+            <div class="category-nav">
+                <button class="category-btn active" data-type="all">All Code</button>
+                <button class="category-btn" data-type="ATL">Animation (ATL)</button>
+                <button class="category-btn" data-type="Effects">Visual Effects</button>
+                <button class="category-btn" data-type="Meta">Meta Functions</button>
+                <button class="category-btn" data-type="UX">User Experience</button>
+                <button class="category-btn" data-type="Misc.">Miscellaneous</button>
+            </div>
 
+            <!-- Search and Filter Bar -->
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <input type="text" id="code-search" placeholder="Search by name or author...">
+                    <button id="code-search-button">Search</button>
+                </div>
+                <div class="filter-container">
+                    <select id="code-complexity-filter">
+                        <option value="all">All Complexity Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Code Snippets Grid -->
+            <div id="code-grid" class="code-grid">
+                <!-- Code snippets will be dynamically loaded here -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button id="prev-page" class="pagination-button" disabled>Previous</button>
+                <span id="page-info" class="pagination-info">Page 1 of 1</span>
+                <button id="next-page" class="pagination-button" disabled>Next</button>
+            </div>
+
+            <!-- No Results Message (Hidden by Default) -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <p>No code snippets match your search criteria.</p>
+            </div>
+
+            <!-- "Add Your Code" Footer -->
+            <div class="code-footer">
+                <h2>Want to Contribute?</h2>
+                <p>Share your own code snippets with the community and help other modders create amazing experiences.</p>
+                <a href="/pages/submit.html" class="contribute-button">
+                    <span>Submit Your Code</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Code Card Template -->
+    <template id="code-card-template">
+        <div class="code-card">
+            <div class="code-visualizer">
+                <div class="code-pattern"></div>
+            </div>
+            <div class="code-header-area">
+                <h3 class="code-title">Code Snippet Title</h3>
+                <span class="code-type">Type</span>
+            </div>
+            <div class="code-meta">
+                <span class="code-author">By: Author Name</span>
+                <span class="code-complexity">Intermediate</span>
+            </div>
+            <div class="code-description">
+                <p>Description of what this code does and how it can be used in your mod.</p>
+            </div>
+            <div class="code-preview-container">
+                <div class="code-toolbar">
+                    <span class="code-language">renpy</span>
+                    <button class="copy-button" title="Copy code">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+                <pre><code class="language-renpy">init python:
+    def example_function(parameter):
+        # This is a sample code snippet
+        return "Result: " + str(parameter)</code></pre>
+            </div>
+            <div class="code-usage">
+                <h4>How to Use</h4>
+                <ol>
+                    <li>Copy the code above</li>
+                    <li>Paste it into your script.rpy file</li>
+                    <li>Customize parameters as needed</li>
+                </ol>
+            </div>
+            <div class="code-notes">
+                <h4>Notes</h4>
+                <p>Additional notes about compatibility, requirements, or special considerations.</p>
+            </div>
+        </div>
+    </template>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/renpy.min.js"></script>
     <script src="/components/addComponents.js"></script>
+    <script src="/assets/js/page_specific/code-assets.js"></script>
     <script src="/assets/js/main.js"></script>
-
 </body>
 </html>

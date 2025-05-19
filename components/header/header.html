@@ -1,13 +1,28 @@
-<header>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/faq.html">FAQ</a></li>
-            <li><a href="/pages/mods.html">Mods</a></li>
-            <li><a href="/pages/assets.html">Assets</a></li>
-            <li><a href="/pages/classroom.html">Classroom</a></li>
-            <li><a href="/pages/submit.html">Submissions</a></li>
-        </ul>
-    </nav>
+<!-- Header for the whole site. Contains the navbar that links to different pages. Turns into a hamburger menu on mobile devices. Do not put Javascript in this file but instead in header.js-->
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <a href="/">
+                <img src="/assets/gui/logo.webp" alt="DDMC Logo" class="header-logo">
+                <span class="site-title">Doki Doki Modding Central</span>
+            </a>
+        </div>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="/pages/mods.html">Mods</a></li>
+                <li><a href="/pages/assets.html">Assets</a></li>
+                <li><a href="/pages/submit.html">Submissions</a></li>
+                <li><a href="/pages/classroom.html">Classroom</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
