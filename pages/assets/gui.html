@@ -3,49 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance</title>
+    <title>Interface - Doki Doki Modding Central</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/components/header/header.css">
     <link rel="stylesheet" href="/components/footer/footer.css">
+    <link rel="stylesheet" href="/assets/css/page_specific/gui-assets.css">
     <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            background-image: url('/assets/images/bg/sorry.webp')
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: white;
-            background-color: black;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: white;
-            background-color: black;
-        }
-        .container {
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            min-height: 100vh;
-        }
-    </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>Sorry!</h1>
-        <p>This page is currently a work in progress. We appreciate your patience and understanding.</p>
-    </div>
+    <main>
+        <section id="gui-container">
+            <div class="gui-header">
+                <h1>Interface Elements</h1>
+                <p class="gui-tagline">Enhance your mod with custom GUI elements and interfaces</p>
+            </div>            <!-- GUI Elements Section -->
+            <section id="gui-section" class="asset-section active">
+                
+                <div class="search-filter-container">
+                    <div class="search-box">
+                        <input type="text" id="gui-search" placeholder="Search GUI elements...">
+                        <button id="gui-search-button">Search</button>
+                    </div>
+                    <div class="filter-container">
+                        <select id="gui-category-filter">
+                            <option value="all">All Categories</option>
+                            <!--Categories based on keywords will be dynamically loaded here-->
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="gui-grid" class="gui-grid">
+                    <!-- GUI items will be dynamically loaded here -->
+                </div>
+                
+                <div class="pagination" id="gui-pagination">
+                    <button id="gui-prev-page" class="pagination-button" disabled>Previous</button>
+                    <span id="gui-page-info" class="pagination-info">Page 1 of 1</span>
+                    <button id="gui-next-page" class="pagination-button" disabled>Next</button>
+                </div>
+            </section>            <div class="gui-footer">
+                <h2>Want to Contribute?</h2>
+                <p>Share your interface designs with the community to help other modders create polished user experiences.</p>
+                <a href="/pages/submit.html" class="contribute-button">
+                    <span>Submit Your GUI</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <script src="/components/addComponents.js"></script>
+    <script src="/assets/js/page_specific/gui-assets.js"></script>
     <script src="/assets/js/main.js"></script>
-
 </body>
 </html>
