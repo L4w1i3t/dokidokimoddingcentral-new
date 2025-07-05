@@ -1,390 +1,399 @@
 /* Addons Page Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('../../images/bg/notebook.webp');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../../images/bg/notebook.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
 }
 
 /* Dark overlay */
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-    z-index: -1;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
 }
 
 main {
-    padding: 80px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Header Section */
 #addons-header {
-    text-align: center;
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease;
 }
 
 #addons-header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
 }
 
 #addons-header p {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    letter-spacing: normal;
-    word-spacing: normal;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 
 /* Search and Filter */
 .search-filter-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .search-box {
-    display: flex;
-    flex: 1 1 300px;
+  display: flex;
+  flex: 1 1 300px;
 }
 
 .search-box input {
-    flex: 1;
-    padding: 12px 15px;
-    border-radius: 5px 0 0 5px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-right: none;
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: none;
 }
 
 .search-box input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .search-box button {
-    padding: 12px 20px;
-    background: linear-gradient(135deg, #6a0dad, #4b0082);
-    border: none;
-    border-radius: 0 5px 5px 0;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #6a0dad, #4b0082);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .search-box button:hover {
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
 }
 
 .filter-container {
-    display: flex;
-    gap: 10px;
-    flex: 1 1 300px;
+  display: flex;
+  gap: 10px;
+  flex: 1 1 300px;
 }
 
 .filter-container select {
-    flex: 1;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(30, 30, 40, 0.8);
-    color: white;
-    font-size: 0.95rem;
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-    background-position: right 15px top 50%;
-    background-size: 12px auto;
-    transition: all 0.3s ease;
+  flex: 1;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(30, 30, 40, 0.8);
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 12px auto;
+  transition: all 0.3s ease;
 }
 
 /* Fix for the dropdown items */
 .filter-container select option {
-    background-color: #1e1e28;
-    color: white;
+  background-color: #1e1e28;
+  color: white;
 }
 
 .filter-container select:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Addon Cards Container */
 #addons-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 /* Addon Card Styling */
 .addon-card {
-    background: rgba(30, 30, 40, 0.85);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeIn 0.8s ease;
-    backdrop-filter: blur(8px);
+  background: rgba(30, 30, 40, 0.85);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease;
+  backdrop-filter: blur(8px);
 }
 
 .addon-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .addon-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .addon-image {
-    height: 180px;
-    overflow: hidden;
+  height: 180px;
+  overflow: hidden;
 }
 
 .addon-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .addon-card:hover .addon-image img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .addon-details {
-    padding: 22px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+  padding: 22px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .addon-details.full-width {
-    height: 100%;
+  height: 100%;
 }
 
 .addon-details h2 {
-    margin: 0 0 10px;
-    font-size: 1.4rem;
-    color: #ffffff;
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #ffffff;
 }
 
 .addon-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 15px;
 }
 
 .addon-category {
-    background: linear-gradient(135deg, #6a0dad, #4b0082);
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: bold;
+  background: linear-gradient(135deg, #6a0dad, #4b0082);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .addon-compatibility {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
 }
 
 .addon-details p {
-    flex-grow: 1;
-    margin: 0 0 20px;
-    color: #e0e0e0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: left;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-shadow: none;
+  flex-grow: 1;
+  margin: 0 0 20px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-shadow: none;
 }
 
 .addon-links {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
-.download-button, .docs-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-align: center;
-    transition: all 0.3s ease;
+.download-button,
+.docs-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 .download-button {
-    background: linear-gradient(135deg, #6a0dad, #4b0082);
-    color: white;
-    flex: 1;
+  background: linear-gradient(135deg, #6a0dad, #4b0082);
+  color: white;
+  flex: 1;
 }
 
 .download-button:hover {
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    transform: translateY(-2px);
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  transform: translateY(-2px);
 }
 
 .docs-button {
-    background: rgba(255, 255, 255, 0.1);
-    color: #e0e0e0;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  flex: 1;
 }
 
 .docs-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
 /* Card without image styles */
 .addon-card.no-image .addon-details {
-    min-height: 180px;
+  min-height: 180px;
 }
 
 /* Pagination */
 .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 20px;
 }
 
 .pagination-button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background: linear-gradient(135deg, #6a0dad, #4b0082);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #6a0dad, #4b0082);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .pagination-button:not([disabled]):hover {
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    transform: translateY(-2px);
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  transform: translateY(-2px);
 }
 
 .pagination-button[disabled] {
-    opacity: 0.5;
-    cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .pagination-info {
-    color: #ffffff;
-    font-size: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 /* Submit Addon Section */
 #submit-addon {
-    text-align: center;
-    margin-top: 50px;
-    padding: 40px;
-    background: rgba(30, 30, 40, 0.7);
-    border-radius: 12px;
-    backdrop-filter: blur(8px);
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px;
+  background: rgba(30, 30, 40, 0.7);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
 }
 
 #submit-addon h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffffff;
 }
 
 #submit-addon p {
-    max-width: 600px;
-    margin: 0 auto 25px;
-    color: #e0e0e0;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    letter-spacing: normal;
-    word-spacing: normal;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 
 .submit-button {
-    display: inline-block;
-    padding: 14px 30px;
-    background: linear-gradient(135deg, #6a0dad, #4b0082);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
+  display: inline-block;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #6a0dad, #4b0082);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
 .submit-button:hover {
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    #addons-container {
-        grid-template-columns: 1fr;
-    }
-    
-    #addons-header h1 {
-        font-size: 2.2rem;
-    }
-    
-    .search-filter-container {
-        flex-direction: column;
-    }
-    
-    .filter-container {
-        flex-direction: column;
-    }
-    
-    .submit-button {
-        width: 100%;
-    }
+  #addons-container {
+    grid-template-columns: 1fr;
+  }
+
+  #addons-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .search-filter-container {
+    flex-direction: column;
+  }
+
+  .filter-container {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    #addons-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  #addons-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -1,426 +1,452 @@
 /* Modern Classroom Page Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('../../images/bg/classroomclass.webp');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-    overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../../images/bg/classroomclass.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  overflow-y: auto;
 }
 
 /* Dark overlay */
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-    z-index: -1;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
 }
 
 main {
-    padding: 80px 20px;
+  padding: 80px 20px;
 }
 
 /* Main Container */
 #classroom-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    animation: fadeIn 1s ease;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease;
 }
 
 /* Header Section */
 .classroom-header {
-    text-align: center;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .classroom-header h1 {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
-    letter-spacing: 1px;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+  letter-spacing: 1px;
 }
 
 .classroom-tagline {
-    font-size: 1.3rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #e0e0e0;
-    line-height: 1.6;
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 /* Classroom Boxes */
 .classroom-boxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
 }
 
 .classroom-box {
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    color: white;
-    display: block;
-    height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: white;
+  display: block;
+  height: 100%;
 }
 
 .classroom-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(106, 13, 173, 0.85), rgba(142, 45, 226, 0.85));
-    z-index: 1;
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(106, 13, 173, 0.85),
+    rgba(142, 45, 226, 0.85)
+  );
+  z-index: 1;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
 }
 
 .classroom-box.courses::before {
-    background: linear-gradient(135deg, rgba(106, 13, 173, 0.85), rgba(142, 45, 226, 0.85));
+  background: linear-gradient(
+    135deg,
+    rgba(106, 13, 173, 0.85),
+    rgba(142, 45, 226, 0.85)
+  );
 }
 
 .classroom-box.library::before {
-    background: linear-gradient(135deg, rgba(0, 150, 136, 0.85), rgba(38, 166, 154, 0.85));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 150, 136, 0.85),
+    rgba(38, 166, 154, 0.85)
+  );
 }
 
 .classroom-box.playground::before {
-    background: linear-gradient(135deg, rgba(233, 30, 99, 0.85), rgba(216, 27, 96, 0.85));
+  background: linear-gradient(
+    135deg,
+    rgba(233, 30, 99, 0.85),
+    rgba(216, 27, 96, 0.85)
+  );
 }
 
 .classroom-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .classroom-box:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .box-content {
-    position: relative;
-    padding: 40px 30px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  position: relative;
+  padding: 40px 30px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .icon-container {
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.12);
-    margin: 0 auto 20px;  /* This centers horizontally with auto left/right margins */
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 0 auto 20px; /* This centers horizontally with auto left/right margins */
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .classroom-box:hover .icon-container {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .classroom-icon {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 .classroom-box h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .classroom-box p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: #f0f0f0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #f0f0f0;
 }
 
 .feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
 }
 
 .feature-list li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .feature-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: white;
-    font-weight: bold;
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: white;
+  font-weight: bold;
 }
 
 .box-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 24px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.15);
-    color: white;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    margin-top: auto;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
 }
 
 .classroom-box:hover .box-button {
-    background-color: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
 }
 
 .box-button svg {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .classroom-box:hover .box-button svg {
-    transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 /* Classroom Footer */
 .classroom-footer {
-    background: rgba(30, 30, 45, 0.85);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(30, 30, 45, 0.85);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .footer-text {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .footer-text h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    color: #ffffff;
-    text-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
 }
 
 .footer-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #e0e0e0;
-    max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 600px;
 }
 
 .footer-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .primary-action {
-    padding: 14px 28px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #6a0dad, #4b0082);
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 14px 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a0dad, #4b0082);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .primary-action:hover {
-    transform: translateY(-3px);
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .secondary-action {
-    padding: 12px 26px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 26px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .secondary-action:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .classroom-header h1 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-    }
-    
-    .classroom-tagline {
-        font-size: 1rem;
-        margin-bottom: 20px;
-        padding: 0 10px;
-    }
-    
-    .classroom-boxes {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 10px;
-    }
-    
-    .classroom-box {
-        height: auto;
-        padding: 20px;
-    }
-    
-    .box-content {
-        padding: 0;
-    }
-    
-    .icon-container {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 15px;
-    }
-    
-    .classroom-icon {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .classroom-box h2 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .classroom-box p {
-        font-size: 0.95rem;
-        margin-bottom: 15px;
-    }
-    
-    .feature-list {
-        margin-bottom: 0;
-    }
-    
-    .feature-list li {
-        font-size: 0.9rem;
-        padding-left: 15px;
-        margin-bottom: 5px;
-    }
-    
-    .action-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .primary-action, 
-    .secondary-action {
-        width: 100%;
-        padding: 12px;
-        font-size: 0.95rem;
-    }
-    
-    /* Improve touchable area for mobile */
-    .feature-list li,
-    .primary-action,
-    .secondary-action {
-        min-height: 44px; /* Apple's recommended minimum touch target size */
-        display: flex;
-        align-items: center;
-    }
+  .classroom-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .classroom-tagline {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .classroom-boxes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .classroom-box {
+    height: auto;
+    padding: 20px;
+  }
+
+  .box-content {
+    padding: 0;
+  }
+
+  .icon-container {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .classroom-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .classroom-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .classroom-box p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .feature-list {
+    margin-bottom: 0;
+  }
+
+  .feature-list li {
+    font-size: 0.9rem;
+    padding-left: 15px;
+    margin-bottom: 5px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary-action,
+  .secondary-action {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  /* Improve touchable area for mobile */
+  .feature-list li,
+  .primary-action,
+  .secondary-action {
+    min-height: 44px; /* Apple's recommended minimum touch target size */
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .classroom-boxes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .classroom-box:last-child {
-        grid-column: span 2;
-        max-width: 500px;
-        margin: 0 auto;
-    }
+  .classroom-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .classroom-box:last-child {
+    grid-column: span 2;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 2560px) {
-    #classroom-container {
-        max-width: 1800px;
-    }
-    
-    .classroom-header h1 {
-        font-size: 4.5rem;
-    }
-    
-    .classroom-tagline {
-        font-size: 1.6rem;
-        max-width: 1000px;
-    }
-    
-    .classroom-boxes {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .classroom-box h2 {
-        font-size: 2.5rem;
-    }
-    
-    .classroom-box p {
-        font-size: 1.3rem;
-    }
-    
-    .footer-text h2 {
-        font-size: 2.8rem;
-    }
-    
-    .footer-text p {
-        font-size: 1.4rem;
-    }
+  #classroom-container {
+    max-width: 1800px;
+  }
+
+  .classroom-header h1 {
+    font-size: 4.5rem;
+  }
+
+  .classroom-tagline {
+    font-size: 1.6rem;
+    max-width: 1000px;
+  }
+
+  .classroom-boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .classroom-box h2 {
+    font-size: 2.5rem;
+  }
+
+  .classroom-box p {
+    font-size: 1.3rem;
+  }
+
+  .footer-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .footer-text p {
+    font-size: 1.4rem;
+  }
 }

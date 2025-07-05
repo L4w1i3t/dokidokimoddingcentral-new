@@ -1,10 +1,10 @@
-#!/usr/bin/env python3
+
 """
-Generate **mods.json** from responses exported as CSV from the Google Form.
+Generate mods.json from responses exported as CSV from the Google Form.
 Key fixes compared to the first draft:
   • keep yes/no flags (we no longer strip them in `clean_text`)
   • recognise android / demo entries directly from the title
-  • convert YouTube links to **embed** format and mark them as `version = "video"`
+  • convert YouTube links to embed format and mark them as `version = "video"`
 """
 
 from __future__ import annotations
@@ -21,12 +21,12 @@ from urllib.parse import urlparse, parse_qs
 ####################################################################################
 
 def clean_text(text: str | None) -> str:
-    """Return the trimmed cell (do *not* erase literal *Yes.* / *No.* strings)."""
+    """Return the trimmed cell (do not erase literal Yes./No. strings)."""
     return (text or "").strip()
 
 
 def col(row: Dict[str, str], fragment: str) -> str:
-    """Return the value whose header *contains* ``fragment`` (case‑insensitive)."""
+    """Return the value whose header contains ``fragment`` (case‑insensitive)."""
     for k, v in row.items():
         if fragment.lower() in k.lower():
             return v
@@ -65,7 +65,7 @@ def extract_main_author(authors_str: str) -> str:
 
 
 def youtube_to_embed(url: str) -> str:
-    """Convert any YouTube *watch* / *youtu.be* link to the */embed/* form."""
+    """Convert any YouTube watch / youtu.be link to the /embed/ form."""
     if not url:
         return url
 
@@ -138,7 +138,7 @@ def process_csv_to_mods_json(csv_path: str | Path, out_path: str | Path) -> None
     with open(out_path, "w", encoding="utf-8") as jf:
         json.dump(mods, jf, indent=2, ensure_ascii=False)
 
-    print(f"✓ mods.json written to {out_path}")
+    print(f"mods.json written to {out_path}")
     for cat, lst in mods.items():
         print(f"  {cat:8}: {len(lst)} mods")
 
@@ -147,9 +147,9 @@ def process_csv_to_mods_json(csv_path: str | Path, out_path: str | Path) -> None
 ####################################################################################
 
 def main():
-    csv_path = Path(r"c:\Users\clmel\Desktop\Programming\LARGE SCALE PROJECTS\WEBSITES\Doki-Doki-Modding-Central\DDMC\tools\responses.csv")
-    out_path = Path(r"c:\Users\clmel\Desktop\Programming\LARGE SCALE PROJECTS\WEBSITES\Doki-Doki-Modding-Central\DDMC\data\mods_exp.json")
-    print("Processing CSV → mods.json …")
+    csv_path = Path(r"../tools/responses.csv")
+    out_path = Path(r"../data/mods_exp.json")
+    print("Processing CSV to mods.json...")
     process_csv_to_mods_json(csv_path, out_path)
 
 

@@ -1,111 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Gallery - Doki Doki Modding Central</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/components/header/header.css">
-    <link rel="stylesheet" href="/components/footer/footer.css">
-    <link rel="stylesheet" href="/assets/css/page_specific/art-assets.css">
-    <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+    <link rel="stylesheet" href="/components/footer/footer.css" />
+    <link rel="stylesheet" href="/assets/css/page_specific/art-assets.css" />
+    <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <main>
-        <section id="art-container">
-            <div class="art-header">
-                <h1>Art Gallery</h1>
-                <p class="art-tagline">Enhance your mod with backgrounds and character CGs</p>
+      <section id="art-container">
+        <div class="art-header">
+          <h1>Art Gallery</h1>
+          <p class="art-tagline">
+            Enhance your mod with backgrounds and character CGs
+          </p>
+        </div>
+
+        <!-- Subcategory Navigation -->
+        <div class="subcategory-nav">
+          <button class="subcategory-btn active" data-target="bg-section">
+            Backgrounds
+          </button>
+          <button class="subcategory-btn" data-target="cg-section">
+            Character CGs
+          </button>
+        </div>
+
+        <!-- BG Section -->
+        <section id="bg-section" class="asset-section active">
+          <div class="section-header">
+            <h2>Backgrounds</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="bg-search"
+                placeholder="Search backgrounds..."
+              />
+              <button id="bg-search-button">Search</button>
             </div>
-
-            <!-- Subcategory Navigation -->
-            <div class="subcategory-nav">
-                <button class="subcategory-btn active" data-target="bg-section">Backgrounds</button>
-                <button class="subcategory-btn" data-target="cg-section">Character CGs</button>
+            <div class="filter-container">
+              <select id="bg-category-filter">
+                <option value="all">All Categories</option>
+                <option value="School">School</option>
+                <option value="Residential">Residential</option>
+                <option value="Outdoors">Outdoors</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
+          </div>
 
-            <!-- BG Section -->
-            <section id="bg-section" class="asset-section active">
-                <div class="section-header">
-                    <h2>Backgrounds</h2>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="search-filter-container">
-                    <div class="search-box">
-                        <input type="text" id="bg-search" placeholder="Search backgrounds...">
-                        <button id="bg-search-button">Search</button>
-                    </div>
-                    <div class="filter-container">
-                        <select id="bg-category-filter">
-                            <option value="all">All Categories</option>
-                            <option value="School">School</option>
-                            <option value="Residential">Residential</option>
-                            <option value="Outdoors">Outdoors</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div id="bg-grid" class="art-grid">
-                    <!-- BG items will be dynamically loaded here -->
-                </div>
-                
-                <div class="pagination" id="bg-pagination">
-                    <button id="bg-prev-page" class="pagination-button" disabled>Previous</button>
-                    <span id="bg-page-info" class="pagination-info">Page 1 of 1</span>
-                    <button id="bg-next-page" class="pagination-button" disabled>Next</button>
-                </div>
-            </section>
+          <div id="bg-grid" class="art-grid">
+            <!-- BG items will be dynamically loaded here -->
+          </div>
 
-            <!-- CG Section -->
-            <section id="cg-section" class="asset-section">
-                <div class="section-header">
-                    <h2>Character CGs</h2>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="search-filter-container">
-                    <div class="search-box">
-                        <input type="text" id="cg-search" placeholder="Search CGs...">
-                        <button id="cg-search-button">Search</button>
-                    </div>
-                    <div class="filter-container">
-                        <select id="cg-character-filter">
-                            <option value="all">All Characters</option>
-                            <option value="Monika">Monika</option>
-                            <option value="Sayori">Sayori</option>
-                            <option value="Natsuki">Natsuki</option>
-                            <option value="Yuri">Yuri</option>
-                            <option value="MC">MC</option>
-                            <option value="Multiple">Other</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div id="cg-grid" class="art-grid">
-                    <!-- CG items will be dynamically loaded here -->
-                </div>
-                
-                <div class="pagination" id="cg-pagination">
-                    <button id="cg-prev-page" class="pagination-button" disabled>Previous</button>
-                    <span id="cg-page-info" class="pagination-info">Page 1 of 1</span>
-                    <button id="cg-next-page" class="pagination-button" disabled>Next</button>
-                </div>
-            </section>
-
-            <div class="art-footer">
-                <h2>Want to Contribute?</h2>
-                <p>Share your artwork with the community to help other modders create visually stunning experiences.</p>
-                <a href="/pages/submit.html" class="contribute-button">
-                    <span>Submit Your Art</span>
-                </a>
-            </div>
+          <div class="pagination" id="bg-pagination">
+            <button id="bg-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="bg-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="bg-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
         </section>
+
+        <!-- CG Section -->
+        <section id="cg-section" class="asset-section">
+          <div class="section-header">
+            <h2>Character CGs</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input type="text" id="cg-search" placeholder="Search CGs..." />
+              <button id="cg-search-button">Search</button>
+            </div>
+            <div class="filter-container">
+              <select id="cg-character-filter">
+                <option value="all">All Characters</option>
+                <option value="Monika">Monika</option>
+                <option value="Sayori">Sayori</option>
+                <option value="Natsuki">Natsuki</option>
+                <option value="Yuri">Yuri</option>
+                <option value="MC">MC</option>
+                <option value="Multiple">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="cg-grid" class="art-grid">
+            <!-- CG items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="cg-pagination">
+            <button id="cg-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="cg-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="cg-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <div class="art-footer">
+          <h2>Want to Contribute?</h2>
+          <p>
+            Share your artwork with the community to help other modders create
+            visually stunning experiences.
+          </p>
+          <a href="/pages/submit.html" class="contribute-button">
+            <span>Submit Your Art</span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <script src="/components/addComponents.js"></script>
     <script src="/assets/js/page_specific/art-assets.js"></script>
     <script src="/assets/js/main.js"></script>
-</body>
+  </body>
 </html>

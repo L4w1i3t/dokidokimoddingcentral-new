@@ -1,60 +1,65 @@
 <!-- mod.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[MOD TITLE] - Doki Doki Modding Central</title>
-  <link rel="stylesheet" href="../../assets/css/styles.css" />
-  <link rel="stylesheet" href="../../components/header/header.css" />
-  <link rel="stylesheet" href="../../components/footer/footer.css" />
-  <link rel="stylesheet" href="../../assets/css/mod_style.css" />
-  <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[MOD TITLE] - Doki Doki Modding Central</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link rel="stylesheet" href="../../assets/css/mod_style.css" />
+    <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <section id="mod-container">
+        <div class="mod-content">
+          <h1>[MOD TITLE]</h1>
 
-<main>
-  <section id="mod-container">
-    <div class="mod-content">
-      <h1>[MOD TITLE]</h1>
+          <!-- Image with video overlay capability -->
+          <div class="mod-image-wrapper">
+            <img
+              id="modThumbnail"
+              src="../../assets/mod_prevs/[image].webp"
+              alt="Mod Preview"
+              class="mod-image"
+            />
+            <div class="play-overlay hidden" id="playOverlay">
+              <div class="play-icon">▶</div>
+            </div>
+          </div>
 
-      <!-- Image with video overlay capability -->
-      <div class="mod-image-wrapper">
-        <img
-          id="modThumbnail"
-          src="../../assets/mod_prevs/[image].webp"
-          alt="Mod Preview"
-          class="mod-image"
-        />
-        <div class="play-overlay hidden" id="playOverlay">
-          <div class="play-icon">▶</div>
+          <!-- Video iframe container (hidden by default) -->
+          <div class="video-iframe-wrapper hidden" id="videoWrapper">
+            <iframe
+              id="videoIframe"
+              src=""
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Mod information -->
+          <div class="mod-info">
+            <p><strong>Author:</strong> [AUTHOR]</p>
+            <p><strong>Submitted By:</strong> [SUBMITTER]</p>
+            <p><strong>Category:</strong> [CATEGORY]</p>
+            <!-- New category field -->
+            <p><strong>Description:</strong></p>
+            <p>[insert description here]</p>
+          </div>
+
+          <!-- Download section -->
+          <div class="mod-download" id="downloadContainer">
+            <!-- Download buttons will be added dynamically -->
+          </div>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <!-- Video iframe container (hidden by default) -->
-      <div class="video-iframe-wrapper hidden" id="videoWrapper">
-        <iframe id="videoIframe" src="" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <!-- Mod information -->
-      <div class="mod-info">
-        <p><strong>Author:</strong> [AUTHOR]</p>
-        <p><strong>Submitted By:</strong> [SUBMITTER]</p>
-        <p><strong>Category:</strong> [CATEGORY]</p> <!-- New category field -->
-        <p><strong>Description:</strong></p>
-        <p>[insert description here]</p>
-      </div>
-
-      <!-- Download section -->
-      <div class="mod-download" id="downloadContainer">
-        <!-- Download buttons will be added dynamically -->
-      </div>
-    </div>
-  </section>
-</main>
-
-<script src="../../components/addComponents.js"></script>
-<script src="../../assets/js/main.js"></script>
-<script src="./populateMod.js"></script>
-</body>
+    <script src="../../components/addComponents.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="./populateMod.js"></script>
+  </body>
 </html>

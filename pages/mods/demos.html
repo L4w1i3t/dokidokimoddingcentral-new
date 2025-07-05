@@ -1,91 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mod Demos - Doki Doki Modding Central</title>
-  <link rel="stylesheet" href="../../assets/css/styles.css"/>
-  <link rel="stylesheet" href="../../components/header/header.css"/>
-  <link rel="stylesheet" href="../../components/footer/footer.css"/>
-  <link rel="stylesheet" href="../../assets/css/page_specific/mod-catalog.css"/>
-  <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon"/>
-  <script src="../../assets/js/mod-data-utils.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mod Demos - Doki Doki Modding Central</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/page_specific/mod-catalog.css"
+    />
+    <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon" />
+    <script src="../../assets/js/mod-data-utils.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="mods-container">
+        <h1>Mod Demos</h1>
 
-<main>
-  <section id="mods-container">
-    <h1>Mod Demos</h1>
-    
-    <div class="search-filter-container">
-      <div class="search-box">
-        <input type="text" id="mod-search" placeholder="Search mod titles...">
-        <button id="search-button">Search</button>
-      </div>
-      <div class="search-box">
-        <input type="text" id="author-search" placeholder="Search by author...">
-        <button id="author-search-button">Search</button>
-      </div>
-      <div class="filter-container">
-        <select id="sort-filter">
-          <option value="newest">Newest First</option>
-          <option value="oldest">Oldest First</option>
-          <option value="az">Title (A-Z)</option>
-          <option value="za">Title (Z-A)</option>
-          <option value="author-az">Author (A-Z)</option>
-          <option value="author-za">Author (Z-A)</option>
-        </select>
-      </div>
-    </div>
-    
-    <div id="mods-list" class="mod-grid">
-      <!-- Mods will be dynamically loaded here -->
-    </div>
-    
-    <div class="pagination">
-      <button id="prev-page" class="pagination-button" disabled>Previous</button>
-      <span id="page-info" class="pagination-info">Page 1 of 1</span>
-      <button id="next-page" class="pagination-button">Next</button>
-    </div>
-  </section>
-</main>
+        <div class="search-filter-container">
+          <div class="search-box">
+            <input
+              type="text"
+              id="mod-search"
+              placeholder="Search mod titles..."
+            />
+            <button id="search-button">Search</button>
+          </div>
+          <div class="search-box">
+            <input
+              type="text"
+              id="author-search"
+              placeholder="Search by author..."
+            />
+            <button id="author-search-button">Search</button>
+          </div>
+          <div class="filter-container">
+            <select id="sort-filter">
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+              <option value="az">Title (A-Z)</option>
+              <option value="za">Title (Z-A)</option>
+              <option value="author-az">Author (A-Z)</option>
+              <option value="author-za">Author (Z-A)</option>
+            </select>
+          </div>
+        </div>
 
-<script>
-  const itemsPerPage = 12;
-  let currentPage = 1;
-  let totalPages = 1;
-  let allMods = [];
-  let filteredMods = [];
+        <div id="mods-list" class="mod-grid">
+          <!-- Mods will be dynamically loaded here -->
+        </div>
 
-  const container = document.getElementById('mods-list');
-  const prevBtn = document.getElementById('prev-page');
-  const nextBtn = document.getElementById('next-page');
-  const pageInfo = document.getElementById('page-info');
-  const searchInput = document.getElementById('mod-search');
-  const searchButton = document.getElementById('search-button');
-  const authorInput = document.getElementById('author-search');
-  const authorSearchButton = document.getElementById('author-search-button');
-  const sortFilter = document.getElementById('sort-filter');
+        <div class="pagination">
+          <button id="prev-page" class="pagination-button" disabled>
+            Previous
+          </button>
+          <span id="page-info" class="pagination-info">Page 1 of 1</span>
+          <button id="next-page" class="pagination-button">Next</button>
+        </div>
+      </section>
+    </main>
 
-  // Function to render mods on the current page
-  function renderPage(pageNumber) {
-    container.innerHTML = '';
-    const startIndex = (pageNumber - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const modsToShow = filteredMods.slice(startIndex, endIndex);
+    <script>
+      const itemsPerPage = 12;
+      let currentPage = 1;
+      let totalPages = 1;
+      let allMods = [];
+      let filteredMods = [];
 
-    if (modsToShow.length === 0) {
-      container.innerHTML = `
+      const container = document.getElementById("mods-list");
+      const prevBtn = document.getElementById("prev-page");
+      const nextBtn = document.getElementById("next-page");
+      const pageInfo = document.getElementById("page-info");
+      const searchInput = document.getElementById("mod-search");
+      const searchButton = document.getElementById("search-button");
+      const authorInput = document.getElementById("author-search");
+      const authorSearchButton = document.getElementById(
+        "author-search-button",
+      );
+      const sortFilter = document.getElementById("sort-filter");
+
+      // Function to render mods on the current page
+      function renderPage(pageNumber) {
+        container.innerHTML = "";
+        const startIndex = (pageNumber - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const modsToShow = filteredMods.slice(startIndex, endIndex);
+
+        if (modsToShow.length === 0) {
+          container.innerHTML = `
         <div class="no-results">
           <p>No demos found matching your search criteria.</p>
         </div>
       `;
-    } else {      modsToShow.forEach(mod => {
-        const modCard = document.createElement('a');
-        modCard.classList.add('mod-card');
-        // Add experimental parameter if we're in experimental mode
-        const expParam = isExperimentalMode() ? '&exp=true' : '';
-        modCard.href = `./mod.html?cat=demos&route=${mod.route}${expParam}`;        modCard.innerHTML = `
+        } else {
+          modsToShow.forEach((mod) => {
+            const modCard = document.createElement("a");
+            modCard.classList.add("mod-card");
+            // Add experimental parameter if we're in experimental mode
+            const expParam = isExperimentalMode() ? "&exp=true" : "";
+            modCard.href = `./mod.html?cat=demos&route=${mod.route}${expParam}`;
+            modCard.innerHTML = `
           <div class="mod-image-container">
             <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" onerror="this.src='../../assets/images/mod-placeholder.svg'" />
           </div>
@@ -96,108 +112,108 @@
             </div>
           </div>
         `;
-        container.appendChild(modCard);
-      });
-    }
+            container.appendChild(modCard);
+          });
+        }
 
-    // Update pagination info
-    pageInfo.textContent = `Page ${pageNumber} of ${totalPages}`;
-    prevBtn.disabled = (pageNumber === 1);
-    nextBtn.disabled = (pageNumber === totalPages || totalPages === 0);
-  }
+        // Update pagination info
+        pageInfo.textContent = `Page ${pageNumber} of ${totalPages}`;
+        prevBtn.disabled = pageNumber === 1;
+        nextBtn.disabled = pageNumber === totalPages || totalPages === 0;
+      }
 
-  // Function to filter and sort mods
-  function filterAndSortMods() {
-    const searchTerm = searchInput.value.toLowerCase().trim();
-    const authorTerm = authorInput.value.toLowerCase().trim();
-    const sortType = sortFilter.value;
+      // Function to filter and sort mods
+      function filterAndSortMods() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const authorTerm = authorInput.value.toLowerCase().trim();
+        const sortType = sortFilter.value;
 
-    // Filter by search term and author
-    filteredMods = allMods.filter(mod => {
-      const matchesTitle = searchTerm === '' || 
-                          mod.title.toLowerCase().includes(searchTerm);
-      const matchesAuthor = authorTerm === '' || 
-                           mod.author.toLowerCase().includes(authorTerm);
-      return matchesTitle && matchesAuthor;
-    });
+        // Filter by search term and author
+        filteredMods = allMods.filter((mod) => {
+          const matchesTitle =
+            searchTerm === "" || mod.title.toLowerCase().includes(searchTerm);
+          const matchesAuthor =
+            authorTerm === "" || mod.author.toLowerCase().includes(authorTerm);
+          return matchesTitle && matchesAuthor;
+        });
 
-    // Sort based on selected option
-    switch(sortType) {
-        case 'newest':
+        // Sort based on selected option
+        switch (sortType) {
+          case "newest":
             // Assuming the default order in JSON is oldest first
             // Just reverse the array to get newest first
             filteredMods = [...filteredMods].reverse();
             break;
-        case 'oldest':
+          case "oldest":
             // Keep the original order from the JSON which is already oldest first
             // Do nothing as filteredMods is already in the right order
             break;
-        case 'az':
+          case "az":
             filteredMods.sort((a, b) => a.title.localeCompare(b.title));
             break;
-        case 'za':
+          case "za":
             filteredMods.sort((a, b) => b.title.localeCompare(a.title));
             break;
-        case 'author-az':
+          case "author-az":
             filteredMods.sort((a, b) => a.author.localeCompare(b.author));
             break;
-        case 'author-za':
+          case "author-za":
             filteredMods.sort((a, b) => b.author.localeCompare(a.author));
             break;
-    }
+        }
 
-    // Reset to first page and update
-    currentPage = 1;
-    totalPages = Math.max(1, Math.ceil(filteredMods.length / itemsPerPage));
-    renderPage(currentPage);
-  }
-  // Load mods from JSON using utility function
-  loadModData('demos')
-    .then(data => {
-        allMods = data;
-        
-        // Apply the default sorting (newest first)
-        // which is just the reverse of the original order
-        filteredMods = [...allMods].reverse();
-        
-        totalPages = Math.ceil(filteredMods.length / itemsPerPage);
+        // Reset to first page and update
+        currentPage = 1;
+        totalPages = Math.max(1, Math.ceil(filteredMods.length / itemsPerPage));
         renderPage(currentPage);
-    })
-    .catch(error => console.error('Error loading mods:', error));
+      }
+      // Load mods from JSON using utility function
+      loadModData("demos")
+        .then((data) => {
+          allMods = data;
 
-  // Event listeners
-  prevBtn.addEventListener('click', () => {
-    if (currentPage > 1) {
-      currentPage--;
-      renderPage(currentPage);
-    }
-  });
+          // Apply the default sorting (newest first)
+          // which is just the reverse of the original order
+          filteredMods = [...allMods].reverse();
 
-  nextBtn.addEventListener('click', () => {
-    if (currentPage < totalPages) {
-      currentPage++;
-      renderPage(currentPage);
-    }
-  });
+          totalPages = Math.ceil(filteredMods.length / itemsPerPage);
+          renderPage(currentPage);
+        })
+        .catch((error) => console.error("Error loading mods:", error));
 
-  searchButton.addEventListener('click', filterAndSortMods);
-  searchInput.addEventListener('keyup', function(event) {
-    if (event.key === 'Enter') {
-      filterAndSortMods();
-    }
-  });
+      // Event listeners
+      prevBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderPage(currentPage);
+        }
+      });
 
-  authorSearchButton.addEventListener('click', filterAndSortMods);
-  authorInput.addEventListener('keyup', function(event) {
-    if (event.key === 'Enter') {
-      filterAndSortMods();
-    }
-  });
+      nextBtn.addEventListener("click", () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderPage(currentPage);
+        }
+      });
 
-  sortFilter.addEventListener('change', filterAndSortMods);
-</script>
+      searchButton.addEventListener("click", filterAndSortMods);
+      searchInput.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+          filterAndSortMods();
+        }
+      });
 
-<script src="../../components/addComponents.js"></script>
-<script src="../../assets/js/main.js"></script>
-</body>
+      authorSearchButton.addEventListener("click", filterAndSortMods);
+      authorInput.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+          filterAndSortMods();
+        }
+      });
+
+      sortFilter.addEventListener("change", filterAndSortMods);
+    </script>
+
+    <script src="../../components/addComponents.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,170 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Make a Submission - Doki Doki Modding Central</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../components/header/header.css">
-    <link rel="stylesheet" href="../components/footer/footer.css">
-    <link rel="stylesheet" href="../assets/css/page_specific/submit.css">
-    <link rel="icon" href="../assets/gui/favicon.ico" type="image/x-icon">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../assets/css/page_specific/submit.css" />
+    <link rel="icon" href="../assets/gui/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <main>
-        <section id="submission-container">
-            <div class="submission-content">
-                <h1>Submit Your Content</h1>
-                <p>Contribute to the DDLC modding community by sharing your creations. Follow the links below to submit your work!</p>
-                
-                <div class="submission-cards-container">
-                    <div class="submission-card">
-                        <div class="submission-icon mod-icon"></div>
-                        <h2>Mod Submission</h2>
-                        <p>Submit your completed mods, demos, or videos to be featured in our catalog.</p>
-                        <a href="https://forms.gle/bRqoSbEoJuGQkS4u7" target="_blank" class="card-button">
-                            Submit Mod
-                        </a>
-                    </div>
-                    
-                    <div class="submission-card">
-                        <div class="submission-icon asset-icon"></div>
-                        <h2>Asset Submission</h2>
-                        <p>Share backgrounds, music, sprites, or other resources for other modders to use.</p>
-                        <a href="https://forms.gle/n5WyvfY78Z5PKHMG9" target="_blank" class="card-button">
-                            Submit Asset
-                        </a>
-                    </div>
-                    
-                    <div class="submission-card">
-                        <div class="submission-icon template-icon"></div>
-                        <h2>Template Addon</h2>
-                        <p>Submit Ren'Py template addons that extend the base DDLC modding template.</p>
-                        <a href="./notavailable.html" target="_blank" class="card-button">
-                            Submit Template Addon
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="guidelines-section">
-                    <div class="guidelines-header">
-                        <h2>Submission Guidelines</h2>
-                        <div class="guidelines-line"></div>
-                    </div>
-                    
-                    <div class="guidelines-content">
-                        <div class="guideline-category">
-                            <h3>General Requirements</h3>
-                            <ul>
-                                <li>Provide clear descriptions and documentation for your submissions</li>
-                                <li>Include high-quality thumbnails or preview images</li>
-                                <li>Ensure your submission doesn't contain malware or illegal content</li>
-                                <li>Review the <a href="http://teamsalvato.com/ip-guidelines/" target="_blank">Team Salvato IP Guidelines</a> before submitting</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="guideline-category">
-                            <h3>Mod Submissions</h3>
-                            <ul>
-                                <li>Include a direct download link (Google Drive, MEGA, etc.)</li>
-                                <li>Specify the mod type (full mod, demo, etc.)</li>
-                                <li>Mention any content warnings or age restrictions</li>
-                                <li>Provide installation instructions if applicable</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="guideline-category">
-                            <h3>Asset Submissions</h3>
-                            <ul>
-                                <li>Specify usage restrictions or credits required</li>
-                                <li>Include file format</li>
-                                <li>Mention if the asset is original or derivative</li>
-                                <li>For music, include track length, genre, and format details</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="guideline-category">
-                            <h3>Template Addon Submissions</h3>
-                            <ul>
-                                <li>Provide a brief description on what it does or is</li>
-                                <li>Include setup/installation instructions</li>
-                                <li>Specify compatibility with template versions</li>
-                                <li>Mention any dependencies or requirements</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="faq-section">
-                    <div class="faq-header">
-                        <h2>Frequently Asked Questions</h2>
-                        <div class="faq-line"></div>
-                    </div>
-                    
-                    <div class="faq-content">
-                        <div class="faq-item">
-                            <div class="faq-question">How long will it take for my submission to be reviewed?</div>
-                            <div class="faq-answer">
-                                <p>Please have patience. Our team reviews submissions as quickly as possible, but we're a small team with other responsibilities. Submissions are typically processed in batches rather than individually.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">Can I update my submission after it's been published?</div>
-                            <div class="faq-answer">
-                                <p>Yes! You can submit updated versions through the same forms. Just make sure to mention that it's an update to an existing submission and provide details about what has changed.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">Are there any restrictions on what I can submit?</div>
-                            <div class="faq-answer">
-                                <p>We accept most submissions as long as they follow Team Salvato's IP Guidelines and don't contain illegal content. We archive EVERYTHING with very few exceptions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="support-section">
-                    <h2>Need Help?</h2>
-                    <p>If you're having trouble with submissions or have questions not covered here, contact us by following this link and scrolling to the bottom of the page.</p>
-                    <a href="../pages/about.html" class="support-button">Find our contact here</a>
-                </div>
+      <section id="submission-container">
+        <div class="submission-content">
+          <h1>Submit Your Content</h1>
+          <p>
+            Contribute to the DDLC modding community by sharing your creations.
+            Follow the links below to submit your work!
+          </p>
+
+          <div class="submission-cards-container">
+            <div class="submission-card">
+              <div class="submission-icon mod-icon"></div>
+              <h2>Mod Submission</h2>
+              <p>
+                Submit your completed mods, demos, or videos to be featured in
+                our catalog.
+              </p>
+              <a
+                href="https://forms.gle/bRqoSbEoJuGQkS4u7"
+                target="_blank"
+                class="card-button"
+              >
+                Submit Mod
+              </a>
             </div>
-        </section>
+
+            <div class="submission-card">
+              <div class="submission-icon asset-icon"></div>
+              <h2>Asset Submission</h2>
+              <p>
+                Share backgrounds, music, sprites, or other resources for other
+                modders to use.
+              </p>
+              <a
+                href="https://forms.gle/n5WyvfY78Z5PKHMG9"
+                target="_blank"
+                class="card-button"
+              >
+                Submit Asset
+              </a>
+            </div>
+
+            <div class="submission-card">
+              <div class="submission-icon template-icon"></div>
+              <h2>Template Addon</h2>
+              <p>
+                Submit Ren'Py template addons that extend the base DDLC modding
+                template.
+              </p>
+              <a href="./notavailable.html" target="_blank" class="card-button">
+                Submit Template Addon
+              </a>
+            </div>
+          </div>
+
+          <div class="guidelines-section">
+            <div class="guidelines-header">
+              <h2>Submission Guidelines</h2>
+              <div class="guidelines-line"></div>
+            </div>
+
+            <div class="guidelines-content">
+              <div class="guideline-category">
+                <h3>General Requirements</h3>
+                <ul>
+                  <li>
+                    Provide clear descriptions and documentation for your
+                    submissions
+                  </li>
+                  <li>Include high-quality thumbnails or preview images</li>
+                  <li>
+                    Ensure your submission doesn't contain malware or illegal
+                    content
+                  </li>
+                  <li>
+                    Review the
+                    <a
+                      href="http://teamsalvato.com/ip-guidelines/"
+                      target="_blank"
+                      >Team Salvato IP Guidelines</a
+                    >
+                    before submitting
+                  </li>
+                </ul>
+              </div>
+
+              <div class="guideline-category">
+                <h3>Mod Submissions</h3>
+                <ul>
+                  <li>
+                    Include a direct download link (Google Drive, MEGA, etc.)
+                  </li>
+                  <li>Specify the mod type (full mod, demo, etc.)</li>
+                  <li>Mention any content warnings or age restrictions</li>
+                  <li>Provide installation instructions if applicable</li>
+                </ul>
+              </div>
+
+              <div class="guideline-category">
+                <h3>Asset Submissions</h3>
+                <ul>
+                  <li>Specify usage restrictions or credits required</li>
+                  <li>Include file format</li>
+                  <li>Mention if the asset is original or derivative</li>
+                  <li>
+                    For music, include track length, genre, and format details
+                  </li>
+                </ul>
+              </div>
+
+              <div class="guideline-category">
+                <h3>Template Addon Submissions</h3>
+                <ul>
+                  <li>Provide a brief description on what it does or is</li>
+                  <li>Include setup/installation instructions</li>
+                  <li>Specify compatibility with template versions</li>
+                  <li>Mention any dependencies or requirements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-section">
+            <div class="faq-header">
+              <h2>Frequently Asked Questions</h2>
+              <div class="faq-line"></div>
+            </div>
+
+            <div class="faq-content">
+              <div class="faq-item">
+                <div class="faq-question">
+                  How long will it take for my submission to be reviewed?
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Please have patience. Our team reviews submissions as
+                    quickly as possible, but we're a small team with other
+                    responsibilities. Submissions are typically processed in
+                    batches rather than individually.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  Can I update my submission after it's been published?
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Yes! You can submit updated versions through the same forms.
+                    Just make sure to mention that it's an update to an existing
+                    submission and provide details about what has changed.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  Are there any restrictions on what I can submit?
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We accept most submissions as long as they follow Team
+                    Salvato's IP Guidelines and don't contain illegal content.
+                    We archive EVERYTHING with very few exceptions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="support-section">
+            <h2>Need Help?</h2>
+            <p>
+              If you're having trouble with submissions or have questions not
+              covered here, contact us by following this link and scrolling to
+              the bottom of the page.
+            </p>
+            <a href="../pages/about.html" class="support-button"
+              >Find our contact here</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="../components/addComponents.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
-        // Simple accordion for FAQ items
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const isOpen = answer.style.maxHeight;
-                
-                // Close all answers
-                document.querySelectorAll('.faq-answer').forEach(item => {
-                    item.style.maxHeight = null;
-                    item.parentElement.classList.remove('active');
-                });
-                
-                // If it wasn't open before, open it
-                if (!isOpen) {
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    question.parentElement.classList.add('active');
-                }
-            });
+      // Simple accordion for FAQ items
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          const isOpen = answer.style.maxHeight;
+
+          // Close all answers
+          document.querySelectorAll(".faq-answer").forEach((item) => {
+            item.style.maxHeight = null;
+            item.parentElement.classList.remove("active");
+          });
+
+          // If it wasn't open before, open it
+          if (!isOpen) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            question.parentElement.classList.add("active");
+          }
         });
-        
-        // Initialize the first FAQ item as open
-        const firstFaq = document.querySelector('.faq-item');
-        if (firstFaq) {
-            const firstAnswer = firstFaq.querySelector('.faq-answer');
-            firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';
-            firstFaq.classList.add('active');
-        }
+      });
+
+      // Initialize the first FAQ item as open
+      const firstFaq = document.querySelector(".faq-item");
+      if (firstFaq) {
+        const firstAnswer = firstFaq.querySelector(".faq-answer");
+        firstAnswer.style.maxHeight = firstAnswer.scrollHeight + "px";
+        firstFaq.classList.add("active");
+      }
     </script>
-</body>
+  </body>
 </html>

@@ -1,101 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mods [EXPERIMENTAL] - Doki Doki Modding Central</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../components/header/header.css">
-    <link rel="stylesheet" href="../components/footer/footer.css">
-    <link rel="stylesheet" href="../assets/css/page_specific/mods.css">
-    <link rel="icon" href="../assets/gui/favicon.ico" type="image/x-icon">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../assets/css/page_specific/mods.css" />
+    <link rel="icon" href="../assets/gui/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <main>
-        <section id="mods-container">
-            <div class="mods-header">
-                <h1>Mods [EXPERIMENTAL PAGE]</h1>
-                <p class="mods-description">This is a catalog made to test our mod sorting algorithm!</p>
-                <p class="mods-subtitle">Do not be alarmed if there is misplaced data, data leakage, or otherwise any issues with a given mod.</p>
-                
-                <!-- Dynamic Mod Counter -->
-                <div class="mod-counter-window">
-                    <div class="counter-content">
-                        <div class="counter-icon">
-                            <img src="../assets/gui/thumbsup.webp" alt="DDLC Logo" class="ddlc-icon">
-                        </div>
-                        <div class="counter-info">
-                            <h3>Total Mods Uploaded</h3>
-                            <div class="mod-count" id="totalModCount">
-                                <span class="count-number">Loading...</span>
-                            </div>
-                            <p class="counter-subtitle">Across all platforms and categories</p>
-                        </div>
-                    </div>
-                    <div class="category-breakdown" id="categoryBreakdown">
-                        <!-- Category counts will be populated dynamically -->
-                    </div>
+      <section id="mods-container">
+        <div class="mods-header">
+          <h1>Mods [EXPERIMENTAL PAGE]</h1>
+          <p class="mods-description">
+            This is a catalog made to test our mod sorting algorithm!
+          </p>
+          <p class="mods-subtitle">
+            Do not be alarmed if there is misplaced data, data leakage, or
+            otherwise any issues with a given mod.
+          </p>
+
+          <!-- Dynamic Mod Counter -->
+          <div class="mod-counter-window">
+            <div class="counter-content">
+              <div class="counter-icon">
+                <img
+                  src="../assets/gui/thumbsup.webp"
+                  alt="DDLC Logo"
+                  class="ddlc-icon"
+                />
+              </div>
+              <div class="counter-info">
+                <h3>Total Mods Uploaded</h3>
+                <div class="mod-count" id="totalModCount">
+                  <span class="count-number">Loading...</span>
                 </div>
+                <p class="counter-subtitle">
+                  Across all platforms and categories
+                </p>
+              </div>
             </div>
-
-            <div class="category-grid">
-                <a href="mods/standard.html?exp=true" class="category-card standard">
-                    <div class="category-content">
-                        <img src="../assets/gui/new_mods.webp" alt="Standard Icon" class="category-icon">
-                        <h2>New PC Mods</h2>
-                        <p>Explore the latest and greatest mods available for Windows, Mac, and Linux platforms.</p>
-                    </div>
-                </a>
-
-                <a href="mods/android.html?exp=true" class="category-card android">
-                    <div class="category-content">
-                        <img src="../assets/gui/android.webp" alt="Android Icon" class="category-icon">
-                        <h2>Android Mods</h2>
-                        <p>Discover mods specifically designed and optimized for Android mobile devices.</p>
-                    </div>
-                </a>
-
-                <a href="mods/archive.html?exp=true" class="category-card archive">
-                    <div class="category-content">
-                        <img src="../assets/gui/archive.webp" alt="Archive Icon" class="category-icon">
-                        <h2>Mod Archive</h2>
-                        <p>Access our comprehensive library of mods from throughout DDLC's modding history.</p>
-                    </div>
-                </a>
-
-                <a href="mods/demos.html?exp=true" class="category-card demos">
-                    <div class="category-content">
-                        <img src="../assets/gui/demos.webp" alt="Demo Icon" class="category-icon">
-                        <h2>Mod Demos</h2>
-                        <p>Preview upcoming mods and experience early versions of works-in-progress.</p>
-                    </div>
-                </a>
-
-                <a href="mods/videos.html?exp=true" class="category-card videos">
-                    <div class="category-content">
-                        <img src="../assets/gui/video.webp" alt="Video Icon" class="category-icon">
-                        <h2>Video Mods</h2>
-                        <p>Watch playthroughs and showcases of mods through curated video content.</p>
-                    </div>
-                </a>
+            <div class="category-breakdown" id="categoryBreakdown">
+              <!-- Category counts will be populated dynamically -->
             </div>
+          </div>
+        </div>
 
-            <div class="mods-resources">
-                <h2>Want to Create Your Own Mod?</h2>
-                <p>Check out our resources, templates, and guides to get started on your modding journey!</p>
-                <div class="resource-links">
-                    <a href="classroom.html" class="resource-link">
-                        <span>Visit the Classroom</span>
-                    </a>
-                    <a href="submit.html" class="resource-link">
-                        <span>Submit Your Mod</span>
-                    </a>
-                </div>
+        <div class="category-grid">
+          <a href="mods/standard.html?exp=true" class="category-card standard">
+            <div class="category-content">
+              <img
+                src="../assets/gui/new_mods.webp"
+                alt="Standard Icon"
+                class="category-icon"
+              />
+              <h2>New PC Mods</h2>
+              <p>
+                Explore the latest and greatest mods available for Windows, Mac,
+                and Linux platforms.
+              </p>
             </div>
-        </section>
-    </main>    <script src="../components/addComponents.js"></script>
+          </a>
+
+          <a href="mods/android.html?exp=true" class="category-card android">
+            <div class="category-content">
+              <img
+                src="../assets/gui/android.webp"
+                alt="Android Icon"
+                class="category-icon"
+              />
+              <h2>Android Mods</h2>
+              <p>
+                Discover mods specifically designed and optimized for Android
+                mobile devices.
+              </p>
+            </div>
+          </a>
+
+          <a href="mods/archive.html?exp=true" class="category-card archive">
+            <div class="category-content">
+              <img
+                src="../assets/gui/archive.webp"
+                alt="Archive Icon"
+                class="category-icon"
+              />
+              <h2>Mod Archive</h2>
+              <p>
+                Access our comprehensive library of mods from throughout DDLC's
+                modding history.
+              </p>
+            </div>
+          </a>
+
+          <a href="mods/demos.html?exp=true" class="category-card demos">
+            <div class="category-content">
+              <img
+                src="../assets/gui/demos.webp"
+                alt="Demo Icon"
+                class="category-icon"
+              />
+              <h2>Mod Demos</h2>
+              <p>
+                Preview upcoming mods and experience early versions of
+                works-in-progress.
+              </p>
+            </div>
+          </a>
+
+          <a href="mods/videos.html?exp=true" class="category-card videos">
+            <div class="category-content">
+              <img
+                src="../assets/gui/video.webp"
+                alt="Video Icon"
+                class="category-icon"
+              />
+              <h2>Video Mods</h2>
+              <p>
+                Watch playthroughs and showcases of mods through curated video
+                content.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="mods-resources">
+          <h2>Want to Create Your Own Mod?</h2>
+          <p>
+            Check out our resources, templates, and guides to get started on
+            your modding journey!
+          </p>
+          <div class="resource-links">
+            <a href="classroom.html" class="resource-link">
+              <span>Visit the Classroom</span>
+            </a>
+            <a href="submit.html" class="resource-link">
+              <span>Submit Your Mod</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../components/addComponents.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/page_specific/mods.js"></script>
-</body>
+  </body>
 </html>

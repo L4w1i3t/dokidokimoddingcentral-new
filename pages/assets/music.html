@@ -1,110 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music & Audio - Doki Doki Modding Central</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/components/header/header.css">
-    <link rel="stylesheet" href="/components/footer/footer.css">
-    <link rel="stylesheet" href="/assets/css/page_specific/music-assets.css">
-    <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+    <link rel="stylesheet" href="/components/footer/footer.css" />
+    <link rel="stylesheet" href="/assets/css/page_specific/music-assets.css" />
+    <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <main>
-        <section id="music-container">
-            <div class="music-header">
-                <h1>Music & Audio Assets</h1>
-                <p class="music-tagline">Enhance your mod with atmospheric soundtracks and sound effects</p>
+      <section id="music-container">
+        <div class="music-header">
+          <h1>Music & Audio Assets</h1>
+          <p class="music-tagline">
+            Enhance your mod with atmospheric soundtracks and sound effects
+          </p>
+        </div>
+
+        <!-- Subcategory Navigation -->
+        <div class="subcategory-nav">
+          <button class="subcategory-btn active" data-target="bgm-section">
+            Background Music
+          </button>
+          <button class="subcategory-btn" data-target="sfx-section">
+            Sound Effects
+          </button>
+        </div>
+
+        <!-- BGM Section -->
+        <section id="bgm-section" class="asset-section active">
+          <div class="section-header">
+            <h2>Background Music</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="bgm-search"
+                placeholder="Search music..."
+              />
+              <button id="bgm-search-button">Search</button>
             </div>
-
-            <!-- Subcategory Navigation -->
-            <div class="subcategory-nav">
-                <button class="subcategory-btn active" data-target="bgm-section">Background Music</button>
-                <button class="subcategory-btn" data-target="sfx-section">Sound Effects</button>
+            <div class="filter-container">
+              <select id="bgm-genre-filter">
+                <option value="all">All Genres</option>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Classical">Classical</option>
+                <option value="Electronic">Electronic</option>
+              </select>
             </div>
+          </div>
 
-            <!-- BGM Section -->
-            <section id="bgm-section" class="asset-section active">
-                <div class="section-header">
-                    <h2>Background Music</h2>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="search-filter-container">
-                    <div class="search-box">
-                        <input type="text" id="bgm-search" placeholder="Search music...">
-                        <button id="bgm-search-button">Search</button>
-                    </div>
-                    <div class="filter-container">
-                        <select id="bgm-genre-filter">
-                            <option value="all">All Genres</option>
-                            <option value="Rock">Rock</option>
-                            <option value="Pop">Pop</option>
-                            <option value="Jazz">Jazz</option>
-                            <option value="Classical">Classical</option>
-                            <option value="Electronic">Electronic</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div id="bgm-grid" class="music-grid">
-                    <!-- BGM items will be dynamically loaded here -->
-                </div>
-                
-                <div class="pagination" id="bgm-pagination">
-                    <button id="bgm-prev-page" class="pagination-button" disabled>Previous</button>
-                    <span id="bgm-page-info" class="pagination-info">Page 1 of 1</span>
-                    <button id="bgm-next-page" class="pagination-button" disabled>Next</button>
-                </div>
-            </section>
+          <div id="bgm-grid" class="music-grid">
+            <!-- BGM items will be dynamically loaded here -->
+          </div>
 
-            <!-- SFX Section -->
-            <section id="sfx-section" class="asset-section">
-                <div class="section-header">
-                    <h2>Sound Effects</h2>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="search-filter-container">
-                    <div class="search-box">
-                        <input type="text" id="sfx-search" placeholder="Search sound effects...">
-                        <button id="sfx-search-button">Search</button>
-                    </div>
-                    <div class="filter-container">
-                        <select id="sfx-category-filter">
-                            <option value="all">All Categories</option>
-                            <option value="UI">UI/Interface</option>
-                            <option value="Environment">Environment</option>
-                            <option value="Character">Character</option>
-                            <option value="Ambience">Ambience</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div id="sfx-grid" class="music-grid">
-                    <!-- SFX items will be dynamically loaded here -->
-                </div>
-                
-                <div class="pagination" id="sfx-pagination">
-                    <button id="sfx-prev-page" class="pagination-button" disabled>Previous</button>
-                    <span id="sfx-page-info" class="pagination-info">Page 1 of 1</span>
-                    <button id="sfx-next-page" class="pagination-button" disabled>Next</button>
-                </div>
-            </section>
-
-            <div class="music-footer">
-                <h2>Want to Contribute?</h2>
-                <p>Share your music and sound effects with the community to help other modders create immersive experiences.</p>
-                <a href="/pages/submit.html" class="contribute-button">
-                    <span>Submit Your Audio</span>
-                </a>
-            </div>
+          <div class="pagination" id="bgm-pagination">
+            <button id="bgm-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="bgm-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="bgm-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
         </section>
+
+        <!-- SFX Section -->
+        <section id="sfx-section" class="asset-section">
+          <div class="section-header">
+            <h2>Sound Effects</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="sfx-search"
+                placeholder="Search sound effects..."
+              />
+              <button id="sfx-search-button">Search</button>
+            </div>
+            <div class="filter-container">
+              <select id="sfx-category-filter">
+                <option value="all">All Categories</option>
+                <option value="UI">UI/Interface</option>
+                <option value="Environment">Environment</option>
+                <option value="Character">Character</option>
+                <option value="Ambience">Ambience</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="sfx-grid" class="music-grid">
+            <!-- SFX items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="sfx-pagination">
+            <button id="sfx-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="sfx-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="sfx-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <div class="music-footer">
+          <h2>Want to Contribute?</h2>
+          <p>
+            Share your music and sound effects with the community to help other
+            modders create immersive experiences.
+          </p>
+          <a href="/pages/submit.html" class="contribute-button">
+            <span>Submit Your Audio</span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <script src="/components/addComponents.js"></script>
     <script src="/assets/js/page_specific/music-assets.js"></script>
     <script src="/assets/js/main.js"></script>
-</body>
+  </body>
 </html>

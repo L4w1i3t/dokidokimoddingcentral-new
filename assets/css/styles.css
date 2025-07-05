@@ -1,24 +1,38 @@
 @font-face {
-    font-family: 'HotMustardBTNRegular';
-    src: url('/assets/fonts/HotMustardBTNRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "HotMustardBTNRegular";
+  src: url("/assets/fonts/HotMustardBTNRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    height: 100%; /* Ensure full height */
+html,
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure full height */
 }
 
-p, li, a {
-    font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "calt" 1, "dlig" 1, "hlig" 1, "curs" 1, "pnum" 1, "onum" 1, "tnum" 1;
-    font-variant-ligatures: common-ligatures contextual ligatures discretionary-ligatures historical-ligatures standard ligatures;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    white-space: normal;
-    word-spacing: normal;
+p,
+li,
+a {
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "clig" 1,
+    "calt" 1,
+    "dlig" 1,
+    "hlig" 1,
+    "curs" 1,
+    "pnum" 1,
+    "onum" 1,
+    "tnum" 1;
+  font-variant-ligatures: common-ligatures contextual ligatures
+    discretionary-ligatures historical-ligatures standard ligatures;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  white-space: normal;
+  word-spacing: normal;
 }
