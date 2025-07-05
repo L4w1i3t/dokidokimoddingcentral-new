@@ -99,18 +99,6 @@ main {
   margin-bottom: 20px;
 }
 
-.mod-icon {
-  background-image: url("../../assets/gui/mod-icon.webp");
-}
-
-.asset-icon {
-  background-image: url("../../assets/gui/asset-icon.webp");
-}
-
-.template-icon {
-  background-image: url("../../assets/gui/template-icon.webp");
-}
-
 .submission-card h2 {
   font-size: 1.6rem;
   margin: 0 0 15px;

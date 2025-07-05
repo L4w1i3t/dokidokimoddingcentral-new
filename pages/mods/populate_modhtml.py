@@ -31,7 +31,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </main>
 
     <script src="../../../../components/addComponents.js"></script>
-    <script src="../../../../assets/js/main.js"></script>
     <script src="../../../../pages/mods/populateMod.js"></script>
 </body>
 </html>
