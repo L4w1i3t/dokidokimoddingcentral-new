@@ -6,143 +6,18 @@
         "category": "Other",
         "keywords": ["Coming Soon", "Placeholder"],
         "file": "placecg.png",
-        "description": "This GUI pack is currently in development and will be available for download soon."
+        "downloadUrl": "https://example.com/files/future_gui_pack.zip",
+        "description": "DUMMY"
       },
       { 
         "id": 100001, 
         "name": "Modern Pink Button Set", 
-        "author": "SakuraDesign", 
+        "author": "BeepBeepLettuce", 
         "category": "Buttons",
         "keywords": ["Buttons", "Pink", "Modern", "Minimalist"],
         "file": "placecg.png",
         "downloadUrl": "https://example.com/files/modern_pink_buttons.zip",
-        "description": "A set of sleek, modern pink buttons perfect for visual novels with a cute aesthetic."
-      },{ 
-        "id": 100002, 
-        "name": "Classic Visual Novel Menu", 
-        "author": "RetroVNCreator", 
-        "category": "Menus",
-        "keywords": ["Menus", "Classic", "Retro"],
-        "file": "classic_vn_menu.png",
-        "downloadUrl": "https://example.com/files/classic_vn_menu.zip",
-        "description": "A classic menu system inspired by early-2000s visual novels, with a modern touch."
-      },      { 
-        "id": 100003, 
-        "name": "Pastel Textbox Collection", 
-        "author": "MoeUI", 
-        "category": "Text Boxes",
-        "keywords": ["Text Boxes", "Pastel", "Cute"],
-        "file": "pastel_textboxes.png",
-        "downloadUrl": "https://example.com/files/pastel_textboxes.zip",
-        "description": "A collection of soft, pastel-colored text boxes with decorative edges."
-      },      { 
-        "id": 100004, 
-        "name": "Dark Mode Interface Kit", 
-        "author": "NightOwlDesigns", 
-        "category": "UI Frames",
-        "keywords": ["UI Frames", "Dark", "Modern", "Sleek"],
-        "file": "dark_mode_ui.png",
-        "downloadUrl": "https://example.com/files/dark_mode_ui.zip",
-        "description": "Complete dark mode interface kit with low-light optimization for comfortable gameplay."
-      },      { 
-        "id": 100005, 
-        "name": "Glitch Effect Elements", 
-        "author": "DigitalDistortion", 
-        "category": "Other",
-        "keywords": ["Effects", "Glitch", "Horror", "Special"],
-        "file": "glitch_elements.png",
-        "downloadUrl": "https://example.com/files/glitch_elements.zip",
-        "description": "Glitchy UI elements perfect for fourth-wall breaking or horror-themed mods."
-      },      { 
-        "id": 100006, 
-        "name": "Rounded Button Pack", 
-        "author": "SmoothUI", 
-        "category": "Buttons",
-        "keywords": ["Buttons", "Rounded", "Soft"],
-        "file": "rounded_buttons.png",
-        "downloadUrl": "https://example.com/files/rounded_buttons.zip",
-        "description": "Soft, rounded buttons with gentle hover effects and multiple color variations."
-      },      { 
-        "id": 100007, 
-        "name": "Classroom-themed Menu System", 
-        "author": "SchoolLifeDesigns", 
-        "category": "Menus",
-        "keywords": ["Menus", "School", "Classroom"],
-        "file": "classroom_menu.png",
-        "downloadUrl": "https://example.com/files/classroom_menu.zip",
-        "description": "Menu design that resembles school notebooks and chalkboards, perfect for school-life games."
-      },      { 
-        "id": 100008, 
-        "name": "Transparent Text Box Set", 
-        "author": "ClearView", 
-        "category": "Text Boxes",
-        "keywords": ["Text Boxes", "Transparent", "Minimal"],
-        "file": "transparent_textboxes.png",
-        "downloadUrl": "https://example.com/files/transparent_textboxes.zip",
-        "description": "Elegant transparent text boxes that don't obscure your background art."
-      },      { 
-        "id": 100009, 
-        "name": "Neon Frame Collection", 
-        "author": "NightCityUI", 
-        "category": "UI Frames",
-        "keywords": ["UI Frames", "Neon", "Bright", "Colorful"],
-        "file": "neon_frames.png",
-        "downloadUrl": "https://example.com/files/neon_frames.zip",
-        "description": "Vibrant neon-styled frames and borders for a cyberpunk aesthetic."
-      },      { 
-        "id": 100010, 
-        "name": "Custom Cursor Pack", 
-        "author": "PointerWorks", 
-        "category": "Other",
-        "keywords": ["Cursors", "Pointers", "Interactive"],
-        "file": "custom_cursors.png",
-        "downloadUrl": "https://example.com/files/custom_cursors.zip",
-        "description": "Set of themed cursors to replace the default pointer in your visual novel."
-      },      { 
-        "id": 100011, 
-        "name": "Minimalist Button Collection", 
-        "author": "SimplistDesign", 
-        "category": "Buttons",
-        "keywords": ["Buttons", "Minimalist", "Clean"],
-        "file": "minimalist_buttons.png",
-        "downloadUrl": "https://example.com/files/minimalist_buttons.zip",
-        "description": "Ultra-clean, minimalist button designs that won't distract from your story."
-      },      { 
-        "id": 100012, 
-        "name": "Seasonal Menu Templates", 
-        "author": "FourSeasons", 
-        "category": "Menus",
-        "keywords": ["Menus", "Seasonal", "Themed"],
-        "file": "seasonal_menus.png",
-        "downloadUrl": "https://example.com/files/seasonal_menus.zip",
-        "description": "Menu templates for spring, summer, fall, and winter themes, easy to customize."
-      },      { 
-        "id": 100013, 
-        "name": "Handwritten Style Text Boxes", 
-        "author": "ScriptFonts", 
-        "category": "Text Boxes",
-        "keywords": ["Text Boxes", "Handwritten", "Personal"],
-        "file": "handwritten_textboxes.png",
-        "downloadUrl": "https://example.com/files/handwritten_textboxes.zip",
-        "description": "Text boxes that look like handwritten notes, journals, or letters."
-      },      { 
-        "id": 100014, 
-        "name": "Fantasy UI Framework", 
-        "author": "MagicInterfaces", 
-        "category": "UI Frames",
-        "keywords": ["UI Frames", "Fantasy", "Medieval", "RPG"],
-        "file": "fantasy_ui.png",
-        "downloadUrl": "https://example.com/files/fantasy_ui.zip",
-        "description": "Complete UI framework with a fantasy/medieval aesthetic for RPG-like visual novels."
-      },      { 
-        "id": 100015, 
-        "name": "Loading Animations Pack", 
-        "author": "LoadFaster", 
-        "category": "Other",
-        "keywords": ["Loading", "Animation", "Transition"],
-        "file": "loading_animations.png",
-        "downloadUrl": "https://example.com/files/loading_animations.zip",
-        "description": "Stylish loading animations and transitions to use between scenes or during saves."
+        "description": "DUMMY"
       }
     ]
 }

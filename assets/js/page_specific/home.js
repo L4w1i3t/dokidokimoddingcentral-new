@@ -256,9 +256,8 @@ function loadRandomMods() {
                             showcaseItem.style.animationDelay = `${0.1 * index}s`;
                             
                             const imageUrl = mod.imageUrl || 'assets/gui/default_mod.webp';
-                            
-                            // Only show the image, no title
-                            showcaseItem.innerHTML = `<img src="${imageUrl}" alt="${mod.title}" class="showcase-img">`;
+                              // Only show the image, no title
+                            showcaseItem.innerHTML = `<img src="${imageUrl}" alt="${mod.title}" class="showcase-img" onerror="this.src='assets/images/mod-placeholder.svg'">`;
                             
                             showcaseElement.appendChild(showcaseItem);
                         }

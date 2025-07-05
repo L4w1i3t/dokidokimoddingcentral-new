@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../../components/footer/footer.css"/>
   <link rel="stylesheet" href="../../assets/css/page_specific/mod-catalog.css"/>
   <link rel="icon" href="../../assets/gui/favicon.ico" type="image/x-icon"/>
+  <script src="../../assets/js/mod-data-utils.js"></script>
 </head>
 <body>
 
@@ -79,16 +80,16 @@
           <p>No videos found matching your search criteria.</p>
         </div>
       `;
-    } else {
-      modsToShow.forEach(mod => {
+    } else {      modsToShow.forEach(mod => {
         const modCard = document.createElement('a');
         modCard.classList.add('mod-card');
-        modCard.href = `./mod.html?cat=videos&route=${mod.route}`;
+        // Add experimental parameter if we're in experimental mode
+        const expParam = isExperimentalMode() ? '&exp=true' : '';        modCard.href = `./mod.html?cat=videos&route=${mod.route}${expParam}`;
         
         // For videos, add a play button overlay on the card
         modCard.innerHTML = `
           <div class="mod-image-container">
-            <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" />
+            <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" onerror="this.src='../../assets/images/mod-placeholder.svg'" />
             <div class="play-icon-small">▶</div>
           </div>
           <div class="mod-details">
@@ -153,12 +154,10 @@
     totalPages = Math.max(1, Math.ceil(filteredMods.length / itemsPerPage));
     renderPage(currentPage);
   }
-
-  // Load mods from JSON
-  fetch('../../data/mods.json')
-    .then(response => response.json())
+  // Load mods from JSON using utility function
+  loadModData('videos')
     .then(data => {
-        allMods = data.videos;
+        allMods = data;
         
         // Apply the default sorting (newest first)
         // which is just the reverse of the original order

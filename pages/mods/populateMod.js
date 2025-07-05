@@ -34,12 +34,15 @@ function isEmpty(str) {
       console.error("Missing 'cat' or 'route' query param. E.g. ?cat=videos&route=youmattertoo");
       document.querySelector('.mod-content').innerHTML = '<div class="error-message"><h2>Error: Mod Not Found</h2><p>Required information is missing from the URL.</p><p><a href="/pages/mods.html">Return to Mods Page</a></p></div>';
       return;
-    }
-
-    // 2) Fetch mods.json (adjust path as needed if your structure differs)
-    const response = await fetch('/data/mods.json');
+    }    // 2) Fetch mods.json (adjust path as needed if your structure differs)
+    // Check if we're in experimental mode and use appropriate JSON file
+    const urlParams = new URLSearchParams(window.location.search);
+    const isExperimental = urlParams.get('exp') === 'true';
+    const jsonPath = isExperimental ? '/data/mods_exp.json' : '/data/mods.json';
+    
+    const response = await fetch(jsonPath);
     if (!response.ok) {
-      throw new Error(`Could not fetch mods.json: ${response.status}`);
+      throw new Error(`Could not fetch mods data: ${response.status}`);
     }
     const modsData = await response.json();
 
@@ -67,14 +70,16 @@ function isEmpty(str) {
     const titleEl = document.querySelector('.mod-content h1');
     if (titleEl) {
       titleEl.textContent = thisMod.title;
-    }
-
-    // The thumbnail image
+    }    // The thumbnail image
     const imgEl = document.getElementById('modThumbnail');
     if (imgEl) {
       const cleanImagePath = thisMod.imageUrl.replace(/^\//, '');
       imgEl.src = `../../${cleanImagePath}`;
       imgEl.alt = thisMod.title;
+      // Add error handling for broken images
+      imgEl.onerror = function() {
+        this.src = '../../assets/images/mod-placeholder.svg';
+      };
     }
 
     // The paragraphs in .mod-content
