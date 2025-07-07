@@ -7,6 +7,8 @@ def remove_empty_files(start_path: str | Path) -> None:
     start_path = Path(start_path).resolve()
 
     for root, dirs, files in os.walk(start_path):
+        # Exclude node_modules and .git directories
+        dirs[:] = [d for d in dirs if d not in {"node_modules", ".git"}]
         for file in files:
             file_path = Path(root) / file
             if file_path.is_file() and file_path.stat().st_size == 0:

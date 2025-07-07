@@ -233,8 +233,8 @@ function loadRandomMods() {
       // Shuffle mods for randomization
       const shuffledMods = shuffleArray(allMods);
 
-      // Take 6 random mods (or fewer if not enough)
-      const modsToShow = shuffledMods.slice(0, 6);
+      // Take 8 random mods (or fewer if not enough) for 2x4 grid
+      const modsToShow = shuffledMods.slice(0, 8);
 
       // Get all image URLs for preloading
       const imageUrls = modsToShow.map(
@@ -258,13 +258,17 @@ function loadRandomMods() {
             if (route) {
               showcaseItem.href = `pages/mods/mod.html?cat=${category}&route=${route}`;
               showcaseItem.classList.add("showcase-item");
-              showcaseItem.style.animationDelay = `${0.1 * index}s`;
 
               const imageUrl = mod.imageUrl || "assets/gui/default_mod.webp";
               // Only show the image, no title
               showcaseItem.innerHTML = `<img src="${imageUrl}" alt="${mod.title}" class="showcase-img" onerror="this.src='assets/images/mod-placeholder.svg'">`;
 
               showcaseElement.appendChild(showcaseItem);
+
+              // Add animation class with delay after element is added to DOM
+              setTimeout(() => {
+                showcaseItem.classList.add("animate-in");
+              }, 100 + (index * 50)); // Stagger the animation
             }
           });
 
