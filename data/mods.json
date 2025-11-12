@@ -299,6 +299,21 @@
           "url": "https://www.mediafire.com/file_premium/gzkfrrzkf0d2e7a/DeceptiveHearts2-1.0.2-Deceptive_Hearts.zip/file"
         }
       ]
+    }, 
+    {
+      "id": 20,
+      "title": "Exit",
+      "author": "ASN",
+      "imageUrl": "/assets/mod_prevs/exit.jpg",
+      "route": "exit.jpg",
+      "submittedBy": "ASN",
+      "description": "You find yourself caught between reality and illusion as you confront Monika, a woman determined to remake the world through a catastrophic experiment. As the lines between life, death, and identity blur, you must face the truth about who you are and what was lost to save what remains.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file_premium/y51vmndqp90u51l/DDLCExit.zip/file"
+        }
+      ]
     }
 	
 	
