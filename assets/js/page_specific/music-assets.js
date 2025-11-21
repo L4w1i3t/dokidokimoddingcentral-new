@@ -16,6 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
   let sfxCategories = new Set(); // Store unique SFX categories
   let currentBgmGenre = "all"; // Track current BGM genre filter selection
   let currentSfxCategory = "all"; // Track current SFX category filter selection
+  
+  // Web Audio API for visualizer
+  let audioContext = null;
+  let analyser = null;
+  let audioSource = null;
+  let animationId = null;
+  let dataArray = null;
 
   // DOM Elements
   const subcategoryBtns = document.querySelectorAll(".subcategory-btn");
@@ -241,10 +248,73 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let i = 0; i < barCount; i++) {
       const height = Math.floor(Math.random() * 60) + 10; // Random height between 10px and 70px
-      barsHTML += `<div class="visualizer-bar" style="height: ${height}px;"></div>`;
+      barsHTML += `<div class="visualizer-bar" style="height: ${height}px;" data-bar-index="${i}"></div>`;
     }
 
     return barsHTML;
+  }
+  
+  // Initialize Web Audio API for real-time audio visualization
+  function initAudioContext() {
+    if (!audioContext) {
+      audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      analyser = audioContext.createAnalyser();
+      analyser.fftSize = 64; // Lower value = fewer, more responsive bars
+      
+      const bufferLength = analyser.frequencyBinCount;
+      dataArray = new Uint8Array(bufferLength);
+      
+      // Connect audio player to analyser
+      if (!audioSource) {
+        audioSource = audioContext.createMediaElementSource(audioPlayer);
+        audioSource.connect(analyser);
+        analyser.connect(audioContext.destination);
+      }
+    }
+    
+    // Resume context if it's suspended (autoplay policy)
+    if (audioContext.state === 'suspended') {
+      audioContext.resume();
+    }
+  }
+  
+  // Animate visualizer bars based on audio frequencies
+  function animateVisualizer(visualizerBars) {
+    if (!analyser || !dataArray) return;
+    
+    analyser.getByteFrequencyData(dataArray);
+    
+    const bars = visualizerBars.querySelectorAll('.visualizer-bar');
+    const barCount = bars.length;
+    const step = Math.floor(dataArray.length / barCount);
+    
+    bars.forEach((bar, index) => {
+      // Get frequency data for this bar
+      const dataIndex = index * step;
+      const value = dataArray[dataIndex];
+      
+      // Map the frequency value (0-255) to bar height (10-60px)
+      const minHeight = 10;
+      const maxHeight = 60;
+      const height = minHeight + (value / 255) * (maxHeight - minHeight);
+      
+      bar.style.height = `${height}px`;
+      
+      // Optional: Add color intensity based on frequency
+      const intensity = value / 255;
+      bar.style.opacity = 0.6 + (intensity * 0.4);
+    });
+    
+    // Continue animation
+    animationId = requestAnimationFrame(() => animateVisualizer(visualizerBars));
+  }
+  
+  // Stop visualizer animation
+  function stopVisualizer() {
+    if (animationId) {
+      cancelAnimationFrame(animationId);
+      animationId = null;
+    }
   }
 
   // Function to detect audio duration
@@ -413,11 +483,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to handle music playback
   function playMusic(item, playButton, visualizerBars) {
+    // Initialize audio context on first user interaction
+    if (!audioContext) {
+      initAudioContext();
+    }
+    
     // If this item is already playing, stop it
     if (currentlyPlaying === item.id) {
       audioPlayer.pause();
       audioPlayer.currentTime = 0;
       currentlyPlaying = null;
+      stopVisualizer();
 
       // Update UI elements for this card only
       updateCardPlayState(playButton, visualizerBars, false);
@@ -439,6 +515,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       audioPlayer.pause();
       audioPlayer.currentTime = 0;
+      stopVisualizer();
     }
 
     // Start playing this item if it has a file
@@ -456,10 +533,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Update UI elements for this card only
       updateCardPlayState(playButton, visualizerBars, true);
+      
+      // Start real-time audio visualization
+      animateVisualizer(visualizerBars);
 
       // Set up event for when audio finishes
       audioPlayer.onended = function () {
         currentlyPlaying = null;
+        stopVisualizer();
         updateCardPlayState(playButton, visualizerBars, false);
       };
 

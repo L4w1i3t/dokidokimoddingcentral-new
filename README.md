@@ -59,3 +59,9 @@ The new and improved site for Doki Doki Modding Central (ModCen/DDMC)
 
 ## Adding Template Addons
 1. Instructions WIP
+
+## Other Notes
+### The Prettier package
+- This is used mainly for me to format the code in the repository.
+- Don't worry about it, just make sure your code is readable and well-formatted.
+### 

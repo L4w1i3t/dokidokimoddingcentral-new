@@ -12,9 +12,242 @@
     { "id": 50003, "name": "Kiyomi", "image": "/assets/images/characters/kiyomi.png", "url": "/more/characters/kiyomi" }
   ],
   "crossover": [
-    { "id": 60000, "name": "???", "image": "/assets/images/characters/place.png" },
-    { "id": 60001, "name": "???", "image": "/assets/images/characters/place.png" },
-    { "id": 60002, "name": "???", "image": "/assets/images/characters/place.png" },
-    { "id": 60003, "name": "???", "image": "/assets/images/characters/place.png" }
+    {
+      "id": "crossover_char_outfit",
+      "name": "Crossover Character - School Uniform",
+      "category": "outfits",
+      "author": "Community",
+      "type": "Crossover",
+      "gender": "Female",
+      "description": "A crossover character from another series in school uniform.",
+      "preview_image": "koto.png",
+      "download_link": "#",
+      "keywords": ["Crossover", "Character", "Outfit"]
+    },
+    {
+      "id": "crossover_char_pose",
+      "name": "Crossover Character - Happy Pose",
+      "category": "poses",
+      "author": "Community",
+      "type": "Crossover",
+      "gender": "Female",
+      "description": "A cheerful pose for a crossover character.",
+      "preview_image": "mio.png",
+      "download_link": "#",
+      "keywords": ["Crossover", "Character", "Pose"]
+    },
+    {
+      "id": "crossover_char_expr",
+      "name": "Crossover Character - Surprised Expression",
+      "category": "expressions",
+      "author": "Community",
+      "type": "Crossover",
+      "gender": "Female",
+      "description": "A surprised expression for a crossover character.",
+      "preview_image": "kiyomi.png",
+      "download_link": "#",
+      "keywords": ["Crossover", "Character", "Expression"]
+    }
+  ],
+  "monika": [
+    {
+      "id": "monika-outfit-casual",
+      "name": "Casual Outfit",
+      "category": "outfits",
+      "description": "Monika's casual everyday outfit",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/monika/monika_casual.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "monika-pose-happy",
+      "name": "Happy Pose",
+      "category": "poses",
+      "description": "Monika with a cheerful expression and pose",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/monika/monika_happy.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "monika-expr-smile",
+      "name": "Smile Expression",
+      "category": "expressions",
+      "description": "Monika's warm smile",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/monika/monika_smile.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "monika-mpt-chibi",
+      "name": "Chibi Variant",
+      "category": "mpt",
+      "description": "Chibi-style Monika sprite",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/monika/monika_chibi.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "monika-other-accessory",
+      "name": "Hair Bow Accessory",
+      "category": "other",
+      "description": "Additional hair accessory for Monika",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/monika/monika_bow.zip",
+      "author": "DDMC Team"
+    }
+  ],
+  "sayori": [
+    {
+      "id": "sayori-outfit-casual",
+      "name": "Casual Outfit",
+      "category": "outfits",
+      "description": "Sayori's casual everyday outfit",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/sayori/sayori_casual.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "sayori-pose-happy",
+      "name": "Happy Pose",
+      "category": "poses",
+      "description": "Sayori with a cheerful expression and pose",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/sayori/sayori_happy.zip",
+      "author": "DDMC Team"
+    }
+  ],
+  "yuri": [
+    {
+      "id": "yuri-outfit-casual",
+      "name": "Casual Outfit",
+      "category": "outfits",
+      "description": "Yuri's casual everyday outfit",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/yuri/yuri_casual.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "yuri-pose-shy",
+      "name": "Shy Pose",
+      "category": "poses",
+      "description": "Yuri with a shy expression and pose",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/yuri/yuri_shy.zip",
+      "author": "DDMC Team"
+    }
+  ],
+  "natsuki": [
+    {
+      "id": "natsuki-outfit-casual",
+      "name": "Casual Outfit",
+      "category": "outfits",
+      "description": "Natsuki's casual everyday outfit",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/natsuki/natsuki_casual.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "natsuki-pose-angry",
+      "name": "Angry Pose",
+      "category": "poses",
+      "description": "Natsuki with an angry expression and pose",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/natsuki/natsuki_angry.zip",
+      "author": "DDMC Team"
+    }
+  ],
+  "mc": [
+    {
+      "id": "mc-outfit-uniform",
+      "name": "School Uniform",
+      "category": "outfits",
+      "description": "MC's school uniform",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/mc/mc_uniform.zip",
+      "author": "DDMC Team"
+    },
+    {
+      "id": "mc-pose-neutral",
+      "name": "Neutral Pose",
+      "category": "poses",
+      "description": "MC with a neutral expression",
+      "image": "/assets/images/mod-placeholder.svg",
+      "file": "/data/characters/mc/mc_neutral.zip",
+      "author": "DDMC Team"
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_kotonoha_outfit",
+      "name": "Kotonoha - Casual Outfit",
+      "category": "outfits",
+      "author": "Community",
+      "type": "Original Character",
+      "gender": "Female",
+      "description": "A kind and gentle original character's casual outfit.",
+      "preview_image": "koto.png",
+      "download_link": "#",
+      "keywords": ["Original", "OC", "Outfit"]
+    },
+    {
+      "id": "char_kotonoha_pose",
+      "name": "Kotonoha - Happy Pose",
+      "category": "poses",
+      "author": "Community",
+      "type": "Original Character",
+      "gender": "Female",
+      "description": "A cheerful pose for Kotonoha.",
+      "preview_image": "koto.png",
+      "download_link": "#",
+      "keywords": ["Original", "OC", "Pose"]
+    },
+    {
+      "id": "char_mio_outfit",
+      "name": "Mio - School Uniform",
+      "category": "outfits",
+      "author": "Community",
+      "type": "Original Character",
+      "gender": "Female",
+      "description": "An energetic character's school uniform.",
+      "preview_image": "mio.png",
+      "download_link": "#",
+      "keywords": ["Original", "OC", "Outfit"]
+    },
+    {
+      "id": "char_kiyomi_expr",
+      "name": "Kiyomi - Shy Expression",
+      "category": "expressions",
+      "author": "Community",
+      "type": "Original Character",
+      "gender": "Female",
+      "description": "A mysterious character's shy expression.",
+      "preview_image": "kiyomi.png",
+      "download_link": "#",
+      "keywords": ["Original", "OC", "Expression"]
+    },
+    {
+      "id": "char_oc_mpt",
+      "name": "OC - Chibi Variant",
+      "category": "mpt",
+      "author": "Community",
+      "type": "Original Character",
+      "gender": "Female",
+      "description": "MPT chibi variant for an original character.",
+      "preview_image": "mio.png",
+      "download_link": "#",
+      "keywords": ["Original", "OC", "MPT", "Chibi"]
+    },
+    {
+      "id": "char_oc_other",
+      "name": "OC - Accessory Pack",
+      "category": "other",
+      "author": "Community",
+      "type": "Original Character",
+      "gender": "Female",
+      "description": "Additional accessories for original characters.",
+      "preview_image": "kiyomi.png",
+      "download_link": "#",
+      "keywords": ["Original", "OC", "Accessories"]
+    }
   ]
 }

@@ -7,9 +7,10 @@
 
 html,
 body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  height: 100%; /* Ensure full height */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 p,
@@ -24,4 +25,33 @@ a {
   -o-hyphens: auto;
   white-space: normal;
   word-spacing: normal;
+  line-height: 1.7;
+}
+
+/* Improved link styles */
+a {
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid #ff69b4;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Better button cursor */
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Improved disabled state */
+button:disabled,
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

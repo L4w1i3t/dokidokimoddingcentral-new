@@ -55,9 +55,10 @@ body {
 #column1 {
   flex: 1;
   align-items: center;
-  justify-content: flex-end; /* Push content to bottom */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-  padding-bottom: 0; /* Remove bottom padding to allow sprite to touch bottom */
+  justify-content: flex-end;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(30, 10, 50, 0.85));
+  padding-bottom: 0;
+  box-shadow: inset 0 0 50px rgba(255, 105, 180, 0.1);
 }
 
 #column2 {
@@ -66,22 +67,52 @@ body {
   justify-content: space-between;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.8),
-    rgba(84, 22, 144, 0.6)
+    rgba(10, 5, 20, 0.9),
+    rgba(84, 22, 144, 0.7),
+    rgba(40, 15, 80, 0.85)
   );
   position: relative;
   z-index: 1;
+  box-shadow: 
+    inset 0 0 80px rgba(142, 45, 226, 0.15),
+    0 0 50px rgba(255, 105, 180, 0.1);
 }
 
 #column3 {
   flex: 1;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(135deg, rgba(30, 10, 50, 0.85), rgba(0, 0, 0, 0.6));
+  box-shadow: inset 0 0 50px rgba(142, 45, 226, 0.1);
 }
 
 /* Divider between columns */
 .divider {
-  width: 2px;
-  background: linear-gradient(to bottom, transparent, #ff69b4, transparent);
+  width: 3px;
+  background: linear-gradient(
+    to bottom, 
+    transparent 0%, 
+    rgba(255, 105, 180, 0.3) 10%,
+    rgba(255, 105, 180, 0.8) 50%,
+    rgba(142, 45, 226, 0.8) 50%,
+    rgba(142, 45, 226, 0.3) 90%,
+    transparent 100%
+  );
+  box-shadow: 
+    0 0 15px rgba(255, 105, 180, 0.5),
+    0 0 30px rgba(142, 45, 226, 0.3);
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 100%;
+  background: inherit;
+  filter: blur(8px);
+  opacity: 0.6;
 }
 
 /* Logo container styling */
@@ -156,18 +187,22 @@ body {
 
 .nav-button {
   display: block;
-  padding: 0.9rem 1.8rem; /* Increased from 0.8rem 1.5rem */
-  background-color: rgba(255, 105, 180, 0.3);
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, rgba(255, 105, 180, 0.35), rgba(142, 45, 226, 0.35));
   color: #fff;
   text-decoration: none;
-  border: 1px solid #ff69b4;
+  border: 2px solid rgba(255, 105, 180, 0.6);
   border-radius: 30px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-weight: bold;
   position: relative;
   overflow: hidden;
-  font-size: 1.1rem; /* Added font size */
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  box-shadow: 
+    0 4px 15px rgba(255, 105, 180, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .nav-button::before {
@@ -180,20 +215,27 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3),
     transparent
   );
-  transition: 0.5s;
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .nav-button:hover {
-  background-color: rgba(255, 105, 180, 0.7);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  background: linear-gradient(135deg, rgba(255, 105, 180, 0.75), rgba(142, 45, 226, 0.75));
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 8px 25px rgba(255, 105, 180, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
 }
 
 .nav-button:hover::before {
   left: 100%;
+}
+
+.nav-button:active {
+  transform: translateY(-2px) scale(1.01);
 }
 
 /* Matsuda sprite */
@@ -360,33 +402,46 @@ body {
 /* Reroll button for featured mods */
 .reroll-button {
   align-self: center;
-  padding: 0.5rem 1.2rem;
-  background-color: rgba(255, 105, 180, 0.3);
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 105, 180, 0.4), rgba(142, 45, 226, 0.4));
   color: #fff;
   text-decoration: none;
-  border: 1px solid #ff69b4;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  border: 2px solid rgba(255, 105, 180, 0.6);
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
-  flex-shrink: 0; /* Prevent button from shrinking */
-  margin-top: auto; /* Push to bottom */
+  gap: 0.5rem;
+  flex-shrink: 0;
+  margin-top: auto;
+  box-shadow: 
+    0 3px 12px rgba(255, 105, 180, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.3px;
 }
 
 .reroll-button:hover {
-  background-color: rgba(255, 105, 180, 0.7);
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(255, 105, 180, 0.4);
+  background: linear-gradient(135deg, rgba(255, 105, 180, 0.7), rgba(142, 45, 226, 0.7));
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 
+    0 6px 20px rgba(255, 105, 180, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.reroll-button:active {
+  transform: translateY(-1px) scale(1.03);
 }
 
 .reroll-button svg {
-  width: 14px;
-  height: 14px;
-  transition: transform 0.3s ease;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .reroll-button:hover svg {
@@ -394,7 +449,7 @@ body {
 }
 
 .reroll-button.spinning svg {
-  animation: spin 0.8s linear;
+  animation: spin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes spin {
@@ -461,35 +516,78 @@ body {
 
 .social-link {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.8rem;
   color: #fff;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-weight: bold;
-  transition: all 0.3s ease;
+  font-size: 1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-align: center;
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.social-link:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.social-link span {
+  position: relative;
+  z-index: 1;
 }
 
 .social-link.reddit {
-  background-color: rgba(255, 69, 0, 0.3);
-  border: 2px solid #ff4500;
+  background: linear-gradient(135deg, rgba(255, 69, 0, 0.4), rgba(200, 50, 0, 0.4));
+  border: 2px solid rgba(255, 69, 0, 0.7);
+  box-shadow: 
+    0 4px 15px rgba(255, 69, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .social-link.reddit:hover {
-  background-color: rgba(255, 69, 0, 0.6);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+  background: linear-gradient(135deg, rgba(255, 69, 0, 0.7), rgba(220, 60, 0, 0.7));
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 
+    0 8px 25px rgba(255, 69, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 100, 50, 0.9);
 }
 
 .social-link.discord {
-  background-color: rgba(114, 137, 218, 0.3);
-  border: 2px solid #7289da;
+  background: linear-gradient(135deg, rgba(114, 137, 218, 0.4), rgba(80, 100, 180, 0.4));
+  border: 2px solid rgba(114, 137, 218, 0.7);
+  box-shadow: 
+    0 4px 15px rgba(114, 137, 218, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .social-link.discord:hover {
-  background-color: rgba(114, 137, 218, 0.6);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(114, 137, 218, 0.4);
+  background: linear-gradient(135deg, rgba(114, 137, 218, 0.7), rgba(90, 110, 190, 0.7));
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 
+    0 8px 25px rgba(114, 137, 218, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(140, 160, 230, 0.9);
+}
+
+.social-link:active {
+  transform: translateY(-2px) scale(1.02);
 }
 
 /* Footer text */

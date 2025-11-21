@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Characters - Doki Doki Modding Central</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+    <link rel="stylesheet" href="/components/footer/footer.css" />
+    <link rel="stylesheet" href="/assets/css/page_specific/character-assets.css" />
+    <link rel="icon" href="/assets/gui/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <section id="character-container">
+        <div class="character-header">
+          <h1>Characters</h1>
+          <p class="character-tagline">
+            Browse character sprites, outfits, poses, and variants for all DDLC characters and OCs
+          </p>
+        </div>
+
+        <!-- Main Character Navigation -->
+        <div class="character-nav">
+          <button class="character-nav-btn active" data-target="monika-section">
+            Monika
+          </button>
+          <button class="character-nav-btn" data-target="sayori-section">
+            Sayori
+          </button>
+          <button class="character-nav-btn" data-target="yuri-section">
+            Yuri
+          </button>
+          <button class="character-nav-btn" data-target="natsuki-section">
+            Natsuki
+          </button>
+          <button class="character-nav-btn" data-target="mc-section">
+            MC
+          </button>
+          <button class="character-nav-btn" data-target="oc-section">
+            Original Characters
+          </button>
+          <button class="character-nav-btn" data-target="crossover-section">
+            Crossover
+          </button>
+        </div>
+
+        <!-- Monika Section -->
+        <section id="monika-section" class="character-main-section active">
+          <!-- Subcategory Navigation -->
+          <div class="subcategory-nav">
+            <button class="subcategory-btn active" data-character="monika" data-target="outfits">
+              Outfits
+            </button>
+            <button class="subcategory-btn" data-character="monika" data-target="poses">
+              Poses
+            </button>
+            <button class="subcategory-btn" data-character="monika" data-target="expressions">
+              Expressions
+            </button>
+            <button class="subcategory-btn" data-character="monika" data-target="mpt">
+              MPT Variants
+            </button>
+            <button class="subcategory-btn" data-character="monika" data-target="other">
+              Other
+            </button>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="monika-search"
+                placeholder="Search Monika assets..."
+              />
+              <button id="monika-search-button">Search</button>
+            </div>
+          </div>
+
+          <div id="monika-grid" class="character-grid">
+            <!-- Monika items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="monika-pagination">
+            <button id="monika-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="monika-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="monika-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <!-- Sayori Section -->
+        <section id="sayori-section" class="character-main-section">
+          <div class="subcategory-nav">
+            <button class="subcategory-btn active" data-character="sayori" data-target="outfits">
+              Outfits
+            </button>
+            <button class="subcategory-btn" data-character="sayori" data-target="poses">
+              Poses
+            </button>
+            <button class="subcategory-btn" data-character="sayori" data-target="expressions">
+              Expressions
+            </button>
+            <button class="subcategory-btn" data-character="sayori" data-target="mpt">
+              MPT Variants
+            </button>
+            <button class="subcategory-btn" data-character="sayori" data-target="other">
+              Other
+            </button>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="sayori-search"
+                placeholder="Search Sayori assets..."
+              />
+              <button id="sayori-search-button">Search</button>
+            </div>
+          </div>
+
+          <div id="sayori-grid" class="character-grid">
+            <!-- Sayori items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="sayori-pagination">
+            <button id="sayori-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="sayori-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="sayori-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <!-- Yuri Section -->
+        <section id="yuri-section" class="character-main-section">
+          <div class="subcategory-nav">
+            <button class="subcategory-btn active" data-character="yuri" data-target="outfits">
+              Outfits
+            </button>
+            <button class="subcategory-btn" data-character="yuri" data-target="poses">
+              Poses
+            </button>
+            <button class="subcategory-btn" data-character="yuri" data-target="expressions">
+              Expressions
+            </button>
+            <button class="subcategory-btn" data-character="yuri" data-target="mpt">
+              MPT Variants
+            </button>
+            <button class="subcategory-btn" data-character="yuri" data-target="other">
+              Other
+            </button>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="yuri-search"
+                placeholder="Search Yuri assets..."
+              />
+              <button id="yuri-search-button">Search</button>
+            </div>
+          </div>
+
+          <div id="yuri-grid" class="character-grid">
+            <!-- Yuri items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="yuri-pagination">
+            <button id="yuri-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="yuri-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="yuri-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <!-- Natsuki Section -->
+        <section id="natsuki-section" class="character-main-section">
+          <div class="subcategory-nav">
+            <button class="subcategory-btn active" data-character="natsuki" data-target="outfits">
+              Outfits
+            </button>
+            <button class="subcategory-btn" data-character="natsuki" data-target="poses">
+              Poses
+            </button>
+            <button class="subcategory-btn" data-character="natsuki" data-target="expressions">
+              Expressions
+            </button>
+            <button class="subcategory-btn" data-character="natsuki" data-target="mpt">
+              MPT Variants
+            </button>
+            <button class="subcategory-btn" data-character="natsuki" data-target="other">
+              Other
+            </button>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="natsuki-search"
+                placeholder="Search Natsuki assets..."
+              />
+              <button id="natsuki-search-button">Search</button>
+            </div>
+          </div>
+
+          <div id="natsuki-grid" class="character-grid">
+            <!-- Natsuki items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="natsuki-pagination">
+            <button id="natsuki-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="natsuki-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="natsuki-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <!-- MC Section -->
+        <section id="mc-section" class="character-main-section">
+          <div class="subcategory-nav">
+            <button class="subcategory-btn active" data-character="mc" data-target="outfits">
+              Outfits
+            </button>
+            <button class="subcategory-btn" data-character="mc" data-target="poses">
+              Poses
+            </button>
+            <button class="subcategory-btn" data-character="mc" data-target="expressions">
+              Expressions
+            </button>
+            <button class="subcategory-btn" data-character="mc" data-target="mpt">
+              MPT Variants
+            </button>
+            <button class="subcategory-btn" data-character="mc" data-target="other">
+              Other
+            </button>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="mc-search"
+                placeholder="Search MC assets..."
+              />
+              <button id="mc-search-button">Search</button>
+            </div>
+          </div>
+
+          <div id="mc-grid" class="character-grid">
+            <!-- MC items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="mc-pagination">
+            <button id="mc-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="mc-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="mc-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <!-- Original Characters Section -->
+        <section id="oc-section" class="character-main-section">
+          <div class="subcategory-nav">
+            <button class="subcategory-btn active" data-character="oc" data-target="outfits">Outfits</button>
+            <button class="subcategory-btn" data-character="oc" data-target="poses">Poses</button>
+            <button class="subcategory-btn" data-character="oc" data-target="expressions">Expressions</button>
+            <button class="subcategory-btn" data-character="oc" data-target="mpt">MPT Variants</button>
+            <button class="subcategory-btn" data-character="oc" data-target="other">Other</button>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="oc-search"
+                placeholder="Search original characters..."
+              />
+              <button id="oc-search-button">Search</button>
+            </div>
+          </div>
+
+          <div id="oc-grid" class="character-grid">
+            <!-- OC items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="oc-pagination">
+            <button id="oc-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="oc-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="oc-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <!-- Crossover Section -->
+        <section id="crossover-section" class="character-main-section">
+          <div class="subcategory-nav">
+            <button class="subcategory-btn active" data-character="crossover" data-target="outfits">Outfits</button>
+            <button class="subcategory-btn" data-character="crossover" data-target="poses">Poses</button>
+            <button class="subcategory-btn" data-character="crossover" data-target="expressions">Expressions</button>
+            <button class="subcategory-btn" data-character="crossover" data-target="mpt">MPT Variants</button>
+            <button class="subcategory-btn" data-character="crossover" data-target="other">Other</button>
+          </div>
+
+          <div class="search-filter-container">
+            <div class="search-box">
+              <input
+                type="text"
+                id="crossover-search"
+                placeholder="Search crossover characters..."
+              />
+              <button id="crossover-search-button">Search</button>
+            </div>
+          </div>
+
+          <div id="crossover-grid" class="character-grid">
+            <!-- Crossover items will be dynamically loaded here -->
+          </div>
+
+          <div class="pagination" id="crossover-pagination">
+            <button id="crossover-prev-page" class="pagination-button" disabled>
+              Previous
+            </button>
+            <span id="crossover-page-info" class="pagination-info">Page 1 of 1</span>
+            <button id="crossover-next-page" class="pagination-button" disabled>
+              Next
+            </button>
+          </div>
+        </section>
+
+        <div class="character-footer">
+          <h2>Want to Contribute?</h2>
+          <p>
+            Share your character sprites, outfits, and variants with the community to help modders bring diverse characters to their stories.
+          </p>
+          <a href="/pages/submit.html" class="contribute-button">
+            <span>Submit Your Assets</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="/components/addComponents.js"></script>
+    <script src="/assets/js/page_specific/character-assets.js"></script>
+    
+  </body>
+</html>

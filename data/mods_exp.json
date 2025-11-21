@@ -47,21 +47,6 @@
     },
     {
       "id": 3,
-      "title": "Doki Doki Broken Poet (Act 1)",
-      "author": "M3rcurialEquilibrium",
-      "imageUrl": "/assets/mod_prevs/dokidokibrokenpoetact1.webp",
-      "route": "dokidokibrokenpoetact1",
-      "submittedBy": "Tune Eternal",
-      "description": "The festival has passed. All 4 girls read their poems, but no one really cared. At least at the end of the day, everyone seems proud they kept to their vision of what the club should be. Sayori is happy you joined the club, but despite that, you haven't really connected with anyone new. Her puppy eyes are too much to bear, and you reluctantly promise to try and get to know the other members of the club better. Natsuki in particular is puzzling. You can't really put a finger on why she continues to come to club despite seemingly not really getting along with anyone, and that is somewhat intriguing. Maybe you can break the ice with her... Maybe you can be her friend. Maybe something more.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Win) https://www.mediafire.com/file_premium/1wjyyudkwhryt8b/DDLCBrokenPoet-1.0-Renpy7Mod.zip/file\n(Android) https://www.mediafire.com/file_premium/tn0q4djgjh3bedb/Broken_Poet_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 4,
       "title": "Shattered Cycle",
       "author": "MasterlumaTDK",
       "imageUrl": "/assets/mod_prevs/shatteredcycle.webp",
@@ -76,7 +61,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "title": "Neuro-sama joins the Literature Club!",
       "author": "JimenezLi",
       "imageUrl": "/assets/mod_prevs/neurosamajoinstheliteratureclub.webp",
@@ -91,7 +76,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "Doki Doki: NIGHT RAIN (Formerly Rimscar's Doki Doki: PANIC!!)",
       "author": "Rimscar",
       "imageUrl": "/assets/mod_prevs/dokidokinightrainformerlyrimscarsdokidokipanic.webp",
@@ -106,22 +91,7 @@
       ]
     },
     {
-      "id": 7,
-      "title": "Before the Needle Lifts",
-      "author": "UNOwen1",
-      "imageUrl": "/assets/mod_prevs/beforetheneedlelifts.webp",
-      "route": "beforetheneedlelifts",
-      "submittedBy": "Tune Eternal",
-      "description": "You and your girlfriend Sayori investigate a series of strange disappearances around your town.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file_premium/6xoq42m7as53ipn/DDLCNeedle-1.0.0-Renpy7Mod.zip/file (Android) https://www.mediafire.com/file_premium/jokp05mi5kgf7rz/Before_the_Needle_Lifts_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 8,
+      "id": 6,
       "title": "100 Club Members (Season 1)",
       "author": "JustTensuraEdogawa",
       "imageUrl": "/assets/mod_prevs/100clubmembersseason1.webp",
@@ -136,7 +106,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 7,
       "title": "Doki Doki Brainrot Club",
       "author": "Bryson_bruv",
       "imageUrl": "/assets/mod_prevs/dokidokibrainrotclub.webp",
@@ -151,22 +121,7 @@
       ]
     },
     {
-      "id": 10,
-      "title": "Kiyomi’s Big Date",
-      "author": "MarioDokiFan4ever",
-      "imageUrl": "/assets/mod_prevs/kiyomisbigdate.webp",
-      "route": "kiyomisbigdate",
-      "submittedBy": "MarioDokiFan4ever",
-      "description": "This mod follows a certain individual named Jace. He gets jealous of Sayori and DokiFan's relationship and wishes he could have one too. He suddenly runs into a particular girl named Kiyomi and falls in love with her at first sight. He takes an opportunity to ask her out to the mall. Will he finally find the love of his life? We shall see how this \"date\" goes for both of them.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "N/A"
-        }
-      ]
-    },
-    {
-      "id": 11,
+      "id": 8,
       "title": "The Machine Stops",
       "author": "Codex",
       "imageUrl": "/assets/mod_prevs/themachinestops.webp",
@@ -181,7 +136,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 9,
       "title": "Canon Quiz",
       "author": "halibabica",
       "imageUrl": "/assets/mod_prevs/canonquiz.webp",
@@ -196,7 +151,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 10,
       "title": "A Weathered World (Remake)",
       "author": "BioActive",
       "imageUrl": "/assets/mod_prevs/aweatheredworldremake.webp",
@@ -211,22 +166,7 @@
       ]
     },
     {
-      "id": 14,
-      "title": "Deceptive Hearts",
-      "author": "Codex",
-      "imageUrl": "/assets/mod_prevs/deceptivehearts.webp",
-      "route": "deceptivehearts",
-      "submittedBy": "Tune Eternal",
-      "description": "When u/KryoGenic03 makes Monika real, he unknowingly sets off a chain reaction of love and lies. When u/H34DL0CK3R and u/DeadEmpyre get a whiff of what Kryo is up to, they decide they must put an end to his relationship with Monika. However, they end up causing more bad then good...\n\nBased on cringe in r/ddlcmods.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Windows) https://www.mediafire.com/file_premium/7i3vp3eavzbc2ug/DeceptiveHearts-1.0.zip/file (Android) https://www.mediafire.com/file_premium/4ouxmpu2hxwl8yh/Deceptive_Hearts_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 15,
+      "id": 11,
       "title": "Deceptive Hearts 1.5",
       "author": "Codex",
       "imageUrl": "/assets/mod_prevs/deceptivehearts15.webp",
@@ -241,7 +181,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 12,
       "title": "Monika Enters the Real World",
       "author": "aahilj",
       "imageUrl": "/assets/mod_prevs/monikaenterstherealworld.webp",
@@ -256,7 +196,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 13,
       "title": "Chad Joins the Literature Club",
       "author": "Understone",
       "imageUrl": "/assets/mod_prevs/chadjoinstheliteratureclub.webp",
@@ -271,7 +211,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": 14,
       "title": "Doki Doki Brainrot Club 2: Redux/Remaster",
       "author": "Brainrot_Club",
       "imageUrl": "/assets/mod_prevs/dokidokibrainrotclub2reduxremaster.webp",
@@ -286,7 +226,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 15,
       "title": "Turquoise",
       "author": "Tormuse",
       "imageUrl": "/assets/mod_prevs/turquoise.webp",
@@ -296,12 +236,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file_premium/8fzb6lqtjcs66xt/Turquoise_version_1.5.zip/file (Android) https://www.mediafire.com/file_premium/bn44opzfjoowt62/Turquoise_Android_Port.apk/file"
+          "url": "https://mega.nz/file/Xe5hiYKL#8d6UaivJ8Z2t4b2zn9jO3-Sb34rA0mkEpU1yIQPs1I0"
         }
       ]
     },
     {
-      "id": 20,
+      "id": 16,
       "title": "The Dark Rainclouds",
       "author": "Team Dark Rainclouds",
       "imageUrl": "/assets/mod_prevs/thedarkrainclouds.webp",
@@ -316,7 +256,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 17,
       "title": "Her Story",
       "author": "cpcantimark (writer/director/music composor)",
       "imageUrl": "/assets/mod_prevs/herstory.webp",
@@ -331,7 +271,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 18,
       "title": "Afternoon",
       "author": "Süleyman Aydın",
       "imageUrl": "/assets/mod_prevs/afternoon.webp",
@@ -346,22 +286,7 @@
       ]
     },
     {
-      "id": 23,
-      "title": "Deceptive Hearts: Judgement Day",
-      "author": "AwesomeNinjaXD",
-      "imageUrl": "/assets/mod_prevs/deceptiveheartsjudgementday.webp",
-      "route": "deceptiveheartsjudgementday",
-      "submittedBy": "Tune Eternal",
-      "description": "Someone has freed u/DeadEmpyre from the Doki Doki Modding Club's #gulag channel, and it's up to the members of the DDMC to find out who it is. But this mysterious figure is bent on deleting the Discord server and finally putting an end to the Doki Doki Modding Club once and for all...\n\nBased on cringe in r/ddlcmods",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/an15k5xv3pvlzwb/DeceptiveHearts2-1.0.2-Deceptive_Hearts.zip/file (ANDROID) https://www.mediafire.com/file/u3h6chiifprxsy7/Deceptive_Hearts_2_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 24,
+      "id": 19,
       "title": "No Happiness",
       "author": "phiftyopz",
       "imageUrl": "/assets/mod_prevs/nohappiness.webp",
@@ -376,7 +301,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 20,
       "title": "Hope",
       "author": "Codex",
       "imageUrl": "/assets/mod_prevs/hope.webp",
@@ -391,7 +316,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 21,
       "title": "Cardboard Box",
       "author": "M3rcurialEquilibrium",
       "imageUrl": "/assets/mod_prevs/cardboardbox.webp",
@@ -406,7 +331,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 22,
       "title": "The End of the Literature Club",
       "author": "RodMediaGroup",
       "imageUrl": "/assets/mod_prevs/theendoftheliteratureclub.webp",
@@ -421,7 +346,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 23,
       "title": "Doki Doki Mercy!",
       "author": "RodMediaGroup",
       "imageUrl": "/assets/mod_prevs/dokidokimercy.webp",
@@ -436,7 +361,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 24,
       "title": "Amnesty",
       "author": "Joe4Everr",
       "imageUrl": "/assets/mod_prevs/amnesty.webp",
@@ -451,7 +376,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 25,
       "title": "DDLC Act 4 Plus",
       "author": "mecoolboy",
       "imageUrl": "/assets/mod_prevs/ddlcact4plus.webp",
@@ -466,7 +391,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 26,
       "title": "Doki Doki: Celestial Restriction",
       "author": "Virtual Corporation",
       "imageUrl": "/assets/mod_prevs/dokidokicelestialrestriction.webp",
@@ -481,7 +406,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 27,
       "title": "Super Sayori's Debut",
       "author": "Team Turkey",
       "imageUrl": "/assets/mod_prevs/supersayorisdebut.webp",
@@ -496,7 +421,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 28,
       "title": "May Flowers",
       "author": "strigonia",
       "imageUrl": "/assets/mod_prevs/mayflowers.webp",
@@ -511,22 +436,7 @@
       ]
     },
     {
-      "id": 34,
-      "title": "Break and Enter",
-      "author": "Wretched Team",
-      "imageUrl": "/assets/mod_prevs/breakandenter.webp",
-      "route": "breakandenter",
-      "submittedBy": "Tune Eternal",
-      "description": "The very last Wretched Team / Studio Indev project before they blew up for the ... third time? Fourth time? Eh fuck it. This is another Breaking Bad meme mod kicking the fucking dead horse.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://drive.google.com/file/d/15jWH9UyqsCazm19OTFaZfJTjEeaJk9MN/view (ANDROID) https://www.mediafire.com/file/v3c7oqmmw0tmfln/Break_and_Enter_1.0.2_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 35,
+      "id": 29,
       "title": "Doki Doki Exit Music {OK SKIBIDI}",
       "author": "Brainrot_Club / Team Brainrot",
       "imageUrl": "/assets/mod_prevs/dokidokiexitmusicokskibidi.webp",
@@ -541,7 +451,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": 30,
       "title": "True Story",
       "author": "MaddieTheMad",
       "imageUrl": "/assets/mod_prevs/truestory.webp",
@@ -556,7 +466,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": 31,
       "title": "The Parfait Girl",
       "author": "aahilj",
       "imageUrl": "/assets/mod_prevs/theparfaitgirl.webp",
@@ -571,7 +481,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": 32,
       "title": "Foreign Relations Act 1",
       "author": "Team Relations:\n\nDavid Locklin - Director\n\nWriting Department:\n\nLookie - Head Of Writing\nZrrkon - Monika Writer\nAlex - Natsuki Writer\nThe Sunlit System - Sayori Writer\nEthen D. Sinwelski - General Writer\ncpc - General Writer\nPatsiuk - General Writer\nRenjiro Redi - General Writer\nDanon - General Writer\nBan Jelačić - General Writer\n\nCoding Department:\n\nMsMod - Coder\nBritainVsFrance 69 - Coder\nXaltios - Coder\nLEMMESOLOIT - Coder\n\nMusic Department:\n\nGio_Mobi - Head Of Music\nRed Blooded American Trashcan - Musician\nPlexsy - Musician\n\nArt Department:\n\nProx - CG Artist\nRicotta - CG Artist\nChest_Boter - Sprite Artist\nLecraft - Sprite Artist\nDitzy (Weeb Edition) - Concept Artist/Japanese Advisor",
       "imageUrl": "/assets/mod_prevs/foreignrelationsact1.webp",
@@ -586,7 +496,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": 33,
       "title": "The Violet Sun",
       "author": "Everything is made by me",
       "imageUrl": "/assets/mod_prevs/thevioletsun.webp",
@@ -601,7 +511,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": 34,
       "title": "Doki Doki Defender",
       "author": "u/boobielover103",
       "imageUrl": "/assets/mod_prevs/dokidokidefender.webp",
@@ -616,7 +526,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": 35,
       "title": "Doki Doki Adoration!!!",
       "author": "u/boobielover103",
       "imageUrl": "/assets/mod_prevs/dokidokiadoration.webp",
@@ -631,7 +541,7 @@
       ]
     },
     {
-      "id": 42,
+      "id": 36,
       "title": "Monika Reviews Mods",
       "author": "Heem",
       "imageUrl": "/assets/mod_prevs/monikareviewsmods.webp",
@@ -646,7 +556,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": 37,
       "title": "Cinnamon Valentine",
       "author": "Atazoth",
       "imageUrl": "/assets/mod_prevs/cinnamonvalentine.webp",
@@ -661,7 +571,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": 38,
       "title": "Lavender Trust",
       "author": "aahilj",
       "imageUrl": "/assets/mod_prevs/lavendertrust.webp",
@@ -676,7 +586,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": 39,
       "title": "Rose Bonds",
       "author": "Atazoth",
       "imageUrl": "/assets/mod_prevs/rosebonds.webp",
@@ -691,7 +601,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": 40,
       "title": "Infinity Gene",
       "author": "Main Author:johnraizhen\nWriting Assistance:NoAH777(Stage 3 of Act 1)\nCoding Assistance:iiTzWolfyy",
       "imageUrl": "/assets/mod_prevs/infinitygene.webp",
@@ -706,7 +616,7 @@
       ]
     },
     {
-      "id": 47,
+      "id": 41,
       "title": "Truth or Deception",
       "author": "Frokieton08",
       "imageUrl": "/assets/mod_prevs/truthordeception.webp",
@@ -717,6 +627,81 @@
         {
           "version": "standard",
           "url": "https://drive.google.com/file/d/1Q8wT2wgaD6xrIjc-_Ze887upeOhg1P4Z/view"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Cinnamon Valentine",
+      "author": "lead author: Atazoth",
+      "imageUrl": "/assets/mod_prevs/cinnamonvalentine.webp",
+      "route": "cinnamonvalentine",
+      "submittedBy": "JQilin",
+      "description": "You invited Sayori on a date for Valentine's day. Will you make it spectacular or will you fumble?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1f4tLwn362EjMw_iPdImOLZW6dH5nue1e/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Project: Third Eye",
+      "author": "JakeTheJakeFourth",
+      "imageUrl": "/assets/mod_prevs/projectthirdeye.webp",
+      "route": "projectthirdeye",
+      "submittedBy": "JakeTheJakeFourth",
+      "description": "Hey there!\n\nI just wanted to announce that i'am releasing my first DDLC mod to public.I started playing DDLC back in 2020 but then i didn't know ANYTHING about coding but now i've returned and decided to give this modding thing a try.I decided that i would just do my take on Project Libitina(as for some reason Dan hasn't released it yet) and see how it goes.\n\nImportant things to know:\n\n1.I'll be using free assets as i'am not an artist and i just don't know how to make stuff like sprites or backgrounds.\n\n2.This is in DEMO so i'll still be adding a lot of things, i decided to release this to see if people will like it...or not.(pls don't hate).",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/w9dygaskymwuojm/ProjectThirdEye-0.1-Renpy8-DDLCModV3.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Exit",
+      "author": "Author: ASN\nCoder: ASN",
+      "imageUrl": "/assets/mod_prevs/exit.webp",
+      "route": "exit",
+      "submittedBy": "ASN",
+      "description": "You find yourself caught between reality and illusion as you confront Monika, a woman determined to remake the world through a catastrophic experiment. As the lines between life, death, and identity blur, you must face the truth about who you are and what was lost to save what remains.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1a1NqKbymn65Qa8vdzZUrXRh6VJvJJsAd/view?usp=drivesdk"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Doki Doki Miscoded Confidence",
+      "author": "Creator/Main Coder: DokiGuy. Error correction: Doki Doki Daes",
+      "imageUrl": "/assets/mod_prevs/dokidokimiscodedconfidence.webp",
+      "route": "dokidokimiscodedconfidence",
+      "submittedBy": "DokiGuy",
+      "description": "Synopsis: This mod takes place right after the end of Act 1. Monika resets the script to load up the 2nd act as normal. But because she had grown too comfortable with the script, she didn't pay attention to what she was doing and accidentally altered Yuri's personality code. How will this sudden change in Yuri affect the club as well as the script?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1W_W2BS1qUprtQ1aSRVs0qpo-b9t0ZH5i/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Miscoded Confidence",
+      "author": "Creator: DokiGuy",
+      "imageUrl": "/assets/mod_prevs/miscodedconfidence.webp",
+      "route": "miscodedconfidence",
+      "submittedBy": "DokiGuy",
+      "description": "Synopsis: This mod takes place right after the end of Act 1. Monika resets the script to load up the 2nd act as normal. But because she had grown too comfortable with the script, she didn't pay attention to what she was doing and accidentally altered Yuri's personality code. How will this sudden change in Yuri affect the club as well as the script?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/drive/folders/1DR7pIXME5Sjgivl2naPkR6doPSZFB84g?usp=sharing"
         }
       ]
     }
@@ -2179,21 +2164,6 @@
     },
     {
       "id": 1097,
-      "title": "Silver & Emerald",
-      "author": "Tiny Waffle Studios",
-      "imageUrl": "/assets/mod_prevs/silveremerald.webp",
-      "route": "silveremerald",
-      "submittedBy": "Tune Eternal",
-      "description": "Monika and Kotonoha make a bet to see who can get the best grade on an exam next class period. Koto gets a lil quirky aka pissed off and, well... you'll see lol. (Side note: If you want any sort of closure to what Natsuki was saying at the very end of Natsuki Rants About DDLC Mods and Community, this is probably the best you're gonna get lol.)",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Win) https://www.mediafire.com/file_premium/ph6bt0zo5fdyrg5/DokiDokiSilverandEmerald-1.0.0.1.zip/file (Android) https://www.mediafire.com/file_premium/2nw4unenrkav6ke/Silver_and_Emerald_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1098,
       "title": "Doki Doki Ordo Literato",
       "author": "Last Remembrancer Team",
       "imageUrl": "/assets/mod_prevs/dokidokiordoliterato.webp",
@@ -2208,7 +2178,7 @@
       ]
     },
     {
-      "id": 1099,
+      "id": 1098,
       "title": "Happy Thoughts",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/happythoughts.webp",
@@ -2223,7 +2193,7 @@
       ]
     },
     {
-      "id": 1100,
+      "id": 1099,
       "title": "Doki Doki SOS Brigade",
       "author": "NightmareNinja",
       "imageUrl": "/assets/mod_prevs/dokidokisosbrigade.webp",
@@ -2238,7 +2208,7 @@
       ]
     },
     {
-      "id": 1101,
+      "id": 1100,
       "title": "Clay God",
       "author": "UNOwen1",
       "imageUrl": "/assets/mod_prevs/claygod.webp",
@@ -2248,12 +2218,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(Win) https://www.mediafire.com/file_premium/dy82bms6k9nv1ny/DDLCClayGod-1.0-Renpy7Mod.zip/file (Android) https://www.mediafire.com/file_premium/9ax65t0pjkuaewe/Clay_God.apk/file"
+          "url": "https://drive.google.com/file/d/1RH-oIEHU4KDCg-tMGPvCHIUBhzvRudZk/view"
         }
       ]
     },
     {
-      "id": 1102,
+      "id": 1101,
       "title": "Hibernation",
       "author": "CraftedBrother05",
       "imageUrl": "/assets/mod_prevs/hibernation.webp",
@@ -2268,7 +2238,7 @@
       ]
     },
     {
-      "id": 1103,
+      "id": 1102,
       "title": "Natsuki Rants About Mods & Community",
       "author": "Tiny Waffle Studios",
       "imageUrl": "/assets/mod_prevs/natsukirantsaboutmodscommunity.webp",
@@ -2283,7 +2253,7 @@
       ]
     },
     {
-      "id": 1104,
+      "id": 1103,
       "title": "Monika Gets An Anal Probe",
       "author": "dfwk",
       "imageUrl": "/assets/mod_prevs/monikagetsananalprobe.webp",
@@ -2298,7 +2268,7 @@
       ]
     },
     {
-      "id": 1105,
+      "id": 1104,
       "title": "My Cloudy Reality!",
       "author": "MsMod Studios",
       "imageUrl": "/assets/mod_prevs/mycloudyreality.webp",
@@ -2313,7 +2283,7 @@
       ]
     },
     {
-      "id": 1106,
+      "id": 1105,
       "title": "Natsuki Becomes The President Of The United States",
       "author": "Frost",
       "imageUrl": "/assets/mod_prevs/natsukibecomesthepresidentoftheunitedstates.webp",
@@ -2328,7 +2298,7 @@
       ]
     },
     {
-      "id": 1107,
+      "id": 1106,
       "title": "Doki Doki I'm Alive",
       "author": "Ruthi",
       "imageUrl": "/assets/mod_prevs/dokidokiimalive.webp",
@@ -2338,12 +2308,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(Win) https://www.mediafire.com/file_premium/a8ozysxdwljby98/Doki_Doki_I%2527m_Alive_-_1.0.zip/file (Android) https://www.mediafire.com/file_premium/ioczopewo5vml0u/Doki_Doki_I%2527m_Alive_English_Spanish_Android.zip/file"
+          "url": "https://drive.google.com/file/d/18x_MwyzjrEXR4qMdqI76Kotdv1fyy25d/view"
         }
       ]
     },
     {
-      "id": 1108,
+      "id": 1107,
       "title": "My Doki Doki SNAFU",
       "author": "GuyBread",
       "imageUrl": "/assets/mod_prevs/mydokidokisnafu.webp",
@@ -2353,12 +2323,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(win) https://www.mediafire.com/file_premium/qf2hoj2hwduayui/My_Doki_Doki_SNAFU.zip/file(Android) https://www.mediafire.com/file_premium/w07vv8wp0zqljkd/MyDokiDokiSNAFU-1.1.6-f.apk/file"
+          "url": "https://drive.google.com/file/d/17gJ0qtDmItOA6JoJxbUnp-AUh42VCjxz/view?usp=drive_link"
         }
       ]
     },
     {
-      "id": 1109,
+      "id": 1108,
       "title": "Pages of Life",
       "author": "Donkeyhotay",
       "imageUrl": "/assets/mod_prevs/pagesoflife.webp",
@@ -2373,7 +2343,7 @@
       ]
     },
     {
-      "id": 1110,
+      "id": 1109,
       "title": "World of Dreams: Thanksgiving Special",
       "author": "MorbiusGreen",
       "imageUrl": "/assets/mod_prevs/worldofdreamsthanksgivingspecial.webp",
@@ -2388,7 +2358,7 @@
       ]
     },
     {
-      "id": 1111,
+      "id": 1110,
       "title": "Total Fold",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/totalfold.webp",
@@ -2403,7 +2373,7 @@
       ]
     },
     {
-      "id": 1112,
+      "id": 1111,
       "title": "MC Laments His Existence",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/mclamentshisexistence.webp",
@@ -2418,7 +2388,7 @@
       ]
     },
     {
-      "id": 1113,
+      "id": 1112,
       "title": "The First DDLC+ Mod",
       "author": "Wretched Team",
       "imageUrl": "/assets/mod_prevs/thefirstddlcmod.webp",
@@ -2433,7 +2403,7 @@
       ]
     },
     {
-      "id": 1114,
+      "id": 1113,
       "title": "Starry Night",
       "author": "Team Final Stand",
       "imageUrl": "/assets/mod_prevs/starrynight.webp",
@@ -2448,7 +2418,7 @@
       ]
     },
     {
-      "id": 1115,
+      "id": 1114,
       "title": "Keeper of Reality (Act One)",
       "author": "Asahir Bloodfall",
       "imageUrl": "/assets/mod_prevs/keeperofrealityactone.webp",
@@ -2463,7 +2433,7 @@
       ]
     },
     {
-      "id": 1116,
+      "id": 1115,
       "title": "Club Meetings (Season 1)",
       "author": "DokiDokiClubMeetings",
       "imageUrl": "/assets/mod_prevs/clubmeetingsseason1.webp",
@@ -2478,22 +2448,7 @@
       ]
     },
     {
-      "id": 1117,
-      "title": "Club Meetings (Season 2)",
-      "author": "DokiDokiClubMeetings",
-      "imageUrl": "/assets/mod_prevs/clubmeetingsseason2.webp",
-      "route": "clubmeetingsseason2",
-      "submittedBy": "64BitBob",
-      "description": "The club members are meeting for a summer birthday party! In the meantime, Monika's bundled together all the Season Two happenings for you in one convenient download!",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Season 2) https://drive.google.com/file/d/1f2Wz32N6cGz2RLJSQVoYfItsQDFPVsX7/view?usp=sharing (Season 2 Collections) https://drive.google.com/file/d/1t93Bz_rFgNpAXVihZlmes0Wwc7bEZmrG/view?usp=sharing"
-        }
-      ]
-    },
-    {
-      "id": 1118,
+      "id": 1116,
       "title": "Club Meetings (Season 3)",
       "author": "DokiDokiClubMeetings",
       "imageUrl": "/assets/mod_prevs/clubmeetingsseason3.webp",
@@ -2508,7 +2463,7 @@
       ]
     },
     {
-      "id": 1119,
+      "id": 1117,
       "title": "Midnight Date",
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/midnightdate.webp",
@@ -2523,7 +2478,7 @@
       ]
     },
     {
-      "id": 1120,
+      "id": 1118,
       "title": "Doki Doki: Christmas Time",
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/dokidokichristmastime.webp",
@@ -2538,7 +2493,7 @@
       ]
     },
     {
-      "id": 1121,
+      "id": 1119,
       "title": "Our Castle Wall: After Stories (ver 1.1.2)",
       "author": "MrZeraTheManT",
       "imageUrl": "/assets/mod_prevs/ourcastlewallafterstoriesver112.webp",
@@ -2553,7 +2508,7 @@
       ]
     },
     {
-      "id": 1122,
+      "id": 1120,
       "title": "Doki Doki: Your Girlfriend Really Loves You!",
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/dokidokiyourgirlfriendreallylovesyou.webp",
@@ -2568,7 +2523,7 @@
       ]
     },
     {
-      "id": 1123,
+      "id": 1121,
       "title": "Just Another Day",
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/justanotherday.webp",
@@ -2583,7 +2538,7 @@
       ]
     },
     {
-      "id": 1124,
+      "id": 1122,
       "title": "Natsuki's Expanded Story",
       "author": "Specsuki",
       "imageUrl": "/assets/mod_prevs/natsukisexpandedstory.webp",
@@ -2598,7 +2553,7 @@
       ]
     },
     {
-      "id": 1125,
+      "id": 1123,
       "title": "Late Night Christmas Heist",
       "author": "Team Relations",
       "imageUrl": "/assets/mod_prevs/latenightchristmasheist.webp",
@@ -2613,7 +2568,7 @@
       ]
     },
     {
-      "id": 1126,
+      "id": 1124,
       "title": "Let This Dream Be Forever",
       "author": "EigHtHCAT",
       "imageUrl": "/assets/mod_prevs/letthisdreambeforever.webp",
@@ -2628,7 +2583,7 @@
       ]
     },
     {
-      "id": 1127,
+      "id": 1125,
       "title": "Downpour",
       "author": "Gubbey",
       "imageUrl": "/assets/mod_prevs/downpour.webp",
@@ -2643,7 +2598,7 @@
       ]
     },
     {
-      "id": 1128,
+      "id": 1126,
       "title": "Celebration!",
       "author": "Tiny Waffle Studios",
       "imageUrl": "/assets/mod_prevs/celebration.webp",
@@ -2653,12 +2608,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/zji78uiuqqbxqxk/DokiDokiWarpedReality-1.2-Renpy7Mod.zip/file (ANDROID) https://pixeldrain.com/u/t2fzyhwv"
+          "url": "https://www.mediafire.com/file/zji78uiuqqbxqxk/DokiDokiWarpedReality-1.2-Renpy7Mod.zip/file"
         }
       ]
     },
     {
-      "id": 1129,
+      "id": 1127,
       "title": "Little Literature Club",
       "author": "regal-begal",
       "imageUrl": "/assets/mod_prevs/littleliteratureclub.webp",
@@ -2668,12 +2623,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/nw9kh9uur0ajwyw/LittleLiteratureClub-VOL1-latest-Renpy8-DDLCMod.zip/file (ANDROID) https://pixeldrain.com/l/Lm9ysJ15#item=1"
+          "url": "https://www.mediafire.com/file/nw9kh9uur0ajwyw/LittleLiteratureClub-VOL1-latest-Renpy8-DDLCMod.zip/file"
         }
       ]
     },
     {
-      "id": 1130,
+      "id": 1128,
       "title": "The Doki's Blow Up the White House",
       "author": "Teravolt Productions",
       "imageUrl": "/assets/mod_prevs/thedokisblowupthewhitehouse.webp",
@@ -2688,7 +2643,7 @@
       ]
     },
     {
-      "id": 1131,
+      "id": 1129,
       "title": "Falsely Accused of Criminal Activity Club!",
       "author": "dfwk",
       "imageUrl": "/assets/mod_prevs/falselyaccusedofcriminalactivityclub.webp",
@@ -2703,7 +2658,7 @@
       ]
     },
     {
-      "id": 1132,
+      "id": 1130,
       "title": "The Renewal",
       "author": "iiTzWolfyy",
       "imageUrl": "/assets/mod_prevs/therenewal.webp",
@@ -2713,12 +2668,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/dnj7ulzwaszecoj/The_Renewal_Demo-1.1-_Mod.zip/file (ANDROID) https://pixeldrain.com/u/Y97ZQmoy"
+          "url": "https://www.mediafire.com/file/dnj7ulzwaszecoj/The_Renewal_Demo-1.1-_Mod.zip/file"
         }
       ]
     },
     {
-      "id": 1133,
+      "id": 1131,
       "title": "Intercepting",
       "author": "inessa_k",
       "imageUrl": "/assets/mod_prevs/intercepting.webp",
@@ -2733,7 +2688,7 @@
       ]
     },
     {
-      "id": 1134,
+      "id": 1132,
       "title": "Controversity Time!",
       "author": "bimagamongMOP",
       "imageUrl": "/assets/mod_prevs/controversitytime.webp",
@@ -2748,7 +2703,7 @@
       ]
     },
     {
-      "id": 1135,
+      "id": 1133,
       "title": "DX Battle Plus Ultimate",
       "author": "Shipwrecker",
       "imageUrl": "/assets/mod_prevs/dxbattleplusultimate.webp",
@@ -2763,7 +2718,7 @@
       ]
     },
     {
-      "id": 1136,
+      "id": 1134,
       "title": "XD",
       "author": "AwesomeNinjaXD",
       "imageUrl": "/assets/mod_prevs/xd.webp",
@@ -2773,12 +2728,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://drive.google.com/file/d/1oB6Hc7F0dhXalstXVhVDaaNp6V1bbnXk/view (ANDROID) https://pixeldrain.com/u/AExBHrdF"
+          "url": "https://drive.google.com/file/d/1oB6Hc7F0dhXalstXVhVDaaNp6V1bbnXk/view"
         }
       ]
     },
     {
-      "id": 1137,
+      "id": 1135,
       "title": "Welcome to the Anime Club",
       "author": "Headlocker",
       "imageUrl": "/assets/mod_prevs/welcometotheanimeclub.webp",
@@ -2788,27 +2743,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/3zo423zdxrmu9x2/WTTAC-v1.0-Renpy7Mod.zip/file (ANDROID) https://workupload.com/file/U3GGshLN82U"
+          "url": "https://www.mediafire.com/file/3zo423zdxrmu9x2/WTTAC-v1.0-Renpy7Mod.zip/file"
         }
       ]
     },
     {
-      "id": 1138,
-      "title": "Emerald Affection (Act One)",
-      "author": "KryoGenic03",
-      "imageUrl": "/assets/mod_prevs/emeraldaffectionactone.webp",
-      "route": "emeraldaffectionactone",
-      "submittedBy": "Tune Eternal",
-      "description": "After one month in the club and graduation only a few months away, MC becomes conflicted about how he feels about the club president, Monika. With a complicated past, and a drive to make Monika happy, will he work up the guts to be with her? Or will life’s problems get in the way? Find out in this Act 1 release of Doki Doki: Emerald Affection!",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/cec8pi381wmwzbd/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.12.zip/file (ANDROID) https://www.mediafire.com/file/apffswytycdr7eh/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.11_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1139,
+      "id": 1136,
       "title": "What If+",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/whatif.webp",
@@ -2823,7 +2763,7 @@
       ]
     },
     {
-      "id": 1140,
+      "id": 1137,
       "title": "Another Lover",
       "author": "Dipshit Studios",
       "imageUrl": "/assets/mod_prevs/anotherlover.webp",
@@ -2838,7 +2778,7 @@
       ]
     },
     {
-      "id": 1141,
+      "id": 1138,
       "title": "Look Around and Find Out",
       "author": "Team PV",
       "imageUrl": "/assets/mod_prevs/lookaroundandfindout.webp",
@@ -2853,7 +2793,7 @@
       ]
     },
     {
-      "id": 1142,
+      "id": 1139,
       "title": "Metal Club",
       "author": "Brifyjek",
       "imageUrl": "/assets/mod_prevs/metalclub.webp",
@@ -2868,7 +2808,7 @@
       ]
     },
     {
-      "id": 1143,
+      "id": 1140,
       "title": "Through My Eyes",
       "author": "12gizguy6",
       "imageUrl": "/assets/mod_prevs/throughmyeyes.webp",
@@ -2883,7 +2823,7 @@
       ]
     },
     {
-      "id": 1144,
+      "id": 1141,
       "title": "Project N",
       "author": "AwesomeNinjaXD",
       "imageUrl": "/assets/mod_prevs/projectn.webp",
@@ -2898,7 +2838,7 @@
       ]
     },
     {
-      "id": 1145,
+      "id": 1142,
       "title": "What If",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/whatif.webp",
@@ -2913,7 +2853,7 @@
       ]
     },
     {
-      "id": 1146,
+      "id": 1143,
       "title": "The Monika Mod",
       "author": "KryoGenic03",
       "imageUrl": "/assets/mod_prevs/themonikamod.webp",
@@ -2928,7 +2868,7 @@
       ]
     },
     {
-      "id": 1147,
+      "id": 1144,
       "title": "Doki Doki Sapphire Dreams",
       "author": "Saul Gaming",
       "imageUrl": "/assets/mod_prevs/dokidokisapphiredreams.webp",
@@ -2943,7 +2883,7 @@
       ]
     },
     {
-      "id": 1148,
+      "id": 1145,
       "title": "Liberation",
       "author": "Doki_Liberator",
       "imageUrl": "/assets/mod_prevs/liberation.webp",
@@ -2953,12 +2893,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/escifbctexmlggp/DokiDokiLiberationAct1.zip/file (ANDROID) https://pixeldrain.com/u/jSzZ8z5u"
+          "url": "https://www.mediafire.com/file/escifbctexmlggp/DokiDokiLiberationAct1.zip/file"
         }
       ]
     },
     {
-      "id": 1149,
+      "id": 1146,
       "title": "I Am Monika",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/iammonika.webp",
@@ -2973,7 +2913,7 @@
       ]
     },
     {
-      "id": 1150,
+      "id": 1147,
       "title": "The Rising Night (Act One)",
       "author": "SpiritH0F",
       "imageUrl": "/assets/mod_prevs/therisingnightactone.webp",
@@ -2983,12 +2923,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/vnynydfyd0ib8sp/TheRisingNight-2.0.0_Demo-Renpy7Mod.zip/file (ANDROID) https://pixeldrain.com/u/WaRcWJYD"
+          "url": "https://www.mediafire.com/file/vnynydfyd0ib8sp/TheRisingNight-2.0.0_Demo-Renpy7Mod.zip/file"
         }
       ]
     },
     {
-      "id": 1151,
+      "id": 1148,
       "title": "Grappling Hook Yuri: The Origin Arc",
       "author": "Team GHY",
       "imageUrl": "/assets/mod_prevs/grapplinghookyuritheoriginarc.webp",
@@ -2998,12 +2938,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/y4vceocp8mcryhh/GHY-4.0.1-Py2-Renpy7Mod.zip/file (ANDROID) https://www.terabox.com/sharing/link?surl=5v9K9h4H1Zh1O7JuCL3XPw"
+          "url": "https://www.mediafire.com/file/y4vceocp8mcryhh/GHY-4.0.1-Py2-Renpy7Mod.zip/file"
         }
       ]
     },
     {
-      "id": 1152,
+      "id": 1149,
       "title": "Absolution: Chapter One",
       "author": "BaryonGod",
       "imageUrl": "/assets/mod_prevs/absolutionchapterone.webp",
@@ -3013,12 +2953,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/xl8t83scn9b9o6x/DokiDokiAbsolutionPATCH.zip/file (ANDROID) https://www.terabox.com/sharing/link?surl=jE4QxE66UdBWidpFxHnm5w"
+          "url": "https://www.mediafire.com/file/xl8t83scn9b9o6x/DokiDokiAbsolutionPATCH.zip/file"
         }
       ]
     },
     {
-      "id": 1153,
+      "id": 1150,
       "title": "Absolution: Chapter Two",
       "author": "BaryonGod",
       "imageUrl": "/assets/mod_prevs/absolutionchaptertwo.webp",
@@ -3028,12 +2968,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/um0q5zhh8byl2h9/DokiDokiAbsolutionCH2.zip/file (ANDROID) https://www.terabox.com/sharing/link?surl=EZh-Dtvs1Z5p2k6nv5ndMQ"
+          "url": "https://www.mediafire.com/file/um0q5zhh8byl2h9/DokiDokiAbsolutionCH2.zip/file"
         }
       ]
     },
     {
-      "id": 1154,
+      "id": 1151,
       "title": "Basically DDLC (VA's Version)",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/basicallyddlcvasversion.webp",
@@ -3048,7 +2988,7 @@
       ]
     },
     {
-      "id": 1155,
+      "id": 1152,
       "title": "Heart Struck (Chapter One)",
       "author": "The Potat",
       "imageUrl": "/assets/mod_prevs/heartstruckchapterone.webp",
@@ -3058,12 +2998,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/285doegrbfrj2jq/HeartStruck-1.1.0-Renpy7Mod.zip/file (ANDROID) https://pixeldrain.com/u/9z3h2qcD"
+          "url": "https://www.mediafire.com/file/285doegrbfrj2jq/HeartStruck-1.1.0-Renpy7Mod.zip/file"
         }
       ]
     },
     {
-      "id": 1156,
+      "id": 1153,
       "title": "infinity peen",
       "author": "I_Suck_At_Sleeping",
       "imageUrl": "/assets/mod_prevs/infinitypeen.webp",
@@ -3078,7 +3018,7 @@
       ]
     },
     {
-      "id": 1157,
+      "id": 1154,
       "title": "Sayonara: Dreams of Letting Go (Prologue)",
       "author": "Team Insight",
       "imageUrl": "/assets/mod_prevs/sayonaradreamsoflettinggoprologue.webp",
@@ -3093,7 +3033,7 @@
       ]
     },
     {
-      "id": 1158,
+      "id": 1155,
       "title": "A Father's Redemption (Remastered)",
       "author": "Goruto",
       "imageUrl": "/assets/mod_prevs/afathersredemptionremastered.webp",
@@ -3108,7 +3048,7 @@
       ]
     },
     {
-      "id": 1159,
+      "id": 1156,
       "title": "How to Make a DDLC Mod",
       "author": "Zachman Awesomeness",
       "imageUrl": "/assets/mod_prevs/howtomakeaddlcmod.webp",
@@ -3123,7 +3063,7 @@
       ]
     },
     {
-      "id": 1160,
+      "id": 1157,
       "title": "World of Walker (Act One)",
       "author": "Wa1kerzzz",
       "imageUrl": "/assets/mod_prevs/worldofwalkeractone.webp",
@@ -3138,7 +3078,7 @@
       ]
     },
     {
-      "id": 1161,
+      "id": 1158,
       "title": "The Window, The Desk, and The Violet",
       "author": "10th#1077",
       "imageUrl": "/assets/mod_prevs/thewindowthedeskandtheviolet.webp",
@@ -3153,7 +3093,7 @@
       ]
     },
     {
-      "id": 1162,
+      "id": 1159,
       "title": "Love Across Screens",
       "author": "Team PV",
       "imageUrl": "/assets/mod_prevs/loveacrossscreens.webp",
@@ -3168,7 +3108,7 @@
       ]
     },
     {
-      "id": 1163,
+      "id": 1160,
       "title": "I Want More Sayori!",
       "author": "Blue Quacker",
       "imageUrl": "/assets/mod_prevs/iwantmoresayori.webp",
@@ -3183,7 +3123,7 @@
       ]
     },
     {
-      "id": 1164,
+      "id": 1161,
       "title": "Yuri is Disappointed in You",
       "author": "Retroadamshow",
       "imageUrl": "/assets/mod_prevs/yuriisdisappointedinyou.webp",
@@ -3193,12 +3133,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://drive.usercontent.google.com/download?id=1ETPrUAqD5kemiZzwJjupE5aIfp77wX7K&export=download&authuser=0 (ANDROID) https://www.terabox.com/sharing/link?surl=CWUeUNUtx4oSrV6xU4B2Jw"
+          "url": "https://drive.usercontent.google.com/download?id=1ETPrUAqD5kemiZzwJjupE5aIfp77wX7K&export=download&authuser=0"
         }
       ]
     },
     {
-      "id": 1165,
+      "id": 1162,
       "title": "Cooking With Natsuki",
       "author": "Team Hope",
       "imageUrl": "/assets/mod_prevs/cookingwithnatsuki.webp",
@@ -3213,7 +3153,7 @@
       ]
     },
     {
-      "id": 1166,
+      "id": 1163,
       "title": "Sayori Gets a Burger",
       "author": "Team Sapphire",
       "imageUrl": "/assets/mod_prevs/sayorigetsaburger.webp",
@@ -3228,7 +3168,7 @@
       ]
     },
     {
-      "id": 1167,
+      "id": 1164,
       "title": "Another After Story",
       "author": "92FM",
       "imageUrl": "/assets/mod_prevs/anotherafterstory.webp",
@@ -3243,7 +3183,7 @@
       ]
     },
     {
-      "id": 1168,
+      "id": 1165,
       "title": "Machine Cancer",
       "author": "Drinks for Crows",
       "imageUrl": "/assets/mod_prevs/machinecancer.webp",
@@ -3258,7 +3198,7 @@
       ]
     },
     {
-      "id": 1169,
+      "id": 1166,
       "title": "Switcheroo",
       "author": "MWRoach",
       "imageUrl": "/assets/mod_prevs/switcheroo.webp",
@@ -3273,7 +3213,7 @@
       ]
     },
     {
-      "id": 1170,
+      "id": 1167,
       "title": "Repentance",
       "author": "Crashpunk",
       "imageUrl": "/assets/mod_prevs/repentance.webp",
@@ -3288,7 +3228,7 @@
       ]
     },
     {
-      "id": 1171,
+      "id": 1168,
       "title": "DDLC - That Special Day",
       "author": "Dr-Black-Jack",
       "imageUrl": "/assets/mod_prevs/ddlcthatspecialday.webp",
@@ -3303,7 +3243,7 @@
       ]
     },
     {
-      "id": 1172,
+      "id": 1169,
       "title": "Natsuki And Chill",
       "author": "cemsthetic",
       "imageUrl": "/assets/mod_prevs/natsukiandchill.webp",
@@ -3318,7 +3258,7 @@
       ]
     },
     {
-      "id": 1173,
+      "id": 1170,
       "title": "Dreams of Literature: Noir",
       "author": "Flasium",
       "imageUrl": "/assets/mod_prevs/dreamsofliteraturenoir.webp",
@@ -3333,7 +3273,7 @@
       ]
     },
     {
-      "id": 1174,
+      "id": 1171,
       "title": "DDBaODTTLNTaTLCTtHI: A Dog Story",
       "author": "DatBlackScientist",
       "imageUrl": "/assets/mod_prevs/ddbaodttlntatlctthiadogstory.webp",
@@ -3348,7 +3288,7 @@
       ]
     },
     {
-      "id": 1175,
+      "id": 1172,
       "title": "Bibleman Saves the Dokis",
       "author": "-2",
       "imageUrl": "/assets/mod_prevs/biblemansavesthedokis.webp",
@@ -3363,7 +3303,7 @@
       ]
     },
     {
-      "id": 1176,
+      "id": 1173,
       "title": "Savior of Souls",
       "author": "crimfinity",
       "imageUrl": "/assets/mod_prevs/saviorofsouls.webp",
@@ -3378,7 +3318,7 @@
       ]
     },
     {
-      "id": 1177,
+      "id": 1174,
       "title": "[her] (ver 1.3)",
       "author": "DatBlackScientist",
       "imageUrl": "/assets/mod_prevs/herver13.webp",
@@ -3388,12 +3328,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/c8zn5k7vpfpw9og/her-1.3-Renpy7Mod.zip/file (ANDROID) https://www.terabox.com/sharing/link?surl=58Chg5rAFJ9PDWkqPwyc0g"
+          "url": "https://www.mediafire.com/file/c8zn5k7vpfpw9og/her-1.3-Renpy7Mod.zip/file"
         }
       ]
     },
     {
-      "id": 1178,
+      "id": 1175,
       "title": "Machine Libra",
       "author": "Drinks for Crows",
       "imageUrl": "/assets/mod_prevs/machinelibra.webp",
@@ -3408,7 +3348,7 @@
       ]
     },
     {
-      "id": 1179,
+      "id": 1176,
       "title": "Trench Warfare",
       "author": "Flasium",
       "imageUrl": "/assets/mod_prevs/trenchwarfare.webp",
@@ -3423,7 +3363,7 @@
       ]
     },
     {
-      "id": 1180,
+      "id": 1177,
       "title": "A Date With Sayori",
       "author": "Cade Bedlam",
       "imageUrl": "/assets/mod_prevs/adatewithsayori.webp",
@@ -3438,7 +3378,7 @@
       ]
     },
     {
-      "id": 1181,
+      "id": 1178,
       "title": "The Last Sky",
       "author": "MyLastWitchout (Mods & Translations)",
       "imageUrl": "/assets/mod_prevs/thelastsky.webp",
@@ -3453,7 +3393,7 @@
       ]
     },
     {
-      "id": 1182,
+      "id": 1179,
       "title": "Pink Eyes",
       "author": "crimfinity (PinkHeart2006)",
       "imageUrl": "/assets/mod_prevs/pinkeyes.webp",
@@ -3468,7 +3408,7 @@
       ]
     },
     {
-      "id": 1183,
+      "id": 1180,
       "title": "Window to Your Heart",
       "author": "Jelly Man",
       "imageUrl": "/assets/mod_prevs/windowtoyourheart.webp",
@@ -3483,7 +3423,7 @@
       ]
     },
     {
-      "id": 1184,
+      "id": 1181,
       "title": "Forever and Ever",
       "author": "AlexanDDOS",
       "imageUrl": "/assets/mod_prevs/foreverandever.webp",
@@ -3498,22 +3438,7 @@
       ]
     },
     {
-      "id": 1185,
-      "title": "Isolation",
-      "author": "AngryBroYT",
-      "imageUrl": "/assets/mod_prevs/isolation.webp",
-      "route": "isolation",
-      "submittedBy": "Tune Eternal",
-      "description": "Join our protagonist on his quest of repairing his broken reputation in a world isolated from any other. He's Forced into torment, love, heartbreak and manipulation. Gain the trust of others, grow to become a better human being. However, there is something dark behind the veil. His parents are scientists, every student around him become subjects. Will you find out what is going on in this facility? Can our protagonist solidify his place in this isolated prison? I wonder...",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(ANDROID) https://www.terabox.com/sharing/link?surl=HulNFiZz9601-r1BH8KTLA"
-        }
-      ]
-    },
-    {
-      "id": 1186,
+      "id": 1182,
       "title": "Yuri Reality",
       "author": "Noah Smyth",
       "imageUrl": "/assets/mod_prevs/yurireality.webp",
@@ -3528,7 +3453,7 @@
       ]
     },
     {
-      "id": 1187,
+      "id": 1183,
       "title": "Chad MC",
       "author": "Qwerty-Quarty",
       "imageUrl": "/assets/mod_prevs/chadmc.webp",
@@ -3543,7 +3468,7 @@
       ]
     },
     {
-      "id": 1188,
+      "id": 1184,
       "title": "Deletion: Rewrite",
       "author": "nico_deletionr",
       "imageUrl": "/assets/mod_prevs/deletionrewrite.webp",
@@ -3558,7 +3483,7 @@
       ]
     },
     {
-      "id": 1189,
+      "id": 1185,
       "title": "Bad Memories",
       "author": "Ayzzmt",
       "imageUrl": "/assets/mod_prevs/badmemories.webp",
@@ -3573,7 +3498,7 @@
       ]
     },
     {
-      "id": 1190,
+      "id": 1186,
       "title": "Enter Traceback",
       "author": "ViSaRi_himself",
       "imageUrl": "/assets/mod_prevs/entertraceback.webp",
@@ -3588,7 +3513,7 @@
       ]
     },
     {
-      "id": 1191,
+      "id": 1187,
       "title": "Through Time and Space",
       "author": "Thijnmens#8502",
       "imageUrl": "/assets/mod_prevs/throughtimeandspace.webp",
@@ -3603,7 +3528,7 @@
       ]
     },
     {
-      "id": 1192,
+      "id": 1188,
       "title": "Day Of Reckoning",
       "author": "Mineplex Vl",
       "imageUrl": "/assets/mod_prevs/dayofreckoning.webp",
@@ -3618,7 +3543,7 @@
       ]
     },
     {
-      "id": 1193,
+      "id": 1189,
       "title": "Forgotten",
       "author": "Unspoken122",
       "imageUrl": "/assets/mod_prevs/forgotten.webp",
@@ -3633,7 +3558,7 @@
       ]
     },
     {
-      "id": 1194,
+      "id": 1190,
       "title": "Tutorial!",
       "author": "Lonesome Dev",
       "imageUrl": "/assets/mod_prevs/tutorial.webp",
@@ -3648,7 +3573,7 @@
       ]
     },
     {
-      "id": 1195,
+      "id": 1191,
       "title": "New World",
       "author": "MaksonJolt",
       "imageUrl": "/assets/mod_prevs/newworld.webp",
@@ -3663,7 +3588,7 @@
       ]
     },
     {
-      "id": 1196,
+      "id": 1192,
       "title": "Dreams",
       "author": "Storm Boss",
       "imageUrl": "/assets/mod_prevs/dreams.webp",
@@ -3678,7 +3603,7 @@
       ]
     },
     {
-      "id": 1197,
+      "id": 1193,
       "title": "Love Secrets",
       "author": "Team LS",
       "imageUrl": "/assets/mod_prevs/lovesecrets.webp",
@@ -3693,7 +3618,7 @@
       ]
     },
     {
-      "id": 1198,
+      "id": 1194,
       "title": "Return to the Portrait",
       "author": "Yujiri",
       "imageUrl": "/assets/mod_prevs/returntotheportrait.webp",
@@ -3708,7 +3633,7 @@
       ]
     },
     {
-      "id": 1199,
+      "id": 1195,
       "title": "Isolation",
       "author": "AngryBroYT",
       "imageUrl": "/assets/mod_prevs/isolation.webp",
@@ -3723,7 +3648,7 @@
       ]
     },
     {
-      "id": 1200,
+      "id": 1196,
       "title": "Scattered Stars",
       "author": "Team Sol",
       "imageUrl": "/assets/mod_prevs/scatteredstars.webp",
@@ -3738,22 +3663,7 @@
       ]
     },
     {
-      "id": 1201,
-      "title": "Forward Momentum",
-      "author": "Bug",
-      "imageUrl": "/assets/mod_prevs/forwardmomentum.webp",
-      "route": "forwardmomentum",
-      "submittedBy": "Tune Eternal",
-      "description": "\"The world we lived in is cruel and unforgiving. Those who strive to express individuality are shunned as abnormal, leaving the only real solution as conforming. It's unfair but we have to accept it for what it is. There is no other way. \"It's these words that he has chosen to reject. Having entered a solitary lifestyle devoid of interactions and anything other than the bare minimum, his high school life has been completely plain and uninteresting. The lone exception to his rule of isolation is his childhood friend, Sayori. Dragging him into her own commitments, he finds himself one of the founding members of a new school club; One for those who want to share the joys of literature! \"How exciting...\"",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(DEMO 1) https://www.mediafire.com/file/ef3c4gfth4hy2ml/Forward_Momentum-1.1.2.DEMO.zip/file (DEMO 2) https://www.mediafire.com/file/50yk3b01ou777dg/Forward_Momentum-DEMO_1.5.zip/file (DEMO 3) https://www.mediafire.com/file/oseggxve8sz5urw/Forward-Momentum-1.0.6.DEV-Mod.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 1202,
+      "id": 1197,
       "title": "Other Clubs",
       "author": "Codeflare",
       "imageUrl": "/assets/mod_prevs/otherclubs.webp",
@@ -3768,7 +3678,7 @@
       ]
     },
     {
-      "id": 1203,
+      "id": 1198,
       "title": "Found Love",
       "author": "Temm",
       "imageUrl": "/assets/mod_prevs/foundlove.webp",
@@ -3783,7 +3693,7 @@
       ]
     },
     {
-      "id": 1204,
+      "id": 1199,
       "title": "Sequel Club (Classic)",
       "author": "Zachman Awesomeness",
       "imageUrl": "/assets/mod_prevs/sequelclubclassic.webp",
@@ -3798,7 +3708,7 @@
       ]
     },
     {
-      "id": 1205,
+      "id": 1200,
       "title": "The Post Credit Scene",
       "author": "Mineplex VL",
       "imageUrl": "/assets/mod_prevs/thepostcreditscene.webp",
@@ -3813,7 +3723,7 @@
       ]
     },
     {
-      "id": 1206,
+      "id": 1201,
       "title": "True Happiness",
       "author": "NightmareExE",
       "imageUrl": "/assets/mod_prevs/truehappiness.webp",
@@ -3828,7 +3738,7 @@
       ]
     },
     {
-      "id": 1207,
+      "id": 1202,
       "title": "Our Hearts United! Chapter One (Beta 5.1 Build)",
       "author": "Azrathas",
       "imageUrl": "/assets/mod_prevs/ourheartsunitedchapteronebeta51build.webp",
@@ -3843,7 +3753,7 @@
       ]
     },
     {
-      "id": 1208,
+      "id": 1203,
       "title": "Drift Club (Reworked)",
       "author": "ZabelekPL",
       "imageUrl": "/assets/mod_prevs/driftclubreworked.webp",
@@ -3858,7 +3768,7 @@
       ]
     },
     {
-      "id": 1209,
+      "id": 1204,
       "title": "-2's Escape From Home (Alpha 0.1)",
       "author": "-2 (OfficialJackRuby)",
       "imageUrl": "/assets/mod_prevs/2sescapefromhomealpha01.webp",
@@ -3873,7 +3783,7 @@
       ]
     },
     {
-      "id": 1210,
+      "id": 1205,
       "title": "TOMOKO;",
       "author": "-2 (OfficialJackRuby)",
       "imageUrl": "/assets/mod_prevs/tomoko.webp",
@@ -3888,7 +3798,7 @@
       ]
     },
     {
-      "id": 1211,
+      "id": 1206,
       "title": "Tomoe;Zero",
       "author": "-2 (OfficialJackRuby)",
       "imageUrl": "/assets/mod_prevs/tomoezero.webp",
@@ -3898,12 +3808,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/wbvp3nsngiysksn/DokiDokiTomoeZero-1.0.0%E2%80%93Py3-Renpy8-DDLCMod.zip/file (ANDROID) https://workupload.com/file/45xJ73RzABT"
+          "url": "https://www.mediafire.com/file/wbvp3nsngiysksn/DokiDokiTomoeZero-1.0.0%E2%80%93Py3-Renpy8-DDLCMod.zip/file"
         }
       ]
     },
     {
-      "id": 1212,
+      "id": 1207,
       "title": "Doki Doki Jumbled",
       "author": "Team Final Stand",
       "imageUrl": "/assets/mod_prevs/dokidokijumbled.webp",
@@ -3918,7 +3828,7 @@
       ]
     },
     {
-      "id": 1213,
+      "id": 1208,
       "title": "My Best Friend is a Ghost (Episode 4)",
       "author": "Storm Boss",
       "imageUrl": "/assets/mod_prevs/mybestfriendisaghostepisode4.webp",
@@ -3933,7 +3843,7 @@
       ]
     },
     {
-      "id": 1214,
+      "id": 1209,
       "title": "My Best Friend is a Ghost (Episode 5)",
       "author": "Storm Boss",
       "imageUrl": "/assets/mod_prevs/mybestfriendisaghostepisode5.webp",
@@ -3948,7 +3858,7 @@
       ]
     },
     {
-      "id": 1215,
+      "id": 1210,
       "title": "New Blood",
       "author": "Venom",
       "imageUrl": "/assets/mod_prevs/newblood.webp",
@@ -3963,7 +3873,7 @@
       ]
     },
     {
-      "id": 1216,
+      "id": 1211,
       "title": "Our Reality",
       "author": "dracodraco100",
       "imageUrl": "/assets/mod_prevs/ourreality.webp",
@@ -3978,7 +3888,7 @@
       ]
     },
     {
-      "id": 1217,
+      "id": 1212,
       "title": "Date Club",
       "author": "VenEttore",
       "imageUrl": "/assets/mod_prevs/dateclub.webp",
@@ -3993,7 +3903,7 @@
       ]
     },
     {
-      "id": 1218,
+      "id": 1213,
       "title": "Mercy?",
       "author": "SGYTOfficial125DEV",
       "imageUrl": "/assets/mod_prevs/mercy.webp",
@@ -4008,7 +3918,7 @@
       ]
     },
     {
-      "id": 1219,
+      "id": 1214,
       "title": "It Wasn't Her",
       "author": "TSNTheSilentNinja",
       "imageUrl": "/assets/mod_prevs/itwasnther.webp",
@@ -4023,7 +3933,7 @@
       ]
     },
     {
-      "id": 1220,
+      "id": 1215,
       "title": "Choice Based",
       "author": "ash_rock",
       "imageUrl": "/assets/mod_prevs/choicebased.webp",
@@ -4038,7 +3948,7 @@
       ]
     },
     {
-      "id": 1221,
+      "id": 1216,
       "title": "Undone Fate",
       "author": "No",
       "imageUrl": "/assets/mod_prevs/undonefate.webp",
@@ -4053,7 +3963,7 @@
       ]
     },
     {
-      "id": 1222,
+      "id": 1217,
       "title": "Despair",
       "author": "sNooPy_DoGG",
       "imageUrl": "/assets/mod_prevs/despair.webp",
@@ -4068,7 +3978,7 @@
       ]
     },
     {
-      "id": 1223,
+      "id": 1218,
       "title": "Doki Doki Christmas Heist: Rise of the Claws",
       "author": "DatBlackScientist",
       "imageUrl": "/assets/mod_prevs/dokidokichristmasheistriseoftheclaws.webp",
@@ -4083,7 +3993,7 @@
       ]
     },
     {
-      "id": 1224,
+      "id": 1219,
       "title": "The New Literature Club",
       "author": "AstraNova",
       "imageUrl": "/assets/mod_prevs/thenewliteratureclub.webp",
@@ -4098,7 +4008,7 @@
       ]
     },
     {
-      "id": 1225,
+      "id": 1220,
       "title": "Sans in DDLC",
       "author": "AinsleyHairyott",
       "imageUrl": "/assets/mod_prevs/sansinddlc.webp",
@@ -4113,7 +4023,7 @@
       ]
     },
     {
-      "id": 1226,
+      "id": 1221,
       "title": "Doki Doki BFF",
       "author": "Brungala",
       "imageUrl": "/assets/mod_prevs/dokidokibff.webp",
@@ -4128,7 +4038,7 @@
       ]
     },
     {
-      "id": 1227,
+      "id": 1222,
       "title": "Twin Realities",
       "author": "Lord_Blubbee",
       "imageUrl": "/assets/mod_prevs/twinrealities.webp",
@@ -4143,7 +4053,7 @@
       ]
     },
     {
-      "id": 1228,
+      "id": 1223,
       "title": "Doki Doki Christmas Adventure",
       "author": "ImTheRealSlayer",
       "imageUrl": "/assets/mod_prevs/dokidokichristmasadventure.webp",
@@ -4158,7 +4068,7 @@
       ]
     },
     {
-      "id": 1229,
+      "id": 1224,
       "title": "Doki Doki Christmas Story",
       "author": "-M!",
       "imageUrl": "/assets/mod_prevs/dokidokichristmasstory.webp",
@@ -4173,7 +4083,7 @@
       ]
     },
     {
-      "id": 1230,
+      "id": 1225,
       "title": "Lavender Scent",
       "author": "SSCminion",
       "imageUrl": "/assets/mod_prevs/lavenderscent.webp",
@@ -4188,7 +4098,7 @@
       ]
     },
     {
-      "id": 1231,
+      "id": 1226,
       "title": "Doki Doki Loser MC!",
       "author": "CaeserDont",
       "imageUrl": "/assets/mod_prevs/dokidokilosermc.webp",
@@ -4203,7 +4113,7 @@
       ]
     },
     {
-      "id": 1232,
+      "id": 1227,
       "title": "Youtuber Club",
       "author": "Nightmare Nacho",
       "imageUrl": "/assets/mod_prevs/youtuberclub.webp",
@@ -4218,7 +4128,7 @@
       ]
     },
     {
-      "id": 1233,
+      "id": 1228,
       "title": "Outbreak: Red Sky",
       "author": "AstraNova",
       "imageUrl": "/assets/mod_prevs/outbreakredsky.webp",
@@ -4233,7 +4143,7 @@
       ]
     },
     {
-      "id": 1234,
+      "id": 1229,
       "title": "MC does not dream of Monika",
       "author": "duke549",
       "imageUrl": "/assets/mod_prevs/mcdoesnotdreamofmonika.webp",
@@ -4248,7 +4158,7 @@
       ]
     },
     {
-      "id": 1235,
+      "id": 1230,
       "title": "Sunny Rains",
       "author": "Karasil Sothren",
       "imageUrl": "/assets/mod_prevs/sunnyrains.webp",
@@ -4263,7 +4173,7 @@
       ]
     },
     {
-      "id": 1236,
+      "id": 1231,
       "title": "Fake Reality",
       "author": "billystein25",
       "imageUrl": "/assets/mod_prevs/fakereality.webp",
@@ -4278,7 +4188,7 @@
       ]
     },
     {
-      "id": 1237,
+      "id": 1232,
       "title": "Alone Together",
       "author": "VentusLeonidas",
       "imageUrl": "/assets/mod_prevs/alonetogether.webp",
@@ -4293,7 +4203,7 @@
       ]
     },
     {
-      "id": 1238,
+      "id": 1233,
       "title": "Lost Ascension",
       "author": "Team Ascension",
       "imageUrl": "/assets/mod_prevs/lostascension.webp",
@@ -4308,7 +4218,7 @@
       ]
     },
     {
-      "id": 1239,
+      "id": 1234,
       "title": "Re:Coded",
       "author": "BippityZop",
       "imageUrl": "/assets/mod_prevs/recoded.webp",
@@ -4323,7 +4233,7 @@
       ]
     },
     {
-      "id": 1240,
+      "id": 1235,
       "title": "Doki Doki Second Chances",
       "author": "Brungala",
       "imageUrl": "/assets/mod_prevs/dokidokisecondchances.webp",
@@ -4338,7 +4248,7 @@
       ]
     },
     {
-      "id": 1241,
+      "id": 1236,
       "title": "Yandere Madness",
       "author": "DatBlackScientist",
       "imageUrl": "/assets/mod_prevs/yanderemadness.webp",
@@ -4353,7 +4263,7 @@
       ]
     },
     {
-      "id": 1242,
+      "id": 1237,
       "title": "Onii-chan Club",
       "author": "LuikBelang",
       "imageUrl": "/assets/mod_prevs/oniichanclub.webp",
@@ -4368,7 +4278,7 @@
       ]
     },
     {
-      "id": 1243,
+      "id": 1238,
       "title": "Sunny Rains",
       "author": "Karasil Sothren and Sayori Amekumo",
       "imageUrl": "/assets/mod_prevs/sunnyrains.webp",
@@ -4383,97 +4293,7 @@
       ]
     },
     {
-      "id": 1244,
-      "title": "World of Dreams: Christmas Special 2021",
-      "author": "Morbiusgreen",
-      "imageUrl": "/assets/mod_prevs/worldofdreamschristmasspecial2021.webp",
-      "route": "worldofdreamschristmasspecial2021",
-      "submittedBy": "Codex",
-      "description": "In an alternate future, MC and the Player have been separated from each other, and everyone spends a nice day preparing for and attending a Christmas party with the girls, while the Player figures out what to get Monika.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://drive.google.com/drive/folders/1Axh5Y5749fUpGDe7j-4vOt7Ju0C5K8Ay?usp=sharing/////Android: https://www.mediafire.com/file/i9c5tllbci0mgxr/WoD_Christmas_Special_2021.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1245,
-      "title": "Pink Eyes",
-      "author": "Pinkheart2006",
-      "imageUrl": "/assets/mod_prevs/pinkeyes.webp",
-      "route": "pinkeyes",
-      "submittedBy": "Codex",
-      "description": "We Are Again at the club, but this time we bring Natsuki to life in this fun and warm love story.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://www.mediafire.com/file/j3i1sfrbiwq3xrq/PinkEyes.zip/file ///// Android: https://workupload.com/file/53GHS5Jvzex"
-        }
-      ]
-    },
-    {
-      "id": 1246,
-      "title": "I Am Monika",
-      "author": "Various Artists",
-      "imageUrl": "/assets/mod_prevs/iammonika.webp",
-      "route": "iammonika",
-      "submittedBy": "Codex",
-      "description": "A mod that delves into the topic of the reality of being in love with Monika.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://www.mediafire.com/file/l24nmf4z4popitm/I-am-Monika-1-0-Renpy7Mod.zip/file ///// Android: https://workupload.com/file/bturphajHbG"
-        }
-      ]
-    },
-    {
-      "id": 1247,
-      "title": "Sayori Mod",
-      "author": "SuperSandwich",
-      "imageUrl": "/assets/mod_prevs/sayorimod.webp",
-      "route": "sayorimod",
-      "submittedBy": "Codex",
-      "description": "Have fun playing this Natsuki mod. I mean, uh, Sayori mod.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://www.mediafire.com/file/0smo78q6x6ny0l4/SayoriMod-1-Renpy7Mod.zip/file //// Android: https://www.mediafire.com/file/pkk9vweo7nwo0iy/Sayori_Mod_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1248,
-      "title": "Switcheroo",
-      "author": "MWRoach",
-      "imageUrl": "/assets/mod_prevs/switcheroo.webp",
-      "route": "switcheroo",
-      "submittedBy": "Codex",
-      "description": "What if the girls weren't girls? And you were instead? It's basically Rule 63, but with a bit of a twist to make it different from base DDLC.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://drive.google.com/file/d/1FScZvf2iucJC2XIb_p6mG0vc5m9Lqs2E/view //// Android: https://workupload.com/file/Jk3XjKMgXbT"
-        }
-      ]
-    },
-    {
-      "id": 1249,
-      "title": "Space",
-      "author": "Various Artists",
-      "imageUrl": "/assets/mod_prevs/space.webp",
-      "route": "space",
-      "submittedBy": "Codex",
-      "description": "As the sun sets, Sayori tries to find hope in a world where her and [player] may drift away. Will she be able to find solace in the space, or will she be crushed by it?",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://www.mediafire.com/file/odmgtuuaupz0zb9/space.zip/file //// Android: https://workupload.com/file/VrPrgKp459R"
-        }
-      ]
-    },
-    {
-      "id": 1250,
+      "id": 1239,
       "title": "Doki Doki Rising Storm",
       "author": "sNooPy_DoGG",
       "imageUrl": "/assets/mod_prevs/dokidokirisingstorm.webp",
@@ -4488,7 +4308,7 @@
       ]
     },
     {
-      "id": 1251,
+      "id": 1240,
       "title": "Doki Doki Rising Storm 2",
       "author": "sNooPy_DoGG",
       "imageUrl": "/assets/mod_prevs/dokidokirisingstorm2.webp",
@@ -4503,7 +4323,7 @@
       ]
     },
     {
-      "id": 1252,
+      "id": 1241,
       "title": "Doki Doki Onii-Chan Club!",
       "author": "LuikBelang",
       "imageUrl": "/assets/mod_prevs/dokidokioniichanclub.webp",
@@ -4518,7 +4338,7 @@
       ]
     },
     {
-      "id": 1253,
+      "id": 1242,
       "title": "Doki Doki Spark of Hope",
       "author": "Raid",
       "imageUrl": "/assets/mod_prevs/dokidokisparkofhope.webp",
@@ -4533,7 +4353,7 @@
       ]
     },
     {
-      "id": 1254,
+      "id": 1243,
       "title": "Doki Doki In A Nutshell",
       "author": "CaesarDont",
       "imageUrl": "/assets/mod_prevs/dokidokiinanutshell.webp",
@@ -4548,7 +4368,7 @@
       ]
     },
     {
-      "id": 1255,
+      "id": 1244,
       "title": "Doki Doki Another World",
       "author": "Nightmare Nacho",
       "imageUrl": "/assets/mod_prevs/dokidokianotherworld.webp",
@@ -4563,7 +4383,7 @@
       ]
     },
     {
-      "id": 1256,
+      "id": 1245,
       "title": "Doki Doki True Feelings (Mod not built)",
       "author": "Saturn",
       "imageUrl": "/assets/mod_prevs/dokidokitruefeelingsmodnotbuilt.webp",
@@ -4578,7 +4398,7 @@
       ]
     },
     {
-      "id": 1257,
+      "id": 1246,
       "title": "DatBlackScientist's Doki Doki Yandere Madness",
       "author": "DatBlackScientist",
       "imageUrl": "/assets/mod_prevs/datblackscientistsdokidokiyanderemadness.webp",
@@ -4593,7 +4413,7 @@
       ]
     },
     {
-      "id": 1258,
+      "id": 1247,
       "title": "Doki Doki Longer Roads",
       "author": "Tr00perTayl0r90",
       "imageUrl": "/assets/mod_prevs/dokidokilongerroads.webp",
@@ -4608,7 +4428,7 @@
       ]
     },
     {
-      "id": 1259,
+      "id": 1248,
       "title": "Doki Doki My Escape!",
       "author": "Rez",
       "imageUrl": "/assets/mod_prevs/dokidokimyescape.webp",
@@ -4623,7 +4443,7 @@
       ]
     },
     {
-      "id": 1260,
+      "id": 1249,
       "title": "Doki Doki Literature Club Re:Coded",
       "author": "BippityZop",
       "imageUrl": "/assets/mod_prevs/dokidokiliteratureclubrecoded.webp",
@@ -4638,7 +4458,7 @@
       ]
     },
     {
-      "id": 1261,
+      "id": 1250,
       "title": "Magical Literary Heroine Natsuki Saves The Literature Club",
       "author": "DiabloGraves",
       "imageUrl": "/assets/mod_prevs/magicalliteraryheroinenatsukisavestheliteratureclub.webp",
@@ -4653,7 +4473,7 @@
       ]
     },
     {
-      "id": 1262,
+      "id": 1251,
       "title": "Doki Doki Into The Dark",
       "author": "QuartzAmythest",
       "imageUrl": "/assets/mod_prevs/dokidokiintothedark.webp",
@@ -4668,7 +4488,7 @@
       ]
     },
     {
-      "id": 1263,
+      "id": 1252,
       "title": "Doki Doki Forces: The Prologue (April Fools Unlocked)",
       "author": "reckonusm",
       "imageUrl": "/assets/mod_prevs/dokidokiforcestheprologueaprilfoolsunlocked.webp",
@@ -4683,7 +4503,7 @@
       ]
     },
     {
-      "id": 1264,
+      "id": 1253,
       "title": "Doki Doki Alone Together",
       "author": "VentusLeonidas",
       "imageUrl": "/assets/mod_prevs/dokidokialonetogether.webp",
@@ -4698,7 +4518,7 @@
       ]
     },
     {
-      "id": 1265,
+      "id": 1254,
       "title": "Doki Doki Encore",
       "author": "ultrastarwarsfan",
       "imageUrl": "/assets/mod_prevs/dokidokiencore.webp",
@@ -4713,7 +4533,7 @@
       ]
     },
     {
-      "id": 1266,
+      "id": 1255,
       "title": "Doki Doki God Syndrome",
       "author": "shroud.co (alex74alex",
       "imageUrl": "/assets/mod_prevs/dokidokigodsyndrome.webp",
@@ -4728,7 +4548,7 @@
       ]
     },
     {
-      "id": 1267,
+      "id": 1256,
       "title": "Doki Doki Malignancy",
       "author": "KuudereGhost",
       "imageUrl": "/assets/mod_prevs/dokidokimalignancy.webp",
@@ -4743,7 +4563,7 @@
       ]
     },
     {
-      "id": 1268,
+      "id": 1257,
       "title": "Doki Doki Rhapsody",
       "author": "DatBlackScientist",
       "imageUrl": "/assets/mod_prevs/dokidokirhapsody.webp",
@@ -4758,7 +4578,7 @@
       ]
     },
     {
-      "id": 1269,
+      "id": 1258,
       "title": "Doki Doki Pantomime Show",
       "author": "timothysonofsam",
       "imageUrl": "/assets/mod_prevs/dokidokipantomimeshow.webp",
@@ -4773,7 +4593,7 @@
       ]
     },
     {
-      "id": 1270,
+      "id": 1259,
       "title": "Doki Doki West Virginia Club",
       "author": "Mestier1233",
       "imageUrl": "/assets/mod_prevs/dokidokiwestvirginiaclub.webp",
@@ -4788,7 +4608,7 @@
       ]
     },
     {
-      "id": 1271,
+      "id": 1260,
       "title": "MC Does Not Dream of Monika",
       "author": "duke549",
       "imageUrl": "/assets/mod_prevs/mcdoesnotdreamofmonika.webp",
@@ -4803,7 +4623,7 @@
       ]
     },
     {
-      "id": 1272,
+      "id": 1261,
       "title": "Doki Doki Corrupted Files",
       "author": "LunaMoon_xx",
       "imageUrl": "/assets/mod_prevs/dokidokicorruptedfiles.webp",
@@ -4818,7 +4638,7 @@
       ]
     },
     {
-      "id": 1273,
+      "id": 1262,
       "title": "Doki Doki Christmas Heist",
       "author": "DatBlackScientist",
       "imageUrl": "/assets/mod_prevs/dokidokichristmasheist.webp",
@@ -4833,7 +4653,7 @@
       ]
     },
     {
-      "id": 1274,
+      "id": 1263,
       "title": "We Are The Literature Club",
       "author": "Patt",
       "imageUrl": "/assets/mod_prevs/wearetheliteratureclub.webp",
@@ -4848,7 +4668,7 @@
       ]
     },
     {
-      "id": 1275,
+      "id": 1264,
       "title": "We Are The Literature Club II",
       "author": "Patt",
       "imageUrl": "/assets/mod_prevs/wearetheliteratureclubii.webp",
@@ -4863,7 +4683,7 @@
       ]
     },
     {
-      "id": 1276,
+      "id": 1265,
       "title": "Doki Doki Relapse",
       "author": "GuyBread",
       "imageUrl": "/assets/mod_prevs/dokidokirelapse.webp",
@@ -4878,7 +4698,7 @@
       ]
     },
     {
-      "id": 1277,
+      "id": 1266,
       "title": "Doki Doki Thot Club",
       "author": "4idi0tsdevt33m",
       "imageUrl": "/assets/mod_prevs/dokidokithotclub.webp",
@@ -4893,7 +4713,7 @@
       ]
     },
     {
-      "id": 1278,
+      "id": 1267,
       "title": "Doki Doki India-Man Time",
       "author": "AinsleyHairyott",
       "imageUrl": "/assets/mod_prevs/dokidokiindiamantime.webp",
@@ -4903,12 +4723,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://drive.google.com/file/d/1HWKTGJjWKA2uGbCPQKuEslaWxcNiSWlP/view (ANDROID) https://www.terabox.com/sharing/link?surl=pAp6SaS4Sh-WAwM63KrbaQ"
+          "url": "https://drive.google.com/file/d/1HWKTGJjWKA2uGbCPQKuEslaWxcNiSWlP/view"
         }
       ]
     },
     {
-      "id": 1279,
+      "id": 1268,
       "title": "Fruits of the Literature Club",
       "author": "American Eagle",
       "imageUrl": "/assets/mod_prevs/fruitsoftheliteratureclub.webp",
@@ -4923,7 +4743,7 @@
       ]
     },
     {
-      "id": 1280,
+      "id": 1269,
       "title": "Doki Doki Lavender Scent",
       "author": "SSCminion",
       "imageUrl": "/assets/mod_prevs/dokidokilavenderscent.webp",
@@ -4938,7 +4758,7 @@
       ]
     },
     {
-      "id": 1281,
+      "id": 1270,
       "title": "Doki Doki Twin Realities",
       "author": "Lord_Blubbee",
       "imageUrl": "/assets/mod_prevs/dokidokitwinrealities.webp",
@@ -4953,7 +4773,7 @@
       ]
     },
     {
-      "id": 1282,
+      "id": 1271,
       "title": "Doki Doki The New Literature Club",
       "author": "AstraNova",
       "imageUrl": "/assets/mod_prevs/dokidokithenewliteratureclub.webp",
@@ -4968,7 +4788,7 @@
       ]
     },
     {
-      "id": 1283,
+      "id": 1272,
       "title": "Go Home Club",
       "author": "Leo40Reddit",
       "imageUrl": "/assets/mod_prevs/gohomeclub.webp",
@@ -4983,7 +4803,7 @@
       ]
     },
     {
-      "id": 1284,
+      "id": 1273,
       "title": "Doki Doki Just Us!",
       "author": "Edgarmods",
       "imageUrl": "/assets/mod_prevs/dokidokijustus.webp",
@@ -4998,7 +4818,7 @@
       ]
     },
     {
-      "id": 1285,
+      "id": 1274,
       "title": "Doki Doki Love and Literature",
       "author": "ohayounatsuki",
       "imageUrl": "/assets/mod_prevs/dokidokiloveandliterature.webp",
@@ -5013,7 +4833,7 @@
       ]
     },
     {
-      "id": 1286,
+      "id": 1275,
       "title": "Hell's Kitchen",
       "author": "MangeyModder",
       "imageUrl": "/assets/mod_prevs/hellskitchen.webp",
@@ -5028,7 +4848,7 @@
       ]
     },
     {
-      "id": 1287,
+      "id": 1276,
       "title": "Doki Doki The Yuri Parable",
       "author": "Animystix",
       "imageUrl": "/assets/mod_prevs/dokidokitheyuriparable.webp",
@@ -5038,12 +4858,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://archive.org/download/DDLCMods/The%20Yuri%20Parable/ (ANDROID) https://www.terabox.com/sharing/link?surl=JANitC5kyrWav14iFnyQJw"
+          "url": "https://archive.org/download/DDLCMods/The%20Yuri%20Parable/"
         }
       ]
     },
     {
-      "id": 1288,
+      "id": 1277,
       "title": "Just Monika: A Doki Doki Literature Club Musical",
       "author": "SweetPicklesYeah",
       "imageUrl": "/assets/mod_prevs/justmonikaadokidokiliteratureclubmusical.webp",
@@ -5058,7 +4878,7 @@
       ]
     },
     {
-      "id": 1289,
+      "id": 1278,
       "title": "Forever & Ever",
       "author": "AlexanDDOS",
       "imageUrl": "/assets/mod_prevs/foreverever.webp",
@@ -5073,7 +4893,7 @@
       ]
     },
     {
-      "id": 1290,
+      "id": 1279,
       "title": "Doki Doki Undone Fate",
       "author": "tiny260",
       "imageUrl": "/assets/mod_prevs/dokidokiundonefate.webp",
@@ -5088,7 +4908,7 @@
       ]
     },
     {
-      "id": 1291,
+      "id": 1280,
       "title": "Doki Doki Choice Based",
       "author": "ash_rock",
       "imageUrl": "/assets/mod_prevs/dokidokichoicebased.webp",
@@ -5103,7 +4923,7 @@
       ]
     },
     {
-      "id": 1292,
+      "id": 1281,
       "title": "Doki Doki It Wasn't Her",
       "author": "TSNTheSilentNinja",
       "imageUrl": "/assets/mod_prevs/dokidokiitwasnther.webp",
@@ -5118,7 +4938,7 @@
       ]
     },
     {
-      "id": 1293,
+      "id": 1282,
       "title": "Doki Doki Weatheard World: Director's Cut",
       "author": "BioActive Development",
       "imageUrl": "/assets/mod_prevs/dokidokiweatheardworlddirectorscut.webp",
@@ -5133,7 +4953,7 @@
       ]
     },
     {
-      "id": 1294,
+      "id": 1283,
       "title": "Doki Doki New Eyes",
       "author": "CykaDev",
       "imageUrl": "/assets/mod_prevs/dokidokineweyes.webp",
@@ -5148,7 +4968,7 @@
       ]
     },
     {
-      "id": 1295,
+      "id": 1284,
       "title": "Summer Hope",
       "author": "Arianne",
       "imageUrl": "/assets/mod_prevs/summerhope.webp",
@@ -5163,7 +4983,7 @@
       ]
     },
     {
-      "id": 1296,
+      "id": 1285,
       "title": "Doki Doki A Slice of Life",
       "author": "kmsrocks1",
       "imageUrl": "/assets/mod_prevs/dokidokiasliceoflife.webp",
@@ -5178,7 +4998,7 @@
       ]
     },
     {
-      "id": 1297,
+      "id": 1286,
       "title": "Dokis & Dragons",
       "author": "Papo#9713",
       "imageUrl": "/assets/mod_prevs/dokisdragons.webp",
@@ -5193,7 +5013,7 @@
       ]
     },
     {
-      "id": 1298,
+      "id": 1287,
       "title": "Doki Heika Banzai!",
       "author": "chankamaster",
       "imageUrl": "/assets/mod_prevs/dokiheikabanzai.webp",
@@ -5208,7 +5028,7 @@
       ]
     },
     {
-      "id": 1299,
+      "id": 1288,
       "title": "Doki Doki Easter Hunt!",
       "author": "Koppien",
       "imageUrl": "/assets/mod_prevs/dokidokieasterhunt.webp",
@@ -5223,7 +5043,7 @@
       ]
     },
     {
-      "id": 1300,
+      "id": 1289,
       "title": "Doki Doki College Club",
       "author": "DokiDokiStar",
       "imageUrl": "/assets/mod_prevs/dokidokicollegeclub.webp",
@@ -5238,7 +5058,7 @@
       ]
     },
     {
-      "id": 1301,
+      "id": 1290,
       "title": "Doki Doki College Club 2",
       "author": "DokiDokiStar",
       "imageUrl": "/assets/mod_prevs/dokidokicollegeclub2.webp",
@@ -5253,7 +5073,7 @@
       ]
     },
     {
-      "id": 1302,
+      "id": 1291,
       "title": "Doki Doki Date Club",
       "author": "VenEttore",
       "imageUrl": "/assets/mod_prevs/dokidokidateclub.webp",
@@ -5268,7 +5088,7 @@
       ]
     },
     {
-      "id": 1303,
+      "id": 1292,
       "title": "Our Final Heartbeat",
       "author": "NNDanny",
       "imageUrl": "/assets/mod_prevs/ourfinalheartbeat.webp",
@@ -5283,7 +5103,7 @@
       ]
     },
     {
-      "id": 1304,
+      "id": 1293,
       "title": "Doki Doki Our Reality",
       "author": "dracodraco100",
       "imageUrl": "/assets/mod_prevs/dokidokiourreality.webp",
@@ -5298,7 +5118,7 @@
       ]
     },
     {
-      "id": 1305,
+      "id": 1294,
       "title": "Doki Doki New Blood",
       "author": "Venom",
       "imageUrl": "/assets/mod_prevs/dokidokinewblood.webp",
@@ -5313,7 +5133,7 @@
       ]
     },
     {
-      "id": 1306,
+      "id": 1295,
       "title": "Welcome to Doki Doki Literature Club, Player!",
       "author": "NightmareNinja",
       "imageUrl": "/assets/mod_prevs/welcometodokidokiliteratureclubplayer.webp",
@@ -5328,7 +5148,7 @@
       ]
     },
     {
-      "id": 1307,
+      "id": 1296,
       "title": "Sayori Shoots Up The Literature Club",
       "author": "chankamaster",
       "imageUrl": "/assets/mod_prevs/sayorishootsuptheliteratureclub.webp",
@@ -5343,7 +5163,7 @@
       ]
     },
     {
-      "id": 1308,
+      "id": 1297,
       "title": "The Festival",
       "author": "Ninjo07",
       "imageUrl": "/assets/mod_prevs/thefestival.webp",
@@ -5358,7 +5178,7 @@
       ]
     },
     {
-      "id": 1309,
+      "id": 1298,
       "title": "Doki Doki Literature Club: Our Time",
       "author": "SovietSpartan",
       "imageUrl": "/assets/mod_prevs/dokidokiliteratureclubourtime.webp",
@@ -5373,7 +5193,7 @@
       ]
     },
     {
-      "id": 1310,
+      "id": 1299,
       "title": "Doki Doki Sayori Date!",
       "author": "Leodecraprio",
       "imageUrl": "/assets/mod_prevs/dokidokisayoridate.webp",
@@ -5388,7 +5208,7 @@
       ]
     },
     {
-      "id": 1311,
+      "id": 1300,
       "title": "Doki Doki Yandere Club",
       "author": "CastelloV",
       "imageUrl": "/assets/mod_prevs/dokidokiyandereclub.webp",
@@ -5403,7 +5223,7 @@
       ]
     },
     {
-      "id": 1312,
+      "id": 1301,
       "title": "Doki Doki Literature Club: The RPG",
       "author": "ProfessorHerb",
       "imageUrl": "/assets/mod_prevs/dokidokiliteratureclubtherpg.webp",
@@ -5418,7 +5238,7 @@
       ]
     },
     {
-      "id": 1313,
+      "id": 1302,
       "title": "Doki Doki No Happiness",
       "author": "phiftyopz",
       "imageUrl": "/assets/mod_prevs/dokidokinohappiness.webp",
@@ -5433,7 +5253,7 @@
       ]
     },
     {
-      "id": 1314,
+      "id": 1303,
       "title": "Doki Doki Do You Lift Club",
       "author": "CykaDev",
       "imageUrl": "/assets/mod_prevs/dokidokidoyouliftclub.webp",
@@ -5448,7 +5268,7 @@
       ]
     },
     {
-      "id": 1315,
+      "id": 1304,
       "title": "Doki Doki Starry-Eyed",
       "author": "augfjtan97",
       "imageUrl": "/assets/mod_prevs/dokidokistarryeyed.webp",
@@ -5463,7 +5283,7 @@
       ]
     },
     {
-      "id": 1316,
+      "id": 1305,
       "title": "Relapse",
       "author": "GuyBread",
       "imageUrl": "/assets/mod_prevs/relapse.webp",
@@ -5478,22 +5298,7 @@
       ]
     },
     {
-      "id": 1317,
-      "title": "Return to the Portrait",
-      "author": "Yujiri",
-      "imageUrl": "/assets/mod_prevs/returntotheportrait.webp",
-      "route": "returntotheportrait",
-      "submittedBy": "Codex",
-      "description": "After the base game, everyone is working together to find out the truth about their world and about Project Libitina. It features a ton of file tampering and other meta stuff like exploring the rules behind Club President powers.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://yujiri.xyz/works/return_to_the_portrait/rttp-pc.zip //// Android: https://pixeldrain.com/u/L6c6K2Sd"
-        }
-      ]
-    },
-    {
-      "id": 1318,
+      "id": 1306,
       "title": "Justin Trudeau",
       "author": "Various Artists",
       "imageUrl": "/assets/mod_prevs/justintrudeau.webp",
@@ -5508,37 +5313,7 @@
       ]
     },
     {
-      "id": 1319,
-      "title": "Thot Club",
-      "author": "4idi0tsdevt33m",
-      "imageUrl": "/assets/mod_prevs/thotclub.webp",
-      "route": "thotclub",
-      "submittedBy": "Codex",
-      "description": "Instead of thinking about what it would be like if MC saved the dokis, why not wonder what it would be like if MC hated them? Speaking of MC, what if he was an All American boi that had some very strong political (Conservative) beliefs?",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://drive.google.com/file/d/1q8ONHgB1qMaN18TNJF-WCtdvyrx9gq1t/view //// Android: https://www.mediafire.com/file/d3v1dfwygmx9b2m/Doki_Doki_Thot_Club.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1320,
-      "title": "Hell's Kitchen",
-      "author": "MangeyModder",
-      "imageUrl": "/assets/mod_prevs/hellskitchen.webp",
-      "route": "hellskitchen",
-      "submittedBy": "Codex",
-      "description": "Gordon Ramsey came to your club to tell you how to make the best cupcakes. Will Gordon have enough patience for these mouthy high schoolers? Can the club members take the heat? Most importantly, where's the lamb sauce?",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://www.mediafire.com/file/k32nena123kzwlk/DokiDokiHellsKitchen-0.1.0-Mod.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 1321,
+      "id": 1307,
       "title": "Exit Music",
       "author": "Lucy Norton",
       "imageUrl": "/assets/mod_prevs/exitmusic.webp",
@@ -5553,7 +5328,7 @@
       ]
     },
     {
-      "id": 1322,
+      "id": 1308,
       "title": "Gay gay literature club launch version",
       "author": "Tormous",
       "imageUrl": "/assets/mod_prevs/gaygayliteratureclublaunchversion.webp",
@@ -5568,7 +5343,7 @@
       ]
     },
     {
-      "id": 1323,
+      "id": 1309,
       "title": "It's Not Like I Like You!",
       "author": "RodMediaGroup",
       "imageUrl": "/assets/mod_prevs/itsnotlikeilikeyou.webp",
@@ -5583,7 +5358,7 @@
       ]
     },
     {
-      "id": 1324,
+      "id": 1310,
       "title": "Doki Doki Monochrome",
       "author": "RodMediaGroup",
       "imageUrl": "/assets/mod_prevs/dokidokimonochrome.webp",
@@ -5598,7 +5373,7 @@
       ]
     },
     {
-      "id": 1325,
+      "id": 1311,
       "title": "Gay Gay Lesbian Club (ver 1.2)",
       "author": "Tormuse",
       "imageUrl": "/assets/mod_prevs/gaygaylesbianclubver12.webp",
@@ -5613,7 +5388,7 @@
       ]
     },
     {
-      "id": 1326,
+      "id": 1312,
       "title": "Fruits Of The Literature Club",
       "author": "American Eagle",
       "imageUrl": "/assets/mod_prevs/fruitsoftheliteratureclub.webp",
@@ -5628,7 +5403,7 @@
       ]
     },
     {
-      "id": 1327,
+      "id": 1313,
       "title": "Roxy Club",
       "author": "Wretched Team",
       "imageUrl": "/assets/mod_prevs/roxyclub.webp",
@@ -5643,7 +5418,7 @@
       ]
     },
     {
-      "id": 1328,
+      "id": 1314,
       "title": "Exit Music: Epilogue",
       "author": "Wretched Team",
       "imageUrl": "/assets/mod_prevs/exitmusicepilogue.webp",
@@ -5658,7 +5433,7 @@
       ]
     },
     {
-      "id": 1329,
+      "id": 1315,
       "title": "2 Many M3NUS",
       "author": "Temm",
       "imageUrl": "/assets/mod_prevs/2manym3nus.webp",
@@ -5673,7 +5448,7 @@
       ]
     },
     {
-      "id": 1330,
+      "id": 1316,
       "title": "2 Many M3NUS: 2 M3NUS 2 many",
       "author": "Temm",
       "imageUrl": "/assets/mod_prevs/2manym3nus2m3nus2many.webp",
@@ -5688,7 +5463,7 @@
       ]
     },
     {
-      "id": 1331,
+      "id": 1317,
       "title": "Another Round",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/anotherround.webp",
@@ -5703,7 +5478,7 @@
       ]
     },
     {
-      "id": 1332,
+      "id": 1318,
       "title": "Basically DDLC",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/basicallyddlc.webp",
@@ -5718,7 +5493,7 @@
       ]
     },
     {
-      "id": 1333,
+      "id": 1319,
       "title": "bean mod",
       "author": "bean",
       "imageUrl": "/assets/mod_prevs/beanmod.webp",
@@ -5733,7 +5508,7 @@
       ]
     },
     {
-      "id": 1334,
+      "id": 1320,
       "title": "Better Call Monika",
       "author": "DACHero",
       "imageUrl": "/assets/mod_prevs/bettercallmonika.webp",
@@ -5748,7 +5523,7 @@
       ]
     },
     {
-      "id": 1335,
+      "id": 1321,
       "title": "DDLC: Branching Paths",
       "author": "ultrastarwarsfan",
       "imageUrl": "/assets/mod_prevs/ddlcbranchingpaths.webp",
@@ -5763,7 +5538,7 @@
       ]
     },
     {
-      "id": 1336,
+      "id": 1322,
       "title": "Breakthrough",
       "author": "DACHero",
       "imageUrl": "/assets/mod_prevs/breakthrough.webp",
@@ -5778,7 +5553,7 @@
       ]
     },
     {
-      "id": 1337,
+      "id": 1323,
       "title": "Britain Club",
       "author": "Soriinz",
       "imageUrl": "/assets/mod_prevs/britainclub.webp",
@@ -5793,7 +5568,7 @@
       ]
     },
     {
-      "id": 1338,
+      "id": 1324,
       "title": "Bibleman Saves the Dokis",
       "author": "-2",
       "imageUrl": "/assets/mod_prevs/biblemansavesthedokis.webp",
@@ -5808,22 +5583,7 @@
       ]
     },
     {
-      "id": 1339,
-      "title": "Doki Doki Cliche Club",
-      "author": "Crimfinity",
-      "imageUrl": "/assets/mod_prevs/dokidokiclicheclub.webp",
-      "route": "dokidokiclicheclub",
-      "submittedBy": "Tune Eternal",
-      "description": "An attempt to make the most generic mod in all of existence, filled with every trope that can fit into a single story! It's also an attempt to somehow make that interesting/funny. Is it? Guess you'll have to find out!",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/h1i4xp0widsezxj/cliche_club.zip/file (ANDROID) https://www.mediafire.com/file/brsvyisopgghlv2/Doki_Doki_Cliche_Club.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1340,
+      "id": 1325,
       "title": "Doki Doki Doki Doki",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/dokidokidokidoki.webp",
@@ -5838,7 +5598,7 @@
       ]
     },
     {
-      "id": 1341,
+      "id": 1326,
       "title": "Doki Doki Literature Club but the Literature Club is Forced to Write Literature for a School Festival of Unknown Origin Literature",
       "author": "92FM",
       "imageUrl": "/assets/mod_prevs/dokidokiliteratureclubbuttheliteratureclubisforcedtowriteliteratureforaschoolfestivalofunknownoriginliterature.webp",
@@ -5853,7 +5613,7 @@
       ]
     },
     {
-      "id": 1342,
+      "id": 1327,
       "title": "Donkey Kong Deluxe",
       "author": "Scrubbles",
       "imageUrl": "/assets/mod_prevs/donkeykongdeluxe.webp",
@@ -5868,7 +5628,7 @@
       ]
     },
     {
-      "id": 1343,
+      "id": 1328,
       "title": "Eggnog Overdrive",
       "author": "Llama",
       "imageUrl": "/assets/mod_prevs/eggnogoverdrive.webp",
@@ -5883,7 +5643,7 @@
       ]
     },
     {
-      "id": 1344,
+      "id": 1329,
       "title": "El Camino",
       "author": "DACHero",
       "imageUrl": "/assets/mod_prevs/elcamino.webp",
@@ -5898,7 +5658,7 @@
       ]
     },
     {
-      "id": 1345,
+      "id": 1330,
       "title": "Exit Music: Redux 2",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/exitmusicredux2.webp",
@@ -5913,37 +5673,7 @@
       ]
     },
     {
-      "id": 1346,
-      "title": "Doki Fantasy Adventure",
-      "author": "FiTMarshmellow",
-      "imageUrl": "/assets/mod_prevs/dokifantasyadventure.webp",
-      "route": "dokifantasyadventure",
-      "submittedBy": "Tune Eternal",
-      "description": "“After another fight about literature, Monika gets fed up with her club’s shenanigans and decides it’s time for some well-deserved retribution. Using her magical code-powers, she sends Sayori, Yuri, Natsuki, and MC to a far-away land where they will be forced to wrestle with its inhabitants as they struggle for both their safety and their freedom. \n\nWill the Literature Club escape unharmed? Will Monika forgive her club members?",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Launch) https://www.mediafire.com/file/f3ivu0s1vwdxurg/Fantasy_Adventure.zip/file (Patched) https://www.mediafire.com/file/urq77ior36efwwd/Fantasy_Adventure.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 1347,
-      "title": "Fight Club",
-      "author": "-2",
-      "imageUrl": "/assets/mod_prevs/fightclub.webp",
-      "route": "fightclub",
-      "submittedBy": "Tune Eternal",
-      "description": "Not to be confused with the long-time development \"Fight Club\" by Team Warrior's Fight\n\nIn a fight for your life how much of yourself are you willing to sacrifice? Because it was never about the size of your muscles or the speed of your kicks. If you are fighting without purpose, you are not fighting at all. This is the prologue to Doki Doki Fight Club and I am excited to present the beginning of my story!",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Launch) https://www.mediafire.com/file/x8n4fz6c43skti8/DDLCFightClub-2.0.0.3-Renpy7Mod.zip/file (Patched) https://www.mediafire.com/file/7obaqi21nuifvuz/DDLCFightClub-2.0.0.3-Renpy7Mod.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 1348,
+      "id": 1331,
       "title": "I Gently Open The Door",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/igentlyopenthedoor.webp",
@@ -5958,7 +5688,7 @@
       ]
     },
     {
-      "id": 1349,
+      "id": 1332,
       "title": "I Gently Open The Door 2",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/igentlyopenthedoor2.webp",
@@ -5973,7 +5703,7 @@
       ]
     },
     {
-      "id": 1350,
+      "id": 1333,
       "title": "How To Translate DDLC Mods",
       "author": "SakuraOrigami",
       "imageUrl": "/assets/mod_prevs/howtotranslateddlcmods.webp",
@@ -5988,7 +5718,7 @@
       ]
     },
     {
-      "id": 1351,
+      "id": 1334,
       "title": "John Madden",
       "author": "Wilinisian",
       "imageUrl": "/assets/mod_prevs/johnmadden.webp",
@@ -6003,7 +5733,7 @@
       ]
     },
     {
-      "id": 1352,
+      "id": 1335,
       "title": "John Madden 2",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/johnmadden2.webp",
@@ -6018,7 +5748,7 @@
       ]
     },
     {
-      "id": 1353,
+      "id": 1336,
       "title": "John Madden 4",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/johnmadden4.webp",
@@ -6033,7 +5763,7 @@
       ]
     },
     {
-      "id": 1354,
+      "id": 1337,
       "title": "John Madden Deluxe",
       "author": "Scrubbles",
       "imageUrl": "/assets/mod_prevs/johnmaddendeluxe.webp",
@@ -6048,7 +5778,7 @@
       ]
     },
     {
-      "id": 1355,
+      "id": 1338,
       "title": "Justin Trudeau",
       "author": "Wilinisian",
       "imageUrl": "/assets/mod_prevs/justintrudeau.webp",
@@ -6063,7 +5793,7 @@
       ]
     },
     {
-      "id": 1356,
+      "id": 1339,
       "title": "Kan-Ye Open The Door",
       "author": "cemsthetic",
       "imageUrl": "/assets/mod_prevs/kanyeopenthedoor.webp",
@@ -6078,7 +5808,7 @@
       ]
     },
     {
-      "id": 1357,
+      "id": 1340,
       "title": "Kill The Dokis",
       "author": "cemsthetic",
       "imageUrl": "/assets/mod_prevs/killthedokis.webp",
@@ -6093,7 +5823,7 @@
       ]
     },
     {
-      "id": 1358,
+      "id": 1341,
       "title": "Leaning on a Bridge",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/leaningonabridge.webp",
@@ -6108,7 +5838,7 @@
       ]
     },
     {
-      "id": 1359,
+      "id": 1342,
       "title": "Leaning on a Bridge: Lucky",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/leaningonabridgelucky.webp",
@@ -6123,7 +5853,7 @@
       ]
     },
     {
-      "id": 1360,
+      "id": 1343,
       "title": "Leaning on a Bridge 2.9: Redux Remix",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/leaningonabridge29reduxremix.webp",
@@ -6138,7 +5868,7 @@
       ]
     },
     {
-      "id": 1361,
+      "id": 1344,
       "title": "Leaning On a Bridge 4.20: Taiwan's Redemption",
       "author": "Llama",
       "imageUrl": "/assets/mod_prevs/leaningonabridge420taiwansredemption.webp",
@@ -6153,7 +5883,7 @@
       ]
     },
     {
-      "id": 1362,
+      "id": 1345,
       "title": "Leaning on a Bridge: Ascension",
       "author": "Various Artists",
       "imageUrl": "/assets/mod_prevs/leaningonabridgeascension.webp",
@@ -6168,7 +5898,7 @@
       ]
     },
     {
-      "id": 1363,
+      "id": 1346,
       "title": "MAS Hlep",
       "author": "Flasium",
       "imageUrl": "/assets/mod_prevs/mashlep.webp",
@@ -6183,7 +5913,7 @@
       ]
     },
     {
-      "id": 1364,
+      "id": 1347,
       "title": "mc goes to the store and buys dee's nuts!!!!",
       "author": "LameMan",
       "imageUrl": "/assets/mod_prevs/mcgoestothestoreandbuysdeesnuts.webp",
@@ -6198,7 +5928,7 @@
       ]
     },
     {
-      "id": 1365,
+      "id": 1348,
       "title": "Meth Club",
       "author": "DACHero",
       "imageUrl": "/assets/mod_prevs/methclub.webp",
@@ -6213,7 +5943,7 @@
       ]
     },
     {
-      "id": 1366,
+      "id": 1349,
       "title": "Meth Club Trilogy Collection",
       "author": "DACHero",
       "imageUrl": "/assets/mod_prevs/methclubtrilogycollection.webp",
@@ -6228,7 +5958,7 @@
       ]
     },
     {
-      "id": 1367,
+      "id": 1350,
       "title": "Doki Doki Monika Music",
       "author": "DACHero",
       "imageUrl": "/assets/mod_prevs/dokidokimonikamusic.webp",
@@ -6243,7 +5973,7 @@
       ]
     },
     {
-      "id": 1368,
+      "id": 1351,
       "title": "Monika's Magic",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/monikasmagic.webp",
@@ -6258,7 +5988,7 @@
       ]
     },
     {
-      "id": 1369,
+      "id": 1352,
       "title": "Project Redline",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/projectredline.webp",
@@ -6273,7 +6003,7 @@
       ]
     },
     {
-      "id": 1370,
+      "id": 1353,
       "title": "Roady Roady Road Trip",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/roadyroadyroadtrip.webp",
@@ -6283,12 +6013,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/6p0jee48b66v67k/Roady_Roady_Road_Trip.zip/file (ANDROID) https://workupload.com/file/SmC2WRa3Jc4"
+          "url": "https://www.mediafire.com/file/6p0jee48b66v67k/Roady_Roady_Road_Trip.zip/file"
         }
       ]
     },
     {
-      "id": 1371,
+      "id": 1354,
       "title": "scene bg bedroom",
       "author": "Rose",
       "imageUrl": "/assets/mod_prevs/scenebgbedroom.webp",
@@ -6303,7 +6033,7 @@
       ]
     },
     {
-      "id": 1372,
+      "id": 1355,
       "title": "Sempiternal Spiral",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/sempiternalspiral.webp",
@@ -6318,7 +6048,7 @@
       ]
     },
     {
-      "id": 1373,
+      "id": 1356,
       "title": "splash.rpy",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/splashrpy.webp",
@@ -6333,37 +6063,7 @@
       ]
     },
     {
-      "id": 1374,
-      "title": "Squish Club",
-      "author": "cemsthetic",
-      "imageUrl": "/assets/mod_prevs/squishclub.webp",
-      "route": "squishclub",
-      "submittedBy": "Tune Eternal",
-      "description": "Imagine you spend your whole life running. Running from responsibilities. Running from love. From life. What if you could just... Be condensed? Well, now your dreams are fulfilled.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Launch) https://www.mediafire.com/file/57q2pg8gpymj6ja/Squishy_Club.zip/file (Patched) https://www.mediafire.com/file/8xwnpn2jounblzs/Squishy_Club.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 1375,
-      "title": "Sunset (Original / Definitive Edition)",
-      "author": "cemsthetic",
-      "imageUrl": "/assets/mod_prevs/sunsetoriginaldefinitiveedition.webp",
-      "route": "sunsetoriginaldefinitiveedition",
-      "submittedBy": "Tune Eternal",
-      "description": "What started off as a normal movie night slowly spirals as you are put through your most horrifying experience yet. Will you be able to escape back to your friends or will the darkness consume you?",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Original) https://www.mediafire.com/file/q7fbp1z7d7jaywx/Sunset.zip/file (Definitive Edition) https://www.mediafire.com/file/fmvcija7wpxi4ug/Sunset_-_Definitive_Edition.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 1376,
+      "id": 1357,
       "title": "DDLC Takes a Field Trip to Chuck E. Cheese",
       "author": "DACHero",
       "imageUrl": "/assets/mod_prevs/ddlctakesafieldtriptochuckecheese.webp",
@@ -6378,7 +6078,7 @@
       ]
     },
     {
-      "id": 1377,
+      "id": 1358,
       "title": "THE Fricking Nightmare",
       "author": "Confused Melody",
       "imageUrl": "/assets/mod_prevs/thefrickingnightmare.webp",
@@ -6393,22 +6093,7 @@
       ]
     },
     {
-      "id": 1378,
-      "title": "The Sour Taste of Lemony Friendships",
-      "author": "FiTMarshmellow",
-      "imageUrl": "/assets/mod_prevs/thesourtasteoflemonyfriendships.webp",
-      "route": "thesourtasteoflemonyfriendships",
-      "submittedBy": "Tune Eternal",
-      "description": "When one’s bridges are burnt a new one will be built. But will the new bridge be of bricks or  lemons?\n\n(Based on the behind-the-scenes of Doki Doki Triple Trouble)",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Launch) https://www.mediafire.com/file/qabvy9u7c2jvsfq/SourTasteOfLemonyFriendships-2.4.8-Renpy7Mod.zip/file (Patched) https://www.mediafire.com/file/ac5lsyuj40wd7e5/SourTasteOfLemonyFriendships-2.4.8-Renpy7Mod.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 1379,
+      "id": 1359,
       "title": "This Club is Full Of...",
       "author": "Shork#1197",
       "imageUrl": "/assets/mod_prevs/thisclubisfullof.webp",
@@ -6423,7 +6108,7 @@
       ]
     },
     {
-      "id": 1380,
+      "id": 1360,
       "title": "This World of Infinite Choices",
       "author": "Wilinisian",
       "imageUrl": "/assets/mod_prevs/thisworldofinfinitechoices.webp",
@@ -6438,7 +6123,7 @@
       ]
     },
     {
-      "id": 1381,
+      "id": 1361,
       "title": "Time for Natsuki",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/timefornatsuki.webp",
@@ -6453,7 +6138,7 @@
       ]
     },
     {
-      "id": 1382,
+      "id": 1362,
       "title": "Tipsy Tipsy: Drunken Club",
       "author": "Flasium",
       "imageUrl": "/assets/mod_prevs/tipsytipsydrunkenclub.webp",
@@ -6468,7 +6153,7 @@
       ]
     },
     {
-      "id": 1383,
+      "id": 1363,
       "title": "Waluigi Club",
       "author": "Crimfinity",
       "imageUrl": "/assets/mod_prevs/waluigiclub.webp",
@@ -6483,7 +6168,7 @@
       ]
     },
     {
-      "id": 1384,
+      "id": 1364,
       "title": "Yuri's Enlightenment",
       "author": "FiTMarshmellow",
       "imageUrl": "/assets/mod_prevs/yurisenlightenment.webp",
@@ -6498,7 +6183,7 @@
       ]
     },
     {
-      "id": 1385,
+      "id": 1365,
       "title": "Zero Bitches Plan",
       "author": "LameMan",
       "imageUrl": "/assets/mod_prevs/zerobitchesplan.webp",
@@ -6513,7 +6198,7 @@
       ]
     },
     {
-      "id": 1386,
+      "id": 1366,
       "title": "Cross-Bow Yuri",
       "author": "CalebThePianist",
       "imageUrl": "/assets/mod_prevs/crossbowyuri.webp",
@@ -6528,7 +6213,7 @@
       ]
     },
     {
-      "id": 1387,
+      "id": 1367,
       "title": "Sayori's Chibi Pet",
       "author": "spoobra",
       "imageUrl": "/assets/mod_prevs/sayorischibipet.webp",
@@ -6543,7 +6228,7 @@
       ]
     },
     {
-      "id": 1388,
+      "id": 1368,
       "title": "Dee's Nuts 2: MC Loves Dee's Big Nuts!!!!",
       "author": "LameMan",
       "imageUrl": "/assets/mod_prevs/deesnuts2mclovesdeesbignuts.webp",
@@ -6558,7 +6243,7 @@
       ]
     },
     {
-      "id": 1389,
+      "id": 1369,
       "title": "Doki Doki A PSA With Monika",
       "author": "ZXLTRXNSixBillion",
       "imageUrl": "/assets/mod_prevs/dokidokiapsawithmonika.webp",
@@ -6573,7 +6258,7 @@
       ]
     },
     {
-      "id": 1390,
+      "id": 1370,
       "title": "We Are the Literature Club",
       "author": "Patt",
       "imageUrl": "/assets/mod_prevs/wearetheliteratureclub.webp",
@@ -6588,37 +6273,7 @@
       ]
     },
     {
-      "id": 1391,
-      "title": "We Are the Literature Club 2",
-      "author": "Patt",
-      "imageUrl": "/assets/mod_prevs/wearetheliteratureclub2.webp",
-      "route": "wearetheliteratureclub2",
-      "submittedBy": "Codex",
-      "description": "During a heavily competitive literature festival, Monika tries to do everything in her power to collect the most literature of all the attending clubs, getting MC caught in the crossfire.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "PC: https://drive.google.com/file/d/1ZJ14JppH_AYyQAm2p1OXP_Ay1cVOdEJQ/view /// Android: https://www.mediafire.com/file/lztgp33o0fxx5rh/We_are_the_Literature_Club_2.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1392,
-      "title": "We Are the Literature Club",
-      "author": "same",
-      "imageUrl": "/assets/mod_prevs/wearetheliteratureclub.webp",
-      "route": "wearetheliteratureclub",
-      "submittedBy": "Codex",
-      "description": "Same mod but android",
-      "links": [
-        {
-          "version": "standard",
-          "url": "Android: https://www.mediafire.com/file/etu8s3l4sonq51l/We_are_the_Literature_Club.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1393,
+      "id": 1371,
       "title": "Mika: A DDLC Short Story",
       "author": "L4w1i3t (Everything but kid Monika sprites)",
       "imageUrl": "/assets/mod_prevs/mikaaddlcshortstory.webp",
@@ -6633,7 +6288,7 @@
       ]
     },
     {
-      "id": 1394,
+      "id": 1372,
       "title": "The True Reality",
       "author": "GanstaKingofSA",
       "imageUrl": "/assets/mod_prevs/thetruereality.webp",
@@ -6648,7 +6303,7 @@
       ]
     },
     {
-      "id": 1395,
+      "id": 1373,
       "title": "A New Reality (v 0.3.2)",
       "author": "u/Jason_is_emosewA",
       "imageUrl": "/assets/mod_prevs/anewrealityv032.webp",
@@ -6663,7 +6318,7 @@
       ]
     },
     {
-      "id": 1396,
+      "id": 1374,
       "title": "A New Reality",
       "author": "MasterlumaTDK",
       "imageUrl": "/assets/mod_prevs/anewreality.webp",
@@ -6678,37 +6333,7 @@
       ]
     },
     {
-      "id": 1397,
-      "title": "A Parfait Premiere",
-      "author": "Zachman Awesomeness",
-      "imageUrl": "/assets/mod_prevs/aparfaitpremiere.webp",
-      "route": "aparfaitpremiere",
-      "submittedBy": "Tune Eternal",
-      "description": "A rare episode of Parfait Girls is airing on TV, and Natsuki wants to watch it! However, life gets in the way. Will this jeopardize Natsuki's only chance of seeing the only airing of the lost Parfait Girls episode?",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://drive.google.com/file/d/1Uq2FJoRUzT1Vdrq-0BY3-VWdnv-T_TRY/view (ANDROID) https://www.mediafire.com/file/8n80vtjbq55dccf/A_Parfait_Premiere_Android_Port.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1398,
-      "title": "Abridged, or How I Learned to Stop Worrying and Love to Mod",
-      "author": "Chronoshag",
-      "imageUrl": "/assets/mod_prevs/abridgedorhowilearnedtostopworryingandlovetomod.webp",
-      "route": "abridgedorhowilearnedtostopworryingandlovetomod",
-      "submittedBy": "Tune Eternal",
-      "description": "An Abridged version of DDLC. Plenty of spicy shenanigans ensue",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://drive.google.com/file/d/1fvLqHAufQlNI3cHDjpxtYeshRgzp9Q7g/view (ANDROID) https://www.mediafire.com/file/sng091ax9ixixk3/Doki_Doki_Literature_Club_Abridged.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1399,
+      "id": 1375,
       "title": "Another Moment With You (Episodes 1-3)",
       "author": "Guardian_Bravo",
       "imageUrl": "/assets/mod_prevs/anothermomentwithyouepisodes13.webp",
@@ -6718,27 +6343,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://drive.google.com/drive/folders/1VOgj5yxuiYYL-QFqESO4GGvvYauahki- (ANDROID) https://workupload.com/file/AddYyYDQurQ"
+          "url": "https://drive.google.com/drive/folders/1VOgj5yxuiYYL-QFqESO4GGvvYauahki-"
         }
       ]
     },
     {
-      "id": 1400,
-      "title": "Another Reality",
-      "author": "Wrath_Of_Cinnamonbun",
-      "imageUrl": "/assets/mod_prevs/anotherreality.webp",
-      "route": "anotherreality",
-      "submittedBy": "Tune Eternal",
-      "description": "A story of redemption, that shows even the villain can become a hero.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/y6hsji81cm3xcs3/Doki_Doki_Another_Reality.rar/file (ANDROID) https://www.mediafire.com/file/ldl3dsvgi8ig9xb/Doki_Doki_Another_Reality_Demo.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 1401,
+      "id": 1376,
       "title": "Doki Doki [[BIG SHOT]]",
       "author": "boobielover103 (aka Silver)",
       "imageUrl": "/assets/mod_prevs/dokidokibigshot.webp",
@@ -6748,12 +6358,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.dropbox.com/s/w0thh8rpsc48r13/BS-4.0.1-Py2-Renpy7Mod.zip?e=1&dl=0 (ANDROID) https://workupload.com/file/5CNEvakHxtv"
+          "url": "https://www.dropbox.com/s/w0thh8rpsc48r13/BS-4.0.1-Py2-Renpy7Mod.zip?e=1&dl=0"
         }
       ]
     },
     {
-      "id": 1402,
+      "id": 1377,
       "title": "Doki Doki Bland Rewrite",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/dokidokiblandrewrite.webp",
@@ -6763,12 +6373,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://drive.google.com/file/d/1cs6BqYGW3u4AI3ZPrOK5serqlM_pgTSr/view (ANDROID) https://workupload.com/file/9fKmS6zThjE"
+          "url": "https://drive.google.com/file/d/1cs6BqYGW3u4AI3ZPrOK5serqlM_pgTSr/view"
         }
       ]
     },
     {
-      "id": 1403,
+      "id": 1378,
       "title": "The Blood Moon Chapters: Chapter 1 - Before, During, and After the Stories",
       "author": "Azrathas",
       "imageUrl": "/assets/mod_prevs/thebloodmoonchapterschapter1beforeduringandafterthestories.webp",
@@ -6778,12 +6388,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://drive.google.com/drive/folders/1yNasWRlSfDnq3nxaV0Ke5JMF9z6XEO7a (ANDROID) https://workupload.com/file/eA47mhmR4JD"
+          "url": "https://drive.google.com/drive/folders/1yNasWRlSfDnq3nxaV0Ke5JMF9z6XEO7a"
         }
       ]
     },
     {
-      "id": 1404,
+      "id": 1379,
       "title": "Doki Doki Butterfly Effect",
       "author": "u/isweartogo-",
       "imageUrl": "/assets/mod_prevs/dokidokibutterflyeffect.webp",
@@ -6793,12 +6403,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/a3g30yot55xo4qe/DDBE-1.0.0-DEMO-pc.rar/file (ANDROID) https://workupload.com/file/YSV6543NF7z"
+          "url": "https://www.mediafire.com/file/a3g30yot55xo4qe/DDBE-1.0.0-DEMO-pc.rar/file"
         }
       ]
     },
     {
-      "id": 1405,
+      "id": 1380,
       "title": "Doki Doki Christmas with Monika",
       "author": "Tormuse",
       "imageUrl": "/assets/mod_prevs/dokidokichristmaswithmonika.webp",
@@ -6813,7 +6423,7 @@
       ]
     },
     {
-      "id": 1406,
+      "id": 1381,
       "title": "Doki Doki Club Meetings: Abridged",
       "author": "Chaqua",
       "imageUrl": "/assets/mod_prevs/dokidokiclubmeetingsabridged.webp",
@@ -6823,12 +6433,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://drive.google.com/file/d/1EQcIAA8eUW81OqMQZVimQ5Ag2sSgDd-Z/view?usp=sharing (ANDROID) https://workupload.com/file/t4RneDFwd9L"
+          "url": "https://drive.google.com/file/d/1EQcIAA8eUW81OqMQZVimQ5Ag2sSgDd-Z/view?usp=sharing"
         }
       ]
     },
     {
-      "id": 1407,
+      "id": 1382,
       "title": "That Special Day",
       "author": "HighKalorie",
       "imageUrl": "/assets/mod_prevs/thatspecialday.webp",
@@ -6843,7 +6453,7 @@
       ]
     },
     {
-      "id": 1408,
+      "id": 1383,
       "title": "Doki Doki Struggle",
       "author": "Main Author: Yandere Gaming",
       "imageUrl": "/assets/mod_prevs/dokidokistruggle.webp",
@@ -6858,7 +6468,7 @@
       ]
     },
     {
-      "id": 1409,
+      "id": 1384,
       "title": "Doki Doki Nightmare",
       "author": "Team AI",
       "imageUrl": "/assets/mod_prevs/dokidokinightmare.webp",
@@ -6873,7 +6483,7 @@
       ]
     },
     {
-      "id": 1410,
+      "id": 1385,
       "title": "Doki Doki Forces [Beta 5]",
       "author": "reckonusm",
       "imageUrl": "/assets/mod_prevs/dokidokiforcesbeta5.webp",
@@ -6888,7 +6498,7 @@
       ]
     },
     {
-      "id": 1411,
+      "id": 1386,
       "title": "Doki Forces: Prologue (Real Version)",
       "author": "reckonusm",
       "imageUrl": "/assets/mod_prevs/dokiforcesprologuerealversion.webp",
@@ -6903,7 +6513,7 @@
       ]
     },
     {
-      "id": 1412,
+      "id": 1387,
       "title": "Doki Forces: Prolouge (April Fools Version)",
       "author": "reckonusm",
       "imageUrl": "/assets/mod_prevs/dokiforcesprolougeaprilfoolsversion.webp",
@@ -6918,7 +6528,7 @@
       ]
     },
     {
-      "id": 1413,
+      "id": 1388,
       "title": "Yuri Route",
       "author": "KadeDev [Yes",
       "imageUrl": "/assets/mod_prevs/yuriroute.webp",
@@ -6933,7 +6543,7 @@
       ]
     },
     {
-      "id": 1414,
+      "id": 1389,
       "title": "Fuck Skull (Joke)",
       "author": "KadeDev [Yes",
       "imageUrl": "/assets/mod_prevs/fuckskulljoke.webp",
@@ -6948,7 +6558,7 @@
       ]
     },
     {
-      "id": 1415,
+      "id": 1390,
       "title": "Yuri's Lavander Adventure",
       "author": "reckonusm",
       "imageUrl": "/assets/mod_prevs/yurislavanderadventure.webp",
@@ -6963,7 +6573,7 @@
       ]
     },
     {
-      "id": 1416,
+      "id": 1391,
       "title": "Doki Forces: Teaser",
       "author": "reckonusm",
       "imageUrl": "/assets/mod_prevs/dokiforcesteaser.webp",
@@ -6978,7 +6588,7 @@
       ]
     },
     {
-      "id": 1417,
+      "id": 1392,
       "title": "Smoki Smoki Weed Club",
       "author": "nono4545",
       "imageUrl": "/assets/mod_prevs/smokismokiweedclub.webp",
@@ -6993,7 +6603,7 @@
       ]
     },
     {
-      "id": 1418,
+      "id": 1393,
       "title": "Dokis Don't Wear Ties",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/dokisdontwearties.webp",
@@ -7008,7 +6618,7 @@
       ]
     },
     {
-      "id": 1419,
+      "id": 1394,
       "title": "Dokis Don't Wear Ties",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/dokisdontwearties.webp",
@@ -7023,7 +6633,7 @@
       ]
     },
     {
-      "id": 1420,
+      "id": 1395,
       "title": "Doki Doki Exit Music [Abridged]",
       "author": "Team NFA",
       "imageUrl": "/assets/mod_prevs/dokidokiexitmusicabridged.webp",
@@ -7038,7 +6648,7 @@
       ]
     },
     {
-      "id": 1421,
+      "id": 1396,
       "title": "Doki Doki Mario Simulator",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/dokidokimariosimulator.webp",
@@ -7053,7 +6663,7 @@
       ]
     },
     {
-      "id": 1422,
+      "id": 1397,
       "title": "Doki Doki Perfect Love",
       "author": "u/boobielover103",
       "imageUrl": "/assets/mod_prevs/dokidokiperfectlove.webp",
@@ -7068,7 +6678,7 @@
       ]
     },
     {
-      "id": 1423,
+      "id": 1398,
       "title": "Collision",
       "author": "u/boobielover103",
       "imageUrl": "/assets/mod_prevs/collision.webp",
@@ -7083,7 +6693,7 @@
       ]
     },
     {
-      "id": 1424,
+      "id": 1399,
       "title": "Doki Doki Crime Case",
       "author": "u/boobielover103",
       "imageUrl": "/assets/mod_prevs/dokidokicrimecase.webp",
@@ -7098,7 +6708,7 @@
       ]
     },
     {
-      "id": 1425,
+      "id": 1400,
       "title": "Doki Doki Mario Time",
       "author": "u/boobielover103",
       "imageUrl": "/assets/mod_prevs/dokidokimariotime.webp",
@@ -7113,7 +6723,7 @@
       ]
     },
     {
-      "id": 1426,
+      "id": 1401,
       "title": "Doki Doki [[Big Shot]]",
       "author": "u/boobielover103",
       "imageUrl": "/assets/mod_prevs/dokidokibigshot.webp",
@@ -7128,7 +6738,7 @@
       ]
     },
     {
-      "id": 1427,
+      "id": 1402,
       "title": "Doki Doki Jumbled",
       "author": "Team Final Stand",
       "imageUrl": "/assets/mod_prevs/dokidokijumbled.webp",
@@ -7143,7 +6753,7 @@
       ]
     },
     {
-      "id": 1428,
+      "id": 1403,
       "title": "Doki Doki Shattered Time",
       "author": "Team Traitor Studios",
       "imageUrl": "/assets/mod_prevs/dokidokishatteredtime.webp",
@@ -7158,7 +6768,7 @@
       ]
     },
     {
-      "id": 1429,
+      "id": 1404,
       "title": "Lost Ascension",
       "author": "Team Lost Ascension",
       "imageUrl": "/assets/mod_prevs/lostascension.webp",
@@ -7173,7 +6783,7 @@
       ]
     },
     {
-      "id": 1430,
+      "id": 1405,
       "title": "Bland Rewrite",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/blandrewrite.webp",
@@ -7188,7 +6798,7 @@
       ]
     },
     {
-      "id": 1431,
+      "id": 1406,
       "title": "Pointless Mod",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/pointlessmod.webp",
@@ -7203,7 +6813,7 @@
       ]
     },
     {
-      "id": 1432,
+      "id": 1407,
       "title": "Cult Of Thog",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/cultofthog.webp",
@@ -7218,7 +6828,7 @@
       ]
     },
     {
-      "id": 1433,
+      "id": 1408,
       "title": "She Changed My Life",
       "author": "JsuMitsuki (Nuru)",
       "imageUrl": "/assets/mod_prevs/shechangedmylife.webp",
@@ -7233,7 +6843,7 @@
       ]
     },
     {
-      "id": 1434,
+      "id": 1409,
       "title": "Doki Doki Fighting Over Monika",
       "author": "JsuMitsuki (Nuru)",
       "imageUrl": "/assets/mod_prevs/dokidokifightingovermonika.webp",
@@ -7248,7 +6858,7 @@
       ]
     },
     {
-      "id": 1435,
+      "id": 1410,
       "title": "The Good Ending - Act One/Act Two",
       "author": "Sam Capener",
       "imageUrl": "/assets/mod_prevs/thegoodendingactoneacttwo.webp",
@@ -7263,22 +6873,7 @@
       ]
     },
     {
-      "id": 1436,
-      "title": "The Good Ending - Act Two (Prerelease Playtest)",
-      "author": "Sam Capener",
-      "imageUrl": "/assets/mod_prevs/thegoodendingacttwoprereleaseplaytest.webp",
-      "route": "thegoodendingacttwoprereleaseplaytest",
-      "submittedBy": "Tune Eternal",
-      "description": "Early build of TGE Act Two for playtesting purposes. Have fun seeing how it changed from development to release!",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(DEMO) https://drive.google.com/file/d/10U3nop9GD1pmuwEMxbcBbGzDVTZnhnjN/view?usp=sharing"
-        }
-      ]
-    },
-    {
-      "id": 1437,
+      "id": 1411,
       "title": "Moth Club",
       "author": "MothBoy_Tim (Sam Capener)",
       "imageUrl": "/assets/mod_prevs/mothclub.webp",
@@ -7293,7 +6888,7 @@
       ]
     },
     {
-      "id": 1438,
+      "id": 1412,
       "title": "Just Ronnie",
       "author": "Savage Sentral (Single Shot Studios)",
       "imageUrl": "/assets/mod_prevs/justronnie.webp",
@@ -7308,7 +6903,7 @@
       ]
     },
     {
-      "id": 1439,
+      "id": 1413,
       "title": "Doki Doki Comedy Club",
       "author": "Logokas",
       "imageUrl": "/assets/mod_prevs/dokidokicomedyclub.webp",
@@ -7323,7 +6918,7 @@
       ]
     },
     {
-      "id": 1440,
+      "id": 1414,
       "title": "Doki Doki Comedy Club 2",
       "author": "GanstakingofSA",
       "imageUrl": "/assets/mod_prevs/dokidokicomedyclub2.webp",
@@ -7338,7 +6933,7 @@
       ]
     },
     {
-      "id": 1441,
+      "id": 1415,
       "title": "New Start Monika",
       "author": "TheBestHack",
       "imageUrl": "/assets/mod_prevs/newstartmonika.webp",
@@ -7353,7 +6948,7 @@
       ]
     },
     {
-      "id": 1442,
+      "id": 1416,
       "title": "Undone Fate",
       "author": "tiny260",
       "imageUrl": "/assets/mod_prevs/undonefate.webp",
@@ -7368,7 +6963,7 @@
       ]
     },
     {
-      "id": 1443,
+      "id": 1417,
       "title": "Tenshi",
       "author": "u/TheOurVoid",
       "imageUrl": "/assets/mod_prevs/tenshi.webp",
@@ -7383,7 +6978,7 @@
       ]
     },
     {
-      "id": 1444,
+      "id": 1418,
       "title": "Tenshi",
       "author": "u/TheOurVoid",
       "imageUrl": "/assets/mod_prevs/tenshi.webp",
@@ -7398,7 +6993,7 @@
       ]
     },
     {
-      "id": 1445,
+      "id": 1419,
       "title": "Mujina",
       "author": "AlfredPros",
       "imageUrl": "/assets/mod_prevs/mujina.webp",
@@ -7413,7 +7008,7 @@
       ]
     },
     {
-      "id": 1446,
+      "id": 1420,
       "title": "Doki Doki Cheating Club",
       "author": "Author DevAV",
       "imageUrl": "/assets/mod_prevs/dokidokicheatingclub.webp",
@@ -7424,6 +7019,21 @@
         {
           "version": "standard",
           "url": "https://www.mediafire.com/file/v6ipvlizexv6vnu/DokiDokiCheatingClub-4.2.0-Py2-Renpy7Mod.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 1421,
+      "title": "Infinity Pens (Act 1) [Unofficial Fix]",
+      "author": "CaptainOreo",
+      "imageUrl": "/assets/mod_prevs/infinitypensact1unofficialfix.webp",
+      "route": "infinitypensact1unofficialfix",
+      "submittedBy": "ACT8113",
+      "description": "Infinity Pens is about two girls fighting over six magic pens. June is the blonde girl, but she cannot remember her past, and it hurts her when she tries to remember. Hanako is red-headed, and she is the villain. Long story short, Monika traps Hanako in a classroom, and June releases her. But Hanako’s true intention is to kill all Monikas' in existence (ie. other people's mods). And to do so, she needs the Infinity Pens. So, it's up to June to stop her and find the pens before she does. But it looks like Monika is hiding something, too. - CaptainOreo [NOTE: This modification is an unofficial edit from an outside party as the original was not in accordance with Team Salvato IP Guidelines previously, and this version will not be fixed by CaptainOreo.]",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1N9172llJwEWcXUfVGNbKCn3wIaDnU_0s/view?usp=sharing"
         }
       ]
     }
@@ -7446,6 +7056,471 @@
     },
     {
       "id": 10001,
+      "title": "Doki Doki Broken Poet (Act 1)",
+      "author": "M3rcurialEquilibrium",
+      "imageUrl": "/assets/mod_prevs/dokidokibrokenpoetact1.webp",
+      "route": "dokidokibrokenpoetact1",
+      "submittedBy": "Tune Eternal",
+      "description": "The festival has passed. All 4 girls read their poems, but no one really cared. At least at the end of the day, everyone seems proud they kept to their vision of what the club should be. Sayori is happy you joined the club, but despite that, you haven't really connected with anyone new. Her puppy eyes are too much to bear, and you reluctantly promise to try and get to know the other members of the club better. Natsuki in particular is puzzling. You can't really put a finger on why she continues to come to club despite seemingly not really getting along with anyone, and that is somewhat intriguing. Maybe you can break the ice with her... Maybe you can be her friend. Maybe something more.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/4p01dq2sik2uihb/DDLCBrokenPoet-1.0-Renpy7Mod.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 10002,
+      "title": "Doki Doki Broken Poet (Act 1) (Android)",
+      "author": "M3rcurialEquilibrium",
+      "imageUrl": "/assets/mod_prevs/dokidokibrokenpoetact1.webp",
+      "route": "dokidokibrokenpoetact1android",
+      "submittedBy": "Tune Eternal",
+      "description": "The festival has passed. All 4 girls read their poems, but no one really cared. At least at the end of the day, everyone seems proud they kept to their vision of what the club should be. Sayori is happy you joined the club, but despite that, you haven't really connected with anyone new. Her puppy eyes are too much to bear, and you reluctantly promise to try and get to know the other members of the club better. Natsuki in particular is puzzling. You can't really put a finger on why she continues to come to club despite seemingly not really getting along with anyone, and that is somewhat intriguing. Maybe you can break the ice with her... Maybe you can be her friend. Maybe something more.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/ubkoi3kcw9zghjx/Broken_Poet_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10003,
+      "title": "Before the Needle Lifts",
+      "author": "UNOwen1",
+      "imageUrl": "/assets/mod_prevs/beforetheneedlelifts.webp",
+      "route": "beforetheneedlelifts",
+      "submittedBy": "Tune Eternal",
+      "description": "You and your girlfriend Sayori investigate a series of strange disappearances around your town.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1rPBLijgaB-HHHag8Z04iEJ3J77UYFxxW/view"
+        }
+      ]
+    },
+    {
+      "id": 10004,
+      "title": "Before the Needle Lifts (Android)",
+      "author": "UNOwen1",
+      "imageUrl": "/assets/mod_prevs/beforetheneedlelifts.webp",
+      "route": "beforetheneedleliftsandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "You and your girlfriend Sayori investigate a series of strange disappearances around your town.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/zcbkz687sowor3i/Before_the_Needle_Lifts_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10005,
+      "title": "Deceptive Hearts",
+      "author": "Codex",
+      "imageUrl": "/assets/mod_prevs/deceptivehearts.webp",
+      "route": "deceptivehearts",
+      "submittedBy": "Tune Eternal",
+      "description": "When u/KryoGenic03 makes Monika real, he unknowingly sets off a chain reaction of love and lies. When u/H34DL0CK3R and u/DeadEmpyre get a whiff of what Kryo is up to, they decide they must put an end to his relationship with Monika. However, they end up causing more bad then good...\n\nBased on cringe in r/ddlcmods.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/obc6tqmrq3i29gv/DeceptiveHearts-1.0.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 10006,
+      "title": "Deceptive Hearts (Android)",
+      "author": "Codex",
+      "imageUrl": "/assets/mod_prevs/deceptivehearts.webp",
+      "route": "deceptiveheartsandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "When u/KryoGenic03 makes Monika real, he unknowingly sets off a chain reaction of love and lies. When u/H34DL0CK3R and u/DeadEmpyre get a whiff of what Kryo is up to, they decide they must put an end to his relationship with Monika. However, they end up causing more bad then good...\n\nBased on cringe in r/ddlcmods.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/u82p37112jrvpak/Deceptive_Hearts_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10007,
+      "title": "Turquoise (Android)",
+      "author": "Tormuse",
+      "imageUrl": "/assets/mod_prevs/turquoise.webp",
+      "route": "turquoiseandroid",
+      "submittedBy": "Tune Eternal, Yumi",
+      "description": "After three years of work, at long last, I'm pleased to present Turquoise! :D This is a Sayonika mod, featuring a romantic relationship between Sayori and Monika, told from Sayori's point of view. It features roughly ten hours of new content over 13 in-game days. It can be considered to be an alternate timeline from the original game, so don't assume you know everything about the story and/or characters.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/error.php?errno=388&quickkey=hfaj2ctuny65kiy&origin=download"
+        }
+      ]
+    },
+    {
+      "id": 10008,
+      "title": "Silver & Emerald",
+      "author": "Tiny Waffle Studios",
+      "imageUrl": "/assets/mod_prevs/silveremerald.webp",
+      "route": "silveremerald",
+      "submittedBy": "Tune Eternal",
+      "description": "Monika and Kotonoha make a bet to see who can get the best grade on an exam next class period. Koto gets a lil quirky aka pissed off and, well... you'll see lol. (Side note: If you want any sort of closure to what Natsuki was saying at the very end of Natsuki Rants About DDLC Mods and Community, this is probably the best you're gonna get lol.)",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/tna9qh4to6nlvpw/DokiDokiSilverandEmerald-1.0.0.1.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 10009,
+      "title": "Silver & Emerald (Android)",
+      "author": "Tiny Waffle Studios",
+      "imageUrl": "/assets/mod_prevs/silveremerald.webp",
+      "route": "silveremeraldandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Monika and Kotonoha make a bet to see who can get the best grade on an exam next class period. Koto gets a lil quirky aka pissed off and, well... you'll see lol. (Side note: If you want any sort of closure to what Natsuki was saying at the very end of Natsuki Rants About DDLC Mods and Community, this is probably the best you're gonna get lol.)",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/2jxilh2qbaijrxf/Silver_and_Emerald_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10010,
+      "title": "Clay God (Android)",
+      "author": "UNOwen1",
+      "imageUrl": "/assets/mod_prevs/claygod.webp",
+      "route": "claygodandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "You're back here again. A lone classroom. A desk. Her. Something's not right. You deleted her. You ended this. Yet, here she is. She tells you she's recently gotten a hobby -- fortune telling. She offers to give you a tarot reading. The cards are laid out on the table. You're asked to choose. Each one holds a piece of the puzzle: What is this world? What's different about it? Why is she here? Why are you here? A cursed book. A ritual. A burial in the middle of nowhere. Sooner or later, all cards will be turned. You will know the truth. Trouble is, it might already be too late...",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/cdp5Foag"
+        }
+      ]
+    },
+    {
+      "id": 10011,
+      "title": "Doki Doki I'm Alive (Android)",
+      "author": "Ruthi",
+      "imageUrl": "/assets/mod_prevs/dokidokiimalive.webp",
+      "route": "dokidokiimaliveandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "A fan sequel to Exit Music.\n\nAfter the events that took place in Exit Music, the protagonist and Natsuki come back to life with the help of a mysterious incorporeal entity, in order to be subjected to a test; find the culprit of their fateful demises and put an end to him. One life in exchange for two, with the handicap of having limited time and limited attempts. If they succeed, they will have a second life on Earth. If they fail, they will die for good and will never see each other again. On the way they will suffer multiple inconveniences, both fortuitous and intentional, but they will put on the table all the means at their disposal to solve a mystery that surpasses them in all aspects; because they do not understand neither the random reason why they have been entrusted with such a mission, nor the way in which they will be able to achieve such an elusive and apparently impossible purpose.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/drive/folders/15IcZtWLpuyBHLEYr2N3iW7G5BpMMbiif"
+        }
+      ]
+    },
+    {
+      "id": 10012,
+      "title": "My Doki Doki SNAFU (Android)",
+      "author": "GuyBread",
+      "imageUrl": "/assets/mod_prevs/mydokidokisnafu.webp",
+      "route": "mydokidokisnafuandroid",
+      "submittedBy": "128BitBob",
+      "description": "My Doki Doki SNAFU follows a re-envisioned MC as he joins the Literature Club and spends the semester learning more about its members while trying not to get caught up in their antics. Joy, sorrow, empathy... feel these and much more while playing through the routes of all your favorite Dokis!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1L27uMqLNB2zXgWowkAXmQEdX9RaapilR/view?usp=drive_link"
+        }
+      ]
+    },
+    {
+      "id": 10013,
+      "title": "Celebration! (Android)",
+      "author": "Tiny Waffle Studios",
+      "imageUrl": "/assets/mod_prevs/celebration.webp",
+      "route": "celebrationandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Monika attempts to disable any mods from being playable but messes up, leading to multiple features from various DDLC mods breaking into the game. This mod is a celebration of the large modding community for this game.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/t2fzyhwv"
+        }
+      ]
+    },
+    {
+      "id": 10014,
+      "title": "Little Literature Club (Android)",
+      "author": "regal-begal",
+      "imageUrl": "/assets/mod_prevs/littleliteratureclub.webp",
+      "route": "littleliteratureclubandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "When the chibis of the Little Literature Club find themselves at risk of becoming clubless losers, they join forces with the school's biggest dummy in order to put on a kickass presentation at the Cursed Festival. However, amidst threats from a mysterious stalker and a non-stop parade of bizarre events, the club's dreams of headpat glory and Olympic gold take a sharp turn toward the nightmarish.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/l/Lm9ysJ15#item=1"
+        }
+      ]
+    },
+    {
+      "id": 10015,
+      "title": "Deceptive Hearts: Judgement Day",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/deceptiveheartsjudgementday.webp",
+      "route": "deceptiveheartsjudgementday",
+      "submittedBy": "Tune Eternal",
+      "description": "Someone has freed u/DeadEmpyre from the Doki Doki Modding Club's #gulag channel, and it's up to the members of the DDMC to find out who it is. But this mysterious figure is bent on deleting the Discord server and finally putting an end to the Doki Doki Modding Club once and for all...\n\nBased on cringe in r/ddlcmods",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/an15k5xv3pvlzwb/DeceptiveHearts2-1.0.2-Deceptive_Hearts.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 10016,
+      "title": "Deceptive Hearts: Judgement Day (Android)",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/deceptiveheartsjudgementday.webp",
+      "route": "deceptiveheartsjudgementdayandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Someone has freed u/DeadEmpyre from the Doki Doki Modding Club's #gulag channel, and it's up to the members of the DDMC to find out who it is. But this mysterious figure is bent on deleting the Discord server and finally putting an end to the Doki Doki Modding Club once and for all...\n\nBased on cringe in r/ddlcmods",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/u3h6chiifprxsy7/Deceptive_Hearts_2_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10017,
+      "title": "The Renewal (Android)",
+      "author": "iiTzWolfyy",
+      "imageUrl": "/assets/mod_prevs/therenewal.webp",
+      "route": "therenewalandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "In the beginning of the umpteenth loop of the game where all the dramatical events have always taken place, something changes. Out of nowhere, MC becomes self aware like Monika has always been. He remembers everything that happened in the past and will try his best to save everyone from their cruel fates (yes, even Monika). The thing is, something will be in the way, and he will quickly notice it... Will you be able to save the club and start a brand new life? Can you trust Monika in this altered reality? Will it finally be the renewal that we've all been waiting for?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/Y97ZQmoy"
+        }
+      ]
+    },
+    {
+      "id": 10018,
+      "title": "XD (Android)",
+      "author": "AwesomeNinjaXD",
+      "imageUrl": "/assets/mod_prevs/xd.webp",
+      "route": "xdandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "This is a rom-com mod with a lot of fluff and risqué humor, inspired by the game dev studio SMEE. It has a lot of references to other VNs and some of my favorite media. It's not gonna be for everyone, but I hope it can get a chuckle out of someone at least.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/AExBHrdF"
+        }
+      ]
+    },
+    {
+      "id": 10019,
+      "title": "Welcome to the Anime Club (Android)",
+      "author": "Headlocker",
+      "imageUrl": "/assets/mod_prevs/welcometotheanimeclub.webp",
+      "route": "welcometotheanimeclubandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "MC and Monika: Once best friends, now bitter enemies with the former trying to close the Literature Club for good. One game. One gamble might decide the future for both clubs. Will this gamble bring him good fortune or will it contribute to his own demise and the LC gets to live for another day?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/U3GGshLN82U"
+        }
+      ]
+    },
+    {
+      "id": 10020,
+      "title": "Foreign Relations (Extended Demo) (Android)",
+      "author": "David Locklin",
+      "imageUrl": "/assets/mod_prevs/foreignrelationsextendeddemo.webp",
+      "route": "foreignrelationsextendeddemoandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "This mod puts you in the shoes of a transfer student coming to Japan. Here, you will join the Literature Club and meet with it's lovely members. You have one year before you leave Japan and return home, but could a special someone you meet make you stay there longer? Or perhaps, could you take that special someone home with you?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/vJDx6PzY"
+        }
+      ]
+    },
+    {
+      "id": 10021,
+      "title": "Emerald Affection (Act One)",
+      "author": "KryoGenic03",
+      "imageUrl": "/assets/mod_prevs/emeraldaffectionactone.webp",
+      "route": "emeraldaffectionactone",
+      "submittedBy": "Tune Eternal",
+      "description": "After one month in the club and graduation only a few months away, MC becomes conflicted about how he feels about the club president, Monika. With a complicated past, and a drive to make Monika happy, will he work up the guts to be with her? Or will life’s problems get in the way? Find out in this Act 1 release of Doki Doki: Emerald Affection!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/cec8pi381wmwzbd/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.12.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 10022,
+      "title": "Emerald Affection (Act One) (Android)",
+      "author": "KryoGenic03",
+      "imageUrl": "/assets/mod_prevs/emeraldaffectionactone.webp",
+      "route": "emeraldaffectionactoneandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "After one month in the club and graduation only a few months away, MC becomes conflicted about how he feels about the club president, Monika. With a complicated past, and a drive to make Monika happy, will he work up the guts to be with her? Or will life’s problems get in the way? Find out in this Act 1 release of Doki Doki: Emerald Affection!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/apffswytycdr7eh/Doki_Doki_Emerald_Affection_-_Act_1_-_V1.11_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10023,
+      "title": "Liberation (Android)",
+      "author": "Doki_Liberator",
+      "imageUrl": "/assets/mod_prevs/liberation.webp",
+      "route": "liberationandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "A mysterious entity known as 'Mister X' has pulled the player into the game, and they must work with Monika to discover the true motive of Mister X all while helping to bring the others into sentience. There's just one other problem. The player also has a mysterious past that they can't seem to remember...",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/jSzZ8z5u"
+        }
+      ]
+    },
+    {
+      "id": 10024,
+      "title": "The Rising Night (Act One) (Android)",
+      "author": "SpiritH0F",
+      "imageUrl": "/assets/mod_prevs/therisingnightactone.webp",
+      "route": "therisingnightactoneandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "This mod focuses on the lives of two MC's, taking place just a few days before the 'festival' and in the eyes of the new MC; A very unenthusiastic high school student who always keeps to himself and is generally more introverted. His more mysterious, reserved nature usually results in him taking a backseat (or just staying out of) most social environments, seeing no use in getting involved in any types of extracurricular activities. On the other end of the spectrum, there's the normal MC who's already established in the club and preparing for said 'festival'. He's the one we all know and love, so I'm sure you'll know him already. That said, the lives of our main protagonists are soon to change in ways they couldn't have ever expected, both good and bad.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/WaRcWJYD"
+        }
+      ]
+    },
+    {
+      "id": 10025,
+      "title": "Grappling Hook Yuri: The Origin Arc (Android)",
+      "author": "Team GHY",
+      "imageUrl": "/assets/mod_prevs/grapplinghookyuritheoriginarc.webp",
+      "route": "grapplinghookyuritheoriginarcandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Have you ever wondered what Yuri would do if she ever got a Grappling Hook? Was your answer crossing dimensions to capture every single MC to ever exist? Probably not, but here it is! Join Grappling Hook Yuri in her first major mod adventure as she and her friends wreak havoc across the multiverse!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=5v9K9h4H1Zh1O7JuCL3XPw"
+        }
+      ]
+    },
+    {
+      "id": 10026,
+      "title": "Absolution: Chapter One (Android)",
+      "author": "BaryonGod",
+      "imageUrl": "/assets/mod_prevs/absolutionchapterone.webp",
+      "route": "absolutionchapteroneandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "In a world of supernatural powers, one person who finished playing DDLC wanted to use his powers to enter the DDLC world himself. He was willing to change the outcome and resist Monika's influence to get a good ending where he could save the girls. This alters the story a lot, as he replaces the main character with himself and will now have to face all the girls' troubles.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=jE4QxE66UdBWidpFxHnm5w"
+        }
+      ]
+    },
+    {
+      "id": 10027,
+      "title": "Absolution: Chapter Two (Android)",
+      "author": "BaryonGod",
+      "imageUrl": "/assets/mod_prevs/absolutionchaptertwo.webp",
+      "route": "absolutionchaptertwoandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "MC tries his best to help Monika after the events they experienced in the past. Unsure of whether they're safe from people from his world, he still does his best to keep them protected with his powers, but the consequences from making certain choices are inevitable and he'll have to face dangers like never before...",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=EZh-Dtvs1Z5p2k6nv5ndMQ"
+        }
+      ]
+    },
+    {
+      "id": 10028,
+      "title": "Heart Struck (Chapter One) (Android)",
+      "author": "The Potat",
+      "imageUrl": "/assets/mod_prevs/heartstruckchapterone.webp",
+      "route": "heartstruckchapteroneandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "The full release of Chapter One of Heart Struck after Potat's computer completely died, and the project had to get rebuilt from the ground up.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://pixeldrain.com/u/9z3h2qcD"
+        }
+      ]
+    },
+    {
+      "id": 10029,
+      "title": "Yuri is Disappointed in You (Android)",
+      "author": "Retroadamshow",
+      "imageUrl": "/assets/mod_prevs/yuriisdisappointedinyou.webp",
+      "route": "yuriisdisappointedinyouandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "You disappoint your girlfriend, Yuri. Shame yourself. This mod is the first (that we're aware of) to utilize both the 1080p DDLC template, as well as the HD MPT spritepack, thus allowing for bigger and (slightly) clearer visuals!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=CWUeUNUtx4oSrV6xU4B2Jw"
+        }
+      ]
+    },
+    {
+      "id": 10030,
+      "title": "[her] (ver 1.3) (Android)",
+      "author": "DatBlackScientist",
+      "imageUrl": "/assets/mod_prevs/herver13.webp",
+      "route": "herver13android",
+      "submittedBy": "Tune Eternal",
+      "description": "After Monika manages to crossover into reality with the help of an unknown voice, she unites with the human she was seeking for. What will it take for her to win their love? (Based on e-dating between DBS and Mari)",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=58Chg5rAFJ9PDWkqPwyc0g"
+        }
+      ]
+    },
+    {
+      "id": 10031,
+      "title": "Isolation (Android)",
+      "author": "AngryBroYT",
+      "imageUrl": "/assets/mod_prevs/isolation.webp",
+      "route": "isolationandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Join our protagonist on his quest of repairing his broken reputation in a world isolated from any other. He's Forced into torment, love, heartbreak and manipulation. Gain the trust of others, grow to become a better human being. However, there is something dark behind the veil. His parents are scientists, every student around him become subjects. Will you find out what is going on in this facility? Can our protagonist solidify his place in this isolated prison? I wonder...",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=HulNFiZz9601-r1BH8KTLA"
+        }
+      ]
+    },
+    {
+      "id": 10032,
       "title": "TOMOKO; (Android)",
       "author": "-2 (OfficialJackRuby)",
       "imageUrl": "/assets/mod_prevs/tomokoandroid.webp",
@@ -7455,12 +7530,132 @@
       "links": [
         {
           "version": "standard",
-          "url": "(ANDROID) https://workupload.com/file/QzUU8b3fZ7R"
+          "url": "https://workupload.com/file/QzUU8b3fZ7R"
         }
       ]
     },
     {
-      "id": 10002,
+      "id": 10033,
+      "title": "Tomoe;Zero (Android)",
+      "author": "-2 (OfficialJackRuby)",
+      "imageUrl": "/assets/mod_prevs/tomoezero.webp",
+      "route": "tomoezeroandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Lights of Nike shine through the dynastic hierarchies of oppression.\n\nRevealing but tessellations resembling truth.\n\nWe share the plights of Odysseus in this sense for we are passengers in our own residence.\n\nTantalized by promises of a cave; the distilled reality.\n\nJoin the girls in Doki Doki Tomoe;Zero on their vacation to Cambodia!\n\n[A mod by -2 of Various Artists]\n\n(The main menu is completely lifted from Arknights)",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/45xJ73RzABT"
+        }
+      ]
+    },
+    {
+      "id": 10034,
+      "title": "Doki Doki India-Man Time (Android)",
+      "author": "AinsleyHairyott",
+      "imageUrl": "/assets/mod_prevs/dokidokiindiamantime.webp",
+      "route": "dokidokiindiamantimeandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "All Dokis are as ordinary as ever. But then, India Man came in by surprise. Watch as India Man throws an element of pure chaos into the peaceful literature club. If you have a spare 15 minutes of your life, Doki Doki India Man is the mod for you! It's exhilarating story will make you feel... something...",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=pAp6SaS4Sh-WAwM63KrbaQ"
+        }
+      ]
+    },
+    {
+      "id": 10035,
+      "title": "Doki Doki The Yuri Parable (Android)",
+      "author": "Animystix",
+      "imageUrl": "/assets/mod_prevs/dokidokitheyuriparable.webp",
+      "route": "dokidokitheyuriparableandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Do you like the The Stanley Parable? Do you like Doki Doki Literature Club? Have you ever wished that the two games would crossover? Do you like tedious questions that are asked purely to generate intrigue? If you answered yes to any of the prior questions, you are in luck! The Yuri Parable is an experience for those looking for a comedic adventure focused around a certain pen-loving bookworm (cough cough Yuri cough cough), alongside a very handsome narrator. The Yuri Parable does not assume any fault nor can it be sued for any terrible jokes it might produce.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.terabox.com/sharing/link?surl=JANitC5kyrWav14iFnyQJw"
+        }
+      ]
+    },
+    {
+      "id": 10036,
+      "title": "Break and Enter",
+      "author": "Wretched Team",
+      "imageUrl": "/assets/mod_prevs/breakandenter.webp",
+      "route": "breakandenter",
+      "submittedBy": "Tune Eternal",
+      "description": "The very last Wretched Team / Studio Indev project before they blew up for the ... third time? Fourth time? Eh fuck it. This is another Breaking Bad meme mod kicking the fucking dead horse.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/15jWH9UyqsCazm19OTFaZfJTjEeaJk9MN/view"
+        }
+      ]
+    },
+    {
+      "id": 10037,
+      "title": "Break and Enter (Android)",
+      "author": "Wretched Team",
+      "imageUrl": "/assets/mod_prevs/breakandenter.webp",
+      "route": "breakandenterandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "The very last Wretched Team / Studio Indev project before they blew up for the ... third time? Fourth time? Eh fuck it. This is another Breaking Bad meme mod kicking the fucking dead horse.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/v3c7oqmmw0tmfln/Break_and_Enter_1.0.2_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10038,
+      "title": "Doki Doki Cliche Club",
+      "author": "Crimfinity",
+      "imageUrl": "/assets/mod_prevs/dokidokiclicheclub.webp",
+      "route": "dokidokiclicheclub",
+      "submittedBy": "Tune Eternal",
+      "description": "An attempt to make the most generic mod in all of existence, filled with every trope that can fit into a single story! It's also an attempt to somehow make that interesting/funny. Is it? Guess you'll have to find out!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/h1i4xp0widsezxj/cliche_club.zip/file"
+        }
+      ]
+    },
+    {
+      "id": 10039,
+      "title": "Doki Doki Cliche Club (Android)",
+      "author": "Crimfinity",
+      "imageUrl": "/assets/mod_prevs/dokidokiclicheclub.webp",
+      "route": "dokidokiclicheclubandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "An attempt to make the most generic mod in all of existence, filled with every trope that can fit into a single story! It's also an attempt to somehow make that interesting/funny. Is it? Guess you'll have to find out!",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/brsvyisopgghlv2/Doki_Doki_Cliche_Club.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10040,
+      "title": "Roady Roady Road Trip (Android)",
+      "author": "Crimfinity",
+      "imageUrl": "/assets/mod_prevs/roadyroadyroadtrip.webp",
+      "route": "roadyroadyroadtripandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Come to Brazil in VA’s longest mod yet, Roady Roady Road Trip! Join the MC and Natsuki as they spend their summer journeying across the world to meet their parents.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/SmC2WRa3Jc4"
+        }
+      ]
+    },
+    {
+      "id": 10041,
       "title": "Cardboard Box (Android)",
       "author": "M3rcurialEquilibrium",
       "imageUrl": "/assets/mod_prevs/cardboardboxandroid.webp",
@@ -7475,7 +7670,37 @@
       ]
     },
     {
-      "id": 10003,
+      "id": 10042,
+      "title": "A Parfait Premiere",
+      "author": "Zachman Awesomeness",
+      "imageUrl": "/assets/mod_prevs/aparfaitpremiere.webp",
+      "route": "aparfaitpremiere",
+      "submittedBy": "Tune Eternal",
+      "description": "A rare episode of Parfait Girls is airing on TV, and Natsuki wants to watch it! However, life gets in the way. Will this jeopardize Natsuki's only chance of seeing the only airing of the lost Parfait Girls episode?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1Uq2FJoRUzT1Vdrq-0BY3-VWdnv-T_TRY/view"
+        }
+      ]
+    },
+    {
+      "id": 10043,
+      "title": "A Parfait Premiere (Android)",
+      "author": "Zachman Awesomeness",
+      "imageUrl": "/assets/mod_prevs/aparfaitpremiere.webp",
+      "route": "aparfaitpremiereandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "A rare episode of Parfait Girls is airing on TV, and Natsuki wants to watch it! However, life gets in the way. Will this jeopardize Natsuki's only chance of seeing the only airing of the lost Parfait Girls episode?",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/8n80vtjbq55dccf/A_Parfait_Premiere_Android_Port.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10044,
       "title": "WT After School Demo (ANDROID)",
       "author": "Wretched Team",
       "imageUrl": "/assets/mod_prevs/wtafterschooldemoandroid.webp",
@@ -7490,7 +7715,37 @@
       ]
     },
     {
-      "id": 10004,
+      "id": 10045,
+      "title": "Abridged, or How I Learned to Stop Worrying and Love to Mod",
+      "author": "Chronoshag",
+      "imageUrl": "/assets/mod_prevs/abridgedorhowilearnedtostopworryingandlovetomod.webp",
+      "route": "abridgedorhowilearnedtostopworryingandlovetomod",
+      "submittedBy": "Tune Eternal",
+      "description": "An Abridged version of DDLC. Plenty of spicy shenanigans ensue",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://drive.google.com/file/d/1fvLqHAufQlNI3cHDjpxtYeshRgzp9Q7g/view"
+        }
+      ]
+    },
+    {
+      "id": 10046,
+      "title": "Abridged, or How I Learned to Stop Worrying and Love to Mod (Android)",
+      "author": "Chronoshag",
+      "imageUrl": "/assets/mod_prevs/abridgedorhowilearnedtostopworryingandlovetomod.webp",
+      "route": "abridgedorhowilearnedtostopworryingandlovetomodandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "An Abridged version of DDLC. Plenty of spicy shenanigans ensue",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/sng091ax9ixixk3/Doki_Doki_Literature_Club_Abridged.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10047,
       "title": "Alone Together (Android)",
       "author": "VentusLeonidas",
       "imageUrl": "/assets/mod_prevs/alonetogetherandroid.webp",
@@ -7505,7 +7760,7 @@
       ]
     },
     {
-      "id": 10005,
+      "id": 10048,
       "title": "Another After Story (Android)",
       "author": "92FM",
       "imageUrl": "/assets/mod_prevs/anotherafterstoryandroid.webp",
@@ -7520,7 +7775,52 @@
       ]
     },
     {
-      "id": 10006,
+      "id": 10049,
+      "title": "Another Moment With You (Episodes 1-3) (Android)",
+      "author": "Guardian_Bravo",
+      "imageUrl": "/assets/mod_prevs/anothermomentwithyouepisodes13.webp",
+      "route": "anothermomentwithyouepisodes13android",
+      "submittedBy": "Tune Eternal",
+      "description": "Episodic, good ol’ fashioned visual novel experience, lacking any of the meta weirdness from vanilla DDLC. Each episode will force you to journey through the inner demons plaguing the four girls, allowing you to view things from their perspectives and step into their shoes.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/AddYyYDQurQ"
+        }
+      ]
+    },
+    {
+      "id": 10050,
+      "title": "Another Reality",
+      "author": "Wrath_Of_Cinnamonbun",
+      "imageUrl": "/assets/mod_prevs/anotherreality.webp",
+      "route": "anotherreality",
+      "submittedBy": "Tune Eternal",
+      "description": "A story of redemption, that shows even the villain can become a hero.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/y6hsji81cm3xcs3/Doki_Doki_Another_Reality.rar/file"
+        }
+      ]
+    },
+    {
+      "id": 10051,
+      "title": "Another Reality (Android)",
+      "author": "Wrath_Of_Cinnamonbun",
+      "imageUrl": "/assets/mod_prevs/anotherreality.webp",
+      "route": "anotherrealityandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "A story of redemption, that shows even the villain can become a hero.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://www.mediafire.com/file/ldl3dsvgi8ig9xb/Doki_Doki_Another_Reality_Demo.apk/file"
+        }
+      ]
+    },
+    {
+      "id": 10052,
       "title": "Her Story (ANDROID)",
       "author": "CPC-Antimark",
       "imageUrl": "/assets/mod_prevs/herstoryandroid.webp",
@@ -7535,7 +7835,7 @@
       ]
     },
     {
-      "id": 10007,
+      "id": 10053,
       "title": "Another Round (ANDROID)",
       "author": "Riverr",
       "imageUrl": "/assets/mod_prevs/anotherroundandroid.webp",
@@ -7550,7 +7850,7 @@
       ]
     },
     {
-      "id": 10008,
+      "id": 10054,
       "title": "Doki Doki Bad Memories (Android)",
       "author": "Ayzzmt",
       "imageUrl": "/assets/mod_prevs/dokidokibadmemoriesandroid.webp",
@@ -7565,7 +7865,7 @@
       ]
     },
     {
-      "id": 10009,
+      "id": 10055,
       "title": "Behind Closed Doors (Android)",
       "author": "FluffyDev",
       "imageUrl": "/assets/mod_prevs/behindcloseddoorsandroid.webp",
@@ -7580,7 +7880,7 @@
       ]
     },
     {
-      "id": 10010,
+      "id": 10056,
       "title": "Better Call Saul - Defense Attorney in Spilt Spaghetti (ANDROID)",
       "author": "Tune Eternal",
       "imageUrl": "/assets/mod_prevs/bettercallsauldefenseattorneyinspiltspaghettiandroid.webp",
@@ -7595,7 +7895,52 @@
       ]
     },
     {
-      "id": 10011,
+      "id": 10057,
+      "title": "Doki Doki [[BIG SHOT]] (Android)",
+      "author": "boobielover103 (aka Silver)",
+      "imageUrl": "/assets/mod_prevs/dokidokibigshot.webp",
+      "route": "dokidokibigshotandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Spamton G. Spamton, also known as Spamto, joins the Literature Club, and causes havok.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/5CNEvakHxtv"
+        }
+      ]
+    },
+    {
+      "id": 10058,
+      "title": "Doki Doki Bland Rewrite (Android)",
+      "author": "Vaunt_Fremont_Tocsin",
+      "imageUrl": "/assets/mod_prevs/dokidokiblandrewrite.webp",
+      "route": "dokidokiblandrewriteandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "In this alternative timeline Elijah/MC and Sayori meet a boy they used to know in elementry school. They soon join the club, which now has many members. This is only the beginning of a story of friendships, love, and drama.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/9fKmS6zThjE"
+        }
+      ]
+    },
+    {
+      "id": 10059,
+      "title": "The Blood Moon Chapters: Chapter 1 - Before, During, and After the Stories (Android)",
+      "author": "Azrathas",
+      "imageUrl": "/assets/mod_prevs/thebloodmoonchapterschapter1beforeduringandafterthestories.webp",
+      "route": "thebloodmoonchapterschapter1beforeduringandafterthestoriesandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "Gonna be honest, this one's pretty involved, attempting to delve into the origins of the Dokis and what Project Libitina is (from what's discernible from the original summary).",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/eA47mhmR4JD"
+        }
+      ]
+    },
+    {
+      "id": 10060,
       "title": "Blue Seas Demo V2 (Android)",
       "author": "dewallt101",
       "imageUrl": "/assets/mod_prevs/blueseasdemov2android.webp",
@@ -7610,7 +7955,7 @@
       ]
     },
     {
-      "id": 10012,
+      "id": 10061,
       "title": "Blue Seas: Nightmare of the Yandere Doki (Android)",
       "author": "dewallt101",
       "imageUrl": "/assets/mod_prevs/blueseasnightmareoftheyanderedokiandroid.webp",
@@ -7625,7 +7970,7 @@
       ]
     },
     {
-      "id": 10013,
+      "id": 10062,
       "title": "Blue Seas: Thanksgiving Edition (Android)",
       "author": "dewallt101",
       "imageUrl": "/assets/mod_prevs/blueseasthanksgivingeditionandroid.webp",
@@ -7640,7 +7985,7 @@
       ]
     },
     {
-      "id": 10014,
+      "id": 10063,
       "title": "Blue Seas: Christmas Adventures (Android)",
       "author": "dewallt101",
       "imageUrl": "/assets/mod_prevs/blueseaschristmasadventuresandroid.webp",
@@ -7655,7 +8000,7 @@
       ]
     },
     {
-      "id": 10015,
+      "id": 10064,
       "title": "Blue Skies (Android)",
       "author": "Sir Swampert",
       "imageUrl": "/assets/mod_prevs/blueskiesandroid.webp",
@@ -7670,7 +8015,7 @@
       ]
     },
     {
-      "id": 10016,
+      "id": 10065,
       "title": "DDLC: Branching Paths (Android)",
       "author": "ultrastarwarsfan",
       "imageUrl": "/assets/mod_prevs/ddlcbranchingpathsandroid.webp",
@@ -7685,7 +8030,7 @@
       ]
     },
     {
-      "id": 10017,
+      "id": 10066,
       "title": "Break And Enter (Android)",
       "author": "Wretched Team",
       "imageUrl": "/assets/mod_prevs/breakandenterandroid.webp",
@@ -7700,7 +8045,7 @@
       ]
     },
     {
-      "id": 10018,
+      "id": 10067,
       "title": "Britain Club (Android)",
       "author": "Soriinz",
       "imageUrl": "/assets/mod_prevs/britainclubandroid.webp",
@@ -7715,7 +8060,22 @@
       ]
     },
     {
-      "id": 10019,
+      "id": 10068,
+      "title": "Doki Doki Butterfly Effect (Android)",
+      "author": "u/isweartogo-",
+      "imageUrl": "/assets/mod_prevs/dokidokibutterflyeffect.webp",
+      "route": "dokidokibutterflyeffectandroid",
+      "submittedBy": "Tune Eternal",
+      "description": "The mod extends the story after act 3, where the girls are saved. However, the MC notices that the girls have been acting strange as time goes by.  Confused, he goes to investigate what happened, but then, \"something\" hypnotizes him.",
+      "links": [
+        {
+          "version": "standard",
+          "url": "https://workupload.com/file/YSV6543NF7z"
+        }
+      ]
+    },
+    {
+      "id": 10069,
       "title": "Can You Spare A Poem? (Android)",
       "author": "SomeDudeNamedAyat",
       "imageUrl": "/assets/mod_prevs/canyouspareapoemandroid.webp",
@@ -7730,7 +8090,7 @@
       ]
     },
     {
-      "id": 10020,
+      "id": 10070,
       "title": "Doki Doki Capitalist Radio (Android)",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/dokidokicapitalistradioandroid.webp",
@@ -7745,7 +8105,7 @@
       ]
     },
     {
-      "id": 10021,
+      "id": 10071,
       "title": "Doki Doki Christmas Time (Android)",
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/dokidokichristmastimeandroid.webp",
@@ -7760,22 +8120,22 @@
       ]
     },
     {
-      "id": 10022,
-      "title": "Doki Doki Club Meetings (Season 1-3 Android)",
-      "author": "DokiDokiClubMeetings",
-      "imageUrl": "/assets/mod_prevs/dokidokiclubmeetingsseason13android.webp",
-      "route": "dokidokiclubmeetingsseason13android",
+      "id": 10072,
+      "title": "Doki Doki Club Meetings: Abridged (Android)",
+      "author": "Chaqua",
+      "imageUrl": "/assets/mod_prevs/dokidokiclubmeetingsabridged.webp",
+      "route": "dokidokiclubmeetingsabridgedandroid",
       "submittedBy": "Tune Eternal",
-      "description": "Use Club Meetings Descriptions.",
+      "description": "The abridged version of Club Meetings, showcasing a single episode filled with inside jokes about the original mod.",
       "links": [
         {
           "version": "standard",
-          "url": "(S1) https://www.mediafire.com/file/glb6skpwhh52h58/Doki_Doki_Club_Meetings_Season_1.apk/file (S2) https://www.mediafire.com/file/c2mogvzasjng2w5/Doki_Doki_Club_Meetings_Season_2.apk/file (S3) https://mixdroop.co/f/dq8mdjr9s604k9"
+          "url": "https://workupload.com/file/t4RneDFwd9L"
         }
       ]
     },
     {
-      "id": 10023,
+      "id": 10073,
       "title": "The Good Ending - Act One (Android)",
       "author": "Sam Capener",
       "imageUrl": "/assets/mod_prevs/thegoodendingactoneandroid.webp",
@@ -7790,7 +8150,7 @@
       ]
     },
     {
-      "id": 10024,
+      "id": 10074,
       "title": "The Good Ending - Act Two (Android)",
       "author": "Sam Capener",
       "imageUrl": "/assets/mod_prevs/thegoodendingacttwoandroid.webp",
@@ -7868,21 +8228,6 @@
     },
     {
       "id": 20004,
-      "title": "True Story (Demo)",
-      "author": "Neljas",
-      "imageUrl": "/assets/mod_prevs/truestorydemo.webp",
-      "route": "truestorydemo",
-      "submittedBy": "Tune Eternal",
-      "description": "True Story is Monika's POV mod, heavily inspired by Everlasting Summer (especially Semyon's route) and Seven Summer Days. This, among other things, applies to the menu, gui, and the music (in this mod there are even more OST's from ES than DDLC OST's), even the saving method (unlike regular DDLC mods, in this mod you first need to point at selected slot, and then again additionally click on the corresponding “Save/Load” button, in general, just like in ES)",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(PC) https://www.mediafire.com/file_premium/5g9iuwylcpp52e1/True_Story_Demo_PC.zip/file (MAC) https://www.mediafire.com/file_premium/tz6m4ll73pf23qa/True_Story_Demo_Mac.zip/file (Android) https://www.mediafire.com/file_premium/dl6oxlexwxcndbh/True_Story_Demo_ANDROID.apk/file"
-        }
-      ]
-    },
-    {
-      "id": 20005,
       "title": "Doki Doki: NIGHT RAIN (Demo) (Formerly Rimscar's Doki Doki: Panic!!) (Not avaliable)",
       "author": "Rimscar",
       "imageUrl": "/assets/mod_prevs/dokidokinightraindemoformerlyrimscarsdokidokipanicnotavaliable.webp",
@@ -7892,12 +8237,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "Broken Link"
+          "url": "https://drive.google.com/file/d/1vbaQ2C8R-UN8nvLTwY03yqwfEWiuPeQR/view"
         }
       ]
     },
     {
-      "id": 20006,
+      "id": 20005,
       "title": "Doki Doki Undercurrents (v. 2.1.0 AKA The Full Demo)",
       "author": "Studio Silver",
       "imageUrl": "/assets/mod_prevs/dokidokiundercurrentsv210akathefulldemo.webp",
@@ -7912,7 +8257,7 @@
       ]
     },
     {
-      "id": 20007,
+      "id": 20006,
       "title": "A Deal With Alastor (Demo v2.0)",
       "author": "TheNumbahSeven",
       "imageUrl": "/assets/mod_prevs/adealwithalastordemov20.webp",
@@ -7927,7 +8272,7 @@
       ]
     },
     {
-      "id": 20008,
+      "id": 20007,
       "title": "Turquoise (Demo)",
       "author": "Tormuse",
       "imageUrl": "/assets/mod_prevs/turquoisedemo.webp",
@@ -7942,7 +8287,7 @@
       ]
     },
     {
-      "id": 20009,
+      "id": 20008,
       "title": "Doki Doki After School (Original Wretched Team Demo)",
       "author": "Wretched Team",
       "imageUrl": "/assets/mod_prevs/dokidokiafterschooloriginalwretchedteamdemo.webp",
@@ -7957,7 +8302,7 @@
       ]
     },
     {
-      "id": 20010,
+      "id": 20009,
       "title": "Doki Doki A New View (Demo)",
       "author": "Team Elevate",
       "imageUrl": "/assets/mod_prevs/dokidokianewviewdemo.webp",
@@ -7972,22 +8317,7 @@
       ]
     },
     {
-      "id": 20011,
-      "title": "Doki Doki Love Torn (Demo)",
-      "author": "Team Elevate",
-      "imageUrl": "/assets/mod_prevs/dokidokilovetorndemo.webp",
-      "route": "dokidokilovetorndemo",
-      "submittedBy": "64BitBob",
-      "description": "In this mod, you live in a re-imagined world of Doki Doki Literature Club. No craziness, just DDLC with a normal life! When your best friend Sayori convinces you to join her club, a chance reunion with your childhood friend Kotonoha sends you down a spiral path of choices, where you enjoy the good, while attempting to handle the bad. Can you handle everything life's about to send your way?",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Demo V1) https://www.mediafire.com/file_premium/rlikzemnds3hpo9/DDLoveTorn-3.0.0-Mod.zip/file (Demo V2) https://www.mediafire.com/file_premium/v2k63upd41rm6am/DDLoveTorn-3.0.1-Renpy7Mod.zip/file"
-        }
-      ]
-    },
-    {
-      "id": 20012,
+      "id": 20010,
       "title": "Foreign Relations (Extended Demo)",
       "author": "David Locklin",
       "imageUrl": "/assets/mod_prevs/foreignrelationsextendeddemo.webp",
@@ -7997,12 +8327,12 @@
       "links": [
         {
           "version": "standard",
-          "url": "(WIN) https://www.mediafire.com/file/iayy0bu4q6v3a5o/ForeignRelations1.4-Renpy7Mod.zip/file (ANDROID) https://pixeldrain.com/u/vJDx6PzY"
+          "url": "https://www.mediafire.com/file/iayy0bu4q6v3a5o/ForeignRelations1.4-Renpy7Mod.zip/file"
         }
       ]
     },
     {
-      "id": 20013,
+      "id": 20011,
       "title": "Elite Mission (Chapter One/Demo)",
       "author": "KEG101",
       "imageUrl": "/assets/mod_prevs/elitemissionchapteronedemo.webp",
@@ -8017,7 +8347,7 @@
       ]
     },
     {
-      "id": 20014,
+      "id": 20012,
       "title": "Heart Struck (Act One: Demo)",
       "author": "The Potat",
       "imageUrl": "/assets/mod_prevs/heartstruckactonedemo.webp",
@@ -8032,7 +8362,7 @@
       ]
     },
     {
-      "id": 20015,
+      "id": 20013,
       "title": "Sequel Club: Back Online - Spring 2022 Demo",
       "author": "Zachman Awesomeness",
       "imageUrl": "/assets/mod_prevs/sequelclubbackonlinespring2022demo.webp",
@@ -8047,7 +8377,7 @@
       ]
     },
     {
-      "id": 20016,
+      "id": 20014,
       "title": "Emerald Affection The Original Demo",
       "author": "KryoGenic03",
       "imageUrl": "/assets/mod_prevs/emeraldaffectiontheoriginaldemo.webp",
@@ -8062,22 +8392,7 @@
       ]
     },
     {
-      "id": 20017,
-      "title": "New Friends (Act One / Act Two Demo)",
-      "author": "Wilinisian",
-      "imageUrl": "/assets/mod_prevs/newfriendsactoneacttwodemo.webp",
-      "route": "newfriendsactoneacttwodemo",
-      "submittedBy": "Tune Eternal",
-      "description": "Sayori, Yuri, and Natsuki struggle with problems that anyone could realistically struggle with. Monika, however, deals with the existential crisis that comes with being self-aware in a game. What I want to do with Doki Doki New Friends is tell a story about Monika where she doesn't struggle with such a \"meta\" problem. Instead, Monika struggles with obsessive-compulsive disorder and intrusive thoughts. On top of that, she has moved to a new school and as the title might imply has to make new friends. Follow Monika as she not only battles with her inner demons but also struggles with the challenges that come with making and keeping friends.",
-      "links": [
-        {
-          "version": "standard",
-          "url": "(Act One) https://www.mediafire.com/file/us4bylsc2st3276/ddnf_act_one.zip/file (Act Two Demo) https://www.mediafire.com/file/i66ug5x5kw4dbey/NewFriendsActTwo-Demo-1.0.rar/file"
-        }
-      ]
-    },
-    {
-      "id": 20018,
+      "id": 20015,
       "title": "My Shamrock Girlfriend (Demo)",
       "author": "-2 (JudoStar224)",
       "imageUrl": "/assets/mod_prevs/myshamrockgirlfrienddemo.webp",
@@ -8092,7 +8407,7 @@
       ]
     },
     {
-      "id": 20019,
+      "id": 20016,
       "title": "Doki Doki Acclamation (Demo)",
       "author": "ZachmanAwesomeness",
       "imageUrl": "/assets/mod_prevs/dokidokiacclamationdemo.webp",
@@ -8107,7 +8422,7 @@
       ]
     },
     {
-      "id": 20020,
+      "id": 20017,
       "title": "Pride of my Heart (Demo Version 2)",
       "author": "HazelFlakes23",
       "imageUrl": "/assets/mod_prevs/prideofmyheartdemoversion2.webp",
@@ -8122,7 +8437,7 @@
       ]
     },
     {
-      "id": 20021,
+      "id": 20018,
       "title": "Doki Doki Transfer (Demo)",
       "author": "FlorMatt02",
       "imageUrl": "/assets/mod_prevs/dokidokitransferdemo.webp",
@@ -8137,7 +8452,7 @@
       ]
     },
     {
-      "id": 20022,
+      "id": 20019,
       "title": "Doki Doki Rewind/Replay (Demo)",
       "author": "Chronoshag",
       "imageUrl": "/assets/mod_prevs/dokidokirewindreplaydemo.webp",
@@ -8152,7 +8467,7 @@
       ]
     },
     {
-      "id": 20023,
+      "id": 20020,
       "title": "The Choices (Demo)",
       "author": "KadeDev (Yes",
       "imageUrl": "/assets/mod_prevs/thechoicesdemo.webp",
@@ -8167,7 +8482,7 @@
       ]
     },
     {
-      "id": 20024,
+      "id": 20021,
       "title": "The Perfect Story (Demo)",
       "author": "cxvdis",
       "imageUrl": "/assets/mod_prevs/theperfectstorydemo.webp",
@@ -8182,7 +8497,7 @@
       ]
     },
     {
-      "id": 20025,
+      "id": 20022,
       "title": "The Perfect Story (Demo)",
       "author": "cxvdis",
       "imageUrl": "/assets/mod_prevs/theperfectstorydemo.webp",
@@ -8197,7 +8512,7 @@
       ]
     },
     {
-      "id": 20026,
+      "id": 20023,
       "title": "The Perfect Story (Demo)",
       "author": "cxvdis",
       "imageUrl": "/assets/mod_prevs/theperfectstorydemo.webp",
@@ -8212,7 +8527,7 @@
       ]
     },
     {
-      "id": 20027,
+      "id": 20024,
       "title": "A Bean New Day (OG Bean Demo)",
       "author": "Vaunt_Fremont_Tocsin",
       "imageUrl": "/assets/mod_prevs/abeannewdayogbeandemo.webp",
@@ -8227,7 +8542,7 @@
       ]
     },
     {
-      "id": 20028,
+      "id": 20025,
       "title": "The Good Ending - The Prologue (Act One Demo)",
       "author": "Sam Capener",
       "imageUrl": "/assets/mod_prevs/thegoodendingtheprologueactonedemo.webp",
@@ -8242,7 +8557,7 @@
       ]
     },
     {
-      "id": 20029,
+      "id": 20026,
       "title": "Emerald Attraction (Demo)",
       "author": "MonikaHearts",
       "imageUrl": "/assets/mod_prevs/emeraldattractiondemo.webp",
@@ -8257,7 +8572,7 @@
       ]
     },
     {
-      "id": 20030,
+      "id": 20027,
       "title": "Doki Doki Responsibility (Unreleased/Unfinished Alpha Demo)",
       "author": "\"u/PrezesBocianow",
       "imageUrl": "/assets/mod_prevs/dokidokiresponsibilityunreleasedunfinishedalphademo.webp",
@@ -8380,6 +8695,21 @@
     },
     {
       "id": 30007,
+      "title": "Kiyomi’s Big Date",
+      "author": "MarioDokiFan4ever",
+      "imageUrl": "/assets/mod_prevs/kiyomisbigdate.webp",
+      "route": "kiyomisbigdate",
+      "submittedBy": "MarioDokiFan4ever",
+      "description": "This mod follows a certain individual named Jace. He gets jealous of Sayori and DokiFan's relationship and wishes he could have one too. He suddenly runs into a particular girl named Kiyomi and falls in love with her at first sight. He takes an opportunity to ask her out to the mall. Will he finally find the love of his life? We shall see how this \"date\" goes for both of them.",
+      "links": [
+        {
+          "version": "video",
+          "url": "https://www.youtube.com/embed/-LPuXyyfE8E"
+        }
+      ]
+    },
+    {
+      "id": 30008,
       "title": "Sayori’s Mistletoe Surprise",
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/sayorismistletoesurprise.webp",
@@ -8394,7 +8724,7 @@
       ]
     },
     {
-      "id": 30008,
+      "id": 30009,
       "title": "DokiFan’s Birthday Surprise",
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/dokifansbirthdaysurprise.webp",
@@ -8409,7 +8739,7 @@
       ]
     },
     {
-      "id": 30009,
+      "id": 30010,
       "title": "A Month With Natsuki",
       "author": "TheBike",
       "imageUrl": "/assets/mod_prevs/amonthwithnatsuki.webp",
@@ -8424,7 +8754,7 @@
       ]
     },
     {
-      "id": 30010,
+      "id": 30011,
       "title": "Braveyori’s Fury",
       "author": "MarioDokiFan4ever",
       "imageUrl": "/assets/mod_prevs/braveyorisfury.webp",
@@ -8439,7 +8769,7 @@
       ]
     },
     {
-      "id": 30011,
+      "id": 30012,
       "title": "DDLC Eidolon: Haze (Part 1)",
       "author": "Aliri",
       "imageUrl": "/assets/mod_prevs/ddlceidolonhazepart1.webp",
@@ -8454,7 +8784,7 @@
       ]
     },
     {
-      "id": 30012,
+      "id": 30013,
       "title": "Eidolon",
       "author": "Aliri",
       "imageUrl": "/assets/mod_prevs/eidolon.webp",
@@ -8464,12 +8794,12 @@
       "links": [
         {
           "version": "video",
-          "url": "https://www.youtube.com/playlist?list=PLsKsvMGDPGMUEMAlT8kpqZDPiJjMaAInL"
+          "url": "https://www.youtube.com/embed/videoseries?list=PLsKsvMGDPGMUEMAlT8kpqZDPiJjMaAInL"
         }
       ]
     },
     {
-      "id": 30013,
+      "id": 30014,
       "title": "Monitor",
       "author": "Aliri",
       "imageUrl": "/assets/mod_prevs/monitor.webp",
@@ -8479,12 +8809,12 @@
       "links": [
         {
           "version": "video",
-          "url": "https://www.youtube.com/playlist?list=PLsKsvMGDPGMWCnNPZoPxxQqQpCUqqJjRk"
+          "url": "https://www.youtube.com/embed/videoseries?list=PLsKsvMGDPGMWCnNPZoPxxQqQpCUqqJjRk"
         }
       ]
     },
     {
-      "id": 30014,
+      "id": 30015,
       "title": "Yuri & MC Visit the Gym",
       "author": "DOKItheJay",
       "imageUrl": "/assets/mod_prevs/yurimcvisitthegym.webp",
@@ -8499,7 +8829,7 @@
       ]
     },
     {
-      "id": 30015,
+      "id": 30016,
       "title": "Yuri Kidnaps MC",
       "author": "Mystery",
       "imageUrl": "/assets/mod_prevs/yurikidnapsmc.webp",
@@ -8514,7 +8844,7 @@
       ]
     },
     {
-      "id": 30016,
+      "id": 30017,
       "title": "The Girls Visit The Canary Islands",
       "author": "Yandere Gaming",
       "imageUrl": "/assets/mod_prevs/thegirlsvisitthecanaryislands.webp",
@@ -8529,7 +8859,7 @@
       ]
     },
     {
-      "id": 30017,
+      "id": 30018,
       "title": "A Month With Natsuki: The Full Month",
       "author": "TheBike",
       "imageUrl": "/assets/mod_prevs/amonthwithnatsukithefullmonth.webp",
@@ -8544,7 +8874,7 @@
       ]
     },
     {
-      "id": 30018,
+      "id": 30019,
       "title": "DDLC But What if Yuri wasn't shy or timid?",
       "author": "Myself",
       "imageUrl": "/assets/mod_prevs/ddlcbutwhatifyuriwasntshyortimid.webp",
@@ -8559,21 +8889,6 @@
       ]
     },
     {
-      "id": 30019,
-      "title": "Monika +18 version.",
-      "author": "I don't know",
-      "imageUrl": "/assets/mod_prevs/monika18version.webp",
-      "route": "monika18version",
-      "submittedBy": "Sashy",
-      "description": "I played the Natsuki nude version in Doki Doki Triple Trouble. For now, I want the Monika nude version. That character with stockings doesn't require much nude. It's enough if her legs are left.",
-      "links": [
-        {
-          "version": "video",
-          "url": "I'm using the Doki Doki Triple Trouble mod you shared. Will there be a monika version?"
-        }
-      ]
-    },
-    {
       "id": 30020,
       "title": "Doki Doki Literature Time! SEASON 1 - \"Fresh Start Arc\"",
       "author": "Main Authro",
@@ -8584,7 +8899,7 @@
       "links": [
         {
           "version": "video",
-          "url": "https://www.youtube.com/playlist?list=PLPP4K35jl-acjTXPQXUAm8PIXuSKJLjtS"
+          "url": "https://www.youtube.com/embed/videoseries?list=PLPP4K35jl-acjTXPQXUAm8PIXuSKJLjtS"
         }
       ]
     },

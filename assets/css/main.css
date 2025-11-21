@@ -1,11 +1,50 @@
+/* CSS Variables for consistent theming */
+:root {
+  --primary-pink: #ff69b4;
+  --primary-purple: #8e2de2;
+  --primary-dark-purple: #6a0dad;
+  --dark-bg: rgba(30, 30, 40, 0.9);
+  --darker-bg: rgba(20, 20, 30, 0.95);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-muted: #c0c0c0;
+  --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.2);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.3);
+  --shadow-strong: 0 15px 40px rgba(0, 0, 0, 0.4);
+  --glow-pink: 0 0 15px rgba(255, 105, 180, 0.5);
+  --glow-purple: 0 0 15px rgba(142, 45, 226, 0.5);
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --border-radius-small: 8px;
+  --border-radius-medium: 12px;
+  --border-radius-large: 20px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+
+/* Smooth scrolling for entire page */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Add proper spacing for the fixed header */
 body {
-  padding-top: 70px; /* Adjust based on header height */
+  padding-top: 70px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 @media (max-width: 768px) {
   body {
-    padding-top: 60px; /* Smaller padding for mobile */
+    padding-top: 60px;
   }
 }
 
@@ -13,4 +52,55 @@ body {
 main {
   position: relative;
   z-index: 1;
+  min-height: calc(100vh - 70px);
+}
+
+/* Improved focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary-pink);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-small);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, input, textarea, select {
+  transition: all var(--transition-normal);
+}
+
+/* Improved scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary-pink), var(--primary-purple));
+  border-radius: 5px;
+  transition: background var(--transition-normal);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff85c5, #a855f7);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-pink) rgba(0, 0, 0, 0.3);
 }
