@@ -482,9 +482,10 @@ body {
   transition: all 0.3s ease;
   opacity: 0; /* Start invisible to prevent flickering */
   transform: translateY(20px); /* Start slightly offset */
-  aspect-ratio: 16 / 9; /* 16:9 aspect ratio for mod thumbnails */
   cursor: pointer;
-  display: block; /* Ensure this is a block element */
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
 
 .showcase-item.animate-in {
@@ -500,9 +501,28 @@ body {
 
 .showcase-img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9; /* 16:9 aspect ratio for mod thumbnails */
   object-fit: cover;
-  display: block; /* Remove any potential inline spacing */
+  display: block;
+  flex-shrink: 0;
+}
+
+.showcase-title {
+  padding: 0.4rem 0.5rem;
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  line-clamp: 2; /* Standard property */
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 /* Community links section */

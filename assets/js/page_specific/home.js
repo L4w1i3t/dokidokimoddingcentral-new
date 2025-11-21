@@ -181,21 +181,21 @@ function loadRandomMods() {
 
   if (!showcaseElement) return;
 
-  // Preload all images before showing them
+  // Preload all images before showing them, with fallback to placeholder
   const preloadImages = (imageUrls) => {
     return Promise.all(
       imageUrls.map((url) => {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           const img = new Image();
-          img.onload = () => resolve(url);
-          img.onerror = () => reject(url);
+          img.onload = () => resolve({ url, success: true });
+          img.onerror = () => resolve({ url, success: false });
           img.src = url;
         });
       }),
     );
   };
 
-  fetch("data/mods.json")
+  fetch("data/mods_exp.json")
     .then((response) => response.json())
     .then((data) => {
       // Combine mods from different categories
@@ -243,7 +243,7 @@ function loadRandomMods() {
 
       // Preload images then show the grid
       preloadImages(imageUrls)
-        .then(() => {
+        .then((results) => {
           // Clear existing content
           showcaseElement.innerHTML = "";
 
@@ -260,8 +260,16 @@ function loadRandomMods() {
               showcaseItem.classList.add("showcase-item");
 
               const imageUrl = mod.imageUrl || "assets/gui/default_mod.webp";
-              // Only show the image, no title
-              showcaseItem.innerHTML = `<img src="${imageUrl}" alt="${mod.title}" class="showcase-img" onerror="this.src='assets/images/mod-placeholder.svg'">`;
+              const imageLoadSuccess = results[index]?.success;
+              
+              // Use placeholder if image failed to load
+              const finalImageUrl = imageLoadSuccess ? imageUrl : "assets/images/mod-placeholder.svg";
+              
+              // Show image and title underneath
+              showcaseItem.innerHTML = `
+                <img src="${finalImageUrl}" alt="${mod.title}" class="showcase-img" onerror="this.src='assets/images/mod-placeholder.svg'">
+                <span class="showcase-title">${mod.title}</span>
+              `;
 
               showcaseElement.appendChild(showcaseItem);
 
@@ -278,7 +286,7 @@ function loadRandomMods() {
           }, 50);
         })
         .catch((error) => {
-          console.error("Error preloading images:", error);
+          console.error("Error loading showcase:", error);
           showcaseElement.innerHTML =
             '<p class="no-mods">Failed to load mods</p>';
           showcaseElement.classList.add("loaded");
