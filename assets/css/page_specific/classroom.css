@@ -137,14 +137,6 @@ main {
   );
 }
 
-.classroom-box.playground::before {
-  background: linear-gradient(
-    135deg,
-    rgba(233, 30, 99, 0.9),
-    rgba(150, 20, 70, 0.9)
-  );
-}
-
 .classroom-box:hover {
   transform: translateY(-15px) scale(1.02);
   box-shadow: 

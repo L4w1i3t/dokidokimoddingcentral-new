@@ -30,44 +30,143 @@ document.addEventListener("DOMContentLoaded", function () {
         return response.json();
       })
       .then((data) => {
-        // Load data for each character
-        if (data.monika) {
-          characterStates.monika.data = data.monika || [];
-          characterStates.monika.filtered = [...characterStates.monika.data];
-          filterBySubcategory('monika');
-        }
-        if (data.sayori) {
-          characterStates.sayori.data = data.sayori || [];
-          characterStates.sayori.filtered = [...characterStates.sayori.data];
-          filterBySubcategory('sayori');
-        }
-        if (data.yuri) {
-          characterStates.yuri.data = data.yuri || [];
-          characterStates.yuri.filtered = [...characterStates.yuri.data];
-          filterBySubcategory('yuri');
-        }
-        if (data.natsuki) {
-          characterStates.natsuki.data = data.natsuki || [];
-          characterStates.natsuki.filtered = [...characterStates.natsuki.data];
-          filterBySubcategory('natsuki');
-        }
-        if (data.mc) {
-          characterStates.mc.data = data.mc || [];
-          characterStates.mc.filtered = [...characterStates.mc.data];
-          filterBySubcategory('mc');
+        // Process main characters (Monika, Sayori, Yuri, Natsuki)
+        if (data.main && Array.isArray(data.main)) {
+          data.main.forEach(character => {
+            const charName = character.name.toLowerCase();
+            if (characterStates[charName]) {
+              // Flatten all subcategories into a single array
+              const allAssets = [];
+              
+              // Process outfits
+              if (character.outfits && Array.isArray(character.outfits)) {
+                character.outfits.forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    allAssets.push({ ...item, category: 'outfits', characterName: character.name });
+                  }
+                });
+              }
+              
+              // Process poses
+              if (character.poses && Array.isArray(character.poses)) {
+                character.poses.forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    allAssets.push({ ...item, category: 'poses', characterName: character.name });
+                  }
+                });
+              }
+              
+              // Process expressions
+              if (character.expressions && Array.isArray(character.expressions)) {
+                character.expressions.forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    allAssets.push({ ...item, category: 'expressions', characterName: character.name });
+                  }
+                });
+              }
+              
+              // Process mpt_variants
+              if (character.mpt_variants && Array.isArray(character.mpt_variants)) {
+                character.mpt_variants.forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    allAssets.push({ ...item, category: 'mpt', characterName: character.name });
+                  }
+                });
+              }
+              
+              // Process other
+              if (character.other && Array.isArray(character.other)) {
+                character.other.forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    allAssets.push({ ...item, category: 'other', characterName: character.name });
+                  }
+                });
+              }
+              
+              characterStates[charName].data = allAssets;
+              characterStates[charName].filtered = [...allAssets];
+              filterBySubcategory(charName);
+            }
+          });
         }
         
-        // Load OC data
-        if (data.characters) {
-          characterStates.oc.data = data.characters || [];
-          characterStates.oc.filtered = [...characterStates.oc.data];
+        // Process MC (from original characters array)
+        if (data.original && Array.isArray(data.original)) {
+          const mcChar = data.original.find(char => char.name === 'MC');
+          if (mcChar) {
+            const allAssets = [];
+            
+            ['outfits', 'poses', 'expressions', 'mpt_variants', 'other'].forEach(subcatKey => {
+              const jsonKey = subcatKey === 'mpt_variants' ? 'mpt_variants' : subcatKey;
+              if (mcChar[jsonKey] && Array.isArray(mcChar[jsonKey])) {
+                mcChar[jsonKey].forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    allAssets.push({ 
+                      ...item, 
+                      category: subcatKey === 'mpt_variants' ? 'mpt' : subcatKey, 
+                      characterName: 'MC' 
+                    });
+                  }
+                });
+              }
+            });
+            
+            characterStates.mc.data = allAssets;
+            characterStates.mc.filtered = [...allAssets];
+            filterBySubcategory('mc');
+          }
+          
+          // Process other Original Characters (excluding MC)
+          const ocChars = data.original.filter(char => char.name !== 'MC');
+          const ocAssets = [];
+          
+          ocChars.forEach(character => {
+            ['outfits', 'poses', 'expressions', 'mpt_variants', 'other'].forEach(subcatKey => {
+              const jsonKey = subcatKey === 'mpt_variants' ? 'mpt_variants' : subcatKey;
+              if (character[jsonKey] && Array.isArray(character[jsonKey])) {
+                character[jsonKey].forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    ocAssets.push({ 
+                      ...item, 
+                      category: subcatKey === 'mpt_variants' ? 'mpt' : subcatKey,
+                      characterName: character.name,
+                      thumbnail_image: character.thumbnail_image
+                    });
+                  }
+                });
+              }
+            });
+          });
+          
+          characterStates.oc.data = ocAssets;
+          characterStates.oc.filtered = [...ocAssets];
           filterBySubcategory('oc');
         }
 
-        // Load Crossover data
-        if (data.crossover) {
-          characterStates.crossover.data = data.crossover || [];
-          characterStates.crossover.filtered = [...characterStates.crossover.data];
+        // Process Crossover characters
+        if (data.crossover && Array.isArray(data.crossover)) {
+          const crossoverAssets = [];
+          
+          data.crossover.forEach(character => {
+            ['outfits', 'poses', 'expressions', 'mpt_variants', 'other'].forEach(subcatKey => {
+              const jsonKey = subcatKey === 'mpt_variants' ? 'mpt_variants' : subcatKey;
+              if (character[jsonKey] && Array.isArray(character[jsonKey])) {
+                character[jsonKey].forEach(item => {
+                  if (item && Object.keys(item).length > 0) {
+                    crossoverAssets.push({ 
+                      ...item, 
+                      category: subcatKey === 'mpt_variants' ? 'mpt' : subcatKey,
+                      characterName: character.name,
+                      thumbnail_image: character.thumbnail_image
+                    });
+                  }
+                });
+              }
+            });
+          });
+          
+          characterStates.crossover.data = crossoverAssets;
+          characterStates.crossover.filtered = [...crossoverAssets];
           filterBySubcategory('crossover');
         }
 

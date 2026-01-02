@@ -1,253 +1,671 @@
 {
   "main": [
-    { "id": 40000, "name": "Monika", "image": "/assets/images/characters/m.png", "url": "/more/characters/monika" },
-    { "id": 40001, "name": "Sayori", "image": "/assets/images/characters/s.png", "url": "/more/characters/sayori"},
-    { "id": 40002, "name": "Yuri", "image": "/assets/images/characters/y.png", "url": "/more/characters/yuri"},
-    { "id": 40003, "name": "Natsuki", "image": "/assets/images/characters/n.png", "url": "/more/characters/natsuki"}
+    {
+      "id": 40000, "name": "Monika",
+      "thumbnail_image": "/assets/images/characters/m.png",
+      "outfits": [
+        {
+          "id": 40001,
+          "name": "Winter Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Cozy winter outfit for Monika",
+          "file": "/data/characters/monika_winter.zip"
+        },
+        {
+          "id": 40002,
+          "name": "Casual Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Casual everyday outfit",
+          "file": "/data/characters/monika_casual.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 40010,
+          "name": "Crossed Arms",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Confident crossed arms pose",
+          "file": "/data/characters/monika_crossed.zip"
+        },
+        {
+          "id": 40011,
+          "name": "Pointing",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Monika pointing forward",
+          "file": "/data/characters/monika_point.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 40020,
+          "name": "Happy Smile",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Bright happy smile",
+          "file": "/data/characters/monika_happy.zip"
+        },
+        {
+          "id": 40021,
+          "name": "Wink",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Playful wink expression",
+          "file": "/data/characters/monika_wink.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+          "id": 40030,
+          "name": "MPT Base Sprite",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "MPT Team",
+          "description": "Monika Plus Template variant",
+          "file": "/data/characters/monika_mpt.zip"
+        }
+      ],
+      "other": [
+        {
+          "id": 40040,
+          "name": "Chibi Monika",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Cute chibi version",
+          "file": "/data/characters/monika_chibi.zip"
+        }
+      ]
+    },
+
+    {
+      "id": 40001, "name": "Sayori",
+      "thumbnail_image": "/assets/images/characters/s.png",
+      "outfits": [
+        {
+          "id": 41001,
+          "name": "Pajamas",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Comfy pajama outfit",
+          "file": "/data/characters/sayori_pajamas.zip"
+        },
+        {
+          "id": 41002,
+          "name": "Raincoat",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Rainy day raincoat",
+          "file": "/data/characters/sayori_rain.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 41010,
+          "name": "Hands Behind Back",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Shy hands behind back pose",
+          "file": "/data/characters/sayori_behind.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 41020,
+          "name": "Cheerful",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Classic Sayori cheerfulness",
+          "file": "/data/characters/sayori_cheerful.zip"
+        },
+        {
+          "id": 41021,
+          "name": "Worried",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Concerned worried expression",
+          "file": "/data/characters/sayori_worried.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+          "id": 41030,
+          "name": "MPT Base Sprite",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "MPT Team",
+          "description": "Sayori Plus Template variant",
+          "file": "/data/characters/sayori_mpt.zip"
+        }
+      ],
+      "other": [
+        {
+          "id": 41040,
+          "name": "Chibi Sayori",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Adorable chibi version",
+          "file": "/data/characters/sayori_chibi.zip"
+        }
+      ]
+    },
+
+    {
+      "id": 40002, "name": "Yuri",
+      "thumbnail_image": "/assets/images/characters/y.png",
+      "outfits": [
+        {
+          "id": 42001,
+          "name": "Summer Dress",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Elegant summer dress",
+          "file": "/data/characters/yuri_summer.zip"
+        },
+        {
+          "id": 42002,
+          "name": "Gothic Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Dark gothic style outfit",
+          "file": "/data/characters/yuri_gothic.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 42010,
+          "name": "Reading Book",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Yuri holding an open book",
+          "file": "/data/characters/yuri_reading.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 42020,
+          "name": "Shy Smile",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Gentle shy smile",
+          "file": "/data/characters/yuri_shy.zip"
+        },
+        {
+          "id": 42021,
+          "name": "Excited",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Excited about literature",
+          "file": "/data/characters/yuri_excited.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+          "id": 42030,
+          "name": "MPT Base Sprite",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "MPT Team",
+          "description": "Yuri Plus Template variant",
+          "file": "/data/characters/yuri_mpt.zip"
+        }
+      ],
+      "other": [
+        {
+          "id": 42040,
+          "name": "Chibi Yuri",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Cute chibi version",
+          "file": "/data/characters/yuri_chibi.zip"
+        }
+      ]
+    },
+
+    {
+      "id": 40003, "name": "Natsuki",
+      "thumbnail_image": "/assets/images/characters/n.png",
+      "outfits": [
+        {
+          "id": 43001,
+          "name": "Chef Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Baking outfit with apron",
+          "file": "/data/characters/natsuki_chef.zip"
+        },
+        {
+          "id": 43002,
+          "name": "Cat Pajamas",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Cute cat-themed pajamas",
+          "file": "/data/characters/natsuki_cat.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 43010,
+          "name": "Hands on Hips",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Confident hands on hips",
+          "file": "/data/characters/natsuki_hips.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 43020,
+          "name": "Pout",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Classic Natsuki pout",
+          "file": "/data/characters/natsuki_pout.zip"
+        },
+        {
+          "id": 43021,
+          "name": "Tsundere Blush",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Blushing tsundere expression",
+          "file": "/data/characters/natsuki_blush.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+          "id": 43030,
+          "name": "MPT Base Sprite",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "MPT Team",
+          "description": "Natsuki Plus Template variant",
+          "file": "/data/characters/natsuki_mpt.zip"
+        }
+      ],
+      "other": [
+        {
+          "id": 43040,
+          "name": "Chibi Natsuki",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Smol chibi version",
+          "file": "/data/characters/natsuki_chibi.zip"
+        }
+      ]
+    }
   ],
+
   "original": [
-    { "id": 50000, "name": "MC", "image": "/assets/images/characters/mc.png", "url": "/more/characters/mc" },
-    { "id": 50001, "name": "Kotonoha", "image": "/assets/images/characters/koto.png", "url": "/more/characters/kotonoha" },
-    { "id": 50002, "name": "Mio", "image": "/assets/images/characters/mio.png", "url": "/more/characters/mio" },
-    { "id": 50003, "name": "Kiyomi", "image": "/assets/images/characters/kiyomi.png", "url": "/more/characters/kiyomi" }
+    {
+      "id": 50000, "name": "MC",
+      "thumbnail_image": "/assets/images/characters/mc.png",
+      "outfits": [
+        {
+          "id": 50001,
+          "name": "Casual Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "MC casual outfit sprite",
+          "file": "/data/characters/mc_casual.zip"
+        },
+        {
+          "id": 50002,
+          "name": "Formal Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "MC in formal attire",
+          "file": "/data/characters/mc_formal.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 50010,
+          "name": "Neutral Stance",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Basic neutral pose",
+          "file": "/data/characters/mc_neutral.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 50020,
+          "name": "Nervous",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Nervous expression",
+          "file": "/data/characters/mc_nervous.zip"
+        },
+        {
+          "id": 50021,
+          "name": "Confident",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Confident smile",
+          "file": "/data/characters/mc_confident.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+          "id": 50030,
+          "name": "MPT Base Sprite",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "MPT Team",
+          "description": "MC Plus Template variant",
+          "file": "/data/characters/mc_mpt.zip"
+        }
+      ],
+      "other": [
+        {
+          "id": 50040,
+          "name": "Chibi MC",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Sample Artist",
+          "description": "Chibi MC sprite",
+          "file": "/data/characters/mc_chibi.zip"
+        }
+      ]
+    },
+
+    {
+      "id": 50001, "name": "Kotonoha",
+      "thumbnail_image": "/assets/images/characters/koto.png",
+      "outfits": [
+        {
+          "id": 51001,
+          "name": "School Uniform",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Kotonoha school uniform",
+          "file": "/data/characters/koto_uniform.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 51010,
+          "name": "Greeting Wave",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Friendly greeting wave",
+          "file": "/data/characters/koto_wave.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 51020,
+          "name": "Gentle Smile",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Warm gentle smile",
+          "file": "/data/characters/koto_smile.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+        }
+      ],
+      "other": [
+        {
+        }
+      ]
+    },
+
+    {
+      "id": 50002, "name": "Mio",
+      "thumbnail_image": "/assets/images/characters/mio.png",
+      "outfits": [
+        {
+          "id": 52001,
+          "name": "Sports Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Athletic sports outfit",
+          "file": "/data/characters/mio_sports.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 52010,
+          "name": "Energetic Pose",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Energetic dynamic pose",
+          "file": "/data/characters/mio_energetic.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 52020,
+          "name": "Determined",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Determined expression",
+          "file": "/data/characters/mio_determined.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+        }
+      ],
+      "other": [
+        {
+        }
+      ]
+    },
+
+    {
+      "id": 50003, "name": "Kiyomi",
+      "thumbnail_image": "/assets/images/characters/kiyomi.png",
+      "outfits": [
+        {
+          "id": 53001,
+          "name": "Traditional Kimono",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Beautiful traditional kimono",
+          "file": "/data/characters/kiyomi_kimono.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 53010,
+          "name": "Elegant Bow",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Graceful bow pose",
+          "file": "/data/characters/kiyomi_bow.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 53020,
+          "name": "Serene",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "OC Artist",
+          "description": "Peaceful serene expression",
+          "file": "/data/characters/kiyomi_serene.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+        }
+      ],
+      "other": [
+        {
+        }
+      ]
+    }
   ],
+
   "crossover": [
     {
-      "id": "crossover_char_outfit",
-      "name": "Crossover Character - School Uniform",
-      "category": "outfits",
-      "author": "Community",
-      "type": "Crossover",
-      "gender": "Female",
-      "description": "A crossover character from another series in school uniform.",
-      "preview_image": "koto.png",
-      "download_link": "#",
-      "keywords": ["Crossover", "Character", "Outfit"]
+      "id": 80000, "name": "Noelle",
+      "thumbnail_image": "/assets/images/characters/noelle.png",
+      "outfits": [
+        {
+          "id": 80001,
+          "name": "Deltarune Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Noelle's original outfit from Deltarune",
+          "file": "/data/characters/noelle_default.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 80010,
+          "name": "Shy Pose",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Noelle's characteristic shy pose",
+          "file": "/data/characters/noelle_shy.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 80020,
+          "name": "Blushing",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Noelle blushing expression",
+          "file": "/data/characters/noelle_blush.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+        }
+      ],
+      "other": [
+        {
+        }
+      ]
     },
+
     {
-      "id": "crossover_char_pose",
-      "name": "Crossover Character - Happy Pose",
-      "category": "poses",
-      "author": "Community",
-      "type": "Crossover",
-      "gender": "Female",
-      "description": "A cheerful pose for a crossover character.",
-      "preview_image": "mio.png",
-      "download_link": "#",
-      "keywords": ["Crossover", "Character", "Pose"]
+      "id": 80001, "name": "Tactical Cupcakes",
+      "thumbnail_image": "/assets/images/characters/tc.png",
+      "outfits": [
+        {
+          "id": 81001,
+          "name": "Tactical Gear",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Military tactical outfit",
+          "file": "/data/characters/tc_tactical.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 81010,
+          "name": "Combat Ready",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Ready for action pose",
+          "file": "/data/characters/tc_combat.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 81020,
+          "name": "Determined",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Serious determined face",
+          "file": "/data/characters/tc_determined.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+        }
+      ],
+      "other": [
+        {
+        }
+      ]
     },
+
     {
-      "id": "crossover_char_expr",
-      "name": "Crossover Character - Surprised Expression",
-      "category": "expressions",
-      "author": "Community",
-      "type": "Crossover",
-      "gender": "Female",
-      "description": "A surprised expression for a crossover character.",
-      "preview_image": "kiyomi.png",
-      "download_link": "#",
-      "keywords": ["Crossover", "Character", "Expression"]
-    }
-  ],
-  "monika": [
-    {
-      "id": "monika-outfit-casual",
-      "name": "Casual Outfit",
-      "category": "outfits",
-      "description": "Monika's casual everyday outfit",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/monika/monika_casual.zip",
-      "author": "DDMC Team"
+      "id": 80002, "name": "Saul Goodman",
+      "thumbnail_image": "/assets/images/characters/saul.png",
+      "outfits": [
+        {
+          "id": 82001,
+          "name": "Lawyer Suit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Saul's signature lawyer suit",
+          "file": "/data/characters/saul_suit.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 82010,
+          "name": "Pointing",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Better Call Saul pointing pose",
+          "file": "/data/characters/saul_point.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 82020,
+          "name": "Confident Smirk",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "Saul's confident lawyer smirk",
+          "file": "/data/characters/saul_smirk.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+        }
+      ],
+      "other": [
+        {
+        }
+      ]
     },
+
     {
-      "id": "monika-pose-happy",
-      "name": "Happy Pose",
-      "category": "poses",
-      "description": "Monika with a cheerful expression and pose",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/monika/monika_happy.zip",
-      "author": "DDMC Team"
-    },
-    {
-      "id": "monika-expr-smile",
-      "name": "Smile Expression",
-      "category": "expressions",
-      "description": "Monika's warm smile",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/monika/monika_smile.zip",
-      "author": "DDMC Team"
-    },
-    {
-      "id": "monika-mpt-chibi",
-      "name": "Chibi Variant",
-      "category": "mpt",
-      "description": "Chibi-style Monika sprite",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/monika/monika_chibi.zip",
-      "author": "DDMC Team"
-    },
-    {
-      "id": "monika-other-accessory",
-      "name": "Hair Bow Accessory",
-      "category": "other",
-      "description": "Additional hair accessory for Monika",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/monika/monika_bow.zip",
-      "author": "DDMC Team"
-    }
-  ],
-  "sayori": [
-    {
-      "id": "sayori-outfit-casual",
-      "name": "Casual Outfit",
-      "category": "outfits",
-      "description": "Sayori's casual everyday outfit",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/sayori/sayori_casual.zip",
-      "author": "DDMC Team"
-    },
-    {
-      "id": "sayori-pose-happy",
-      "name": "Happy Pose",
-      "category": "poses",
-      "description": "Sayori with a cheerful expression and pose",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/sayori/sayori_happy.zip",
-      "author": "DDMC Team"
-    }
-  ],
-  "yuri": [
-    {
-      "id": "yuri-outfit-casual",
-      "name": "Casual Outfit",
-      "category": "outfits",
-      "description": "Yuri's casual everyday outfit",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/yuri/yuri_casual.zip",
-      "author": "DDMC Team"
-    },
-    {
-      "id": "yuri-pose-shy",
-      "name": "Shy Pose",
-      "category": "poses",
-      "description": "Yuri with a shy expression and pose",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/yuri/yuri_shy.zip",
-      "author": "DDMC Team"
-    }
-  ],
-  "natsuki": [
-    {
-      "id": "natsuki-outfit-casual",
-      "name": "Casual Outfit",
-      "category": "outfits",
-      "description": "Natsuki's casual everyday outfit",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/natsuki/natsuki_casual.zip",
-      "author": "DDMC Team"
-    },
-    {
-      "id": "natsuki-pose-angry",
-      "name": "Angry Pose",
-      "category": "poses",
-      "description": "Natsuki with an angry expression and pose",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/natsuki/natsuki_angry.zip",
-      "author": "DDMC Team"
-    }
-  ],
-  "mc": [
-    {
-      "id": "mc-outfit-uniform",
-      "name": "School Uniform",
-      "category": "outfits",
-      "description": "MC's school uniform",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/mc/mc_uniform.zip",
-      "author": "DDMC Team"
-    },
-    {
-      "id": "mc-pose-neutral",
-      "name": "Neutral Pose",
-      "category": "poses",
-      "description": "MC with a neutral expression",
-      "image": "/assets/images/mod-placeholder.svg",
-      "file": "/data/characters/mc/mc_neutral.zip",
-      "author": "DDMC Team"
-    }
-  ],
-  "characters": [
-    {
-      "id": "char_kotonoha_outfit",
-      "name": "Kotonoha - Casual Outfit",
-      "category": "outfits",
-      "author": "Community",
-      "type": "Original Character",
-      "gender": "Female",
-      "description": "A kind and gentle original character's casual outfit.",
-      "preview_image": "koto.png",
-      "download_link": "#",
-      "keywords": ["Original", "OC", "Outfit"]
-    },
-    {
-      "id": "char_kotonoha_pose",
-      "name": "Kotonoha - Happy Pose",
-      "category": "poses",
-      "author": "Community",
-      "type": "Original Character",
-      "gender": "Female",
-      "description": "A cheerful pose for Kotonoha.",
-      "preview_image": "koto.png",
-      "download_link": "#",
-      "keywords": ["Original", "OC", "Pose"]
-    },
-    {
-      "id": "char_mio_outfit",
-      "name": "Mio - School Uniform",
-      "category": "outfits",
-      "author": "Community",
-      "type": "Original Character",
-      "gender": "Female",
-      "description": "An energetic character's school uniform.",
-      "preview_image": "mio.png",
-      "download_link": "#",
-      "keywords": ["Original", "OC", "Outfit"]
-    },
-    {
-      "id": "char_kiyomi_expr",
-      "name": "Kiyomi - Shy Expression",
-      "category": "expressions",
-      "author": "Community",
-      "type": "Original Character",
-      "gender": "Female",
-      "description": "A mysterious character's shy expression.",
-      "preview_image": "kiyomi.png",
-      "download_link": "#",
-      "keywords": ["Original", "OC", "Expression"]
-    },
-    {
-      "id": "char_oc_mpt",
-      "name": "OC - Chibi Variant",
-      "category": "mpt",
-      "author": "Community",
-      "type": "Original Character",
-      "gender": "Female",
-      "description": "MPT chibi variant for an original character.",
-      "preview_image": "mio.png",
-      "download_link": "#",
-      "keywords": ["Original", "OC", "MPT", "Chibi"]
-    },
-    {
-      "id": "char_oc_other",
-      "name": "OC - Accessory Pack",
-      "category": "other",
-      "author": "Community",
-      "type": "Original Character",
-      "gender": "Female",
-      "description": "Additional accessories for original characters.",
-      "preview_image": "kiyomi.png",
-      "download_link": "#",
-      "keywords": ["Original", "OC", "Accessories"]
+      "id": 80003, "name": "BF",
+      "thumbnail_image": "/assets/images/characters/bf.png",
+      "outfits": [
+        {
+          "id": 83001,
+          "name": "Default Outfit",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "BF's default FNF outfit",
+          "file": "/data/characters/bf_default.zip"
+        }
+      ],
+      "poses": [
+        {
+          "id": 83010,
+          "name": "Mic Pose",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "BF holding microphone",
+          "file": "/data/characters/bf_mic.zip"
+        }
+      ],
+      "expressions": [
+        {
+          "id": 83020,
+          "name": "Beep Boop",
+          "image": "/assets/images/mod-placeholder.svg",
+          "author": "Crossover Artist",
+          "description": "BF's signature expression",
+          "file": "/data/characters/bf_beep.zip"
+        }
+      ],
+      "mpt_variants": [
+        {
+        }
+      ],
+      "other": [
+        {
+        }
+      ]
     }
   ]
 }
