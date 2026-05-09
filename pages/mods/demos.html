@@ -25,19 +25,21 @@
               type="text"
               id="mod-search"
               placeholder="Search mod titles..."
+              aria-label="Search demo mod titles"
             />
-            <button id="search-button">Search</button>
+            <button id="search-button" type="button">Search</button>
           </div>
           <div class="search-box">
             <input
               type="text"
               id="author-search"
               placeholder="Search by author..."
+              aria-label="Search demo mods by author"
             />
-            <button id="author-search-button">Search</button>
+            <button id="author-search-button" type="button">Search</button>
           </div>
           <div class="filter-container">
-            <select id="sort-filter">
+            <select id="sort-filter" aria-label="Sort demo mods">
               <option value="newest">Newest First</option>
               <option value="oldest">Oldest First</option>
               <option value="az">Title (A-Z)</option>
@@ -80,6 +82,7 @@
         "author-search-button",
       );
       const sortFilter = document.getElementById("sort-filter");
+      const debouncedFilterAndSortMods = debounce(filterAndSortMods);
 
       // Function to render mods on the current page
       function renderPage(pageNumber) {
@@ -96,23 +99,7 @@
       `;
         } else {
           modsToShow.forEach((mod) => {
-            const modCard = document.createElement("a");
-            modCard.classList.add("mod-card");
-            // Add experimental parameter if we're in experimental mode
-            const expParam = isExperimentalMode() ? "&exp=true" : "";
-            modCard.href = `./mod.html?cat=demos&route=${mod.route}${expParam}`;
-            modCard.innerHTML = `
-          <div class="mod-image-container">
-            <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" onerror="this.src='../../assets/images/nothumbnail.webp'" />
-          </div>
-          <div class="mod-details">
-            <h2>${mod.title}</h2>
-            <div class="mod-meta">
-              ${renderAuthorLabel(mod)}
-            </div>
-          </div>
-        `;
-            container.appendChild(modCard);
+            container.appendChild(createModCatalogCard(mod, "demos"));
           });
         }
 
@@ -130,8 +117,8 @@
 
         // Filter by search term and author
         filteredMods = allMods.filter((mod) => {
-          const matchesTitle =
-            searchTerm === "" || mod.title.toLowerCase().includes(searchTerm);
+          const title = String(mod.title || "").toLowerCase();
+          const matchesTitle = searchTerm === "" || title.includes(searchTerm);
           const matchesAuthor =
             authorTerm === "" || getAuthorSearchText(mod).includes(authorTerm);
           return matchesTitle && matchesAuthor;
@@ -149,10 +136,14 @@
             // Do nothing as filteredMods is already in the right order
             break;
           case "az":
-            filteredMods.sort((a, b) => a.title.localeCompare(b.title));
+            filteredMods.sort((a, b) =>
+              String(a.title || "").localeCompare(String(b.title || "")),
+            );
             break;
           case "za":
-            filteredMods.sort((a, b) => b.title.localeCompare(a.title));
+            filteredMods.sort((a, b) =>
+              String(b.title || "").localeCompare(String(a.title || "")),
+            );
             break;
           case "author-az":
             filteredMods.sort((a, b) =>
@@ -184,10 +175,23 @@
           // which is just the reverse of the original order
           filteredMods = [...allMods].reverse();
 
-          totalPages = Math.ceil(filteredMods.length / itemsPerPage);
+          totalPages = Math.max(
+            1,
+            Math.ceil(filteredMods.length / itemsPerPage),
+          );
           renderPage(currentPage);
         })
-        .catch((error) => console.error("Error loading mods:", error));
+        .catch((error) => {
+          console.error("Error loading mods:", error);
+          container.innerHTML = `
+        <div class="no-results">
+          <p>Mods could not be loaded right now. Please try again later.</p>
+        </div>
+      `;
+          pageInfo.textContent = "Page 1 of 1";
+          prevBtn.disabled = true;
+          nextBtn.disabled = true;
+        });
 
       // Event listeners
       prevBtn.addEventListener("click", () => {
@@ -205,6 +209,7 @@
       });
 
       searchButton.addEventListener("click", filterAndSortMods);
+      searchInput.addEventListener("input", debouncedFilterAndSortMods);
       searchInput.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
           filterAndSortMods();
@@ -212,6 +217,7 @@
       });
 
       authorSearchButton.addEventListener("click", filterAndSortMods);
+      authorInput.addEventListener("input", debouncedFilterAndSortMods);
       authorInput.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
           filterAndSortMods();

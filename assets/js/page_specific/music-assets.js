@@ -16,13 +16,26 @@ document.addEventListener("DOMContentLoaded", function () {
   let sfxCategories = new Set(); // Store unique SFX categories
   let currentBgmGenre = "all"; // Track current BGM genre filter selection
   let currentSfxCategory = "all"; // Track current SFX category filter selection
-  
+
   // Web Audio API for visualizer
   let audioContext = null;
   let analyser = null;
   let audioSource = null;
   let animationId = null;
   let dataArray = null;
+
+  function getTrackKey(type, item) {
+    return `${type}-${item.id}-${item.file || item.name || "unknown"}`;
+  }
+
+  function debounce(callback, delay = 180) {
+    let timeoutId;
+
+    return function (...args) {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => callback.apply(this, args), delay);
+    };
+  }
 
   // DOM Elements
   const subcategoryBtns = document.querySelectorAll(".subcategory-btn");
@@ -64,7 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
         extractBgmGenres();
         populateBgmGenreFilter();
 
-        totalBgmPages = Math.ceil(filteredBgmData.length / ITEMS_PER_PAGE);
+        totalBgmPages = Math.max(
+          1,
+          Math.ceil(filteredBgmData.length / ITEMS_PER_PAGE),
+        );
         renderBgmGrid();
         updateBgmPagination();
       })
@@ -93,7 +109,10 @@ document.addEventListener("DOMContentLoaded", function () {
         extractSfxCategories();
         populateSfxCategoryFilter();
 
-        totalSfxPages = Math.ceil(filteredSfxData.length / ITEMS_PER_PAGE);
+        totalSfxPages = Math.max(
+          1,
+          Math.ceil(filteredSfxData.length / ITEMS_PER_PAGE),
+        );
         renderSfxGrid();
         updateSfxPagination();
       })
@@ -224,6 +243,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Tab switching functionality
   subcategoryBtns.forEach((button) => {
+    button.type = "button";
+
     button.addEventListener("click", () => {
       const target = button.getAttribute("data-target");
 
@@ -253,17 +274,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     return barsHTML;
   }
-  
+
   // Initialize Web Audio API for real-time audio visualization
   function initAudioContext() {
     if (!audioContext) {
       audioContext = new (window.AudioContext || window.webkitAudioContext)();
       analyser = audioContext.createAnalyser();
       analyser.fftSize = 64; // Lower value = fewer, more responsive bars
-      
+
       const bufferLength = analyser.frequencyBinCount;
       dataArray = new Uint8Array(bufferLength);
-      
+
       // Connect audio player to analyser
       if (!audioSource) {
         audioSource = audioContext.createMediaElementSource(audioPlayer);
@@ -271,44 +292,46 @@ document.addEventListener("DOMContentLoaded", function () {
         analyser.connect(audioContext.destination);
       }
     }
-    
+
     // Resume context if it's suspended (autoplay policy)
-    if (audioContext.state === 'suspended') {
+    if (audioContext.state === "suspended") {
       audioContext.resume();
     }
   }
-  
+
   // Animate visualizer bars based on audio frequencies
   function animateVisualizer(visualizerBars) {
     if (!analyser || !dataArray) return;
-    
+
     analyser.getByteFrequencyData(dataArray);
-    
-    const bars = visualizerBars.querySelectorAll('.visualizer-bar');
+
+    const bars = visualizerBars.querySelectorAll(".visualizer-bar");
     const barCount = bars.length;
     const step = Math.floor(dataArray.length / barCount);
-    
+
     bars.forEach((bar, index) => {
       // Get frequency data for this bar
       const dataIndex = index * step;
       const value = dataArray[dataIndex];
-      
+
       // Map the frequency value (0-255) to bar height (10-60px)
       const minHeight = 10;
       const maxHeight = 60;
       const height = minHeight + (value / 255) * (maxHeight - minHeight);
-      
+
       bar.style.height = `${height}px`;
-      
+
       // Optional: Add color intensity based on frequency
       const intensity = value / 255;
-      bar.style.opacity = 0.6 + (intensity * 0.4);
+      bar.style.opacity = 0.6 + intensity * 0.4;
     });
-    
+
     // Continue animation
-    animationId = requestAnimationFrame(() => animateVisualizer(visualizerBars));
+    animationId = requestAnimationFrame(() =>
+      animateVisualizer(visualizerBars),
+    );
   }
-  
+
   // Stop visualizer animation
   function stopVisualizer() {
     if (animationId) {
@@ -400,6 +423,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const card = document.createElement("div");
       card.className = "music-card";
       card.setAttribute("data-id", item.id);
+      const trackKey = getTrackKey("bgm", item);
+      card.setAttribute("data-track-key", trackKey);
 
       // Default to "Unknown" until we can detect actual duration
       let lengthDisplay = "Unknown Length";
@@ -410,7 +435,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Check if this card is currently playing
-      const isPlaying = currentlyPlaying === item.id;
+      const isPlaying = currentlyPlaying === trackKey;
       const playButtonClass = isPlaying ? "play-button playing" : "play-button";
       const playButtonText = isPlaying ? "Stop" : "Play";
       const playButtonIcon = isPlaying
@@ -452,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const playBtn = card.querySelector(".play-button");
       const visualizerBars = card.querySelector(".visualizer-bars");
       playBtn.addEventListener("click", () => {
-        playMusic(item, playBtn, visualizerBars);
+        playMusic(item, trackKey, playBtn, visualizerBars);
       });
 
       // Disable download button if there's no file
@@ -482,14 +507,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Function to handle music playback
-  function playMusic(item, playButton, visualizerBars) {
+  function playMusic(item, trackKey, playButton, visualizerBars) {
     // Initialize audio context on first user interaction
     if (!audioContext) {
       initAudioContext();
     }
-    
+
     // If this item is already playing, stop it
-    if (currentlyPlaying === item.id) {
+    if (currentlyPlaying === trackKey) {
       audioPlayer.pause();
       audioPlayer.currentTime = 0;
       currentlyPlaying = null;
@@ -504,7 +529,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentlyPlaying !== null) {
       // Find the previously playing card and update its UI
       const previousCard = document.querySelector(
-        `.music-card[data-id="${currentlyPlaying}"]`,
+        `.music-card[data-track-key="${currentlyPlaying}"]`,
       );
       if (previousCard) {
         const previousPlayBtn = previousCard.querySelector(".play-button");
@@ -529,11 +554,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       });
 
-      currentlyPlaying = item.id;
+      currentlyPlaying = trackKey;
 
       // Update UI elements for this card only
       updateCardPlayState(playButton, visualizerBars, true);
-      
+
       // Start real-time audio visualization
       animateVisualizer(visualizerBars);
 
@@ -549,7 +574,7 @@ document.addEventListener("DOMContentLoaded", function () {
         audioPlayer.addEventListener("loadedmetadata", function onMetadata() {
           const duration = audioPlayer.duration;
           const card = document.querySelector(
-            `.music-card[data-id="${item.id}"]`,
+            `.music-card[data-track-key="${trackKey}"]`,
           );
           if (card) {
             const lengthSpan = card.querySelector(".music-length");
@@ -563,7 +588,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     } else {
-      console.log(`No audio file available for: ${item.name}`);
       alert("This audio file is not available for playback.");
     }
   }
@@ -628,8 +652,11 @@ document.addEventListener("DOMContentLoaded", function () {
               " sec"
             : item.length_seconds + " sec";
       } else {
-        lengthDisplay = "< 1 sec";
+        lengthDisplay = "&lt; 1 sec";
       }
+
+      const hasFile = Boolean(item.file);
+      const sfxFilePath = hasFile ? `/data/sfx/${item.file}` : "";
 
       card.innerHTML = `
                 <div class="visualizer">
@@ -645,13 +672,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         <span class="music-length">${lengthDisplay}</span>
                     </div>
                     <div class="music-controls">
-                        <button class="play-button">
+                        <button class="play-button" ${hasFile ? "" : 'disabled title="Audio not available"'}>
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
                             </svg>
                             Play
                         </button>
-                        <a href="#" class="download-button">
+                        <a ${hasFile ? `href="${sfxFilePath}" download="${item.file}"` : 'aria-disabled="true"'} class="download-button${hasFile ? "" : " disabled"}">
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
@@ -666,11 +693,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Add event listeners for play button
       const playBtn = card.querySelector(".play-button");
-      playBtn.addEventListener("click", () => {
-        console.log(`Playing sound effect: ${item.name}`);
-        // Here you would implement actual audio playback functionality
-      });
+      if (hasFile) {
+        playBtn.addEventListener("click", () => {
+          playSoundEffect(sfxFilePath, playBtn);
+        });
+      }
     });
+  }
+
+  function playSoundEffect(filePath, playButton) {
+    if (currentlyPlaying !== null) {
+      const previousCard = document.querySelector(
+        `.music-card[data-track-key="${currentlyPlaying}"]`,
+      );
+      if (previousCard) {
+        updateCardPlayState(
+          previousCard.querySelector(".play-button"),
+          previousCard.querySelector(".visualizer-bars"),
+          false,
+        );
+      }
+      currentlyPlaying = null;
+      stopVisualizer();
+    }
+
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
+    audioPlayer.src = filePath;
+    playButton.classList.add("playing");
+    audioPlayer.play().catch((error) => {
+      console.error("Error playing sound effect:", error);
+      playButton.classList.remove("playing");
+    });
+    audioPlayer.onended = function () {
+      playButton.classList.remove("playing");
+    };
   }
 
   // Update BGM pagination info and buttons
@@ -706,10 +763,13 @@ document.addEventListener("DOMContentLoaded", function () {
     currentBgmGenre = genre;
 
     filteredBgmData = bgmData.filter((item) => {
+      const itemName = String(item.name || "").toLowerCase();
+      const itemAuthor = String(item.author || "").toLowerCase();
+      const selectedGenre = genre.toLowerCase();
       const matchesSearch =
         searchTerm === "" ||
-        item.name.toLowerCase().includes(searchTerm) ||
-        item.author.toLowerCase().includes(searchTerm);
+        itemName.includes(searchTerm) ||
+        itemAuthor.includes(searchTerm);
 
       // Check if any genre matches the filter
       let matchesGenre = genre === "all";
@@ -721,18 +781,19 @@ document.addEventListener("DOMContentLoaded", function () {
           const genreList = item.genre.split(separators);
 
           matchesGenre = genreList.some(
-            (g) => g.trim().toLowerCase() === genre.toLowerCase(),
+            (g) => g.trim().toLowerCase() === selectedGenre,
           );
         } else {
           // Single genre
-          matchesGenre = item.genre.toLowerCase() === genre.toLowerCase();
+          matchesGenre = String(item.genre).toLowerCase() === selectedGenre;
         }
       }
 
       // Also check keywords if available
       if (!matchesGenre && item.keywords && Array.isArray(item.keywords)) {
         matchesGenre = item.keywords.some(
-          (keyword) => keyword && keyword.toLowerCase() === genre.toLowerCase(),
+          (keyword) =>
+            keyword && String(keyword).toLowerCase() === selectedGenre,
         );
       }
 
@@ -751,24 +812,27 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSfxCategory = category;
 
     filteredSfxData = sfxData.filter((item) => {
+      const itemName = String(item.name || "").toLowerCase();
+      const itemAuthor = String(item.author || "").toLowerCase();
+      const selectedCategory = category.toLowerCase();
       const matchesSearch =
         searchTerm === "" ||
-        item.name.toLowerCase().includes(searchTerm) ||
-        item.author.toLowerCase().includes(searchTerm);
+        itemName.includes(searchTerm) ||
+        itemAuthor.includes(searchTerm);
 
       // Check if category matches
       let matchesCategory = category === "all";
 
       if (!matchesCategory && item.category) {
         matchesCategory =
-          item.category.toLowerCase() === category.toLowerCase();
+          String(item.category).toLowerCase() === selectedCategory;
       }
 
       // Also check keywords if available
       if (!matchesCategory && item.keywords && Array.isArray(item.keywords)) {
         matchesCategory = item.keywords.some(
           (keyword) =>
-            keyword && keyword.toLowerCase() === category.toLowerCase(),
+            keyword && String(keyword).toLowerCase() === selectedCategory,
         );
       }
 
@@ -813,7 +877,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (sfxGrid) sfxObserver.observe(sfxGrid, sfxObserverConfig);
   } // Event listeners
   // BGM search and filter
+  const debouncedFilterBgmData = debounce(filterBgmData);
+  const debouncedFilterSfxData = debounce(filterSfxData);
+
   bgmSearchBtn.addEventListener("click", filterBgmData);
+  bgmSearch.addEventListener("input", debouncedFilterBgmData);
   bgmSearch.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
       filterBgmData();
@@ -856,6 +924,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }); // SFX search and filter
   sfxSearchBtn.addEventListener("click", filterSfxData);
+  sfxSearch.addEventListener("input", debouncedFilterSfxData);
   sfxSearch.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
       filterSfxData();

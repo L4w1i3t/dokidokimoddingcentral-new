@@ -18,6 +18,28 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentPage = 1;
   let totalPages = 1;
 
+  function debounce(callback, delay = 180) {
+    let timeoutId;
+
+    return function (...args) {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => callback.apply(this, args), delay);
+    };
+  }
+
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function hasUsableUrl(url) {
+    return Boolean(url && url.trim() && url.trim() !== "#");
+  }
+
   // Fetch addons data
   fetch("/data/addons.json")
     .then((response) => {
@@ -29,7 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       allAddons = data.addons || [];
       filteredAddons = [...allAddons];
-      totalPages = Math.ceil(filteredAddons.length / ITEMS_PER_PAGE);
+      totalPages = Math.max(
+        1,
+        Math.ceil(filteredAddons.length / ITEMS_PER_PAGE),
+      );
 
       renderAddons();
       updatePagination();
@@ -41,6 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>Failed to load addons. Please try again later.</p>
                 </div>
             `;
+      pageInfo.textContent = "Page 1 of 1";
+      prevButton.disabled = true;
+      nextButton.disabled = true;
     });
 
   // Function to render addons based on current page and filters
@@ -64,16 +92,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Render each addon
     addonsToShow.forEach((addon) => {
       const hasImage = addon.imageUrl && addon.imageUrl.trim() !== "";
+      const hasDownload = hasUsableUrl(addon.downloadUrl);
+      const compatibility = Array.isArray(addon.compatibility)
+        ? addon.compatibility
+        : [];
       const addonCardEl = document.createElement("div");
       addonCardEl.className = `addon-card${!hasImage ? " no-image" : ""}`;
       addonCardEl.setAttribute("data-category", addon.category);
-      addonCardEl.setAttribute(
-        "data-compatibility",
-        addon.compatibility.join(" "),
-      );
+      addonCardEl.setAttribute("data-compatibility", compatibility.join(" "));
 
       // Format the compatibility string
-      const compatibilityString = addon.compatibility
+      const compatibilityString = compatibility
         .map((version) => `Ren'Py ${version}.x`)
         .join(", ");
 
@@ -84,20 +113,24 @@ document.addEventListener("DOMContentLoaded", function () {
                       hasImage
                         ? `
                         <div class="addon-image">
-                            <img src="${addon.imageUrl}" alt="${addon.title}">
+                            <img src="${escapeHtml(addon.imageUrl)}" alt="${escapeHtml(addon.title)}">
                         </div>
                     `
                         : ""
                     }
                     <div class="addon-details${!hasImage ? " full-width" : ""}">
-                        <h2>${addon.title}</h2>
+                        <h2>${escapeHtml(addon.title)}</h2>
                         <div class="addon-meta">
-                            <span class="addon-category">${getCategoryName(addon.category)}</span>
-                            <span class="addon-compatibility">${compatibilityString}</span>
+                            <span class="addon-category">${escapeHtml(getCategoryName(addon.category))}</span>
+                            <span class="addon-compatibility">${escapeHtml(compatibilityString || "Compatibility TBD")}</span>
                         </div>
-                        <p>${addon.description}</p>
+                        <p>${escapeHtml(addon.description)}</p>
                         <div class="addon-links">
-                            <a href="${addon.downloadUrl}" class="download-button">Download</a>
+                            ${
+                              hasDownload
+                                ? `<a href="${escapeHtml(addon.downloadUrl)}" class="download-button">Download</a>`
+                                : '<span class="download-button disabled" aria-disabled="true">Unavailable</span>'
+                            }
                         </div>
                     </div>
                 </div>
@@ -137,11 +170,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const compatibility = compatibilityFilter.value;
 
     filteredAddons = allAddons.filter((addon) => {
+      const title = String(addon.title || "").toLowerCase();
+      const description = String(addon.description || "").toLowerCase();
+
       // Search by title and description
       const matchesSearch =
         searchTerm === "" ||
-        addon.title.toLowerCase().includes(searchTerm) ||
-        addon.description.toLowerCase().includes(searchTerm);
+        title.includes(searchTerm) ||
+        description.includes(searchTerm);
 
       // Filter by category
       const matchesCategory = category === "all" || addon.category === category;
@@ -149,7 +185,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Filter by compatibility
       const matchesCompatibility =
         compatibility === "all" ||
-        addon.compatibility.includes(parseInt(compatibility));
+        (Array.isArray(addon.compatibility) &&
+          addon.compatibility.includes(parseInt(compatibility)));
 
       return matchesSearch && matchesCategory && matchesCompatibility;
     });
@@ -161,7 +198,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Event listeners
+  const debouncedFilterAddons = debounce(filterAddons);
+
   searchButton.addEventListener("click", filterAddons);
+  searchInput.addEventListener("input", debouncedFilterAddons);
   searchInput.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
       filterAddons();

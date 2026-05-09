@@ -60,6 +60,21 @@ function addExperimentalParam(url) {
 }
 
 /**
+ * Debounces noisy UI events such as live search input.
+ * @param {Function} callback
+ * @param {number} delay
+ * @returns {Function}
+ */
+function debounce(callback, delay = 180) {
+  let timeoutId;
+
+  return function (...args) {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => callback.apply(this, args), delay);
+  };
+}
+
+/**
  * Escapes text before inserting it into HTML template strings.
  * @param {string} value
  * @returns {string}
@@ -152,6 +167,67 @@ function renderAuthorLabel(mod) {
   const fullAuthor = getFullAuthorText(mod);
   const displayAuthor = formatAuthorDisplay(mod.author, fullAuthor);
   return `<span class="mod-author" title="${escapeHtml(fullAuthor)}">By: ${escapeHtml(displayAuthor)}</span>`;
+}
+
+/**
+ * Builds a catalog card for a mod list page using DOM APIs for text content.
+ * @param {Object} mod
+ * @param {string} category
+ * @returns {HTMLAnchorElement}
+ */
+function createModCatalogCard(mod, category) {
+  const modCard = document.createElement("a");
+  modCard.classList.add("mod-card");
+
+  if (mod.route) {
+    const params = new URLSearchParams({
+      cat: category,
+      route: mod.route,
+    });
+    if (isExperimentalMode()) {
+      params.set("exp", "true");
+    }
+    modCard.href = `./mod.html?${params.toString()}`;
+  } else {
+    modCard.setAttribute("aria-disabled", "true");
+    modCard.tabIndex = -1;
+  }
+
+  const imageContainer = document.createElement("div");
+  imageContainer.className = "mod-image-container";
+
+  const image = document.createElement("img");
+  image.src = mod.imageUrl || "../../assets/images/nothumbnail.webp";
+  image.alt = mod.title || "Mod thumbnail";
+  image.className = "mod-image";
+  image.loading = "lazy";
+  image.addEventListener("error", () => {
+    image.src = "../../assets/images/nothumbnail.webp";
+  });
+  imageContainer.appendChild(image);
+
+  if (category === "videos") {
+    const playIcon = document.createElement("div");
+    playIcon.className = "play-icon-small";
+    playIcon.setAttribute("aria-hidden", "true");
+    playIcon.innerHTML = "&#9658;";
+    imageContainer.appendChild(playIcon);
+  }
+
+  const details = document.createElement("div");
+  details.className = "mod-details";
+
+  const title = document.createElement("h2");
+  title.textContent = mod.title || "Untitled Mod";
+
+  const meta = document.createElement("div");
+  meta.className = "mod-meta";
+  meta.innerHTML = renderAuthorLabel(mod);
+
+  details.append(title, meta);
+  modCard.append(imageContainer, details);
+
+  return modCard;
 }
 
 /**

@@ -44,11 +44,15 @@
               type="text"
               id="code-search"
               placeholder="Search by name or author..."
+              aria-label="Search code snippets"
             />
-            <button id="code-search-button">Search</button>
+            <button id="code-search-button" type="button">Search</button>
           </div>
           <div class="filter-container">
-            <select id="code-complexity-filter">
+            <select
+              id="code-complexity-filter"
+              aria-label="Filter code snippets"
+            >
               <option value="all">All Complexity Levels</option>
               <option value="beginner">Beginner</option>
               <option value="intermediate">Intermediate</option>
@@ -160,6 +164,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/renpy.min.js"></script>
     <script src="/components/addComponents.js"></script>
     <script src="/assets/js/page_specific/code-assets.js"></script>
-    
   </body>
 </html>

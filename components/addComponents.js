@@ -30,8 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Load JavaScript file for a component
   function loadScript(url) {
     return new Promise((resolve, reject) => {
+      const existingScript = document.querySelector(`script[src="${url}"]`);
+      if (existingScript) {
+        resolve();
+        return;
+      }
+
       const script = document.createElement("script");
       script.src = url;
+      script.defer = true;
       script.onload = resolve;
       script.onerror = reject;
       document.body.appendChild(script); // Append to body instead of head for proper execution order
@@ -47,13 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Load header first, then its JavaScript
     loadComponent("/components/header/header.html", "prepend", function () {
       // After header HTML is loaded, load its JavaScript
-      loadScript("/components/header/header.js")
-        .then(() => {
-          console.log("Header script loaded successfully");
-        })
-        .catch((error) => {
-          console.error("Error loading header script:", error);
-        });
+      loadScript("/components/header/header.js").catch((error) => {
+        console.error("Error loading header script:", error);
+      });
     });
 
     // Load footer

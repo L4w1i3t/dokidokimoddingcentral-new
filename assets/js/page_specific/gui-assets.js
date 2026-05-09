@@ -28,6 +28,24 @@ document.addEventListener("DOMContentLoaded", function () {
   let modalCaption;
   let closeModalBtn;
 
+  function debounce(callback, delay = 180) {
+    let timeoutId;
+
+    return function (...args) {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => callback.apply(this, args), delay);
+    };
+  }
+
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   // Initialize preview modal
   function initPreviewModal() {
     // Create modal if it doesn't exist
@@ -162,6 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function filterGuiElements() {
     const searchTerm = guiSearch.value.toLowerCase().trim();
     const selectedCategory = guiCategoryFilter.value;
+    const selectedCategoryNormalized = selectedCategory.toLowerCase();
 
     // Track current selection
     currentGuiCategory = selectedCategory;
@@ -172,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (!categoryMatch && item.category) {
         categoryMatch =
-          item.category.toLowerCase() === selectedCategory.toLowerCase();
+          String(item.category).toLowerCase() === selectedCategoryNormalized;
       }
 
       if (!categoryMatch && item.keywords) {
@@ -185,23 +204,25 @@ document.addEventListener("DOMContentLoaded", function () {
           categoryMatch = keywords.some(
             (keyword) =>
               keyword &&
-              keyword.toLowerCase() === selectedCategory.toLowerCase(),
+              String(keyword).toLowerCase() === selectedCategoryNormalized,
           );
         }
       }
 
       // Search term filter
-      const nameMatch =
-        item.name && item.name.toLowerCase().includes(searchTerm);
-      const authorMatch =
-        item.author && item.author.toLowerCase().includes(searchTerm);
+      const nameMatch = String(item.name || "")
+        .toLowerCase()
+        .includes(searchTerm);
+      const authorMatch = String(item.author || "")
+        .toLowerCase()
+        .includes(searchTerm);
       const keywordsMatch =
         item.keywords &&
         (typeof item.keywords === "string"
           ? item.keywords.toLowerCase().includes(searchTerm)
           : Array.isArray(item.keywords) &&
             item.keywords.some(
-              (k) => k && k.toLowerCase().includes(searchTerm),
+              (k) => k && String(k).toLowerCase().includes(searchTerm),
             ));
 
       const searchMatch =
@@ -259,25 +280,31 @@ document.addEventListener("DOMContentLoaded", function () {
             : ""
         : item.category || "General";
 
+      const safeImagePath = escapeHtml(imagePath);
+      const safeName = escapeHtml(item.name || "Untitled GUI");
+      const safeAuthor = escapeHtml(item.author || "Unknown");
+      const safeCategories = escapeHtml(categories);
+      const safeDownloadUrl = escapeHtml(item.downloadUrl || imagePath);
+
       guiCard.innerHTML = `
                 <div class="gui-preview">
-                    <img src="${imagePath}" alt="${item.name}" loading="lazy">
+                    <img src="${safeImagePath}" alt="${safeName}" loading="lazy">
                 </div>
                 <div class="gui-details">
-                    <h3>${item.name || "Untitled GUI"}</h3>
+                    <h3>${safeName}</h3>
                     <div class="gui-meta">
-                        <span class="gui-author">By: ${item.author || "Unknown"}</span>
-                        <span class="gui-category">${categories}</span>
+                        <span class="gui-author">By: ${safeAuthor}</span>
+                        <span class="gui-category">${safeCategories}</span>
                         <span class="gui-resolution">Loading...</span>
                     </div>
                     <div class="art-controls">
-                        <button class="preview-button" data-img="${imagePath}" data-name="${item.name || "Untitled"}">
+                        <button class="preview-button" type="button" data-img="${safeImagePath}" data-name="${safeName}">
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
                                 <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
                             </svg>
                             Preview
-                        </button>                        <a href="${item.downloadUrl || imagePath}" class="download-button" download>
+                        </button>                        <a href="${safeDownloadUrl}" class="download-button" download>
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
@@ -343,7 +370,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (item.downloadUrl) {
         // If we have a specific download URL, use it
         downloadBtn.href = item.downloadUrl;
-        downloadBtn.title = `Download ${item.name}`;
+        downloadBtn.title = `Download ${item.name || "GUI element"}`;
       }
     });
 
@@ -393,7 +420,10 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchGuiData();
 
     // Add event listeners for GUI search and filter
+    const debouncedFilterGuiElements = debounce(filterGuiElements);
+
     guiSearchBtn.addEventListener("click", filterGuiElements);
+    guiSearch.addEventListener("input", debouncedFilterGuiElements);
     guiSearch.addEventListener("keypress", function (e) {
       if (e.key === "Enter") {
         filterGuiElements();

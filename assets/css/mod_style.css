@@ -190,7 +190,7 @@ body::before {
   padding: 20px;
   border-radius: 8px;
   font-style: italic;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 30px;
 }
 
@@ -225,6 +225,11 @@ body::before {
   background: linear-gradient(135deg, #8e2de2, #4a00e0);
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.download-button[aria-disabled="true"] {
+  opacity: 0.55;
+  pointer-events: none;
 }
 
 .mod-download p {

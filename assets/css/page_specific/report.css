@@ -289,3 +289,72 @@ main {
     font-size: 2.5rem;
   }
 }
+
+/* Clean report page refresh */
+main {
+  padding: clamp(88px, 10vw, 116px) var(--page-gutter) 56px;
+}
+
+.report-content {
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  background: linear-gradient(
+    145deg,
+    rgba(22, 22, 32, 0.92),
+    rgba(35, 32, 48, 0.9)
+  );
+  box-shadow: var(--shadow-panel);
+}
+
+.report-header h1 {
+  font-size: clamp(2.15rem, 5vw, 3.45rem);
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
+.report-header p {
+  line-height: 1.65;
+  text-shadow: none;
+}
+
+.report-card,
+.guidance-item,
+.form-panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  box-shadow: var(--shadow-control);
+}
+
+.report-button {
+  border-radius: var(--radius-control);
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-strong),
+    var(--color-secondary)
+  );
+}
+
+.report-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.34);
+}
+
+.form-frame-wrapper {
+  border-radius: var(--radius-control);
+}
+
+.guidance-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--color-accent),
+    rgba(255, 115, 183, 0)
+  );
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 76px 14px 36px;
+  }
+}

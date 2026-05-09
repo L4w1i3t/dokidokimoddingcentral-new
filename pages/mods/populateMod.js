@@ -21,6 +21,13 @@ function isEmpty(str) {
   return !str || str.trim() === "";
 }
 
+function setLabelParagraph(paragraph, label, value) {
+  paragraph.replaceChildren();
+  const labelEl = document.createElement("strong");
+  labelEl.textContent = label;
+  paragraph.append(labelEl, ` ${value || "N/A"}`);
+}
+
 (async function populateModPage() {
   try {
     // 1) Grab cat & route from the URL
@@ -104,15 +111,15 @@ function isEmpty(str) {
         typeof formatAuthorDisplay === "function"
           ? formatAuthorDisplay(thisMod.author, fullAuthor)
           : thisMod.author || "Unknown";
-      const safeAuthor =
-        typeof escapeHtml === "function"
-          ? escapeHtml(displayAuthor)
-          : displayAuthor;
-      paragraphEls[0].innerHTML = `<strong>Author:</strong> ${safeAuthor}`;
+      setLabelParagraph(paragraphEls[0], "Author:", displayAuthor);
       paragraphEls[0].title = fullAuthor;
     }
     if (paragraphEls[1]) {
-      paragraphEls[1].innerHTML = `<strong>Submitted By:</strong> ${thisMod.submittedBy || "N/A"}`;
+      setLabelParagraph(
+        paragraphEls[1],
+        "Submitted By:",
+        thisMod.submittedBy || "N/A",
+      );
     }
 
     // Add category display
@@ -126,11 +133,14 @@ function isEmpty(str) {
         archive: "Archived Mod",
       };
       const displayCategory = categoryDisplayName[categoryName] || categoryName;
-      paragraphEls[2].innerHTML = `<strong>Category:</strong> ${displayCategory}`;
+      setLabelParagraph(paragraphEls[2], "Category:", displayCategory);
     }
 
     if (paragraphEls[3]) {
-      paragraphEls[3].innerHTML = `<strong>Description:</strong>`;
+      paragraphEls[3].replaceChildren();
+      const descriptionLabel = document.createElement("strong");
+      descriptionLabel.textContent = "Description:";
+      paragraphEls[3].appendChild(descriptionLabel);
     }
     if (paragraphEls[4]) {
       paragraphEls[4].textContent = thisMod.description || "";
@@ -184,7 +194,11 @@ function isEmpty(str) {
         thisMod.links.forEach((linkObj, index) => {
           const btn = document.createElement("a");
           btn.classList.add("download-button");
-          btn.href = linkObj.url || "#";
+          if (linkObj.url) {
+            btn.href = linkObj.url;
+          } else {
+            btn.setAttribute("aria-disabled", "true");
+          }
           //btn.setAttribute('target', '_blank'); // open in new tab
           btn.textContent =
             typeof formatDownloadLabel === "function"

@@ -45,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let modalCaption;
   let closeModalBtn;
 
+  function debounce(callback, delay = 180) {
+    let timeoutId;
+
+    return function (...args) {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => callback.apply(this, args), delay);
+    };
+  }
+
   // Initialize preview modal
   function initPreviewModal() {
     // Create modal if it doesn't exist
@@ -128,8 +137,14 @@ document.addEventListener("DOMContentLoaded", function () {
         filteredBgData = [...bgData];
         filteredCgData = [...cgData];
 
-        totalBgPages = Math.ceil(filteredBgData.length / ITEMS_PER_PAGE);
-        totalCgPages = Math.ceil(filteredCgData.length / ITEMS_PER_PAGE);
+        totalBgPages = Math.max(
+          1,
+          Math.ceil(filteredBgData.length / ITEMS_PER_PAGE),
+        );
+        totalCgPages = Math.max(
+          1,
+          Math.ceil(filteredCgData.length / ITEMS_PER_PAGE),
+        );
 
         // Populate filter dropdowns with extracted categories
         populateFilterDropdowns();
@@ -256,6 +271,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Tab switching functionality
   subcategoryBtns.forEach((button) => {
+    button.type = "button";
+
     button.addEventListener("click", () => {
       const target = button.getAttribute("data-target");
 
@@ -555,10 +572,13 @@ document.addEventListener("DOMContentLoaded", function () {
     currentBgCategory = category;
 
     filteredBgData = bgData.filter((item) => {
+      const itemName = String(item.name || "").toLowerCase();
+      const itemAuthor = String(item.author || "").toLowerCase();
+      const selectedCategory = category.toLowerCase();
       const matchesSearch =
         searchTerm === "" ||
-        item.name.toLowerCase().includes(searchTerm) ||
-        item.author.toLowerCase().includes(searchTerm);
+        itemName.includes(searchTerm) ||
+        itemAuthor.includes(searchTerm);
 
       let matchesCategory = category === "all";
 
@@ -566,12 +586,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check if any keyword matches
         matchesCategory = item.keywords.some(
           (keyword) =>
-            keyword && keyword.toLowerCase() === category.toLowerCase(),
+            keyword && String(keyword).toLowerCase() === selectedCategory,
         );
       } else if (!matchesCategory && item.category) {
         // Check if category matches
         matchesCategory =
-          item.category.toLowerCase() === category.toLowerCase();
+          String(item.category).toLowerCase() === selectedCategory;
       }
 
       return matchesSearch && matchesCategory;
@@ -589,10 +609,13 @@ document.addEventListener("DOMContentLoaded", function () {
     currentCgCharacter = character;
 
     filteredCgData = cgData.filter((item) => {
+      const itemName = String(item.name || "").toLowerCase();
+      const itemAuthor = String(item.author || "").toLowerCase();
+      const selectedCharacter = character.toLowerCase();
       const matchesSearch =
         searchTerm === "" ||
-        item.name.toLowerCase().includes(searchTerm) ||
-        item.author.toLowerCase().includes(searchTerm);
+        itemName.includes(searchTerm) ||
+        itemAuthor.includes(searchTerm);
 
       let matchesCharacter = character === "all";
 
@@ -600,12 +623,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check if any keyword matches
         matchesCharacter = item.keywords.some(
           (keyword) =>
-            keyword && keyword.toLowerCase() === character.toLowerCase(),
+            keyword && String(keyword).toLowerCase() === selectedCharacter,
         );
       } else if (!matchesCharacter && item.character) {
         // Check if character matches
         matchesCharacter =
-          item.character.toLowerCase() === character.toLowerCase();
+          String(item.character).toLowerCase() === selectedCharacter;
       }
 
       return matchesSearch && matchesCharacter;
@@ -616,7 +639,11 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCgPagination();
   } // Event listeners
   // BG search and filter
+  const debouncedFilterBgData = debounce(filterBgData);
+  const debouncedFilterCgData = debounce(filterCgData);
+
   bgSearchBtn.addEventListener("click", filterBgData);
+  bgSearch.addEventListener("input", debouncedFilterBgData);
   bgSearch.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
       filterBgData();
@@ -659,6 +686,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }); // CG search and filter
   cgSearchBtn.addEventListener("click", filterCgData);
+  cgSearch.addEventListener("input", debouncedFilterCgData);
   cgSearch.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
       filterCgData();

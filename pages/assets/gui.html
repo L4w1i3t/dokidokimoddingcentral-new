@@ -27,11 +27,12 @@
                 type="text"
                 id="gui-search"
                 placeholder="Search GUI elements..."
+                aria-label="Search GUI elements"
               />
-              <button id="gui-search-button">Search</button>
+              <button id="gui-search-button" type="button">Search</button>
             </div>
             <div class="filter-container">
-              <select id="gui-category-filter">
+              <select id="gui-category-filter" aria-label="Filter GUI elements">
                 <option value="all">All Categories</option>
                 <!--Categories based on keywords will be dynamically loaded here-->
               </select>
@@ -67,6 +68,5 @@
 
     <script src="/components/addComponents.js"></script>
     <script src="/assets/js/page_specific/gui-assets.js"></script>
-    
   </body>
 </html>

@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentSearchTerm = "";
   let codeContents = {}; // Cache for loaded code contents
 
+  function debounce(callback, delay = 180) {
+    let timeoutId;
+
+    return function (...args) {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => callback.apply(this, args), delay);
+    };
+  }
+
   // Fetch code data from JSON file
   fetch("/data/code.json")
     .then((response) => response.json())
@@ -42,7 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   // Event Listeners
+  const debouncedSearch = debounce(performSearch);
+
   searchButton.addEventListener("click", performSearch);
+  codeSearch.addEventListener("input", debouncedSearch);
   codeSearch.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
       performSearch();
@@ -65,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   categoryButtons.forEach((button) => {
+    button.type = "button";
+
     button.addEventListener("click", function () {
       // Update active button
       document.querySelector(".category-btn.active").classList.remove("active");
@@ -118,11 +132,14 @@ document.addEventListener("DOMContentLoaded", function () {
         currentComplexity === "all" || item.complexity === currentComplexity;
 
       // Search term
+      const name = String(item.name || "").toLowerCase();
+      const author = String(item.author || "").toLowerCase();
+      const description = String(item.description || "").toLowerCase();
       const searchMatch =
         !currentSearchTerm ||
-        item.name.toLowerCase().includes(currentSearchTerm) ||
-        item.author.toLowerCase().includes(currentSearchTerm) ||
-        item.description.toLowerCase().includes(currentSearchTerm);
+        name.includes(currentSearchTerm) ||
+        author.includes(currentSearchTerm) ||
+        description.includes(currentSearchTerm);
 
       return categoryMatch && complexityMatch && searchMatch;
     });
@@ -131,8 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   function updateDisplay() {
     // Update pagination info
-    totalPages = Math.ceil(filteredCode.length / ITEMS_PER_PAGE);
-    if (totalPages === 0) totalPages = 1;
+    totalPages = Math.max(1, Math.ceil(filteredCode.length / ITEMS_PER_PAGE));
 
     if (currentPage > totalPages) {
       currentPage = totalPages;
@@ -193,15 +209,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const codeBlock = this.closest(
               ".code-preview-container",
             ).querySelector("code");
-            copyToClipboard(codeBlock.innerText);
-
-            // Visual feedback
-            const originalText = this.innerHTML;
-            this.innerHTML =
-              '<svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022z"/></svg>';
-            setTimeout(() => {
-              this.innerHTML = originalText;
-            }, 2000);
+            copyToClipboard(codeBlock.innerText).then(() => {
+              const originalText = this.innerHTML;
+              this.innerHTML =
+                '<svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022z"/></svg>';
+              setTimeout(() => {
+                this.innerHTML = originalText;
+              }, 2000);
+            });
           });
         });
       })
@@ -252,9 +267,13 @@ document.addEventListener("DOMContentLoaded", function () {
     card.querySelector(".code-language").textContent = language;
 
     // Set usage and notes
-    card.querySelector(".code-usage ol").innerHTML = item.usage
-      .map((step) => `<li>${step}</li>`)
-      .join("");
+    const usageList = card.querySelector(".code-usage ol");
+    usageList.textContent = "";
+    (item.usage || []).forEach((step) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = step;
+      usageList.appendChild(listItem);
+    });
     card.querySelector(".code-notes p").textContent = item.notes;
 
     return card;
@@ -266,18 +285,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+
     const textarea = document.createElement("textarea");
     textarea.value = text;
     document.body.appendChild(textarea);
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-  }
-
-  function showCodeDetails(item) {
-    // This function could open a modal with more detailed view of the code
-    // For now, we'll just log to console, but this could be expanded later
-    console.log("Code details:", item);
+    return Promise.resolve();
   }
 
   // Wait for syntax highlighting library to load

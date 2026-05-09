@@ -35,9 +35,13 @@ main {
   max-width: 1400px;
   margin: 60px auto;
   padding: 45px 35px;
-  background: linear-gradient(145deg, rgba(30, 30, 40, 0.92), rgba(45, 45, 60, 0.92));
+  background: linear-gradient(
+    145deg,
+    rgba(30, 30, 40, 0.92),
+    rgba(45, 45, 60, 0.92)
+  );
   border-radius: 20px;
-  box-shadow: 
+  box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
@@ -92,7 +96,8 @@ main {
   transform: translateX(-50%);
   height: 3px;
   width: 120px;
-  background: linear-gradient(90deg, 
+  background: linear-gradient(
+    90deg,
     rgba(255, 255, 255, 0),
     #9370db,
     #8a2be2,
@@ -118,13 +123,18 @@ main {
 }
 
 .subcategory-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
@@ -142,7 +152,7 @@ main {
 .subcategory-btn.active {
   background: linear-gradient(135deg, #9370db, #8a2be2);
   border: 2px solid rgba(147, 112, 219, 0.7);
-  box-shadow: 
+  box-shadow:
     0 6px 25px rgba(147, 112, 219, 0.5),
     0 0 30px rgba(138, 43, 226, 0.3);
   transform: translateY(-2px);
@@ -187,7 +197,8 @@ main {
 .section-line {
   height: 3px;
   width: 120px;
-  background: linear-gradient(90deg, 
+  background: linear-gradient(
+    90deg,
     rgba(255, 255, 255, 0),
     #ff69b4,
     #a855f7,
@@ -236,7 +247,7 @@ main {
   outline: none;
   border-color: #9370db;
   background: rgba(255, 255, 255, 0.18);
-  box-shadow: 
+  box-shadow:
     0 0 20px rgba(147, 112, 219, 0.6),
     0 4px 15px rgba(147, 112, 219, 0.3);
   transform: translateY(-2px);
@@ -260,20 +271,25 @@ main {
 }
 
 .search-box button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .search-box button:hover {
   background: linear-gradient(135deg, #a982e0, #9a42f3);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(147, 112, 219, 0.5),
     0 0 30px rgba(138, 43, 226, 0.4);
 }
@@ -330,7 +346,7 @@ main {
 .filter-container select:focus {
   outline: none;
   border-color: #9370db;
-  box-shadow: 
+  box-shadow:
     0 0 20px rgba(147, 112, 219, 0.6),
     0 4px 15px rgba(147, 112, 219, 0.3);
 }
@@ -387,10 +403,14 @@ main {
 
 /* Art Card Styling */
 .art-card {
-  background: linear-gradient(145deg, rgba(35, 35, 50, 0.9), rgba(45, 45, 65, 0.9));
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 50, 0.9),
+    rgba(45, 45, 65, 0.9)
+  );
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 
+  box-shadow:
     0 10px 35px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -403,13 +423,17 @@ main {
 }
 
 .art-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(147, 112, 219, 0.15), transparent 70%);
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(147, 112, 219, 0.15),
+    transparent 70%
+  );
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
@@ -418,7 +442,7 @@ main {
 
 .art-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 
+  box-shadow:
     0 18px 50px rgba(0, 0, 0, 0.5),
     0 0 40px rgba(147, 112, 219, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -432,7 +456,11 @@ main {
 /* Art preview area at the top of each card */
 .art-preview {
   height: 220px;
-  background: linear-gradient(to bottom, rgba(147, 112, 219, 0.25), rgba(30, 30, 40, 0.25));
+  background: linear-gradient(
+    to bottom,
+    rgba(147, 112, 219, 0.25),
+    rgba(30, 30, 40, 0.25)
+  );
   position: relative;
   display: flex;
   align-items: center;
@@ -442,7 +470,11 @@ main {
 }
 
 .art-card:hover .art-preview {
-  background: linear-gradient(to bottom, rgba(147, 112, 219, 0.35), rgba(30, 30, 40, 0.35));
+  background: linear-gradient(
+    to bottom,
+    rgba(147, 112, 219, 0.35),
+    rgba(30, 30, 40, 0.35)
+  );
 }
 
 .art-preview img {
@@ -538,13 +570,18 @@ main {
 
 .preview-button::before,
 .download-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
@@ -557,7 +594,7 @@ main {
 .preview-button:hover {
   background: linear-gradient(135deg, #a982e0, #9a42f3);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 6px 20px rgba(147, 112, 219, 0.6),
     0 0 25px rgba(138, 43, 226, 0.4);
 }
@@ -587,11 +624,15 @@ main {
 .no-results {
   text-align: center;
   padding: 50px 40px;
-  background: linear-gradient(145deg, rgba(35, 35, 50, 0.9), rgba(45, 45, 65, 0.9));
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 50, 0.9),
+    rgba(45, 45, 65, 0.9)
+  );
   border-radius: 16px;
   margin: 30px auto;
   max-width: 600px;
-  box-shadow: 
+  box-shadow:
     0 10px 35px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(147, 112, 219, 0.3);
@@ -633,20 +674,25 @@ main {
 }
 
 .pagination-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .pagination-button:hover {
   background: linear-gradient(135deg, #a982e0, #9a42f3);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(147, 112, 219, 0.6),
     0 0 30px rgba(138, 43, 226, 0.4);
 }
@@ -686,7 +732,8 @@ main {
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Preview Modal */.pagination-info {
+/* Preview Modal */
+.pagination-info {
   color: #ffffff;
   font-size: 1rem;
 }
@@ -934,5 +981,98 @@ main {
 
   .art-card h3 {
     font-size: 1.6rem;
+  }
+}
+
+/* Clean art library refresh */
+main {
+  padding: clamp(88px, 10vw, 116px) var(--page-gutter) 56px;
+}
+
+.art-header h1 {
+  font-size: clamp(2.15rem, 5vw, 3.45rem);
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
+.art-tagline {
+  max-width: 62ch;
+  line-height: 1.6;
+  text-shadow: none;
+}
+
+.subcategory-nav,
+.search-filter-container {
+  gap: 12px;
+}
+
+.subcategory-btn,
+.search-box button,
+.filter-container select,
+.pagination-button,
+.preview-button,
+.download-button,
+.contribute-button {
+  border-radius: var(--radius-control);
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.search-box input,
+.filter-container select {
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: none;
+}
+
+.search-box input:focus,
+.filter-container select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(255, 115, 183, 0.22);
+  transform: none;
+}
+
+.art-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.art-card,
+.no-results,
+.art-footer {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  box-shadow: var(--shadow-control);
+}
+
+.art-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-strong);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.36);
+}
+
+.art-card:hover .art-preview,
+.art-card:hover .art-preview img {
+  transform: scale(1.03);
+}
+
+.art-card h3 {
+  font-size: 1.22rem;
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 76px 14px 36px;
+  }
+
+  .search-box {
+    grid-template-columns: 1fr;
   }
 }

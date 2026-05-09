@@ -1,93 +1,99 @@
-// Header functionality
-function initializeHeader() {
-  console.log("Initializing header JS...");
-
-  // Elements
-  const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
-  const mainNav = document.querySelector(".main-nav");
-  const body = document.body;
-
-  console.log("Menu toggle element:", mobileMenuToggle); // Debug log
-
-  if (!mobileMenuToggle || !mainNav) {
-    console.error("Header elements not found!");
-    return;
-  }
-
-  // Create overlay element for mobile menu
-  const menuOverlay = document.createElement("div");
-  menuOverlay.className = "menu-overlay";
-  body.appendChild(menuOverlay);
-
-  // Toggle mobile menu
-  mobileMenuToggle.addEventListener("click", function () {
-    console.log("Mobile menu clicked"); // Debug log
-    mobileMenuToggle.classList.toggle("active");
-    mainNav.classList.toggle("active");
-    menuOverlay.classList.toggle("active");
-
-    // Prevent scrolling when menu is open
-    if (mainNav.classList.contains("active")) {
-      body.style.overflow = "hidden";
-    } else {
-      body.style.overflow = "";
-    }
-  });
-
-  // Close mobile menu when clicking overlay
-  menuOverlay.addEventListener("click", function () {
-    mobileMenuToggle.classList.remove("active");
-    mainNav.classList.remove("active");
-    menuOverlay.classList.remove("active");
-    body.style.overflow = "";
-  });
-
-  // Close mobile menu when clicking a nav link
-  const navLinks = document.querySelectorAll(".nav-links a");
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      mobileMenuToggle.classList.remove("active");
-      mainNav.classList.remove("active");
-      menuOverlay.classList.remove("active");
-      body.style.overflow = "";
-    });
-  });
-
-  // Add active class to current page link
-  const currentLocation = window.location.pathname;
-  navLinks.forEach((link) => {
-    const linkPath = link.getAttribute("href");
-    if (
-      currentLocation === linkPath ||
-      (currentLocation.includes(linkPath) && linkPath !== "/")
-    ) {
-      link.classList.add("current-page");
-    }
-  });
-
-  // Header scroll effect - add background color on scroll
-  function handleScroll() {
+(function () {
+  function initializeHeader() {
     const header = document.querySelector(".site-header");
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
+    const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    if (!header || !mobileMenuToggle || !mainNav) {
+      return;
     }
+
+    if (header.dataset.initialized === "true") {
+      return;
+    }
+    header.dataset.initialized = "true";
+
+    let menuOverlay = document.querySelector(".menu-overlay");
+    if (!menuOverlay) {
+      menuOverlay = document.createElement("div");
+      menuOverlay.className = "menu-overlay";
+      document.body.appendChild(menuOverlay);
+    }
+
+    const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
+
+    function setMenuState(isOpen) {
+      mobileMenuToggle.classList.toggle("active", isOpen);
+      mainNav.classList.toggle("active", isOpen);
+      menuOverlay.classList.toggle("active", isOpen);
+      document.body.classList.toggle("nav-open", isOpen);
+      mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+      mobileMenuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu",
+      );
+    }
+
+    function markCurrentPage() {
+      const currentPath = window.location.pathname.replace(
+        /\/index\.html$/,
+        "/",
+      );
+
+      navLinks.forEach((link) => {
+        const linkPath = new URL(link.href, window.location.origin).pathname;
+        const isCurrent =
+          currentPath === linkPath ||
+          (currentPath.startsWith("/pages/mods/") &&
+            linkPath === "/pages/mods.html") ||
+          (currentPath.startsWith("/pages/assets/") &&
+            linkPath === "/pages/assets.html");
+
+        link.classList.toggle("current-page", isCurrent);
+        if (isCurrent) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    }
+
+    function handleScroll() {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    }
+
+    mobileMenuToggle.setAttribute("aria-expanded", "false");
+    mobileMenuToggle.addEventListener("click", function () {
+      setMenuState(!mainNav.classList.contains("active"));
+    });
+
+    menuOverlay.addEventListener("click", function () {
+      setMenuState(false);
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        setMenuState(false);
+      });
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && mainNav.classList.contains("active")) {
+        setMenuState(false);
+        mobileMenuToggle.focus();
+      }
+    });
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    markCurrentPage();
+    handleScroll();
   }
 
-  window.addEventListener("scroll", handleScroll);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeHeader);
+  } else {
+    initializeHeader();
+  }
 
-  // Initialize scroll state
-  handleScroll();
-
-  console.log("Header initialization complete");
-}
-
-// Call the initialization function immediately
-initializeHeader();
-
-// Also handle DOMContentLoaded in case this script is loaded in the <head>
-document.addEventListener("DOMContentLoaded", initializeHeader);
-
-// Make the function available globally so it can be explicitly called
-window.initializeHeader = initializeHeader;
+  window.initializeHeader = initializeHeader;
+})();

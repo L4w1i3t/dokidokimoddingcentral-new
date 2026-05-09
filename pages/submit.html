@@ -31,6 +31,7 @@
                 href="https://forms.gle/bRqoSbEoJuGQkS4u7"
                 target="_blank"
                 class="card-button"
+                rel="noopener noreferrer"
               >
                 Submit Mod
               </a>
@@ -46,6 +47,7 @@
                 href="https://forms.gle/n5WyvfY78Z5PKHMG9"
                 target="_blank"
                 class="card-button"
+                rel="noopener noreferrer"
               >
                 Submit Asset
               </a>
@@ -57,7 +59,12 @@
                 Submit Ren'Py template addons that extend the base DDLC modding
                 template.
               </p>
-              <a href="./notavailable.html" target="_blank" class="card-button">
+              <a
+                href="./notavailable.html"
+                target="_blank"
+                class="card-button"
+                rel="noopener noreferrer"
+              >
                 Submit Template Addon
               </a>
             </div>
@@ -87,6 +94,7 @@
                     <a
                       href="http://teamsalvato.com/ip-guidelines/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       >Team Salvato IP Guidelines</a
                     >
                     before submitting
@@ -138,9 +146,13 @@
 
             <div class="faq-content">
               <div class="faq-item">
-                <div class="faq-question">
+                <button
+                  class="faq-question"
+                  type="button"
+                  aria-expanded="false"
+                >
                   How long will it take for my submission to be reviewed?
-                </div>
+                </button>
                 <div class="faq-answer">
                   <p>
                     Please have patience. Our team reviews submissions as
@@ -152,9 +164,13 @@
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">
+                <button
+                  class="faq-question"
+                  type="button"
+                  aria-expanded="false"
+                >
                   Can I update my submission after it's been published?
-                </div>
+                </button>
                 <div class="faq-answer">
                   <p>
                     Yes! You can submit updated versions through the same forms.
@@ -165,9 +181,13 @@
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">
+                <button
+                  class="faq-question"
+                  type="button"
+                  aria-expanded="false"
+                >
                   Are there any restrictions on what I can submit?
-                </div>
+                </button>
                 <div class="faq-answer">
                   <p>
                     We accept most submissions as long as they follow Team
@@ -195,24 +215,26 @@
     </main>
 
     <script src="../components/addComponents.js"></script>
-    
+
     <script>
       // Simple accordion for FAQ items
       document.querySelectorAll(".faq-question").forEach((question) => {
         question.addEventListener("click", () => {
           const answer = question.nextElementSibling;
-          const isOpen = answer.style.maxHeight;
+          const isOpen = question.getAttribute("aria-expanded") === "true";
 
           // Close all answers
           document.querySelectorAll(".faq-answer").forEach((item) => {
             item.style.maxHeight = null;
             item.parentElement.classList.remove("active");
+            item.previousElementSibling.setAttribute("aria-expanded", "false");
           });
 
           // If it wasn't open before, open it
           if (!isOpen) {
             answer.style.maxHeight = answer.scrollHeight + "px";
             question.parentElement.classList.add("active");
+            question.setAttribute("aria-expanded", "true");
           }
         });
       });
@@ -221,8 +243,10 @@
       const firstFaq = document.querySelector(".faq-item");
       if (firstFaq) {
         const firstAnswer = firstFaq.querySelector(".faq-answer");
+        const firstQuestion = firstFaq.querySelector(".faq-question");
         firstAnswer.style.maxHeight = firstAnswer.scrollHeight + "px";
         firstFaq.classList.add("active");
+        firstQuestion.setAttribute("aria-expanded", "true");
       }
     </script>
   </body>

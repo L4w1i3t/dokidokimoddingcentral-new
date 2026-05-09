@@ -34,9 +34,13 @@ main {
   max-width: 1400px;
   margin: 60px auto;
   padding: 45px 35px;
-  background: linear-gradient(145deg, rgba(30, 30, 40, 0.92), rgba(45, 45, 60, 0.92));
+  background: linear-gradient(
+    145deg,
+    rgba(30, 30, 40, 0.92),
+    rgba(45, 45, 60, 0.92)
+  );
   border-radius: 20px;
-  box-shadow: 
+  box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
@@ -97,13 +101,18 @@ main {
 }
 
 .subcategory-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
@@ -121,7 +130,7 @@ main {
 .subcategory-btn.active {
   background: linear-gradient(135deg, #ff4949, #d44242);
   border: 2px solid rgba(255, 73, 73, 0.8);
-  box-shadow: 
+  box-shadow:
     0 6px 20px rgba(255, 73, 73, 0.5),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
@@ -184,7 +193,7 @@ main {
   outline: none;
   border-color: #ff4949;
   background: rgba(255, 255, 255, 0.18);
-  box-shadow: 
+  box-shadow:
     0 0 20px rgba(255, 73, 73, 0.6),
     0 4px 15px rgba(255, 73, 73, 0.3);
   transform: translateY(-2px);
@@ -208,20 +217,25 @@ main {
 }
 
 .search-box button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .search-box button:hover {
   background: linear-gradient(135deg, #ff5e5e, #e04747);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(255, 73, 73, 0.6),
     0 0 30px rgba(255, 73, 73, 0.4);
 }
@@ -273,7 +287,7 @@ main {
 .filter-container select:focus {
   outline: none;
   border-color: #ff4949;
-  box-shadow: 
+  box-shadow:
     0 0 15px rgba(255, 73, 73, 0.5),
     0 4px 12px rgba(255, 73, 73, 0.3);
 }
@@ -328,7 +342,11 @@ main {
 
 /* Music Card Styling */
 .music-card {
-  background: linear-gradient(145deg, rgba(40, 40, 55, 0.95), rgba(30, 30, 40, 0.95));
+  background: linear-gradient(
+    145deg,
+    rgba(40, 40, 55, 0.95),
+    rgba(30, 30, 40, 0.95)
+  );
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -343,10 +361,14 @@ main {
 }
 
 .music-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(255, 73, 73, 0.15), transparent 70%);
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 73, 73, 0.15),
+    transparent 70%
+  );
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
@@ -355,7 +377,7 @@ main {
 
 .music-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 
+  box-shadow:
     0 18px 45px rgba(0, 0, 0, 0.5),
     0 0 30px rgba(255, 73, 73, 0.3);
   border-color: rgba(255, 73, 73, 0.7);
@@ -367,7 +389,11 @@ main {
 
 .visualizer {
   height: 110px;
-  background: linear-gradient(145deg, rgba(255, 73, 73, 0.25), rgba(30, 30, 40, 0.3));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 73, 73, 0.25),
+    rgba(30, 30, 40, 0.3)
+  );
   position: relative;
   display: flex;
   align-items: center;
@@ -377,7 +403,11 @@ main {
 }
 
 .music-card:hover .visualizer {
-  background: linear-gradient(145deg, rgba(255, 73, 73, 0.35), rgba(30, 30, 40, 0.4));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 73, 73, 0.35),
+    rgba(30, 30, 40, 0.4)
+  );
 }
 
 .visualizer-bars {
@@ -391,10 +421,16 @@ main {
 
 .visualizer-bar {
   width: 4px;
-  background: linear-gradient(180deg, rgba(255, 73, 73, 0.9), rgba(255, 255, 255, 0.7));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 73, 73, 0.9),
+    rgba(255, 255, 255, 0.7)
+  );
   border-radius: 2px 2px 0 0;
   opacity: 0.7;
-  transition: height 0.08s ease-out, opacity 0.08s ease-out;
+  transition:
+    height 0.08s ease-out,
+    opacity 0.08s ease-out;
   box-shadow: 0 0 8px rgba(255, 73, 73, 0.3);
 }
 
@@ -422,7 +458,7 @@ main {
 
 /* Enhanced glow effect when playing */
 .visualizer-bars.active .visualizer-bar {
-  box-shadow: 
+  box-shadow:
     0 0 12px rgba(255, 73, 73, 0.6),
     0 0 4px rgba(255, 255, 255, 0.4);
 }
@@ -478,12 +514,16 @@ main {
   flex: 1;
   padding: 12px 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   color: white;
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -495,13 +535,18 @@ main {
 
 .play-button::before,
 .download-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
@@ -523,7 +568,7 @@ main {
 .play-button.playing:hover {
   background: linear-gradient(135deg, #33d176, #2cc36a);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 6px 20px rgba(46, 204, 113, 0.6),
     0 0 25px rgba(39, 174, 96, 0.4);
 }
@@ -537,7 +582,7 @@ main {
 .play-button:hover {
   background: linear-gradient(135deg, #ff5e5e, #e04747);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 6px 20px rgba(255, 73, 73, 0.6),
     0 0 25px rgba(212, 66, 66, 0.4);
 }
@@ -549,11 +594,23 @@ main {
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
+.play-button:disabled,
+.download-button.disabled,
+.download-button[aria-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+  transform: none;
+}
+
 /* No results message */
 .no-results {
   text-align: center;
   padding: 50px 40px;
-  background: linear-gradient(145deg, rgba(40, 40, 55, 0.9), rgba(30, 30, 40, 0.9));
+  background: linear-gradient(
+    145deg,
+    rgba(40, 40, 55, 0.9),
+    rgba(30, 30, 40, 0.9)
+  );
   border-radius: 16px;
   margin: 20px auto;
   max-width: 600px;
@@ -586,20 +643,25 @@ main {
 }
 
 .pagination-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .pagination-button:not([disabled]):hover {
   background: linear-gradient(135deg, #ff5e5e, #e04747);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(255, 73, 73, 0.6),
     0 0 30px rgba(212, 66, 66, 0.4);
 }
@@ -611,7 +673,11 @@ main {
 .pagination-button[disabled] {
   opacity: 0.4;
   cursor: not-allowed;
-  background: linear-gradient(135deg, rgba(100, 100, 110, 0.5), rgba(80, 80, 90, 0.5));
+  background: linear-gradient(
+    135deg,
+    rgba(100, 100, 110, 0.5),
+    rgba(80, 80, 90, 0.5)
+  );
   box-shadow: none;
 }
 
@@ -624,11 +690,15 @@ main {
 
 /* Footer Section */
 .music-footer {
-  background: linear-gradient(145deg, rgba(40, 40, 55, 0.95), rgba(30, 30, 40, 0.95));
+  background: linear-gradient(
+    145deg,
+    rgba(40, 40, 55, 0.95),
+    rgba(30, 30, 40, 0.95)
+  );
   border-radius: 20px;
   padding: 50px 40px;
   text-align: center;
-  box-shadow: 
+  box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
@@ -674,19 +744,24 @@ main {
 }
 
 .contribute-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .contribute-button:hover {
   transform: translateY(-4px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(255, 73, 73, 0.6),
     0 0 30px rgba(212, 66, 66, 0.4);
   background: linear-gradient(135deg, #ff5e5e, #e04747);
@@ -710,11 +785,19 @@ main {
 
 /* SFX specific styles */
 #sfx-section .visualizer {
-  background: linear-gradient(145deg, rgba(255, 120, 120, 0.25), rgba(30, 30, 40, 0.3));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 120, 120, 0.25),
+    rgba(30, 30, 40, 0.3)
+  );
 }
 
 #sfx-section .music-card:hover .visualizer {
-  background: linear-gradient(145deg, rgba(255, 120, 120, 0.35), rgba(30, 30, 40, 0.4));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 120, 120, 0.35),
+    rgba(30, 30, 40, 0.4)
+  );
 }
 
 /* Responsive Styles */
@@ -815,5 +898,93 @@ main {
 
   .music-card h3 {
     font-size: 1.6rem;
+  }
+}
+
+/* Clean music library refresh */
+main {
+  padding: clamp(88px, 10vw, 116px) var(--page-gutter) 56px;
+}
+
+.music-header h1 {
+  font-size: clamp(2.15rem, 5vw, 3.45rem);
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
+.music-tagline {
+  max-width: 62ch;
+  line-height: 1.6;
+  text-shadow: none;
+}
+
+.subcategory-nav,
+.search-filter-container {
+  gap: 12px;
+}
+
+.subcategory-btn,
+.search-box button,
+.filter-container select,
+.pagination-button,
+.play-button,
+.download-button,
+.contribute-button {
+  border-radius: var(--radius-control);
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.search-box input,
+.filter-container select {
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: none;
+}
+
+.search-box input:focus,
+.filter-container select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(255, 115, 183, 0.22);
+  transform: none;
+}
+
+.music-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.music-card,
+.no-results,
+.music-footer {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  box-shadow: var(--shadow-control);
+}
+
+.music-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-strong);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.36);
+}
+
+.music-card h3 {
+  font-size: 1.22rem;
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 76px 14px 36px;
+  }
+
+  .search-box {
+    grid-template-columns: 1fr;
   }
 }

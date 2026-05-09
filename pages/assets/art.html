@@ -32,18 +32,18 @@
 
         <!-- BG Section -->
         <section id="bg-section" class="asset-section active">
-
           <div class="search-filter-container">
             <div class="search-box">
               <input
                 type="text"
                 id="bg-search"
                 placeholder="Search backgrounds..."
+                aria-label="Search backgrounds"
               />
-              <button id="bg-search-button">Search</button>
+              <button id="bg-search-button" type="button">Search</button>
             </div>
             <div class="filter-container">
-              <select id="bg-category-filter">
+              <select id="bg-category-filter" aria-label="Filter backgrounds">
                 <option value="all">All Categories</option>
                 <option value="School">School</option>
                 <option value="Residential">Residential</option>
@@ -70,14 +70,21 @@
 
         <!-- CG Section -->
         <section id="cg-section" class="asset-section">
-
           <div class="search-filter-container">
             <div class="search-box">
-              <input type="text" id="cg-search" placeholder="Search CGs..." />
-              <button id="cg-search-button">Search</button>
+              <input
+                type="text"
+                id="cg-search"
+                placeholder="Search CGs..."
+                aria-label="Search character CGs"
+              />
+              <button id="cg-search-button" type="button">Search</button>
             </div>
             <div class="filter-container">
-              <select id="cg-character-filter">
+              <select
+                id="cg-character-filter"
+                aria-label="Filter character CGs"
+              >
                 <option value="all">All Characters</option>
                 <option value="Monika">Monika</option>
                 <option value="Sayori">Sayori</option>
@@ -119,6 +126,5 @@
 
     <script src="/components/addComponents.js"></script>
     <script src="/assets/js/page_specific/art-assets.js"></script>
-    
   </body>
 </html>

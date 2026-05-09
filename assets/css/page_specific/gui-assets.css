@@ -34,9 +34,13 @@ main {
   max-width: 1400px;
   margin: 60px auto;
   padding: 45px 35px;
-  background: linear-gradient(145deg, rgba(30, 30, 40, 0.92), rgba(45, 45, 60, 0.92));
+  background: linear-gradient(
+    145deg,
+    rgba(30, 30, 40, 0.92),
+    rgba(45, 45, 60, 0.92)
+  );
   border-radius: 20px;
-  box-shadow: 
+  box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
@@ -97,13 +101,18 @@ main {
 }
 
 .subcategory-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
@@ -121,7 +130,7 @@ main {
 .subcategory-btn.active {
   background: linear-gradient(135deg, #ff69b4, #ff1493);
   border: 2px solid rgba(255, 105, 180, 0.7);
-  box-shadow: 
+  box-shadow:
     0 6px 25px rgba(255, 105, 180, 0.5),
     0 0 30px rgba(255, 20, 147, 0.3);
   transform: translateY(-2px);
@@ -208,7 +217,7 @@ main {
   outline: none;
   border-color: #ff69b4;
   background: rgba(255, 255, 255, 0.18);
-  box-shadow: 
+  box-shadow:
     0 0 20px rgba(255, 105, 180, 0.6),
     0 4px 15px rgba(255, 105, 180, 0.3);
   transform: translateY(-2px);
@@ -232,20 +241,25 @@ main {
 }
 
 .search-box button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .search-box button:hover {
   background: linear-gradient(135deg, #ff83c3, #ff359a);
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(255, 105, 180, 0.6),
     0 0 30px rgba(255, 20, 147, 0.4);
 }
@@ -297,7 +311,7 @@ main {
 .filter-container select:focus {
   outline: none;
   border-color: #ff69b4;
-  box-shadow: 
+  box-shadow:
     0 0 15px rgba(255, 105, 180, 0.5),
     0 4px 12px rgba(255, 105, 180, 0.3);
 }
@@ -787,5 +801,96 @@ main {
 
   .gui-card h3 {
     font-size: 1.6rem;
+  }
+}
+
+/* Clean GUI library refresh */
+main {
+  padding: clamp(88px, 10vw, 116px) var(--page-gutter) 56px;
+}
+
+.gui-header h1 {
+  font-size: clamp(2.15rem, 5vw, 3.45rem);
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
+.gui-tagline {
+  max-width: 62ch;
+  line-height: 1.6;
+  text-shadow: none;
+}
+
+.search-filter-container {
+  gap: 12px;
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.search-box input,
+.filter-container select {
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: none;
+}
+
+.search-box input:focus,
+.filter-container select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(255, 115, 183, 0.22);
+  transform: none;
+}
+
+.search-box button,
+.pagination-button,
+.preview-button,
+.download-button,
+.contribute-button {
+  border-radius: var(--radius-control);
+}
+
+.gui-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.gui-card,
+.no-results,
+.gui-footer {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  box-shadow: var(--shadow-control);
+}
+
+.gui-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-strong);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.36);
+}
+
+.gui-card:hover .gui-preview,
+.gui-card:hover .gui-preview img {
+  transform: scale(1.03);
+}
+
+.gui-card h3 {
+  font-size: 1.22rem;
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 76px 14px 36px;
+  }
+
+  .search-box {
+    grid-template-columns: 1fr;
   }
 }

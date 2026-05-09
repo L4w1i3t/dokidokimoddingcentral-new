@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     demos: "Demo Mods",
     videos: "Video Mods",
     archive: "Archived Mods",
-  }; /**
+  };
+
+  /**
    * Fetches mods data and updates the counter display
    */
   async function loadModCounts() {
@@ -160,10 +162,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const count = categoryCounts[categoryKey];
 
         return `
-                    <div class="category-count-item" data-category="${categoryKey}">
+                    <button type="button" class="category-count-item" data-category="${categoryKey}">
                         <span class="category-name">${displayName}</span>
                         <span class="category-count">${count.toLocaleString()}</span>
-                    </div>
+                    </button>
                 `;
       })
       .join("");

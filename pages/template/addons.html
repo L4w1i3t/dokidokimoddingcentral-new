@@ -25,11 +25,12 @@
               type="text"
               id="addon-search"
               placeholder="Search addons..."
+              aria-label="Search template addons"
             />
-            <button id="search-button">Search</button>
+            <button id="search-button" type="button">Search</button>
           </div>
           <div class="filter-container">
-            <select id="category-filter">
+            <select id="category-filter" aria-label="Filter addons by category">
               <option value="all">All Categories</option>
               <option value="ui">UI Components</option>
               <option value="system">Core Systems</option>
@@ -37,7 +38,10 @@
               <option value="audio">Audio Tools</option>
               <option value="utility">Utilities</option>
             </select>
-            <select id="compatibility-filter">
+            <select
+              id="compatibility-filter"
+              aria-label="Filter addons by Ren'Py version"
+            >
               <option value="all">All Ren'Py Versions</option>
               <option value="6">Ren'Py 6.x</option>
               <option value="7">Ren'Py 7.x</option>
@@ -70,7 +74,7 @@
     </main>
 
     <script src="../../components/addComponents.js"></script>
-    
+
     <script src="../../assets/js/page_specific/addons.js"></script>
   </body>
 </html>

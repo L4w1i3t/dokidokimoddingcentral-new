@@ -35,11 +35,11 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  Doki Doki Modding Central (DDMC or ModCen) is a comprehensive platform
-                  dedicated to creating, sharing, and exploring modifications
-                  for <em>Doki Doki Literature Club!</em> by Team Salvato. It
-                  serves as a hub for modders and fans to collaborate, share
-                  resources, and enhance their experience.
+                  Doki Doki Modding Central (DDMC or ModCen) is a comprehensive
+                  platform dedicated to creating, sharing, and exploring
+                  modifications for <em>Doki Doki Literature Club!</em> by Team
+                  Salvato. It serves as a hub for modders and fans to
+                  collaborate, share resources, and enhance their experience.
                 </p>
               </div>
             </div>
@@ -158,6 +158,7 @@
                     <a
                       href="http://teamsalvato.com/ip-guidelines/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       >Team Salvato IP Guidelines</a
                     >
                   </li>
@@ -394,60 +395,7 @@
     </main>
 
     <script src="../components/addComponents.js"></script>
-    
-    <script>
-      // Updated accordion functionality for FAQ items - all collapsed by default
-      document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", () => {
-          const faqItem = question.parentElement;
-          const answer = question.nextElementSibling;
 
-          // Check if this item is already active
-          const isActive = faqItem.classList.contains("active");
-
-          // Close all items
-          document.querySelectorAll(".faq-item").forEach((item) => {
-            item.classList.remove("active");
-            item.querySelector(".faq-answer").style.maxHeight = null;
-          });
-
-          // If the clicked item wasn't active, open it
-          if (!isActive) {
-            faqItem.classList.add("active");
-            answer.style.maxHeight = answer.scrollHeight + "px";
-          }
-        });
-      });
-
-      // Tab navigation
-      document.querySelectorAll(".faq-tab").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          // Remove active class from all tabs
-          document.querySelectorAll(".faq-tab").forEach((t) => {
-            t.classList.remove("active");
-          });
-
-          // Add active class to clicked tab
-          tab.classList.add("active");
-
-          // Hide all categories
-          document.querySelectorAll(".faq-category").forEach((cat) => {
-            cat.classList.remove("active");
-          });
-
-          // Show the selected category
-          const categoryId = tab.getAttribute("data-category");
-          document.getElementById(categoryId).classList.add("active");
-
-          // Ensure all questions are collapsed in the newly shown category
-          document
-            .querySelectorAll("#" + categoryId + " .faq-item")
-            .forEach((item) => {
-              item.classList.remove("active");
-              item.querySelector(".faq-answer").style.maxHeight = null;
-            });
-        });
-      });
-    </script>
+    <script src="../assets/js/page_specific/faq.js"></script>
   </body>
 </html>

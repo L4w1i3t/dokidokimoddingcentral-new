@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       Assets: "Browse and download assets for your projects!",
       Submissions:
         "Submit your own mods and assets, and share them with the community!",
+      Report:
+        "Share your thoughts, feedback, and concerns!",
       Classroom: "Learn about RenPy, DDLC, and modding techniques!",
       About: "Learn more about Doki Doki Modding Central!",
       FAQ: "Find answers to frequently asked questions!",
@@ -176,6 +178,15 @@ document.addEventListener("DOMContentLoaded", function () {
 /**
  * Loads random mods from the JSON data and displays them in the showcase
  */
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function loadRandomMods() {
   const showcaseElement = document.getElementById("showcase");
 
@@ -202,26 +213,15 @@ function loadRandomMods() {
       let allMods = [];
 
       // Include all five categories and add category identifier to each mod
-      if (data.standard) {
-        data.standard.forEach((mod) => (mod._cat = "standard"));
-        allMods = allMods.concat(data.standard);
-      }
-      if (data.android) {
-        data.android.forEach((mod) => (mod._cat = "android"));
-        allMods = allMods.concat(data.android);
-      }
-      if (data.demos) {
-        data.demos.forEach((mod) => (mod._cat = "demos"));
-        allMods = allMods.concat(data.demos);
-      }
-      if (data.videos) {
-        data.videos.forEach((mod) => (mod._cat = "videos"));
-        allMods = allMods.concat(data.videos);
-      }
-      if (data.archive) {
-        data.archive.forEach((mod) => (mod._cat = "archive"));
-        allMods = allMods.concat(data.archive);
-      }
+      ["standard", "android", "demos", "videos", "archive"].forEach(
+        (category) => {
+          if (Array.isArray(data[category])) {
+            allMods = allMods.concat(
+              data[category].map((mod) => ({ ...mod, _cat: category })),
+            );
+          }
+        },
+      );
 
       // If no mods available, show message
       if (allMods.length === 0) {
@@ -238,7 +238,7 @@ function loadRandomMods() {
 
       // Get all image URLs for preloading
       const imageUrls = modsToShow.map(
-        (mod) => mod.imageUrl || "assets/gui/default_mod.webp",
+        (mod) => mod.imageUrl || "assets/images/nothumbnail.webp",
       );
 
       // Preload images then show the grid
@@ -256,27 +256,33 @@ function loadRandomMods() {
 
             // Only create links for mods with valid routes
             if (route) {
-              showcaseItem.href = `pages/mods/mod.html?cat=${category}&route=${route}`;
+              showcaseItem.href = `pages/mods/mod.html?cat=${encodeURIComponent(category)}&route=${encodeURIComponent(route)}`;
               showcaseItem.classList.add("showcase-item");
 
-              const imageUrl = mod.imageUrl || "assets/gui/default_mod.webp";
+              const imageUrl = mod.imageUrl || "assets/images/nothumbnail.webp";
               const imageLoadSuccess = results[index]?.success;
-              
+
               // Use placeholder if image failed to load
-              const finalImageUrl = imageLoadSuccess ? imageUrl : "assets/images/nothumbnail.webp";
-              
+              const finalImageUrl = imageLoadSuccess
+                ? imageUrl
+                : "assets/images/nothumbnail.webp";
+              const safeTitle = escapeHtml(mod.title || "Untitled Mod");
+
               // Show image and title underneath
               showcaseItem.innerHTML = `
-                <img src="${finalImageUrl}" alt="${mod.title}" class="showcase-img" onerror="this.src='assets/images/nothumbnail.webp'">
-                <span class="showcase-title">${mod.title}</span>
+                <img src="${escapeHtml(finalImageUrl)}" alt="${safeTitle}" class="showcase-img" onerror="this.src='assets/images/nothumbnail.webp'">
+                <span class="showcase-title">${safeTitle}</span>
               `;
 
               showcaseElement.appendChild(showcaseItem);
 
               // Add animation class with delay after element is added to DOM
-              setTimeout(() => {
-                showcaseItem.classList.add("animate-in");
-              }, 100 + (index * 50)); // Stagger the animation
+              setTimeout(
+                () => {
+                  showcaseItem.classList.add("animate-in");
+                },
+                100 + index * 50,
+              ); // Stagger the animation
             }
           });
 
