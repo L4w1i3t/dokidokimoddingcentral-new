@@ -280,11 +280,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (character === 'oc') {
         const previewImage = item.preview_image 
           ? `/data/characters/${item.preview_image}` 
-          : "/assets/images/mod-placeholder.svg";
+          : "/assets/images/nothumbnail.webp";
 
         card.innerHTML = `
           <div class="character-preview">
-            <img src="${previewImage}" alt="${item.name}" loading="lazy" onerror="this.src='/assets/images/mod-placeholder.svg'">
+            <img src="${previewImage}" alt="${item.name}" loading="lazy" onerror="this.src='/assets/images/nothumbnail.webp'">
           </div>
           <div class="character-details">
             <h3>${item.name}</h3>
@@ -314,11 +314,11 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else {
         // Main character assets (simpler card)
-        const previewImage = item.image || "/assets/images/mod-placeholder.svg";
+        const previewImage = item.image || "/assets/images/nothumbnail.webp";
         
         card.innerHTML = `
           <div class="character-preview">
-            <img src="${previewImage}" alt="${item.name || 'Asset'}" loading="lazy" onerror="this.src='/assets/images/mod-placeholder.svg'">
+            <img src="${previewImage}" alt="${item.name || 'Asset'}" loading="lazy" onerror="this.src='/assets/images/nothumbnail.webp'">
           </div>
           <div class="character-details">
             <h3>${item.name || 'Untitled Asset'}</h3>

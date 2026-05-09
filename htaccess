@@ -9,7 +9,7 @@
     Header set X-XSS-Protection "1; mode=block"
 
     # Enforce a Content Security Policy (CSP)
-	Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self';"
+	Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src 'self' https://docs.google.com; object-src 'none'; base-uri 'self';"
 	
 
 

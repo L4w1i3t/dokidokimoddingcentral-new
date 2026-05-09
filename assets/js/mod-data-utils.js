@@ -58,3 +58,134 @@ function addExperimentalParam(url) {
   }
   return url;
 }
+
+/**
+ * Escapes text before inserting it into HTML template strings.
+ * @param {string} value
+ * @returns {string}
+ */
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+/**
+ * @param {string} value
+ * @returns {string}
+ */
+function getPrimaryAuthorName(value) {
+  const text = String(value || "").trim();
+  if (!text) {
+    return "Unknown";
+  }
+
+  const firstLine = text.split(/\r?\n/).find((line) => line.trim()) || text;
+  const colonParts = firstLine.split(":");
+  const prefix = colonParts[0].trim();
+  const suffix = colonParts.slice(1).join(":").trim();
+  const genericLabels = new Set([
+    "author",
+    "authors",
+    "creator",
+    "main author",
+    "main creator",
+    "coder",
+    "writer",
+    "writing department",
+    "coding department",
+    "music department",
+    "art department",
+  ]);
+
+  let candidate =
+    colonParts.length > 1 && !genericLabels.has(prefix.toLowerCase())
+      ? prefix
+      : suffix || firstLine;
+
+  candidate = candidate
+    .split(/[,;]|\s+-\s+/)[0]
+    .replace(/^(author|authors|creator|main author|main creator)\s*:\s*/i, "")
+    .trim();
+
+  return candidate || "Unknown";
+}
+
+/**
+ * Keeps cards compact while preserving full author text for tooltips/details.
+ * @param {string} author
+ * @param {string} fullAuthor
+ * @returns {string}
+ */
+function formatAuthorDisplay(author, fullAuthor) {
+  const fullText = String(fullAuthor || author || "").trim();
+  const primary = getPrimaryAuthorName(author || fullText);
+  const hasManyAuthors =
+    fullText.length > 60 ||
+    /[,;\n]/.test(fullText) ||
+    /\b(department|coder|writer|artist|musician|director)\b/i.test(fullText);
+
+  if (hasManyAuthors && !/\bet al\.?$/i.test(primary)) {
+    return `${primary} et al.`;
+  }
+
+  return primary;
+}
+
+/**
+ * @param {Object} mod
+ * @returns {string}
+ */
+function getFullAuthorText(mod) {
+  return String((mod && (mod.authorFull || mod.author)) || "Unknown").trim();
+}
+
+/**
+ * Builds catalog-card author markup.
+ * @param {Object} mod
+ * @returns {string}
+ */
+function renderAuthorLabel(mod) {
+  const fullAuthor = getFullAuthorText(mod);
+  const displayAuthor = formatAuthorDisplay(mod.author, fullAuthor);
+  return `<span class="mod-author" title="${escapeHtml(fullAuthor)}">By: ${escapeHtml(displayAuthor)}</span>`;
+}
+
+/**
+ * @param {Object} mod
+ * @returns {string}
+ */
+function getAuthorSearchText(mod) {
+  return `${(mod && mod.author) || ""} ${(mod && mod.authorFull) || ""}`.toLowerCase();
+}
+
+/**
+ * Adds a fallback suffix when old data has several identical download labels.
+ * @param {Object} linkObj
+ * @param {number} index
+ * @param {Array} links
+ * @returns {string}
+ */
+function formatDownloadLabel(linkObj, index, links) {
+  const version = String((linkObj && linkObj.version) || "").trim();
+  if (!version) {
+    return "Download";
+  }
+
+  const normalizedVersion = version.toLowerCase();
+  const duplicateCount = (links || []).filter(
+    (link) =>
+      String((link && link.version) || "")
+        .trim()
+        .toLowerCase() === normalizedVersion,
+  ).length;
+
+  if (duplicateCount > 1) {
+    return `Download (${version} ${index + 1})`;
+  }
+
+  return `Download (${version})`;
+}

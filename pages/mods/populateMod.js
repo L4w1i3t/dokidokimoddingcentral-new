@@ -85,7 +85,7 @@ function isEmpty(str) {
       imgEl.alt = thisMod.title;
       // Add error handling for broken images
       imgEl.onerror = function () {
-        this.src = "../../assets/images/mod-placeholder.svg";
+        this.src = "../../assets/images/nothumbnail.webp";
       };
     }
 
@@ -96,7 +96,20 @@ function isEmpty(str) {
     // [2] => "Description:"
     // [3] => actual description
     if (paragraphEls[0]) {
-      paragraphEls[0].innerHTML = `<strong>Author:</strong> ${thisMod.author}`;
+      const fullAuthor =
+        typeof getFullAuthorText === "function"
+          ? getFullAuthorText(thisMod)
+          : thisMod.author || "Unknown";
+      const displayAuthor =
+        typeof formatAuthorDisplay === "function"
+          ? formatAuthorDisplay(thisMod.author, fullAuthor)
+          : thisMod.author || "Unknown";
+      const safeAuthor =
+        typeof escapeHtml === "function"
+          ? escapeHtml(displayAuthor)
+          : displayAuthor;
+      paragraphEls[0].innerHTML = `<strong>Author:</strong> ${safeAuthor}`;
+      paragraphEls[0].title = fullAuthor;
     }
     if (paragraphEls[1]) {
       paragraphEls[1].innerHTML = `<strong>Submitted By:</strong> ${thisMod.submittedBy || "N/A"}`;
@@ -168,15 +181,17 @@ function isEmpty(str) {
         // Clear container
         downloadContainer.innerHTML = "";
 
-        thisMod.links.forEach((linkObj) => {
+        thisMod.links.forEach((linkObj, index) => {
           const btn = document.createElement("a");
           btn.classList.add("download-button");
           btn.href = linkObj.url || "#";
           //btn.setAttribute('target', '_blank'); // open in new tab
-          // If linkObj has .version, display it
-          btn.textContent = linkObj.version
-            ? `Download (${linkObj.version})`
-            : "Download";
+          btn.textContent =
+            typeof formatDownloadLabel === "function"
+              ? formatDownloadLabel(linkObj, index, thisMod.links)
+              : linkObj.version
+                ? `Download (${linkObj.version})`
+                : "Download";
 
           downloadContainer.appendChild(btn);
         });

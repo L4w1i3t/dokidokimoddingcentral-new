@@ -38,9 +38,13 @@ main {
   max-width: 1200px;
   margin: 60px auto;
   padding: 45px 35px;
-  background: linear-gradient(145deg, rgba(30, 30, 40, 0.92), rgba(45, 45, 60, 0.92));
+  background: linear-gradient(
+    145deg,
+    rgba(30, 30, 40, 0.92),
+    rgba(45, 45, 60, 0.92)
+  );
   border-radius: 20px;
-  box-shadow: 
+  box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
@@ -101,7 +105,7 @@ main {
   outline: none;
   border-color: #ff69b4;
   background: rgba(255, 255, 255, 0.18);
-  box-shadow: 
+  box-shadow:
     0 0 20px rgba(255, 105, 180, 0.6),
     0 4px 15px rgba(255, 105, 180, 0.3);
   transform: translateY(-2px);
@@ -125,19 +129,24 @@ main {
 }
 
 .search-box button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .search-box button:hover {
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(255, 105, 180, 0.5),
     0 0 30px rgba(168, 85, 247, 0.4);
 }
@@ -196,7 +205,7 @@ main {
 .filter-container select:focus {
   outline: none;
   border-color: #ff69b4;
-  box-shadow: 
+  box-shadow:
     0 0 20px rgba(255, 105, 180, 0.6),
     0 4px 15px rgba(255, 105, 180, 0.3);
 }
@@ -206,15 +215,20 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 35px;
+  align-items: start;
   margin-bottom: 50px;
 }
 
 /* Mod Card Styling */
 .mod-card {
-  background: linear-gradient(145deg, rgba(35, 35, 50, 0.9), rgba(45, 45, 65, 0.9));
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 50, 0.9),
+    rgba(45, 45, 65, 0.9)
+  );
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 
+  box-shadow:
     0 10px 35px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -223,7 +237,8 @@ main {
   -webkit-backdrop-filter: blur(10px);
   text-decoration: none;
   color: white;
-  height: 100%;
+  height: auto;
+  min-height: 328px;
   display: flex;
   flex-direction: column;
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -231,13 +246,17 @@ main {
 }
 
 .mod-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(255, 105, 180, 0.15), transparent 70%);
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 105, 180, 0.15),
+    transparent 70%
+  );
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
@@ -246,7 +265,7 @@ main {
 
 .mod-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 
+  box-shadow:
     0 18px 50px rgba(0, 0, 0, 0.5),
     0 0 40px rgba(255, 105, 180, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -258,15 +277,17 @@ main {
 }
 
 .mod-image-container {
-  height: 200px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   overflow: hidden;
   position: relative;
   z-index: 2;
+  flex: 0 0 auto;
 }
 
 .mod-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -295,6 +316,11 @@ main {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   transition: all 0.3s ease;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  min-height: 3.64rem;
 }
 
 .mod-card:hover h2 {
@@ -313,6 +339,11 @@ main {
   font-size: 0.98rem;
   font-weight: 500;
   transition: color 0.3s ease;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .mod-card:hover .mod-author {
@@ -323,11 +354,15 @@ main {
 .no-results {
   text-align: center;
   padding: 50px 40px;
-  background: linear-gradient(145deg, rgba(35, 35, 50, 0.9), rgba(45, 45, 65, 0.9));
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 50, 0.9),
+    rgba(45, 45, 65, 0.9)
+  );
   border-radius: 16px;
   margin: 30px auto;
   max-width: 600px;
-  box-shadow: 
+  box-shadow:
     0 10px 35px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 105, 180, 0.3);
@@ -369,19 +404,24 @@ main {
 }
 
 .pagination-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
 .pagination-button:hover {
   transform: translateY(-3px);
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(255, 105, 180, 0.5),
     0 0 30px rgba(168, 85, 247, 0.4);
 }
@@ -492,11 +532,12 @@ main {
   }
 
   .mod-image-container {
-    height: 150px;
+    aspect-ratio: 16 / 9;
+    height: auto;
   }
 
   .mod-image {
-    height: 150px;
+    height: 100%;
   }
 
   .mod-details {

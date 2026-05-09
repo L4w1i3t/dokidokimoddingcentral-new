@@ -263,11 +263,11 @@ function loadRandomMods() {
               const imageLoadSuccess = results[index]?.success;
               
               // Use placeholder if image failed to load
-              const finalImageUrl = imageLoadSuccess ? imageUrl : "assets/images/mod-placeholder.svg";
+              const finalImageUrl = imageLoadSuccess ? imageUrl : "assets/images/nothumbnail.webp";
               
               // Show image and title underneath
               showcaseItem.innerHTML = `
-                <img src="${finalImageUrl}" alt="${mod.title}" class="showcase-img" onerror="this.src='assets/images/mod-placeholder.svg'">
+                <img src="${finalImageUrl}" alt="${mod.title}" class="showcase-img" onerror="this.src='assets/images/nothumbnail.webp'">
                 <span class="showcase-title">${mod.title}</span>
               `;
 

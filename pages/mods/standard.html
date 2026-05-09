@@ -103,12 +103,12 @@
             modCard.href = `./mod.html?cat=standard&route=${mod.route}${expParam}`;
             modCard.innerHTML = `
           <div class="mod-image-container">
-            <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" onerror="this.src='../../assets/images/mod-placeholder.svg'" />
+            <img src="${mod.imageUrl}" alt="${mod.title}" class="mod-image" onerror="this.src='../../assets/images/nothumbnail.webp'" />
           </div>
           <div class="mod-details">
             <h2>${mod.title}</h2>
             <div class="mod-meta">
-              <span class="mod-author">By: ${mod.author}</span>
+              ${renderAuthorLabel(mod)}
             </div>
           </div>
         `;
@@ -133,7 +133,7 @@
           const matchesTitle =
             searchTerm === "" || mod.title.toLowerCase().includes(searchTerm);
           const matchesAuthor =
-            authorTerm === "" || mod.author.toLowerCase().includes(authorTerm);
+            authorTerm === "" || getAuthorSearchText(mod).includes(authorTerm);
           return matchesTitle && matchesAuthor;
         });
 
@@ -155,10 +155,18 @@
             filteredMods.sort((a, b) => b.title.localeCompare(a.title));
             break;
           case "author-az":
-            filteredMods.sort((a, b) => a.author.localeCompare(b.author));
+            filteredMods.sort((a, b) =>
+              formatAuthorDisplay(a.author, a.authorFull).localeCompare(
+                formatAuthorDisplay(b.author, b.authorFull),
+              ),
+            );
             break;
           case "author-za":
-            filteredMods.sort((a, b) => b.author.localeCompare(a.author));
+            filteredMods.sort((a, b) =>
+              formatAuthorDisplay(b.author, b.authorFull).localeCompare(
+                formatAuthorDisplay(a.author, a.authorFull),
+              ),
+            );
             break;
         }
 
@@ -214,6 +222,5 @@
     </script>
 
     <script src="../../components/addComponents.js"></script>
-    
   </body>
 </html>

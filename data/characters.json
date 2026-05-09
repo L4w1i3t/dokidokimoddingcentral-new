@@ -7,7 +7,7 @@
         {
           "id": 40001,
           "name": "Winter Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Cozy winter outfit for Monika",
           "file": "/data/characters/monika_winter.zip"
@@ -15,7 +15,7 @@
         {
           "id": 40002,
           "name": "Casual Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Casual everyday outfit",
           "file": "/data/characters/monika_casual.zip"
@@ -25,7 +25,7 @@
         {
           "id": 40010,
           "name": "Crossed Arms",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Confident crossed arms pose",
           "file": "/data/characters/monika_crossed.zip"
@@ -33,7 +33,7 @@
         {
           "id": 40011,
           "name": "Pointing",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Monika pointing forward",
           "file": "/data/characters/monika_point.zip"
@@ -43,7 +43,7 @@
         {
           "id": 40020,
           "name": "Happy Smile",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Bright happy smile",
           "file": "/data/characters/monika_happy.zip"
@@ -51,7 +51,7 @@
         {
           "id": 40021,
           "name": "Wink",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Playful wink expression",
           "file": "/data/characters/monika_wink.zip"
@@ -61,7 +61,7 @@
         {
           "id": 40030,
           "name": "MPT Base Sprite",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "MPT Team",
           "description": "Monika Plus Template variant",
           "file": "/data/characters/monika_mpt.zip"
@@ -71,7 +71,7 @@
         {
           "id": 40040,
           "name": "Chibi Monika",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Cute chibi version",
           "file": "/data/characters/monika_chibi.zip"
@@ -86,7 +86,7 @@
         {
           "id": 41001,
           "name": "Pajamas",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Comfy pajama outfit",
           "file": "/data/characters/sayori_pajamas.zip"
@@ -94,7 +94,7 @@
         {
           "id": 41002,
           "name": "Raincoat",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Rainy day raincoat",
           "file": "/data/characters/sayori_rain.zip"
@@ -104,7 +104,7 @@
         {
           "id": 41010,
           "name": "Hands Behind Back",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Shy hands behind back pose",
           "file": "/data/characters/sayori_behind.zip"
@@ -114,7 +114,7 @@
         {
           "id": 41020,
           "name": "Cheerful",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Classic Sayori cheerfulness",
           "file": "/data/characters/sayori_cheerful.zip"
@@ -122,7 +122,7 @@
         {
           "id": 41021,
           "name": "Worried",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Concerned worried expression",
           "file": "/data/characters/sayori_worried.zip"
@@ -132,7 +132,7 @@
         {
           "id": 41030,
           "name": "MPT Base Sprite",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "MPT Team",
           "description": "Sayori Plus Template variant",
           "file": "/data/characters/sayori_mpt.zip"
@@ -142,7 +142,7 @@
         {
           "id": 41040,
           "name": "Chibi Sayori",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Adorable chibi version",
           "file": "/data/characters/sayori_chibi.zip"
@@ -157,7 +157,7 @@
         {
           "id": 42001,
           "name": "Summer Dress",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Elegant summer dress",
           "file": "/data/characters/yuri_summer.zip"
@@ -165,7 +165,7 @@
         {
           "id": 42002,
           "name": "Gothic Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Dark gothic style outfit",
           "file": "/data/characters/yuri_gothic.zip"
@@ -175,7 +175,7 @@
         {
           "id": 42010,
           "name": "Reading Book",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Yuri holding an open book",
           "file": "/data/characters/yuri_reading.zip"
@@ -185,7 +185,7 @@
         {
           "id": 42020,
           "name": "Shy Smile",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Gentle shy smile",
           "file": "/data/characters/yuri_shy.zip"
@@ -193,7 +193,7 @@
         {
           "id": 42021,
           "name": "Excited",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Excited about literature",
           "file": "/data/characters/yuri_excited.zip"
@@ -203,7 +203,7 @@
         {
           "id": 42030,
           "name": "MPT Base Sprite",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "MPT Team",
           "description": "Yuri Plus Template variant",
           "file": "/data/characters/yuri_mpt.zip"
@@ -213,7 +213,7 @@
         {
           "id": 42040,
           "name": "Chibi Yuri",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Cute chibi version",
           "file": "/data/characters/yuri_chibi.zip"
@@ -228,7 +228,7 @@
         {
           "id": 43001,
           "name": "Chef Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Baking outfit with apron",
           "file": "/data/characters/natsuki_chef.zip"
@@ -236,7 +236,7 @@
         {
           "id": 43002,
           "name": "Cat Pajamas",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Cute cat-themed pajamas",
           "file": "/data/characters/natsuki_cat.zip"
@@ -246,7 +246,7 @@
         {
           "id": 43010,
           "name": "Hands on Hips",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Confident hands on hips",
           "file": "/data/characters/natsuki_hips.zip"
@@ -256,7 +256,7 @@
         {
           "id": 43020,
           "name": "Pout",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Classic Natsuki pout",
           "file": "/data/characters/natsuki_pout.zip"
@@ -264,7 +264,7 @@
         {
           "id": 43021,
           "name": "Tsundere Blush",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Blushing tsundere expression",
           "file": "/data/characters/natsuki_blush.zip"
@@ -274,7 +274,7 @@
         {
           "id": 43030,
           "name": "MPT Base Sprite",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "MPT Team",
           "description": "Natsuki Plus Template variant",
           "file": "/data/characters/natsuki_mpt.zip"
@@ -284,7 +284,7 @@
         {
           "id": 43040,
           "name": "Chibi Natsuki",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Smol chibi version",
           "file": "/data/characters/natsuki_chibi.zip"
@@ -301,7 +301,7 @@
         {
           "id": 50001,
           "name": "Casual Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "MC casual outfit sprite",
           "file": "/data/characters/mc_casual.zip"
@@ -309,7 +309,7 @@
         {
           "id": 50002,
           "name": "Formal Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "MC in formal attire",
           "file": "/data/characters/mc_formal.zip"
@@ -319,7 +319,7 @@
         {
           "id": 50010,
           "name": "Neutral Stance",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Basic neutral pose",
           "file": "/data/characters/mc_neutral.zip"
@@ -329,7 +329,7 @@
         {
           "id": 50020,
           "name": "Nervous",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Nervous expression",
           "file": "/data/characters/mc_nervous.zip"
@@ -337,7 +337,7 @@
         {
           "id": 50021,
           "name": "Confident",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Confident smile",
           "file": "/data/characters/mc_confident.zip"
@@ -347,7 +347,7 @@
         {
           "id": 50030,
           "name": "MPT Base Sprite",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "MPT Team",
           "description": "MC Plus Template variant",
           "file": "/data/characters/mc_mpt.zip"
@@ -357,7 +357,7 @@
         {
           "id": 50040,
           "name": "Chibi MC",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Sample Artist",
           "description": "Chibi MC sprite",
           "file": "/data/characters/mc_chibi.zip"
@@ -372,7 +372,7 @@
         {
           "id": 51001,
           "name": "School Uniform",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Kotonoha school uniform",
           "file": "/data/characters/koto_uniform.zip"
@@ -382,7 +382,7 @@
         {
           "id": 51010,
           "name": "Greeting Wave",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Friendly greeting wave",
           "file": "/data/characters/koto_wave.zip"
@@ -392,7 +392,7 @@
         {
           "id": 51020,
           "name": "Gentle Smile",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Warm gentle smile",
           "file": "/data/characters/koto_smile.zip"
@@ -415,7 +415,7 @@
         {
           "id": 52001,
           "name": "Sports Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Athletic sports outfit",
           "file": "/data/characters/mio_sports.zip"
@@ -425,7 +425,7 @@
         {
           "id": 52010,
           "name": "Energetic Pose",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Energetic dynamic pose",
           "file": "/data/characters/mio_energetic.zip"
@@ -435,7 +435,7 @@
         {
           "id": 52020,
           "name": "Determined",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Determined expression",
           "file": "/data/characters/mio_determined.zip"
@@ -458,7 +458,7 @@
         {
           "id": 53001,
           "name": "Traditional Kimono",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Beautiful traditional kimono",
           "file": "/data/characters/kiyomi_kimono.zip"
@@ -468,7 +468,7 @@
         {
           "id": 53010,
           "name": "Elegant Bow",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Graceful bow pose",
           "file": "/data/characters/kiyomi_bow.zip"
@@ -478,7 +478,7 @@
         {
           "id": 53020,
           "name": "Serene",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "OC Artist",
           "description": "Peaceful serene expression",
           "file": "/data/characters/kiyomi_serene.zip"
@@ -503,7 +503,7 @@
         {
           "id": 80001,
           "name": "Deltarune Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Noelle's original outfit from Deltarune",
           "file": "/data/characters/noelle_default.zip"
@@ -513,7 +513,7 @@
         {
           "id": 80010,
           "name": "Shy Pose",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Noelle's characteristic shy pose",
           "file": "/data/characters/noelle_shy.zip"
@@ -523,7 +523,7 @@
         {
           "id": 80020,
           "name": "Blushing",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Noelle blushing expression",
           "file": "/data/characters/noelle_blush.zip"
@@ -546,7 +546,7 @@
         {
           "id": 81001,
           "name": "Tactical Gear",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Military tactical outfit",
           "file": "/data/characters/tc_tactical.zip"
@@ -556,7 +556,7 @@
         {
           "id": 81010,
           "name": "Combat Ready",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Ready for action pose",
           "file": "/data/characters/tc_combat.zip"
@@ -566,7 +566,7 @@
         {
           "id": 81020,
           "name": "Determined",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Serious determined face",
           "file": "/data/characters/tc_determined.zip"
@@ -589,7 +589,7 @@
         {
           "id": 82001,
           "name": "Lawyer Suit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Saul's signature lawyer suit",
           "file": "/data/characters/saul_suit.zip"
@@ -599,7 +599,7 @@
         {
           "id": 82010,
           "name": "Pointing",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Better Call Saul pointing pose",
           "file": "/data/characters/saul_point.zip"
@@ -609,7 +609,7 @@
         {
           "id": 82020,
           "name": "Confident Smirk",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "Saul's confident lawyer smirk",
           "file": "/data/characters/saul_smirk.zip"
@@ -632,7 +632,7 @@
         {
           "id": 83001,
           "name": "Default Outfit",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "BF's default FNF outfit",
           "file": "/data/characters/bf_default.zip"
@@ -642,7 +642,7 @@
         {
           "id": 83010,
           "name": "Mic Pose",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "BF holding microphone",
           "file": "/data/characters/bf_mic.zip"
@@ -652,7 +652,7 @@
         {
           "id": 83020,
           "name": "Beep Boop",
-          "image": "/assets/images/mod-placeholder.svg",
+          "image": "/assets/images/nothumbnail.webp",
           "author": "Crossover Artist",
           "description": "BF's signature expression",
           "file": "/data/characters/bf_beep.zip"

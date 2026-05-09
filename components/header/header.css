@@ -230,7 +230,7 @@
 /* Tablet Adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
   .site-title {
-    display: inline-block;
+    display: none;
     font-size: 1.1rem;
   }
 
