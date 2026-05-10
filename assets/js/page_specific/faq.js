@@ -19,6 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function setFaqItemHeight(item) {
+    const answer = item.querySelector(".faq-answer");
+
+    if (answer && item.classList.contains("active")) {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  }
+
   function openFaqItem(item) {
     const answer = item.querySelector(".faq-answer");
     const question = item.querySelector(".faq-question");
@@ -32,6 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (question) {
       question.setAttribute("aria-expanded", "true");
     }
+  }
+
+  function refreshOpenFaqItems() {
+    faqItems.forEach(setFaqItemHeight);
   }
 
   tabs.forEach((tab) => {
@@ -91,4 +103,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  window.addEventListener("resize", refreshOpenFaqItems);
+
+  if (document.fonts) {
+    document.fonts.ready.then(refreshOpenFaqItems);
+  }
 });

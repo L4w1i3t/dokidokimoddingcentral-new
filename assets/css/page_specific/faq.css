@@ -206,18 +206,20 @@ main {
 }
 
 .faq-answer {
+  --faq-answer-block-padding: 20px;
   max-height: 0;
   overflow: hidden;
-  transition:
-    max-height 0.5s ease,
-    padding 0.3s ease;
+  transition: max-height 0.5s ease;
   padding: 0 20px;
   color: #e0e0e0;
 }
 
-.faq-item.active .faq-answer {
-  max-height: 1000px;
-  padding: 20px;
+.faq-answer > :first-child {
+  padding-top: var(--faq-answer-block-padding);
+}
+
+.faq-answer > :last-child {
+  padding-bottom: var(--faq-answer-block-padding);
 }
 
 .faq-answer p {
@@ -314,12 +316,10 @@ main {
   }
 
   .faq-answer {
+    --faq-answer-block-padding: 15px;
     font-size: 0.9rem;
     line-height: 1.5;
-  }
-
-  .faq-item.active .faq-answer {
-    padding: 15px;
+    padding-inline: 15px;
   }
 }
 
